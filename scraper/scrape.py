@@ -33,16 +33,17 @@ YEARS_BACK = 5   # how many years back to search
 
 FESTIVALS = ["Cannes", "Venice", "Berlin", "Sundance", "Toronto", "Rotterdam", "Tribeca", "SXSW"]
 
-# Verified TMDB keyword IDs for each festival
-FESTIVAL_KEYWORD_IDS = {
-    "Cannes":     818,
-    "Venice":     10096,
-    "Berlin":     10225,
-    "Sundance":   10224,
-    "Toronto":    10226,
-    "Rotterdam":  10227,
-    "Tribeca":    10228,
-    "SXSW":       10229,
+# TMDB keyword search terms for each festival
+# Using multiple terms per festival increases recall
+FESTIVAL_KEYWORDS = {
+    "Cannes":     ["cannes film festival", "cannes"],
+    "Venice":     ["venice film festival", "venice international film festival"],
+    "Berlin":     ["berlin international film festival", "berlinale"],
+    "Sundance":   ["sundance film festival", "sundance"],
+    "Toronto":    ["toronto international film festival", "tiff"],
+    "Rotterdam":  ["international film festival rotterdam", "iffr", "rotterdam film festival"],
+    "Tribeca":    ["tribeca film festival", "tribeca"],
+    "SXSW":       ["sxsw", "south by southwest film festival"],
 }
 
 HEADERS = {
@@ -101,7 +102,7 @@ def tmdb_get(path, params={}):
 
 
 def discover_australian_films(year):
-    """Discover ALL films with Australia as production country for a given year."""
+    """Discover feature films (70+ mins) with Australia as production country for a given year."""
     films = []
     page = 1
     while True:
@@ -109,6 +110,7 @@ def discover_australian_films(year):
             "with_origin_country": "AU",
             "primary_release_year": year,
             "sort_by": "vote_count.desc",
+            "with_runtime.gte": 70,   # feature films only
             "page": page,
         })
         if not data:
@@ -124,21 +126,40 @@ def discover_australian_films(year):
 
 
 def get_festival_tmdb_ids(festival_name, years):
-    """Get all TMDB movie IDs tagged with a festival keyword."""
-    kw_id = FESTIVAL_KEYWORD_IDS.get(festival_name)
-    if not kw_id:
-        data = tmdb_get("/search/keyword", {"query": festival_name})
-        if data and data.get("results"):
-            kw_id = data["results"][0]["id"]
-    if not kw_id:
+    """
+    Get all TMDB movie IDs tagged with a festival keyword.
+    Searches multiple keyword variants and collects all matching IDs.
+    """
+    search_terms = FESTIVAL_KEYWORDS.get(festival_name, [festival_name.lower()])
+
+    # Find all keyword IDs for this festival
+    kw_ids = []
+    for term in search_terms:
+        data = tmdb_get("/search/keyword", {"query": term})
+        if not data:
+            continue
+        for kw in data.get("results", []):
+            kw_name = kw.get("name", "").lower()
+            # Only accept keywords that meaningfully match the festival
+            if any(word in kw_name for word in term.lower().split()):
+                kw_ids.append(kw["id"])
+                log.info(f"  [{festival_name}] keyword match: '{kw['name']}' (id={kw['id']})")
+        time.sleep(0.1)
+
+    if not kw_ids:
+        log.warning(f"  [{festival_name}] No keyword IDs found")
         return set()
+
+    # Deduplicate keyword IDs
+    kw_ids = list(set(kw_ids))
+    kw_combined = "|".join(str(k) for k in kw_ids)  # TMDB OR logic
 
     ids = set()
     for year in years:
         page = 1
         while True:
             data = tmdb_get("/discover/movie", {
-                "with_keywords": kw_id,
+                "with_keywords": kw_combined,
                 "primary_release_year": year,
                 "page": page,
             })
@@ -150,7 +171,8 @@ def get_festival_tmdb_ids(festival_name, years):
                 break
             page += 1
             time.sleep(0.25)
-    log.info(f"  {festival_name}: {len(ids)} tagged films")
+
+    log.info(f"  {festival_name}: {len(ids)} tagged films across {years}")
     return ids
 
 
@@ -366,6 +388,11 @@ def run_scraper():
         film.letterboxd_rating = lb["letterboxd_rating"]
         film.letterboxd_url    = lb["letterboxd_url"]
         time.sleep(0.5)
+
+        # Skip short films as a safety net
+        if film.runtime_mins and film.runtime_mins < 70:
+            log.info(f"  ✗ Skipping short film: {film.title} ({film.runtime_mins} mins)")
+            continue
 
         result_films.append(asdict(film))
         log.info(f"  ✓ {film.title} ({film.year}) | festivals: {film.festivals}")

@@ -1,1 +1,233 @@
-[]
+[
+  {
+    "title": "Jimpa",
+    "year": 2025,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Sophie Hyde",
+    "synopsis": "Hannah and her non-binary teenager Frances visit her gay grandfather Jimpa in Amsterdam. Frances expresses a desire to stay with their grandfather for a year, challenging Hannah's parenting beliefs and forcing her to confront past issues.",
+    "poster_url": "posters/1286491.jpg",
+    "tmdb_id": 1286491,
+    "tmdb_rating": 7.2,
+    "imdb_id": "tt23745668",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.32,
+    "letterboxd_url": "https://letterboxd.com/film/jimpa/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 113,
+    "added_at": "2026-03-31T05:18:12.836867"
+  },
+  {
+    "title": "Lesbian Space Princess",
+    "year": 2025,
+    "festivals": [
+      "Berlin"
+    ],
+    "director": "Leela Varghese",
+    "synopsis": "A space princess is thrust out of her sheltered life and into a galactic quest to save her bounty hunter ex-girlfriend from evil incel aliens.",
+    "poster_url": "posters/1333141.jpg",
+    "tmdb_id": 1333141,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt29781139",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.64,
+    "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
+    "screen_australia_url": null,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Science Fiction"
+    ],
+    "runtime_mins": 87,
+    "added_at": "2026-03-31T05:18:06.325741"
+  },
+  {
+    "title": "Make It Look Real",
+    "year": 2025,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Kate Blackmore",
+    "synopsis": "Intimacy coordinator Claire Warden guides actors through sex scenes on a film set, negotiating the vision of a director, the physical and psychological needs of the performers, and a documentary crew filming her every move.",
+    "poster_url": "posters/1381062.jpg",
+    "tmdb_id": 1381062,
+    "tmdb_rating": null,
+    "imdb_id": "tt33400208",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.31,
+    "letterboxd_url": "https://letterboxd.com/film/make-it-look-real-2025/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 78,
+    "added_at": "2026-03-31T05:18:19.535052"
+  },
+  {
+    "title": "We Bury the Dead",
+    "year": 2025,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Zak Hilditch",
+    "synopsis": "After a catastrophic military disaster, the dead don't just rise - they hunt. Ava searches for her missing husband, but what she finds is far more terrifying.",
+    "poster_url": "posters/1198984.jpg",
+    "tmdb_id": 1198984,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt29713093",
+    "imdb_rating": null,
+    "letterboxd_rating": 2.76,
+    "letterboxd_url": "https://letterboxd.com/film/we-bury-the-dead/",
+    "screen_australia_url": null,
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "runtime_mins": 95,
+    "added_at": "2026-03-31T05:18:17.070806"
+  },
+  {
+    "title": "Furiosa: A Mad Max Saga",
+    "year": 2024,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "George Miller",
+    "synopsis": "As the world falls, young Furiosa is snatched from the Green Place of Many Mothers into the hands of a great biker horde led by the warlord Dementus. Sweeping through the wasteland, they encounter the citadel presided over by Immortan Joe. The two tyrants wage war for dominance, and Furiosa must survive many trials as she puts together the means to find her way home.",
+    "poster_url": "posters/786892.jpg",
+    "tmdb_id": 786892,
+    "tmdb_rating": 7.5,
+    "imdb_id": "tt12037194",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.77,
+    "letterboxd_url": "https://letterboxd.com/film/furiosa-a-mad-max-saga/",
+    "screen_australia_url": null,
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "runtime_mins": 149,
+    "added_at": "2026-03-31T05:18:01.777049"
+  },
+  {
+    "title": "Memoir of a Snail",
+    "year": 2024,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Adam Elliot",
+    "synopsis": "Forcibly separated from her twin brother when they are orphaned, a melancholic misfit learns how to find confidence within herself amid the clutter of misfortunes and everyday life.",
+    "poster_url": "posters/1064486.jpg",
+    "tmdb_id": 1064486,
+    "tmdb_rating": 8.0,
+    "imdb_id": "tt23770030",
+    "imdb_rating": null,
+    "letterboxd_rating": 4.17,
+    "letterboxd_url": "https://letterboxd.com/film/memoir-of-a-snail/",
+    "screen_australia_url": null,
+    "genres": [
+      "Animation",
+      "Drama",
+      "Comedy"
+    ],
+    "runtime_mins": 94,
+    "added_at": "2026-03-31T05:18:14.989452"
+  },
+  {
+    "title": "The New Boy",
+    "year": 2023,
+    "festivals": [
+      "Cannes",
+      "Toronto"
+    ],
+    "director": "Warwick Thornton",
+    "synopsis": "In 1940s Australia, a nameless nine-year-old Aboriginal orphan arrives in the dead of night at a remote monastery overseen by a renegade nun, where his presence disturbs its delicately balanced world.",
+    "poster_url": "posters/937161.jpg",
+    "tmdb_id": 937161,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt18180926",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.04,
+    "letterboxd_url": "https://letterboxd.com/film/the-new-boy/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 116,
+    "added_at": "2026-03-31T05:17:59.035411"
+  },
+  {
+    "title": "The Survival of Kindness",
+    "year": 2023,
+    "festivals": [
+      "Berlin"
+    ],
+    "director": "Rolf de Heer",
+    "synopsis": "In a cage on a trailer in the middle of the desert, BlackWoman is abandoned, left to die. But BlackWoman seems not ready. She escapes, journeying through pestilence and persecution, from desert to mountain and finally to city, on a quest for an unknown beginning. But the city is more uncertain even than the desert, and recaptured, BlackWoman must find another escape. Or does she?",
+    "poster_url": "posters/1024707.jpg",
+    "tmdb_id": 1024707,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt15831022",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.19,
+    "letterboxd_url": "https://letterboxd.com/film/the-survival-of-kindness/",
+    "screen_australia_url": null,
+    "genres": [
+      "Mystery",
+      "Fantasy",
+      "Science Fiction"
+    ],
+    "runtime_mins": 96,
+    "added_at": "2026-03-31T05:18:03.949349"
+  },
+  {
+    "title": "You Won't Be Alone",
+    "year": 2022,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Goran Stolevski",
+    "synopsis": "In an isolated mountain village in 19th century Macedonia, a young feral witch accidentally kills a peasant. She assumes the peasant's shape to see what life is like in her skin, igniting a deep seated curiosity to experience life inside the bodies of others.",
+    "poster_url": "posters/883083.jpg",
+    "tmdb_id": 883083,
+    "tmdb_rating": 6.6,
+    "imdb_id": "tt8296030",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.67,
+    "letterboxd_url": "https://letterboxd.com/film/you-wont-be-alone/",
+    "screen_australia_url": null,
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "runtime_mins": 108,
+    "added_at": "2026-03-31T05:18:10.704352"
+  },
+  {
+    "title": "Playing with Sharks",
+    "year": 2021,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Sally Aitken",
+    "synopsis": "Valerie Taylor is a shark fanatic and an Australian icon – a marine maverick who forged her way as a fearless diver, cinematographer and conservationist. She filmed the real sharks for Jaws and famously wore a chainmail suit, using herself as shark bait, changing our scientific understanding of sharks forever.",
+    "poster_url": "posters/776553.jpg",
+    "tmdb_id": 776553,
+    "tmdb_rating": 7.6,
+    "imdb_id": "tt11226258",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.8,
+    "letterboxd_url": "https://letterboxd.com/film/playing-with-sharks/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 95,
+    "added_at": "2026-03-31T05:18:08.511898"
+  }
+]

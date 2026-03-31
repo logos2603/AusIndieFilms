@@ -28,7 +28,7 @@ BASE_DIR     = Path(__file__).parent.parent / "website"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 10
+YEARS_BACK = 5
 
 # TMDB IDs to explicitly exclude (films incorrectly tagged as Australian in TMDB)
 BLOCKLIST_TMDB_IDS = {
@@ -227,8 +227,84 @@ WIKI_TEMPLATES = {
 }
 
 
+# SXSW PDF archive URLs — scraped from sxsw.com/festivals/film/archive/
+SXSW_PDF_URLS = {
+    2025: "https://sxsw.com/wp-content/uploads/2025/09/25_SXSW_FilmTV-Archive_4.7.pdf",
+    2024: "https://sxsw.com/wp-content/uploads/2024/06/24_SXSW_FilmTV-Archive.pdf",
+    2023: "https://sxsw.com/wp-content/uploads/2023/07/23_SXSW_FilmTV-Archive.pdf",
+    2022: "https://sxsw.com/wp-content/uploads/2022/06/22_SXSW_FilmArchive1.pdf",
+    2021: "https://sxsw.com/wp-content/uploads/2022/07/2021FilmArchive-2.pdf",
+    2020: "https://sxsw.com/wp-content/uploads/2021/06/FilmPocketGuide2020_resize.pdf",
+    2019: "https://sxsw.com/wp-content/uploads/2019/06/2019FilmArchive-1.pdf",
+    2018: "https://sxsw.com/wp-content/uploads/2018/06/2018FilmArchive-1.pdf",
+    2017: "https://sxsw.com/wp-content/uploads/2016/08/2017-Film-Archive-2.pdf",
+    2016: "https://sxsw.com/wp-content/uploads/2016/08/2016_film-archive-1.pdf",
+}
+
+
+def scrape_sxsw_pdf(year: int) -> list[dict]:
+    """
+    Download and extract film titles from the SXSW annual PDF archive.
+    Returns a list of {"title": str, "year": int, "festival": "SXSW"}.
+    """
+    url = SXSW_PDF_URLS.get(year)
+    if not url:
+        return []
+
+    try:
+        import pdfplumber
+        import io
+
+        log.info(f"  Downloading SXSW {year} PDF archive...")
+        r = requests.get(url, headers=HEADERS, timeout=30)
+        if r.status_code != 200:
+            log.warning(f"  SXSW PDF {year} returned HTTP {r.status_code}")
+            return []
+
+        films = []
+        seen = set()
+
+        with pdfplumber.open(io.BytesIO(r.content)) as pdf:
+            for page in pdf.pages:
+                text = page.extract_text()
+                if not text:
+                    continue
+
+                for line in text.split("\n"):
+                    line = line.strip()
+                    # Film titles in SXSW archives are typically on their own line,
+                    # mixed case, 3-80 chars, not all caps (which are section headers)
+                    if len(line) < 3 or len(line) > 80:
+                        continue
+                    if line.isupper():
+                        continue  # section headers
+                    if line.isdigit():
+                        continue  # page numbers
+                    # Skip lines that look like director credits (start with "Dir.")
+                    if line.lower().startswith("dir"):
+                        continue
+                    # Skip lines that are clearly not titles
+                    if any(line.startswith(p) for p in ["©", "www.", "http", "sxsw"]):
+                        continue
+                    if line.lower() in seen:
+                        continue
+                    seen.add(line.lower())
+                    films.append({"title": line, "year": year, "festival": "SXSW"})
+
+        log.info(f"  SXSW {year} PDF: extracted {len(films)} candidate titles")
+        return films
+
+    except ImportError:
+        log.error("pdfplumber not installed — run: pip install pdfplumber")
+        return []
+    except Exception as e:
+        log.error(f"  SXSW PDF scrape failed for {year}: {e}")
+        return []
+
+
 def get_festival_films(festival: str, years: list[int]) -> list[dict]:
-    """Get all films for a festival across given years, using Wikipedia as primary source."""
+    """Get all films for a festival across given years, using Wikipedia as primary source.
+    For SXSW, supplements Wikipedia with the official PDF archive."""
     all_films = []
     templates = WIKI_TEMPLATES.get(festival, [])
 
@@ -240,8 +316,16 @@ def get_festival_films(festival: str, years: list[int]) -> list[dict]:
                 all_films.extend(films)
                 found = True
                 break  # stop trying templates once one works
+
+        # For SXSW: supplement with (or fall back to) the official PDF archive
+        if festival == "SXSW":
+            pdf_films = scrape_sxsw_pdf(year)
+            if pdf_films:
+                all_films.extend(pdf_films)
+                found = True
+
         if not found:
-            log.warning(f"  No Wikipedia data found for {festival} {year}")
+            log.warning(f"  No data found for {festival} {year}")
         time.sleep(0.3)
 
     return all_films

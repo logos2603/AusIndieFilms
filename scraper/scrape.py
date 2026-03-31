@@ -28,7 +28,7 @@ BASE_DIR     = Path(__file__).parent.parent / "website"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 10
+YEARS_BACK = 5
 
 # TMDB IDs to explicitly exclude (films incorrectly tagged as Australian in TMDB)
 BLOCKLIST_TMDB_IDS = {
@@ -306,6 +306,115 @@ def is_feature_film(detail: dict) -> bool:
     return runtime >= 70
 
 
+def fetch_wikipedia_film_article(title: str, year: int) -> Optional[str]:
+    """
+    Fetch the wikitext for a film's Wikipedia article.
+    Tries several common title formats. Returns wikitext or None.
+    """
+    params = {
+        "action": "parse",
+        "prop": "wikitext",
+        "format": "json",
+        "redirects": True,
+    }
+    for page_title in [f"{title} ({year} film)", f"{title} (film)", title]:
+        try:
+            r = requests.get(
+                "https://en.wikipedia.org/w/api.php",
+                params={**params, "page": page_title},
+                headers=HEADERS,
+                timeout=10,
+            )
+            data = r.json()
+            if "error" in data:
+                continue
+            wikitext = data.get("parse", {}).get("wikitext", {}).get("*", "")
+            if wikitext:
+                return wikitext
+        except Exception as e:
+            log.warning(f"  Wikipedia fetch failed for '{page_title}': {e}")
+    return None
+
+
+def verify_australian_on_wikipedia(title: str, year: int) -> bool:
+    """
+    Cross-check a film against Wikipedia to confirm it is Australian.
+    Looks for Australia-related production keywords in the film's Wikipedia article.
+    Returns True if Wikipedia confirms Australian production, False if it contradicts it,
+    and True (benefit of the doubt) if no Wikipedia article is found.
+    """
+    AU_KEYWORDS = [
+        "australia", "australian", "screen australia", "australia council",
+        "film australia", "abc film", "abc television", "foxtel", "roadshow",
+        "new south wales", "victoria", "queensland", "western australia",
+        "south australia", "tasmania", "northern territory", "canberra",
+    ]
+    NOT_AU_KEYWORDS = [
+        "chinese film", "china film", "french film", "french production",
+        "german film", "italian film", "japanese film", "korean film",
+        "american film", "british film", "united kingdom production",
+    ]
+
+    wikitext = fetch_wikipedia_film_article(title, year)
+
+    if wikitext is None:
+        log.info(f"  ? No Wikipedia article found for '{title}', accepting on TMDB data alone")
+        return True
+
+    wikitext_lower = wikitext.lower()
+
+    # Check for explicit non-Australian keywords first
+    for kw in NOT_AU_KEYWORDS:
+        if kw in wikitext_lower:
+            log.info(f"  ✗ Wikipedia contradicts Australian origin: '{kw}' found for '{title}'")
+            return False
+
+    # Check for Australian keywords
+    for kw in AU_KEYWORDS:
+        if kw in wikitext_lower:
+            log.info(f"  ✓ Wikipedia confirms Australian: '{kw}' found for '{title}'")
+            return True
+
+    # Article found but no AU keywords — likely not Australian
+    log.info(f"  ✗ Wikipedia article found but no Australian keywords for '{title}'")
+    return False
+
+
+def verify_not_rerelease(title: str, festival_year: int) -> bool:
+    """
+    Check whether a film is a re-release of an older film at a festival.
+    If Wikipedia shows the film's original release year is more than 2 years
+    before the festival year, it's likely a retrospective and we reject it.
+    """
+    wikitext = fetch_wikipedia_film_article(title, festival_year)
+    if wikitext is None:
+        return True  # Can't verify, give benefit of the doubt
+
+    # Look for release year in the infobox — e.g. | released = 1994
+    # or plain 4-digit years near "release" keywords
+    release_patterns = [
+        r"\|\s*release[d\s_]*=\s*.*?(\d{4})",
+        r"\|\s*released\s*=\s*.*?(\d{4})",
+        r"release_date\s*=\s*.*?(\d{4})",
+        r"\{\{film date[^}]*?(\d{4})",
+        r"\{\{start date[^}]*?(\d{4})",
+    ]
+    for pattern in release_patterns:
+        match = re.search(pattern, wikitext, re.IGNORECASE)
+        if match:
+            original_year = int(match.group(1))
+            age = festival_year - original_year
+            if age > 2:
+                log.info(f"  ✗ Re-release detected: '{title}' originally released {original_year}, festival year {festival_year} ({age} years gap)")
+                return False
+            else:
+                log.info(f"  ✓ Release year check passed: '{title}' ({original_year})")
+                return True
+
+    # No release year found in article — give benefit of the doubt
+    return True
+
+
 def extract_tmdb_data(detail: dict) -> dict:
     director = ""
     for m in detail.get("credits", {}).get("crew", []):
@@ -483,6 +592,10 @@ def run_scraper():
             continue
         if detail.get("id") in BLOCKLIST_TMDB_IDS:
             log.info(f"  ✗ Blocklisted: {title}")
+            continue
+        if not verify_australian_on_wikipedia(title, year):
+            continue
+        if not verify_not_rerelease(title, year):
             continue
         if not is_feature_film(detail):
             log.info(f"  ✗ Short film: {title} ({detail.get('runtime')} mins)")

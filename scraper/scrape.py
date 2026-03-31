@@ -18,7 +18,7 @@ from dataclasses import dataclass, asdict, fields as datafields
 from typing import Optional
 from bs4 import BeautifulSoup
 
-logging.basicConfig(level=logging.DEBUG, format="%(asctime)s %(levelname)s %(message)s")
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────

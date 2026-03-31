@@ -28,7 +28,12 @@ BASE_DIR     = Path(__file__).parent.parent / "website"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 5
+YEARS_BACK = 10
+
+# TMDB IDs to explicitly exclude (films incorrectly tagged as Australian in TMDB)
+BLOCKLIST_TMDB_IDS = {
+    1115379,  # Only the River Flows (2023) — Chinese film, incorrectly tagged
+}
 
 HEADERS = {
     "User-Agent": (
@@ -475,6 +480,9 @@ def run_scraper():
         if not detail:
             continue
         if not is_australian(detail):
+            continue
+        if detail.get("id") in BLOCKLIST_TMDB_IDS:
+            log.info(f"  ✗ Blocklisted: {title}")
             continue
         if not is_feature_film(detail):
             log.info(f"  ✗ Short film: {title} ({detail.get('runtime')} mins)")

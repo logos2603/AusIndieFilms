@@ -215,6 +215,11 @@
       flex-wrap: wrap;
     }
 
+    .doc-tag {
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
     .festival-tag {
       font-family: 'DM Mono', monospace;
       font-size: 0.55rem;
@@ -352,11 +357,12 @@
       <button class="pill" data-festival="Venice">Venice</button>
       <button class="pill" data-festival="Berlin">Berlin</button>
       <button class="pill" data-festival="Sundance">Sundance</button>
-      <button class="pill" data-festival="Toronto (TIFF)">TIFF</button>
+      <button class="pill" data-festival="Toronto">TIFF</button>
       <button class="pill" data-festival="Rotterdam (IFFR)">Rotterdam</button>
-      <button class="pill" data-festival="Tribeca">Tribeca</button>
       <button class="pill" data-festival="SXSW">SXSW</button>
     </div>
+
+    <button class="pill" id="doc-filter" data-doc="false">Documentaries</button>
 
     <select class="sort-select" id="sort">
       <option value="year-desc">Newest first</option>
@@ -401,14 +407,23 @@
       }
     }
 
+    let docsOnly = false;
+
     function filtered() {
       let films = [...allFilms];
 
       if (activeFestival !== "all") {
         films = films.filter(f =>
-          f.festivals && f.festivals.some(fest =>
-            fest.toLowerCase().includes(activeFestival.toLowerCase())
-          )
+          f.festivals && f.festivals.some(fest => {
+            const norm = fest === "Toronto (TIFF)" ? "Toronto" : fest;
+            return norm.toLowerCase().includes(activeFestival.toLowerCase());
+          })
+        );
+      }
+
+      if (docsOnly) {
+        films = films.filter(f =>
+          (f.genres || []).some(g => g.toLowerCase() === "documentary")
         );
       }
 
@@ -456,12 +471,22 @@
         ? `<img class="card-poster" src="${f.poster_url}" alt="${escHtml(f.title)} poster" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="card-poster-placeholder" style="display:none">🎬</div>`
         : `<div class="card-poster-placeholder">🎬</div>`;
 
+      const FESTIVAL_LABELS = {
+        "Toronto": "TIFF",
+        "Toronto (TIFF)": "TIFF",
+      };
+      const isDoc = (f.genres || []).some(g => g.toLowerCase() === "documentary");
+      const docTag = isDoc ? `<span class="festival-tag doc-tag">Documentary</span>` : "";
+
       const festivals = (f.festivals || [])
-        .map(fest => `<span class="festival-tag">${escHtml(fest)}</span>`)
+        .map(fest => {
+          const label = FESTIVAL_LABELS[fest] || fest;
+          return `<span class="festival-tag">${escHtml(label)}</span>`;
+        })
         .join("");
 
       const ratings = [
-        f.tmdb_rating    ? ratingChip("TMDB",       f.tmdb_rating.toFixed(1))      : "",
+
         f.imdb_rating    ? ratingChip("IMDb",        f.imdb_rating.toFixed(1))      : "",
         f.letterboxd_rating ? ratingChip("LB",       f.letterboxd_rating.toFixed(1)) : "",
       ].filter(Boolean).join("");
@@ -476,7 +501,7 @@
         <div class="card" style="animation-delay:${delay}ms">
           ${poster}
           <div class="card-body">
-            <div class="card-festivals">${festivals}</div>
+            <div class="card-festivals">${festivals}${docTag}</div>
             <div class="card-title">${escHtml(f.title)} <span style="color:var(--muted);font-weight:300">${f.year}</span></div>
             ${f.director ? `<div class="card-director">dir. ${escHtml(f.director)}</div>` : ""}
             ${f.synopsis ? `<div class="card-synopsis">${escHtml(f.synopsis)}</div>` : ""}
@@ -516,6 +541,12 @@
       activeFestival = btn.dataset.festival;
       document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
       btn.classList.add("active");
+      render();
+    });
+
+    document.getElementById("doc-filter").addEventListener("click", function() {
+      docsOnly = !docsOnly;
+      this.classList.toggle("active", docsOnly);
       render();
     });
 

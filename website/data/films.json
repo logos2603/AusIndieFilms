@@ -1,5 +1,28 @@
 [
   {
+    "title": "EPiC: Elvis Presley in Concert",
+    "year": 2025,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Baz Luhrmann",
+    "synopsis": "Long-lost footage from Elvis Presley's legendary Las Vegas residency in the 1970s woven together with rare 16mm footage from Elvis on Tour, and 8mm from the Graceland archive, plus recordings of Elvis telling \"his side of the story\" rediscovered during Baz Luhrmann's research for his 2022 film, Elvis.",
+    "poster_url": "posters/1445363.jpg",
+    "tmdb_id": 1445363,
+    "tmdb_rating": 8.3,
+    "imdb_id": "tt35003538",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.97,
+    "letterboxd_url": "https://letterboxd.com/film/epic-elvis-presley-in-concert/",
+    "screen_australia_url": null,
+    "genres": [
+      "Music",
+      "Documentary"
+    ],
+    "runtime_mins": 98,
+    "added_at": "2026-03-31T05:35:32.979661"
+  },
+  {
     "title": "Jimpa",
     "year": 2025,
     "festivals": [
@@ -91,6 +114,30 @@
     "added_at": "2026-03-31T05:18:17.070806"
   },
   {
+    "title": "Birdeater",
+    "year": 2024,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Jack Clark",
+    "synopsis": "A bride-to-be is invited to her own fiancé's bachelor party, but when uncomfortable details about their relationship are exposed, the night takes a feral turn.",
+    "poster_url": "posters/1114137.jpg",
+    "tmdb_id": 1114137,
+    "tmdb_rating": 5.4,
+    "imdb_id": "tt20674132",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.06,
+    "letterboxd_url": "https://letterboxd.com/film/birdeater/",
+    "screen_australia_url": null,
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Horror"
+    ],
+    "runtime_mins": 115,
+    "added_at": "2026-03-31T05:35:37.771200"
+  },
+  {
     "title": "Furiosa: A Mad Max Saga",
     "year": 2024,
     "festivals": [
@@ -137,6 +184,78 @@
     ],
     "runtime_mins": 94,
     "added_at": "2026-03-31T05:18:14.989452"
+  },
+  {
+    "title": "The Wolves Always Come at Night",
+    "year": 2024,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Gabrielle Brady",
+    "synopsis": "Davaa and Zaya are a young nomadic couple in the vast Bayanhongor region of Mongolia who are in the throes of animal birthing season when a seismic event suddenly changes their lives. They are forced to migrate afar but are haunted by their past lives.",
+    "poster_url": "posters/1320329.jpg",
+    "tmdb_id": 1320329,
+    "tmdb_rating": 9.2,
+    "imdb_id": "tt30768181",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.61,
+    "letterboxd_url": "https://letterboxd.com/film/the-wolves-always-come-at-night/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary",
+      "Drama"
+    ],
+    "runtime_mins": 96,
+    "added_at": "2026-03-31T05:35:30.517800"
+  },
+  {
+    "title": "Went Up the Hill",
+    "year": 2024,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Samuel Van Grinsven",
+    "synopsis": "Jack ventures to remote New Zealand for the funeral of his estranged mother and meets her widow Jill. But his mother's spirit returns to inhabit each of their bodies, instigating a life-threatening three-way nocturnal dance.",
+    "poster_url": "posters/1037352.jpg",
+    "tmdb_id": 1037352,
+    "tmdb_rating": 7.5,
+    "imdb_id": "tt14303268",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.01,
+    "letterboxd_url": "https://letterboxd.com/film/went-up-the-hill/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Horror",
+      "Romance",
+      "Thriller"
+    ],
+    "runtime_mins": 100,
+    "added_at": "2026-03-31T05:35:28.362480"
+  },
+  {
+    "title": "Late Night with the Devil",
+    "year": 2023,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Cameron Cairnes",
+    "synopsis": "A live broadcast of a late-night talk show in 1977 goes horribly wrong, unleashing evil into the nation's living rooms.",
+    "poster_url": "posters/938614.jpg",
+    "tmdb_id": 938614,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt14966898",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.36,
+    "letterboxd_url": "https://letterboxd.com/film/late-night-with-the-devil/",
+    "screen_australia_url": null,
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
+    "runtime_mins": 93,
+    "added_at": "2026-03-31T05:35:35.297289"
   },
   {
     "title": "The New Boy",
@@ -207,6 +326,30 @@
     ],
     "runtime_mins": 108,
     "added_at": "2026-03-31T05:18:10.704352"
+  },
+  {
+    "title": "Nitram",
+    "year": 2021,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Justin Kurzel",
+    "synopsis": "Based on true events, \"Nitram\" lives with his parents in suburban Australia in the mid-90s. He lives a life of isolation and frustration at never fitting in. As his anger grows, he begins a slow descent into a nightmare that culminates in the most heinous of acts.",
+    "poster_url": "posters/797457.jpg",
+    "tmdb_id": 797457,
+    "tmdb_rating": 6.9,
+    "imdb_id": "tt13694628",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.67,
+    "letterboxd_url": "https://letterboxd.com/film/nitram/",
+    "screen_australia_url": null,
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
+    "runtime_mins": 112,
+    "added_at": "2026-03-31T05:35:25.703555"
   },
   {
     "title": "Playing with Sharks",

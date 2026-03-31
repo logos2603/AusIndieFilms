@@ -30,6 +30,22 @@ POSTERS_DIR  = BASE_DIR / "posters"
 
 YEARS_BACK = 5
 
+# Known Australian festival films to always include regardless of scrape results
+# Add films here if they are confirmed Australian but not being picked up automatically
+# Format: (title, year, [festivals])
+SEED_FILMS = [
+    ("Audrey",                      2024, ["SXSW"]),
+    ("Monolith",                    2023, ["SXSW"]),
+    ("The Moogai",                  2024, ["SXSW"]),
+    ("Talk to Me",                  2023, ["Sundance"]),
+    ("The Drover's Wife: The Legend of Molly Johnson", 2021, ["Toronto", "Berlin"]),
+    ("Babyteeth",                   2019, ["Venice", "Toronto"]),
+    ("The Nightingale",             2018, ["Venice"]),
+    ("Sweet Country",               2017, ["Venice", "Toronto"]),
+    ("Samson & Delilah",            2009, ["Cannes"]),
+    ("Animal Kingdom",              2010, ["Sundance", "Toronto"]),
+]
+
 # TMDB IDs to explicitly exclude (films incorrectly tagged as Australian in TMDB)
 BLOCKLIST_TMDB_IDS = {
     1115379,  # Only the River Flows (2023) — Chinese film, incorrectly tagged
@@ -270,7 +286,9 @@ SXSW_PDF_URLS = {
 def scrape_sxsw_pdf(year: int) -> list[dict]:
     """
     Download and extract film titles from the SXSW annual PDF archive.
-    Returns a list of {"title": str, "year": int, "festival": "SXSW"}.
+    The PDF is a multi-column table: Title | Director | Category | Section | Premiere
+    We extract the first column (title) using pdfplumber's table extraction.
+    Falls back to text extraction if table extraction fails.
     """
     url = SXSW_PDF_URLS.get(year)
     if not url:
@@ -289,32 +307,60 @@ def scrape_sxsw_pdf(year: int) -> list[dict]:
         films = []
         seen = set()
 
+        # Known column header values to skip
+        SKIP_VALUES = {
+            "title", "director(s)", "director", "film category",
+            "screening section", "premiere status", "2024 archive",
+            "2023 archive", "2022 archive", "2021 archive", "2020 archive",
+            "", None,
+        }
+
         with pdfplumber.open(io.BytesIO(r.content)) as pdf:
             for page in pdf.pages:
-                text = page.extract_text()
-                if not text:
-                    continue
-
-                for line in text.split("\n"):
-                    line = line.strip()
-                    # Film titles in SXSW archives are typically on their own line,
-                    # mixed case, 3-80 chars, not all caps (which are section headers)
-                    if len(line) < 3 or len(line) > 80:
+                # Try table extraction first — most reliable for columnar PDFs
+                tables = page.extract_tables()
+                if tables:
+                    for table in tables:
+                        for row in table:
+                            if not row:
+                                continue
+                            # First cell is the title
+                            title = (row[0] or "").strip()
+                            if not title:
+                                continue
+                            if title.lower() in SKIP_VALUES:
+                                continue
+                            if title.isupper():
+                                continue  # section headers like "2024 ARCHIVE"
+                            if title.isdigit():
+                                continue
+                            if len(title) < 2 or len(title) > 100:
+                                continue
+                            if title.lower() in seen:
+                                continue
+                            seen.add(title.lower())
+                            films.append({"title": title, "year": year, "festival": "SXSW"})
+                else:
+                    # Fallback: text extraction — split on multiple spaces to get first column
+                    text = page.extract_text()
+                    if not text:
                         continue
-                    if line.isupper():
-                        continue  # section headers
-                    if line.isdigit():
-                        continue  # page numbers
-                    # Skip lines that look like director credits (start with "Dir.")
-                    if line.lower().startswith("dir"):
-                        continue
-                    # Skip lines that are clearly not titles
-                    if any(line.startswith(p) for p in ["©", "www.", "http", "sxsw"]):
-                        continue
-                    if line.lower() in seen:
-                        continue
-                    seen.add(line.lower())
-                    films.append({"title": line, "year": year, "festival": "SXSW"})
+                    for line in text.split("\n"):
+                        line = line.strip()
+                        if not line or line.isupper() or line.isdigit():
+                            continue
+                        # In the text fallback, title is everything before 2+ spaces
+                        # (the columns are separated by large whitespace gaps)
+                        parts = re.split(r"  +", line)
+                        title = parts[0].strip()
+                        if len(title) < 2 or len(title) > 100:
+                            continue
+                        if title.lower() in SKIP_VALUES:
+                            continue
+                        if title.lower() in seen:
+                            continue
+                        seen.add(title.lower())
+                        films.append({"title": title, "year": year, "festival": "SXSW"})
 
         log.info(f"  SXSW {year} PDF: extracted {len(films)} candidate titles")
         return films

@@ -214,15 +214,10 @@ WIKI_TEMPLATES = {
         "{year} International Film Festival Rotterdam",
         "IFFR {year}",
     ],
-    "Tribeca":   [
-        "{year} Tribeca Festival",
-        "Tribeca Festival {year}",
-        "{year} Tribeca Film Festival",
-    ],
     "SXSW":      [
+        "{year} South by Southwest Film & TV Festival",
         "{year} South by Southwest Film Festival",
         "South by Southwest {year} film",
-        "{year} SXSW Film Festival",
     ],
 }
 

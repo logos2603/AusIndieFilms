@@ -28,7 +28,7 @@ BASE_DIR     = Path(__file__).parent.parent / "website"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 5
+YEARS_BACK = 10
 
 # TMDB IDs to explicitly exclude (films incorrectly tagged as Australian in TMDB)
 BLOCKLIST_TMDB_IDS = {

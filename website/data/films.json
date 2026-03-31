@@ -1,1 +1,794 @@
-[]
+[
+  {
+    "title": "We Are All Strangers",
+    "year": 2026,
+    "festivals": [
+      "Berlin"
+    ],
+    "director": "Anthony Chen",
+    "synopsis": "A life-altering event forces 21-year-old Junyang and his girlfriend to face reality. At the same time, while Junyang’s father is struggling to hold their modest life together, a woman enters his life and both generations are forced to redefine their family.",
+    "poster_url": "posters/884692.jpg",
+    "tmdb_id": 884692,
+    "tmdb_rating": null,
+    "imdb_id": "tt13848364",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.42,
+    "letterboxd_url": "https://letterboxd.com/film/we-are-all-strangers/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 157,
+    "added_at": "2026-03-31T03:05:25.658268"
+  },
+  {
+    "title": "EPiC: Elvis Presley in Concert",
+    "year": 2025,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Baz Luhrmann",
+    "synopsis": "Long-lost footage from Elvis Presley's legendary Las Vegas residency in the 1970s woven together with rare 16mm footage from Elvis on Tour, and 8mm from the Graceland archive, plus recordings of Elvis telling \"his side of the story\" rediscovered during Baz Luhrmann's research for his 2022 film, Elvis.",
+    "poster_url": "posters/1445363.jpg",
+    "tmdb_id": 1445363,
+    "tmdb_rating": 8.3,
+    "imdb_id": "tt35003538",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.97,
+    "letterboxd_url": "https://letterboxd.com/film/epic-elvis-presley-in-concert/",
+    "screen_australia_url": null,
+    "genres": [
+      "Music",
+      "Documentary"
+    ],
+    "runtime_mins": 98,
+    "added_at": "2026-03-31T03:06:02.262300"
+  },
+  {
+    "title": "Jimpa",
+    "year": 2025,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Sophie Hyde",
+    "synopsis": "Hannah and her non-binary teenager Frances visit her gay grandfather Jimpa in Amsterdam. Frances expresses a desire to stay with their grandfather for a year, challenging Hannah's parenting beliefs and forcing her to confront past issues.",
+    "poster_url": "posters/1286491.jpg",
+    "tmdb_id": 1286491,
+    "tmdb_rating": 7.2,
+    "imdb_id": "tt23745668",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.32,
+    "letterboxd_url": "https://letterboxd.com/film/jimpa/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 113,
+    "added_at": "2026-03-31T03:05:39.706811"
+  },
+  {
+    "title": "Lesbian Space Princess",
+    "year": 2025,
+    "festivals": [
+      "Berlin"
+    ],
+    "director": "Leela Varghese",
+    "synopsis": "A space princess is thrust out of her sheltered life and into a galactic quest to save her bounty hunter ex-girlfriend from evil incel aliens.",
+    "poster_url": "posters/1333141.jpg",
+    "tmdb_id": 1333141,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt29781139",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.64,
+    "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
+    "screen_australia_url": null,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Science Fiction"
+    ],
+    "runtime_mins": 87,
+    "added_at": "2026-03-31T03:05:23.404357"
+  },
+  {
+    "title": "Lilith Fair: Building a Mystery",
+    "year": 2025,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Ally Pankiw",
+    "synopsis": "Behind the scenes of Sarah McLachlan’s legendary all-women music festival and features interviews with performers including Bonnie Raitt, Erykah Badu, Olivia Rodrigo, and Emmylou Harris.",
+    "poster_url": "posters/1314862.jpg",
+    "tmdb_id": 1314862,
+    "tmdb_rating": 7.5,
+    "imdb_id": "tt32915874",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.99,
+    "letterboxd_url": "https://letterboxd.com/film/lilith-fair-building-a-mystery/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary",
+      "Music"
+    ],
+    "runtime_mins": 117,
+    "added_at": "2026-03-31T03:06:04.555598"
+  },
+  {
+    "title": "Make It Look Real",
+    "year": 2025,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Kate Blackmore",
+    "synopsis": "Intimacy coordinator Claire Warden guides actors through sex scenes on a film set, negotiating the vision of a director, the physical and psychological needs of the performers, and a documentary crew filming her every move.",
+    "poster_url": "posters/1381062.jpg",
+    "tmdb_id": 1381062,
+    "tmdb_rating": null,
+    "imdb_id": "tt33400208",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.31,
+    "letterboxd_url": "https://letterboxd.com/film/make-it-look-real-2025/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 78,
+    "added_at": "2026-03-31T03:06:14.704006"
+  },
+  {
+    "title": "We Bury the Dead",
+    "year": 2025,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Zak Hilditch",
+    "synopsis": "After a catastrophic military disaster, the dead don't just rise - they hunt. Ava searches for her missing husband, but what she finds is far more terrifying.",
+    "poster_url": "posters/1198984.jpg",
+    "tmdb_id": 1198984,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt29713093",
+    "imdb_rating": null,
+    "letterboxd_rating": 2.76,
+    "letterboxd_url": "https://letterboxd.com/film/we-bury-the-dead/",
+    "screen_australia_url": null,
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "runtime_mins": 95,
+    "added_at": "2026-03-31T03:06:12.037705"
+  },
+  {
+    "title": "Birdeater",
+    "year": 2024,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Jack Clark",
+    "synopsis": "A bride-to-be is invited to her own fiancé's bachelor party, but when uncomfortable details about their relationship are exposed, the night takes a feral turn.",
+    "poster_url": "posters/1114137.jpg",
+    "tmdb_id": 1114137,
+    "tmdb_rating": 5.4,
+    "imdb_id": "tt20674132",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.06,
+    "letterboxd_url": "https://letterboxd.com/film/birdeater/",
+    "screen_australia_url": null,
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Horror"
+    ],
+    "runtime_mins": 115,
+    "added_at": "2026-03-31T03:06:09.764011"
+  },
+  {
+    "title": "Furiosa: A Mad Max Saga",
+    "year": 2024,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "George Miller",
+    "synopsis": "As the world falls, young Furiosa is snatched from the Green Place of Many Mothers into the hands of a great biker horde led by the warlord Dementus. Sweeping through the wasteland, they encounter the citadel presided over by Immortan Joe. The two tyrants wage war for dominance, and Furiosa must survive many trials as she puts together the means to find her way home.",
+    "poster_url": "posters/786892.jpg",
+    "tmdb_id": 786892,
+    "tmdb_rating": 7.5,
+    "imdb_id": "tt12037194",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.77,
+    "letterboxd_url": "https://letterboxd.com/film/furiosa-a-mad-max-saga/",
+    "screen_australia_url": null,
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "runtime_mins": 149,
+    "added_at": "2026-03-31T03:05:07.486459"
+  },
+  {
+    "title": "Ka Whawhai Tonu",
+    "year": 2024,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Mike Jonathan",
+    "synopsis": "Two young teenagers are forced to take control of their own destiny amid the chaos of a pivotal battle in New Zealand’s first land wars in 1864.",
+    "poster_url": "posters/1130852.jpg",
+    "tmdb_id": 1130852,
+    "tmdb_rating": 5.8,
+    "imdb_id": "tt22208340",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.48,
+    "letterboxd_url": "https://letterboxd.com/film/ka-whawhai-tonu/",
+    "screen_australia_url": null,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "History"
+    ],
+    "runtime_mins": 115,
+    "added_at": "2026-03-31T03:05:55.335784"
+  },
+  {
+    "title": "Memoir of a Snail",
+    "year": 2024,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Adam Elliot",
+    "synopsis": "Forcibly separated from her twin brother when they are orphaned, a melancholic misfit learns how to find confidence within herself amid the clutter of misfortunes and everyday life.",
+    "poster_url": "posters/1064486.jpg",
+    "tmdb_id": 1064486,
+    "tmdb_rating": 8.0,
+    "imdb_id": "tt23770030",
+    "imdb_rating": null,
+    "letterboxd_rating": 4.17,
+    "letterboxd_url": "https://letterboxd.com/film/memoir-of-a-snail/",
+    "screen_australia_url": null,
+    "genres": [
+      "Animation",
+      "Drama",
+      "Comedy"
+    ],
+    "runtime_mins": 94,
+    "added_at": "2026-03-31T03:05:59.971466"
+  },
+  {
+    "title": "The Wolves Always Come at Night",
+    "year": 2024,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Gabrielle Brady",
+    "synopsis": "Davaa and Zaya are a young nomadic couple in the vast Bayanhongor region of Mongolia who are in the throes of animal birthing season when a seismic event suddenly changes their lives. They are forced to migrate afar but are haunted by their past lives.",
+    "poster_url": "posters/1320329.jpg",
+    "tmdb_id": 1320329,
+    "tmdb_rating": 9.2,
+    "imdb_id": "tt30768181",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.61,
+    "letterboxd_url": "https://letterboxd.com/film/the-wolves-always-come-at-night/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary",
+      "Drama"
+    ],
+    "runtime_mins": 96,
+    "added_at": "2026-03-31T03:05:57.778088"
+  },
+  {
+    "title": "Went Up the Hill",
+    "year": 2024,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Samuel Van Grinsven",
+    "synopsis": "Jack ventures to remote New Zealand for the funeral of his estranged mother and meets her widow Jill. But his mother's spirit returns to inhabit each of their bodies, instigating a life-threatening three-way nocturnal dance.",
+    "poster_url": "posters/1037352.jpg",
+    "tmdb_id": 1037352,
+    "tmdb_rating": 7.5,
+    "imdb_id": "tt14303268",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.01,
+    "letterboxd_url": "https://letterboxd.com/film/went-up-the-hill/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Horror",
+      "Romance",
+      "Thriller"
+    ],
+    "runtime_mins": 100,
+    "added_at": "2026-03-31T03:05:53.068103"
+  },
+  {
+    "title": "Housekeeping for Beginners",
+    "year": 2023,
+    "festivals": [
+      "Venice"
+    ],
+    "director": "Goran Stolevski",
+    "synopsis": "Dita, who, despite never aspiring to be a mother, finds herself compelled to raise her girlfriend’s two daughters—Mia, a tiny troublemaker, and Vanesa, a rebellious teenager. As their individual wills clash, a heartwarming story unfolds about an unlikely family's struggle to stay together.",
+    "poster_url": "posters/1081593.jpg",
+    "tmdb_id": 1081593,
+    "tmdb_rating": 6.7,
+    "imdb_id": "tt24244436",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.64,
+    "letterboxd_url": "https://letterboxd.com/film/housekeeping-for-beginners/",
+    "screen_australia_url": null,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "runtime_mins": 107,
+    "added_at": "2026-03-31T03:05:12.240178"
+  },
+  {
+    "title": "Late Night with the Devil",
+    "year": 2023,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Cameron Cairnes",
+    "synopsis": "A live broadcast of a late-night talk show in 1977 goes horribly wrong, unleashing evil into the nation's living rooms.",
+    "poster_url": "posters/938614.jpg",
+    "tmdb_id": 938614,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt14966898",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.36,
+    "letterboxd_url": "https://letterboxd.com/film/late-night-with-the-devil/",
+    "screen_australia_url": null,
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
+    "runtime_mins": 93,
+    "added_at": "2026-03-31T03:06:07.476713"
+  },
+  {
+    "title": "Muriel's Wedding",
+    "year": 2023,
+    "festivals": [
+      "Berlin"
+    ],
+    "director": "P.J. Hogan",
+    "synopsis": "Socially awkward Muriel Heslop wants nothing more than to get married. Unfortunately, due to her oppressive politician father, Muriel has never even been on a date. Ostracized by her more socially adept friends, Muriel runs into fellow outcast Rhonda Epinstalk, and the two move from their small Australian town to the big city of Sydney, where Muriel changes her name and begins the arduous task of redesigning her life to match her fantasies.",
+    "poster_url": "posters/236.jpg",
+    "tmdb_id": 236,
+    "tmdb_rating": 6.8,
+    "imdb_id": "tt0110598",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.8,
+    "letterboxd_url": "https://letterboxd.com/film/muriels-wedding/",
+    "screen_australia_url": null,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 106,
+    "added_at": "2026-03-31T03:05:20.990407"
+  },
+  {
+    "title": "The New Boy",
+    "year": 2023,
+    "festivals": [
+      "Cannes",
+      "Toronto"
+    ],
+    "director": "Warwick Thornton",
+    "synopsis": "In 1940s Australia, a nameless nine-year-old Aboriginal orphan arrives in the dead of night at a remote monastery overseen by a renegade nun, where his presence disturbs its delicately balanced world.",
+    "poster_url": "posters/937161.jpg",
+    "tmdb_id": 937161,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt18180926",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.04,
+    "letterboxd_url": "https://letterboxd.com/film/the-new-boy/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 116,
+    "added_at": "2026-03-31T03:05:02.958004"
+  },
+  {
+    "title": "The Survival of Kindness",
+    "year": 2023,
+    "festivals": [
+      "Berlin"
+    ],
+    "director": "Rolf de Heer",
+    "synopsis": "In a cage on a trailer in the middle of the desert, BlackWoman is abandoned, left to die. But BlackWoman seems not ready. She escapes, journeying through pestilence and persecution, from desert to mountain and finally to city, on a quest for an unknown beginning. But the city is more uncertain even than the desert, and recaptured, BlackWoman must find another escape. Or does she?",
+    "poster_url": "posters/1024707.jpg",
+    "tmdb_id": 1024707,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt15831022",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.19,
+    "letterboxd_url": "https://letterboxd.com/film/the-survival-of-kindness/",
+    "screen_australia_url": null,
+    "genres": [
+      "Mystery",
+      "Fantasy",
+      "Science Fiction"
+    ],
+    "runtime_mins": 96,
+    "added_at": "2026-03-31T03:05:18.542643"
+  },
+  {
+    "title": "Three Thousand Years of Longing",
+    "year": 2022,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "George Miller",
+    "synopsis": "A solitary scholar discovers an ancient bottle while on a trip to Istanbul and unleashes a djinn who offers her three wishes. Filled with reluctance, she is unable to come up with one, so the djinn tries to inspire her with his stories.",
+    "poster_url": "posters/556694.jpg",
+    "tmdb_id": 556694,
+    "tmdb_rating": 6.9,
+    "imdb_id": "tt9198364",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.38,
+    "letterboxd_url": "https://letterboxd.com/film/three-thousand-years-of-longing/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "runtime_mins": 108,
+    "added_at": "2026-03-31T03:05:00.659372"
+  },
+  {
+    "title": "You Won't Be Alone",
+    "year": 2022,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Goran Stolevski",
+    "synopsis": "In an isolated mountain village in 19th century Macedonia, a young feral witch accidentally kills a peasant. She assumes the peasant's shape to see what life is like in her skin, igniting a deep seated curiosity to experience life inside the bodies of others.",
+    "poster_url": "posters/883083.jpg",
+    "tmdb_id": 883083,
+    "tmdb_rating": 6.6,
+    "imdb_id": "tt8296030",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.67,
+    "letterboxd_url": "https://letterboxd.com/film/you-wont-be-alone/",
+    "screen_australia_url": null,
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "runtime_mins": 108,
+    "added_at": "2026-03-31T03:05:37.333310"
+  },
+  {
+    "title": "Berlin",
+    "year": 2021,
+    "festivals": [
+      "Berlin"
+    ],
+    "director": "Iain Sinclair",
+    "synopsis": "When Tom, an Australian abroad, meets Charlotte in a Berlin bar, sparks fly and they head back to her loft apartment. As they drink, talk and flirt late into the night, they begin to unearth startling secrets that can no longer be ignored...",
+    "poster_url": "posters/984056.jpg",
+    "tmdb_id": 984056,
+    "tmdb_rating": null,
+    "imdb_id": null,
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/berlin-2021/",
+    "screen_australia_url": null,
+    "genres": [],
+    "runtime_mins": 77,
+    "added_at": "2026-03-31T03:05:17.553163"
+  },
+  {
+    "title": "Nitram",
+    "year": 2021,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Justin Kurzel",
+    "synopsis": "Based on true events, \"Nitram\" lives with his parents in suburban Australia in the mid-90s. He lives a life of isolation and frustration at never fitting in. As his anger grows, he begins a slow descent into a nightmare that culminates in the most heinous of acts.",
+    "poster_url": "posters/797457.jpg",
+    "tmdb_id": 797457,
+    "tmdb_rating": 6.9,
+    "imdb_id": "tt13694628",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.67,
+    "letterboxd_url": "https://letterboxd.com/film/nitram/",
+    "screen_australia_url": null,
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
+    "runtime_mins": 112,
+    "added_at": "2026-03-31T03:04:58.066907"
+  },
+  {
+    "title": "Playing with Sharks",
+    "year": 2021,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Sally Aitken",
+    "synopsis": "Valerie Taylor is a shark fanatic and an Australian icon – a marine maverick who forged her way as a fearless diver, cinematographer and conservationist. She filmed the real sharks for Jaws and famously wore a chainmail suit, using herself as shark bait, changing our scientific understanding of sharks forever.",
+    "poster_url": "posters/776553.jpg",
+    "tmdb_id": 776553,
+    "tmdb_rating": 7.6,
+    "imdb_id": "tt11226258",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.8,
+    "letterboxd_url": "https://letterboxd.com/film/playing-with-sharks/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 95,
+    "added_at": "2026-03-31T03:05:34.905228"
+  },
+  {
+    "title": "Falling for Figaro",
+    "year": 2020,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Ben Lewin",
+    "synopsis": "A brilliant young fund manager leaves her unfulfilling job and long-term boyfriend to chase her lifelong dream of becoming an opera singer in the Scottish Highlands.",
+    "poster_url": "posters/508444.jpg",
+    "tmdb_id": 508444,
+    "tmdb_rating": 6.5,
+    "imdb_id": "tt7392014",
+    "imdb_rating": null,
+    "letterboxd_rating": 2.66,
+    "letterboxd_url": "https://letterboxd.com/film/falling-for-figaro/",
+    "screen_australia_url": null,
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Music"
+    ],
+    "runtime_mins": 104,
+    "added_at": "2026-03-31T03:05:50.757065"
+  },
+  {
+    "title": "I Am Mother",
+    "year": 2019,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Grant Sputore",
+    "synopsis": "A teenage girl is raised underground by a robot \"Mother\", designed to repopulate the earth following an extinction event. But their unique bond is threatened when an inexplicable stranger arrives with alarming news.",
+    "poster_url": "posters/505948.jpg",
+    "tmdb_id": 505948,
+    "tmdb_rating": 6.7,
+    "imdb_id": "tt6292852",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.07,
+    "letterboxd_url": "https://letterboxd.com/film/i-am-mother/",
+    "screen_australia_url": null,
+    "genres": [
+      "Science Fiction",
+      "Thriller"
+    ],
+    "runtime_mins": 113,
+    "added_at": "2026-03-31T03:05:30.256073"
+  },
+  {
+    "title": "Judy and Punch",
+    "year": 2019,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Mirrah Foulkes",
+    "synopsis": "In the anarchic town of Seaside, nowhere near the sea, puppeteers Judy and Punch are trying to resurrect their marionette show. The show is a hit due to Judy's superior puppeteering but Punch's driving ambition and penchant for whisky lead to an inevitable tragedy that Judy must avenge.",
+    "poster_url": "posters/506554.jpg",
+    "tmdb_id": 506554,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt7798644",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.13,
+    "letterboxd_url": "https://letterboxd.com/film/judy-and-punch/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Comedy",
+      "Crime"
+    ],
+    "runtime_mins": 105,
+    "added_at": "2026-03-31T03:05:27.894820"
+  },
+  {
+    "title": "Top End Wedding",
+    "year": 2019,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Wayne Blair",
+    "synopsis": "Lauren and Ned are engaged, they are in love, and they have just ten days to find Lauren’s mother who has gone AWOL somewhere in the remote far north of Australia, reunite her parents and pull off their dream wedding.",
+    "poster_url": "posters/499573.jpg",
+    "tmdb_id": 499573,
+    "tmdb_rating": 5.9,
+    "imdb_id": "tt7555072",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.24,
+    "letterboxd_url": "https://letterboxd.com/film/top-end-wedding/",
+    "screen_australia_url": null,
+    "genres": [
+      "Comedy"
+    ],
+    "runtime_mins": 113,
+    "added_at": "2026-03-31T03:05:32.483110"
+  },
+  {
+    "title": "Driving Miss Daisy",
+    "year": 2018,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Peter Ots",
+    "synopsis": "Driving Miss Daisy tells the affecting story of the decades-long relationship between a stubborn Southern matriarch and her compassionate chauffeur. An iconic tale of pride, changing times and the transformative power of friendship, the play has warmed the hearts of millions of theatergoers worldwide.",
+    "poster_url": "posters/289450.jpg",
+    "tmdb_id": 289450,
+    "tmdb_rating": 8.0,
+    "imdb_id": "tt4653310",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.33,
+    "letterboxd_url": "https://letterboxd.com/film/driving-miss-daisy/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama",
+      "Comedy",
+      "TV Movie"
+    ],
+    "runtime_mins": 82,
+    "added_at": "2026-03-31T03:04:55.662977"
+  },
+  {
+    "title": "Nekrotronic",
+    "year": 2018,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Kiah Roache-Turner",
+    "synopsis": "A man discovers that he is part of a secret sect of magical beings who hunt down and destroy demons in the internet.",
+    "poster_url": "posters/506775.jpg",
+    "tmdb_id": 506775,
+    "tmdb_rating": 5.9,
+    "imdb_id": "tt7453418",
+    "imdb_rating": null,
+    "letterboxd_rating": 2.74,
+    "letterboxd_url": "https://letterboxd.com/film/nekrotronic/",
+    "screen_australia_url": null,
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Science Fiction"
+    ],
+    "runtime_mins": 99,
+    "added_at": "2026-03-31T03:05:47.095742"
+  },
+  {
+    "title": "Casting JonBenet",
+    "year": 2017,
+    "festivals": [
+      "Berlin",
+      "Sundance"
+    ],
+    "director": "Kitty Green",
+    "synopsis": "Twenty years after the modern world's most notorious child murder, the legacy of the crime and its impact are explored.",
+    "poster_url": "posters/430826.jpg",
+    "tmdb_id": 430826,
+    "tmdb_rating": 5.7,
+    "imdb_id": "tt6333052",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.31,
+    "letterboxd_url": "https://letterboxd.com/film/casting-jonbenet/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary",
+      "Crime",
+      "Drama"
+    ],
+    "runtime_mins": 81,
+    "added_at": "2026-03-31T03:05:14.657714"
+  },
+  {
+    "title": "The Butterfly Tree",
+    "year": 2017,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Priscilla Cameron",
+    "synopsis": "Evelyn, an ex-burlesque queen, bewitches single dad Al and his teenage son Fin with her zest for life. When father and son discover they are competing for the affections of the same woman, it reopens old wounds over the death of Fin's mother.",
+    "poster_url": "posters/429762.jpg",
+    "tmdb_id": 429762,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt3719948",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.11,
+    "letterboxd_url": "https://letterboxd.com/film/the-butterfly-tree/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 97,
+    "added_at": "2026-03-31T03:05:42.066338"
+  },
+  {
+    "title": "The Seen and Unseen",
+    "year": 2017,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Kamila Andini",
+    "synopsis": "Tantra and Tantri are inseparable. When they secretly steal eggs from the family’s sacrificial offering, Tantri always gets the whites and Tantra the yolks. One day, however, the yolk is missing, as is Tantra. Her brother gravely ill and in hospital, Tantri starts slipping into magical parallel worlds, approaching the inevitable farewell through costumes, body paint and dance. When at one point Tantri’s mother washes the paint from her face, it is as if tenderly to expel the illusion that things can remain as they are. In long dream sequences and against the background of the Balinese philosophy of sekala – the seen – and niskala – the unseen – Andini relates how one ten-year-old girl deals with parting and grief.",
+    "poster_url": "posters/469312.jpg",
+    "tmdb_id": 469312,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt7215548",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.56,
+    "letterboxd_url": "https://letterboxd.com/film/the-seen-and-unseen/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 86,
+    "added_at": "2026-03-31T03:05:44.507985"
+  },
+  {
+    "title": "West of Sunshine",
+    "year": 2017,
+    "festivals": [
+      "Venice"
+    ],
+    "director": "Jason Raftopoulos",
+    "synopsis": "A father has less than a day to pay back a debt to a violent loan shark, while looking after his young son.",
+    "poster_url": "posters/472645.jpg",
+    "tmdb_id": 472645,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt6567012",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.21,
+    "letterboxd_url": "https://letterboxd.com/film/west-of-sunshine/",
+    "screen_australia_url": null,
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 78,
+    "added_at": "2026-03-31T03:05:09.948409"
+  },
+  {
+    "title": "Apprentice (film)",
+    "year": 2016,
+    "festivals": [
+      "Cannes",
+      "Toronto"
+    ],
+    "director": "Luc Vinciguerra",
+    "synopsis": "Santa doesn't want to retire, but rules are rules and he must train someone to replace him. The lucky winner, to be chosen from among millions of children, must be named Nicholas, be an orphan and have a pure heart. On the other side of the planet, there is a little boy who is a perfect match, but his lack of self-confidence and fear of heights make him a poor contestant. Will Santa agree to step down, and help his apprentice take his place?",
+    "poster_url": "posters/51450.jpg",
+    "tmdb_id": 51450,
+    "tmdb_rating": 6.2,
+    "imdb_id": "tt1754455",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": null,
+    "genres": [
+      "Family",
+      "Animation"
+    ],
+    "runtime_mins": 80,
+    "added_at": "2026-03-31T03:04:53.287351"
+  }
+]

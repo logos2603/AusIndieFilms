@@ -1,0 +1,168 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body,div{font-family:'DM Sans',sans-serif;color:var(--color-text-primary)}
+  .wrap{padding:0 0 2rem}
+  .hero{padding:2rem 1.5rem 1.2rem;border-bottom:0.5px solid var(--color-border-tertiary)}
+  .hero h1{font-family:'Playfair Display',serif;font-size:1.85rem;font-weight:700;line-height:1.2;margin-bottom:.3rem}
+  .hero p{font-size:12px;color:var(--color-text-secondary);letter-spacing:.05em;text-transform:uppercase}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;padding:1rem 1.5rem;border-bottom:0.5px solid var(--color-border-tertiary);align-items:center}
+  .controls input,.controls select{font-family:'DM Sans',sans-serif;font-size:13px;padding:6px 11px;background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);color:var(--color-text-primary)}
+  .controls input{flex:1;min-width:180px}
+  .controls select:focus,.controls input:focus{outline:none;border-color:var(--color-border-primary)}
+  .stat-bar{display:flex;gap:1.5rem;padding:.6rem 1.5rem;border-bottom:0.5px solid var(--color-border-tertiary);font-size:12px;color:var(--color-text-secondary);flex-wrap:wrap}
+  .stat-bar strong{color:var(--color-text-primary);font-weight:500}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.9rem;padding:1.1rem 1.5rem}
+  .card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden;display:flex;flex-direction:column;transition:border-color .18s}
+  .card:hover{border-color:var(--color-border-secondary)}
+  .poster-wrap{height:170px;position:relative;overflow:hidden;background:var(--color-background-tertiary)}
+  .poster-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+  .poster-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:1rem;gap:8px}
+  .poster-fallback .icon{font-size:28px;opacity:.25}
+  .poster-fallback .fb-title{font-family:'Playfair Display',serif;font-style:italic;font-size:.85rem;color:var(--color-text-tertiary);text-align:center;line-height:1.3}
+  .fest-badge{position:absolute;top:8px;left:8px;font-size:10px;font-weight:500;padding:2px 7px;border-radius:var(--border-radius-md);letter-spacing:.03em}
+  .year-tag{position:absolute;bottom:8px;right:8px;font-size:10px;font-weight:500;padding:2px 7px;background:rgba(0,0,0,.6);color:#fff;border-radius:var(--border-radius-md)}
+  .genre-strip{display:flex;flex-wrap:wrap;gap:4px;padding:.6rem 1rem .2rem}
+  .genre-pill{font-size:10px;padding:2px 7px;border-radius:var(--border-radius-md);background:var(--color-background-secondary);color:var(--color-text-secondary);border:0.5px solid var(--color-border-tertiary)}
+  .card-body{padding:.5rem 1rem .8rem;flex:1;display:flex;flex-direction:column;gap:4px}
+  .card-title{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;line-height:1.3}
+  .card-director{font-size:11px;color:var(--color-text-secondary)}
+  .card-synopsis{font-size:11px;color:var(--color-text-secondary);line-height:1.5;margin-top:3px;flex:1}
+  .card-footer{border-top:0.5px solid var(--color-border-tertiary);padding:.6rem 1rem;font-size:11px;color:var(--color-text-secondary)}
+  .card-footer span{color:var(--color-text-primary);font-weight:500}
+  .award-row{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+  .award-pill{font-size:10px;padding:2px 7px;border-radius:var(--border-radius-md);background:var(--color-background-warning);color:var(--color-text-warning)}
+  .empty{padding:3rem 1.5rem;text-align:center;color:var(--color-text-secondary);font-size:14px;grid-column:1/-1}
+  .f-cannes{background:#1a3a5c;color:#b5d4f4}
+  .f-venice{background:#4a1b0c;color:#f5c4b3}
+  .f-berlin{background:#26215c;color:#cecbf6}
+  .f-sundance{background:#04342c;color:#9fe1cb}
+  .f-tiff{background:#173404;color:#c0dd97}
+  .f-tribeca{background:#412402;color:#fac775}
+  .f-rotterdam{background:#3c3489;color:#afa9ec}
+  .f-busan{background:#4b1528;color:#f4c0d1}
+  .f-sxsw{background:#085041;color:#5dcaa5}
+</style>
+<div class="wrap">
+  <div class="hero">
+    <h1>Australian Cinema on the World Stage</h1>
+    <p>Australian films at major international festivals · 1999–2025</p>
+  </div>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search by title or director…" oninput="render()">
+    <select id="fest" onchange="render()">
+      <option value="">All festivals</option>
+      <option>Cannes</option><option>Venice</option><option>Berlin</option>
+      <option>Sundance</option><option>TIFF</option><option>Tribeca</option>
+      <option>Rotterdam</option><option>Busan</option><option>SXSW</option>
+    </select>
+    <select id="genre" onchange="render()">
+      <option value="">All genres</option>
+      <option>Drama</option><option>Horror</option><option>Thriller</option>
+      <option>Crime</option><option>Indigenous</option><option>Sci-Fi</option>
+      <option>Romance</option><option>Historical</option><option>Comedy</option>
+    </select>
+    <select id="yr" onchange="render()"></select>
+  </div>
+  <div class="stat-bar" id="stats"></div>
+  <div class="grid" id="grid"></div>
+</div>
+<script>
+const IMG='https://image.tmdb.org/t/p/w342';
+const FILMS=[
+  {title:"Lantana",year:2001,dir:"Ray Lawrence",fest:"TIFF",section:"Special Presentations",synopsis:"Four couples navigate love, betrayal and grief after a woman's body is found in suburban Sydney.",dist:"Palace Films",award:null,genres:["Drama","Thriller"],poster:IMG+"/9eP3gjItfpSMgKqnN4y7PiF4FGQ.jpg"},
+  {title:"Rabbit-Proof Fence",year:2002,dir:"Phillip Noyce",fest:"Berlin",section:"Panorama",synopsis:"Three Aboriginal girls flee a settlement and walk 1,500 miles home along the rabbit-proof fence.",dist:"Buena Vista International",award:null,genres:["Historical","Drama","Indigenous"],poster:IMG+"/fvmOqMTpNq0dCIrDvmB9HFbmGMO.jpg"},
+  {title:"Beneath Clouds",year:2002,dir:"Ivan Sen",fest:"Berlin",section:"Forum",synopsis:"Two young people hitchhike across rural New South Wales, both seeking escape from their troubled lives.",dist:"Dendy Films",award:null,genres:["Drama","Indigenous"],poster:null},
+  {title:"Japanese Story",year:2003,dir:"Sue Brooks",fest:"TIFF",section:"Contemporary World Cinema",synopsis:"A geologist guides a Japanese businessman through the Western Australian outback with unexpected consequences.",dist:"Dendy Films",award:null,genres:["Drama","Romance"],poster:null},
+  {title:"Somersault",year:2004,dir:"Cate Shortland",fest:"Cannes",section:"Un Certain Regard",synopsis:"A teenage girl flees home and drifts through a winter mountain town, searching for connection and love.",dist:"Hopscotch Entertainment",award:null,genres:["Drama","Romance"],poster:IMG+"/vPnFhSz0tHMrKhgbBlEAOjkUv3i.jpg"},
+  {title:"Look Both Ways",year:2005,dir:"Sarah Watt",fest:"Rotterdam",section:"Tiger Competition",synopsis:"An artist terrified of death and a journalist with cancer spend a pivotal weekend reassessing their lives.",dist:"Palace Films",award:"Tiger Award",genres:["Drama","Comedy"],poster:null},
+  {title:"Ten Canoes",year:2006,dir:"Rolf de Heer",fest:"Cannes",section:"Un Certain Regard",synopsis:"The first feature in an Indigenous Australian language — a story-within-a-story set in pre-colonial Arnhem Land.",dist:"Hopscotch Entertainment",award:"Special Jury Prize",genres:["Drama","Indigenous"],poster:IMG+"/hkgBzGbSzLj5sTaqgKqvO7gTiNbvD.jpg"},
+  {title:"Noise",year:2007,dir:"Matthew Saville",fest:"Berlin",section:"Panorama",synopsis:"A cop with tinnitus investigates a train massacre while struggling with his own fragile mind.",dist:"Hopscotch Entertainment",award:null,genres:["Crime","Thriller","Drama"],poster:null},
+  {title:"Samson & Delilah",year:2009,dir:"Warwick Thornton",fest:"Cannes",section:"Un Certain Regard",synopsis:"Two marginalised Indigenous teenagers fall in love and survive on the streets of Alice Springs.",dist:"Footprint Films",award:"Caméra d'Or",genres:["Drama","Romance","Indigenous"],poster:IMG+"/1CXBRKPlI5JqrxJFrgNeB4dBaxA.jpg"},
+  {title:"The Loved Ones",year:2009,dir:"Sean Byrne",fest:"TIFF",section:"Midnight Madness",synopsis:"When a teenager rejects a classmate's prom invitation, she and her father exact a horrifying revenge.",dist:"Icon Film Distribution",award:null,genres:["Horror","Thriller"],poster:IMG+"/pXrGbMBxlnepikfELdv3n1K6fy6.jpg"},
+  {title:"Animal Kingdom",year:2010,dir:"David Michôd",fest:"Sundance",section:"World Cinema Dramatic",synopsis:"A teenager is taken in by his criminal Melbourne family, with deadly consequences.",dist:"Madman Entertainment",award:"Grand Jury Prize",genres:["Crime","Drama","Thriller"],poster:IMG+"/hUMNj4gthHvAVDjolJNIK0wd5M6.jpg"},
+  {title:"Sleeping Beauty",year:2011,dir:"Julia Leigh",fest:"Cannes",section:"Competition",synopsis:"A university student takes a job that involves being sedated for the pleasure of wealthy strangers.",dist:"Palace Films",award:null,genres:["Drama","Thriller"],poster:IMG+"/qIL5bVRRYpNzJiXm3nrNRGYdC9Z.jpg"},
+  {title:"The Hunter",year:2011,dir:"Daniel Nettheim",fest:"TIFF",section:"Special Presentations",synopsis:"A mercenary is sent to Tasmania to track down the last Tasmanian tiger for a biotech company.",dist:"Roadshow Films",award:null,genres:["Drama","Thriller"],poster:IMG+"/6MRrKFfL9ctGpvtL3V0n2dxD7p5.jpg"},
+  {title:"Snowtown",year:2011,dir:"Justin Kurzel",fest:"Cannes",section:"Directors' Fortnight",synopsis:"Based on Australia's most notorious serial killings, tracing the radicalisation of a vulnerable youth.",dist:"Hopscotch Entertainment",award:null,genres:["Crime","Drama","Thriller"],poster:IMG+"/A6HjP4Ry0tHFa4rfFlvJC1MhOXv.jpg"},
+  {title:"The Sapphires",year:2012,dir:"Wayne Blair",fest:"Cannes",section:"Directors' Fortnight",synopsis:"Four young Aboriginal women form a singing group and tour Vietnam entertaining troops in 1968.",dist:"Transmission Films",award:null,genres:["Drama","Comedy","Indigenous"],poster:IMG+"/wHkRRuIMPLmWlTDuKRKzXpijMjN.jpg"},
+  {title:"52 Tuesdays",year:2013,dir:"Sophie Hyde",fest:"Sundance",section:"World Cinema Dramatic",synopsis:"Filmed every Tuesday over a year, a teenage girl navigates her relationship as her mother transitions gender.",dist:"Umbrella Entertainment",award:"Directing Award",genres:["Drama"],poster:IMG+"/bHgRq6w5AX7rBSsOkWVPpFJUqJb.jpg"},
+  {title:"52 Tuesdays",year:2014,dir:"Sophie Hyde",fest:"Berlin",section:"Generation 14plus",synopsis:"Filmed every Tuesday over a year, a teenage girl navigates her relationship as her mother transitions gender.",dist:"Umbrella Entertainment",award:"Crystal Bear",genres:["Drama"],poster:IMG+"/bHgRq6w5AX7rBSsOkWVPpFJUqJb.jpg"},
+  {title:"Tracks",year:2013,dir:"John Curran",fest:"TIFF",section:"Special Presentations",synopsis:"Robyn Davidson's solo trek across 1,700 miles of Australian desert with only her dog and four camels.",dist:"Roadshow Films",award:null,genres:["Drama","Historical"],poster:IMG+"/bYBw4Y9o3ixLhZS8e4BIuFVmBlk.jpg"},
+  {title:"The Babadook",year:2014,dir:"Jennifer Kent",fest:"Sundance",section:"Midnight",synopsis:"A single mother and her son are terrorised by a sinister presence conjured by a mysterious children's book.",dist:"Umbrella Entertainment",award:null,genres:["Horror","Drama"],poster:IMG+"/rQBSiEd6lWxYXWH1dQh25BnWBkB.jpg"},
+  {title:"Charlie's Country",year:2014,dir:"Rolf de Heer",fest:"Cannes",section:"Un Certain Regard",synopsis:"An ageing Aboriginal man grows frustrated with the law and retreats to the bush to live traditionally.",dist:"Entertainment One",award:"Best Actor",genres:["Drama","Indigenous"],poster:IMG+"/3UqhxRXwCUqbxJW4VHdQkpPcaV7.jpg"},
+  {title:"The Rover",year:2014,dir:"David Michôd",fest:"Cannes",section:"Midnight Screening",synopsis:"Set 10 years after economic collapse, a brutal drifter pursues the men who stole his car across the outback.",dist:"Roadshow Films",award:null,genres:["Sci-Fi","Thriller","Drama"],poster:IMG+"/1Bpb2OMkHELlgMEjHvBCKl8TBkv.jpg"},
+  {title:"Tanna",year:2015,dir:"Bentley Dean & Martin Butler",fest:"Venice",section:"Orizzonti",synopsis:"A luminous true story of forbidden love set in Vanuatu, filmed entirely with the indigenous community.",dist:"Madman Entertainment",award:"Special Jury Prize",genres:["Drama","Romance","Indigenous"],poster:IMG+"/o8ySBa5INgVYStB9mF7JuJGjjFL.jpg"},
+  {title:"The Daughter",year:2015,dir:"Simon Stone",fest:"Venice",section:"Orizzonti",synopsis:"A man returns home to confront family secrets that upend the lives of everyone connected to his father.",dist:"Transmission Films",award:null,genres:["Drama"],poster:IMG+"/vxXxPPkzBKBFdCSmJBJSBtqK9RU.jpg"},
+  {title:"Ruben Guthrie",year:2015,dir:"Brendan Cowell",fest:"TIFF",section:"Discovery",synopsis:"A successful advertising executive is forced to reassess his entire identity when he gives up alcohol.",dist:"Pinnacle Films",award:null,genres:["Drama","Comedy"],poster:null},
+  {title:"Hounds of Love",year:2016,dir:"Ben Young",fest:"Venice",section:"Giornate degli Autori",synopsis:"In 1980s Perth, a teenage girl uses her wits to drive a wedge between her sadistic captors.",dist:"Vertical Entertainment",award:null,genres:["Thriller","Horror","Crime"],poster:IMG+"/uuJFcPH3NXHSD0kPWwQeOm9Aaxf.jpg"},
+  {title:"Boys in the Trees",year:2016,dir:"Nicholas Verso",fest:"Venice",section:"Giornate degli Autori",synopsis:"On Halloween 1997, two estranged high school friends spend one last night together as strange events unfold.",dist:"Bonsai Films",award:null,genres:["Drama","Horror"],poster:IMG+"/qvE1FBZB9rrKSn9v7CkOxWY0vRe.jpg"},
+  {title:"Sweet Country",year:2017,dir:"Warwick Thornton",fest:"Venice",section:"Orizzonti",synopsis:"In 1920s outback Australia, an Aboriginal farmhand kills a white man in self-defence and goes on the run.",dist:"Transmission Films",award:"Special Jury Prize",genres:["Historical","Drama","Indigenous"],poster:IMG+"/3d9bqA8ae0k4b9NCAA3JxXBg4YB.jpg"},
+  {title:"Lean on Pete",year:2017,dir:"Andrew Haigh",fest:"Venice",section:"Competition",synopsis:"A lonely teenager forms a bond with an ageing racehorse and embarks on a desperate journey across America.",dist:"A24",award:null,genres:["Drama"],poster:IMG+"/nw0Ox2wvv5klO4lv25mStBmxYMg.jpg"},
+  {title:"Cargo",year:2017,dir:"Ben Howling & Yolanda Ramke",fest:"TIFF",section:"Discovery",synopsis:"In a zombie-ravaged Australia, an infected father has 48 hours to find safety for his baby daughter.",dist:"Netflix",award:null,genres:["Horror","Drama","Sci-Fi"],poster:IMG+"/d5dqmLVm8AiCTtKlIpLjW4r8VF.jpg"},
+  {title:"Upgrade",year:2018,dir:"Leigh Whannell",fest:"SXSW",section:"Midnighters",synopsis:"A technophobe paralysed in a mugging is given an experimental AI implant that lets him seek brutal revenge.",dist:"Blumhouse / Roadshow Films",award:"Midnighters Audience Award",genres:["Sci-Fi","Thriller","Horror"],poster:IMG+"/oFCGQNgzBBFRQHhNzJhObBSFPPm.jpg"},
+  {title:"The Breaker Upperers",year:2018,dir:"Jackie van Beek & Madeleine Sami",fest:"SXSW",section:"Narrative Feature Competition",synopsis:"Two best friends run a shady business breaking up couples for cash — until their own friendship starts to unravel.",dist:"Madman Entertainment",award:null,genres:["Comedy","Drama"],poster:IMG+"/yVnLYcS07gFrLaFtZRCGI09OaDE.jpg"},
+  {title:"Little Monsters",year:2019,dir:"Abe Forsythe",fest:"SXSW",section:"Midnighters",synopsis:"A washed-up musician volunteers to chaperone a kindergarten trip that descends into a zombie apocalypse.",dist:"Neon / Hulu",award:null,genres:["Horror","Comedy"],poster:IMG+"/3bqPWGTbFOPhtzfmSMHPGRzKH0t.jpg"},
+  {title:"The Nightingale",year:2018,dir:"Jennifer Kent",fest:"Venice",section:"Competition",synopsis:"A young Irish convict woman in 1825 Tasmania pursues a British officer who wronged her through the wilderness.",dist:"IFC Films",award:"Special Jury Prize",genres:["Historical","Thriller","Drama"],poster:IMG+"/lnqDaEj7Xr2CfmqHFMVIMIYkFXm.jpg"},
+  {title:"High Ground",year:2020,dir:"Stephen Johnson",fest:"Berlin",section:"Berlinale Special",synopsis:"A young Aboriginal tracker in the 1930s pursues his uncle, who has become a wanted outlaw, across the Top End.",dist:"Madman Entertainment",award:null,genres:["Historical","Drama","Indigenous"],poster:IMG+"/aHlnr3yjv4Y5laDpE2pn5ILRYzS.jpg"},
+  {title:"The Drover's Wife",year:2021,dir:"Leah Purcell",fest:"TIFF",section:"Discovery",synopsis:"An Aboriginal woman stands her ground on the edge of the outback, fighting for her children and freedom.",dist:"Bunya Productions",award:null,genres:["Historical","Drama","Indigenous"],poster:IMG+"/c8J7Ts7ZxHNPn9rP5t7hJF1YSEC.jpg"},
+  {title:"Nitram",year:2021,dir:"Justin Kurzel",fest:"Cannes",section:"Un Certain Regard",synopsis:"A portrait of the years leading up to Australia's worst mass shooting, the 1996 Port Arthur massacre.",dist:"Madman Entertainment",award:"Best Director",genres:["Crime","Drama","Historical"],poster:IMG+"/oYHM5eijqeAEMXGHMeSbREH4f8m.jpg"},
+  {title:"Aftersun",year:2022,dir:"Charlotte Wells",fest:"TIFF",section:"Discovery",synopsis:"An adult woman reflects on a childhood holiday with her father, piecing together hidden truths from home videos.",dist:"A24",award:null,genres:["Drama"],poster:IMG+"/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg"},
+  {title:"Blueback",year:2022,dir:"Robert Connolly",fest:"Busan",section:"World Cinema",synopsis:"A young girl and her mother devote their lives to protecting a wild blue groper fish off the WA coast.",dist:"Studiocanal",award:null,genres:["Drama"],poster:IMG+"/5gkZ4w0hPpnEX3bCFMWEjjdBuln.jpg"},
+  {title:"Talk to Me",year:2023,dir:"Danny & Michael Philippou",fest:"Sundance",section:"Midnight",synopsis:"Teenagers discover a ceramic hand that allows them to channel spirits — with terrifying results.",dist:"A24",award:"Audience Award",genres:["Horror","Thriller"],poster:IMG+"/kdPMUys0LoNqeN1yWz3lLI8Ufzs.jpg"},
+  {title:"The New Boy",year:2023,dir:"Warwick Thornton",fest:"Cannes",section:"Un Certain Regard",synopsis:"A young Aboriginal orphan disrupts a remote monastery run by a nun in 1940s outback Australia.",dist:"Transmission Films",award:null,genres:["Drama","Indigenous"],poster:IMG+"/3gvB8bDSmkbD8rEpCDRVUH7fZ1k.jpg"},
+  {title:"The Rooster",year:2023,dir:"Mark Leonard Winter",fest:"Tribeca",section:"World Narrative Competition",synopsis:"A father reconnects with his young son by entering them both in a local talent competition.",dist:"Palace Films",award:null,genres:["Drama","Comedy"],poster:null},
+  {title:"Birdeater",year:2024,dir:"Jim Weir & Jack Clark",fest:"SXSW",section:"Horror/Thriller",synopsis:"A disturbed young man invites his girlfriend away for a secluded weekend with his old schoolmates, revealing his true nature.",dist:"Umbrella Entertainment",award:null,genres:["Thriller","Horror"],poster:null},
+  {title:"Audrey",year:2024,dir:"Natalie Bailey",fest:"SXSW",section:"Narrative Feature Competition",synopsis:"A mother living a life she never wanted takes on her comatose daughter's identity, discovering uncomfortable truths.",dist:"TBC",award:null,genres:["Drama","Comedy"],poster:null},
+  {title:"Furiosa: A Mad Max Saga",year:2024,dir:"George Miller",fest:"Cannes",section:"Out of Competition",synopsis:"The origin story of Furiosa, charting her capture by the Warlord Dementus and her path to survival in the Wasteland.",dist:"Warner Bros. Pictures",award:null,genres:["Sci-Fi","Drama"],poster:IMG+"/iADOJ8Zymht2JPMoy3R7xceZprc.jpg"},
+  {title:"How to Make Gravy",year:2024,dir:"Jed Kurzel",fest:"TIFF",section:"Discovery",synopsis:"Based on Paul Kelly's beloved song, a man in prison navigates Christmas while longing for his family.",dist:"Madman Entertainment",award:null,genres:["Drama","Comedy"],poster:null},
+  {title:"The Surfer",year:2024,dir:"Lorcan Finnegan",fest:"Cannes",section:"Midnight Screenings",synopsis:"A man returns to his childhood Australian beach town and faces a menacing, territorial local gang.",dist:"Picturehouse Entertainment",award:null,genres:["Thriller","Drama"],poster:IMG+"/r8AqXJZN5Y6q8F5oKSvfN6b6Rp4.jpg"},
+  {title:"We Bury the Dead",year:2025,dir:"Zak Hilditch",fest:"SXSW",section:"Midnighters",synopsis:"After a catastrophic American military experiment devastates Tasmania, a woman joins a body retrieval unit to find her missing husband.",dist:"Vertical Entertainment",award:null,genres:["Sci-Fi","Thriller","Horror"],poster:null},
+];
+
+const festColors={Cannes:"f-cannes",Venice:"f-venice",Berlin:"f-berlin",Sundance:"f-sundance",TIFF:"f-tiff",Tribeca:"f-tribeca",Rotterdam:"f-rotterdam",Busan:"f-busan",SXSW:"f-sxsw"};
+
+const yrSel=document.getElementById('yr');
+yrSel.innerHTML='<option value="">All years</option>';
+[...new Set(FILMS.map(f=>f.year))].sort((a,b)=>b-a).forEach(y=>{
+  const o=document.createElement('option');o.value=y;o.textContent=y;yrSel.appendChild(o);
+});
+
+function render(){
+  const q=document.getElementById('search').value.toLowerCase();
+  const fest=document.getElementById('fest').value;
+  const yr=document.getElementById('yr').value;
+  const genre=document.getElementById('genre').value;
+  const list=FILMS.filter(f=>{
+    if(fest&&f.fest!==fest)return false;
+    if(yr&&f.year!==+yr)return false;
+    if(genre&&!f.genres.includes(genre))return false;
+    if(q&&!f.title.toLowerCase().includes(q)&&!f.dir.toLowerCase().includes(q))return false;
+    return true;
+  });
+  document.getElementById('stats').innerHTML=`<span><strong>${list.length}</strong> film${list.length!==1?'s':''}</span><span><strong>${[...new Set(list.map(f=>f.fest))].length}</strong> festival${[...new Set(list.map(f=>f.fest))].length!==1?'s':''}</span><span><strong>${[...new Set(list.map(f=>f.year))].length}</strong> year${[...new Set(list.map(f=>f.year))].length!==1?'s':''}</span>`;
+  const grid=document.getElementById('grid');
+  if(!list.length){grid.innerHTML='<div class="empty">No films match your filters.</div>';return;}
+  grid.innerHTML=list.map(f=>`
+    <div class="card">
+      <div class="poster-wrap">
+        ${f.poster?`<img src="${f.poster}" alt="${f.title}" onerror="this.parentElement.innerHTML='<div class=poster-fallback><div class=icon>🎬</div><div class=fb-title>${f.title.replace(/['"]/g,'')}</div></div>'">`:`<div class="poster-fallback"><div class="icon">🎬</div><div class="fb-title">${f.title}</div></div>`}
+        <span class="fest-badge ${festColors[f.fest]||''}">${f.fest}</span>
+        <span class="year-tag">${f.year}</span>
+      </div>
+      <div class="genre-strip">${f.genres.map(g=>`<span class="genre-pill">${g}</span>`).join('')}</div>
+      <div class="card-body">
+        <div class="card-title">${f.title}</div>
+        <div class="card-director">Dir. ${f.dir}</div>
+        <div class="card-synopsis">${f.synopsis}</div>
+        ${f.award?`<div class="award-row"><span class="award-pill">★ ${f.award}</span></div>`:''}
+      </div>
+      <div class="card-footer">
+        <div>${f.section}</div>
+        <div style="margin-top:3px">Distributor: <span>${f.dist||'—'}</span></div>
+      </div>
+    </div>
+  `).join('');
+}
+render();
+</script>

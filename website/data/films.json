@@ -1,5 +1,27 @@
 [
   {
+    "title": "Deeper",
+    "year": 2025,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Jennifer Peedom",
+    "synopsis": "In a remote part of New Zealand, lies a cold, dark and mysterious cave system with the potential to be the deepest dived cave in the world. It’s here that explorer and hero of the Thai cave rescue Richard “Harry” Harris is searching for a sense of self. There’s no question that this is the highest stakes dive he has ever attempted. Underground, underwater, with a finite amount of gas to breathe, it’s a dangerous game to play. So what drives Harry to continue in his pursuit when he knows the cost - not just to himself, but to those he loves - and will he make it back to them?",
+    "poster_url": "posters/1422638.jpg",
+    "tmdb_id": 1422638,
+    "tmdb_rating": null,
+    "imdb_id": "tt34546353",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.41,
+    "letterboxd_url": "https://letterboxd.com/film/deeper-2025/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 87,
+    "added_at": "2026-03-31T06:59:51.093750"
+  },
+  {
     "title": "EPiC: Elvis Presley in Concert",
     "year": 2025,
     "festivals": [
@@ -91,6 +113,75 @@
     "added_at": "2026-03-31T06:22:56.141139"
   },
   {
+    "title": "One More Shot",
+    "year": 2025,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Nicholas Clifford",
+    "synopsis": "New Years Eve. 1999. Minnie discovers a bottle of time travelling tequila. Each shot takes her back to the start of the night - giving her a bottle’s worth of shots to win back her old flame Joe, and change the course of her millennium.",
+    "poster_url": "posters/1242705.jpg",
+    "tmdb_id": 1242705,
+    "tmdb_rating": 7.0,
+    "imdb_id": "tt9425856",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.05,
+    "letterboxd_url": "https://letterboxd.com/film/one-more-shot-2025/",
+    "screen_australia_url": null,
+    "genres": [
+      "Comedy",
+      "Science Fiction",
+      "Drama"
+    ],
+    "runtime_mins": 92,
+    "added_at": "2026-03-31T06:59:48.768316"
+  },
+  {
+    "title": "Together",
+    "year": 2025,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Michael Shanks",
+    "synopsis": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
+    "poster_url": "posters/1242011.jpg",
+    "tmdb_id": 1242011,
+    "tmdb_rating": 7.0,
+    "imdb_id": "tt31184028",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.28,
+    "letterboxd_url": "https://letterboxd.com/film/together-2025/",
+    "screen_australia_url": null,
+    "genres": [
+      "Horror",
+      "Romance"
+    ],
+    "runtime_mins": 102,
+    "added_at": "2026-03-31T06:59:56.501983"
+  },
+  {
+    "title": "Uvalde Mom",
+    "year": 2025,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Anayansi Prado",
+    "synopsis": "When a school shooting shakes a Texas town, a mom becomes a hero and speaks against a faulty system. The community confronts those who failed its kids.",
+    "poster_url": "posters/1416099.jpg",
+    "tmdb_id": 1416099,
+    "tmdb_rating": null,
+    "imdb_id": "tt28736333",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/uvalde-mom/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 86,
+    "added_at": "2026-03-31T06:59:53.818902"
+  },
+  {
     "title": "We Bury the Dead",
     "year": 2025,
     "festivals": [
@@ -136,6 +227,28 @@
     ],
     "runtime_mins": 115,
     "added_at": "2026-03-31T06:22:51.670972"
+  },
+  {
+    "title": "Every Little Thing",
+    "year": 2024,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Sally Aitken",
+    "synopsis": "Amid the glamour of Hollywood, Los Angeles, a woman finds herself on a transformative journey as she nurtures wounded hummingbirds, unraveling a visually captivating and magical tale of love, fragility, healing, and the delicate beauty in tiny acts of greatness.",
+    "poster_url": "posters/1214522.jpg",
+    "tmdb_id": 1214522,
+    "tmdb_rating": 7.4,
+    "imdb_id": "tt30134880",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.66,
+    "letterboxd_url": "https://letterboxd.com/film/every-little-thing-2024/",
+    "screen_australia_url": null,
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 93,
+    "added_at": "2026-03-31T06:59:43.995136"
   },
   {
     "title": "Furiosa: A Mad Max Saga",
@@ -184,6 +297,29 @@
     ],
     "runtime_mins": 94,
     "added_at": "2026-03-31T06:22:44.661204"
+  },
+  {
+    "title": "The Moogai",
+    "year": 2024,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Jon Bell",
+    "synopsis": "A young Aboriginal couple brings home their second baby. What should be a joyous time takes a sinister turn, as the baby's mother starts seeing a malevolent spirit she is convinced is trying to take her baby.",
+    "poster_url": "posters/1043725.jpg",
+    "tmdb_id": 1043725,
+    "tmdb_rating": 5.9,
+    "imdb_id": "tt21609514",
+    "imdb_rating": null,
+    "letterboxd_rating": 2.85,
+    "letterboxd_url": "https://letterboxd.com/film/the-moogai-2024/",
+    "screen_australia_url": null,
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "runtime_mins": 84,
+    "added_at": "2026-03-31T06:59:46.481082"
   },
   {
     "title": "The Wolves Always Come at Night",

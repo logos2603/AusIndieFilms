@@ -18,7 +18,7 @@ from dataclasses import dataclass, asdict, fields as datafields
 from typing import Optional
 from bs4 import BeautifulSoup
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+logging.basicConfig(level=logging.DEBUG, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
@@ -468,7 +468,7 @@ def fetch_wikipedia_film_article(title: str, year: int) -> Optional[str]:
         "format": "json",
         "redirects": True,
     }
-    for page_title in [f"{title} ({year} film)", f"{title} (film)", title]:
+    for page_title in [f"{title} ({year} film)", f"{title} ({year-1} film)", f"{title} (film)", title]:
         for attempt in range(3):  # up to 3 retries per title format
             try:
                 time.sleep(0.5 + attempt)  # 0.5s, 1.5s, 2.5s between attempts
@@ -791,9 +791,11 @@ def run_scraper():
         # Step 1: Fast TMDB pre-filter — cheap broad check before Wikipedia
         detail = tmdb_search_film(title, year)
         if not detail:
+            log.debug(f"  ✗ TMDB: no result for '{title}' ({year})")
             continue
 
-        tmdb_id = detail.get("id")
+        tmdb_id   = detail.get("id")
+        tmdb_title = detail.get("title", "")
 
         # Blocklist check early to avoid any further processing
         if tmdb_id in BLOCKLIST_TMDB_IDS:
@@ -803,21 +805,28 @@ def run_scraper():
         # a) production_countries includes AU
         # b) origin_country includes AU
         # c) a known Australian production company is listed
-        prod_countries = [c.get("iso_3166_1","") for c in detail.get("production_countries", [])]
+        prod_countries  = [c.get("iso_3166_1","") for c in detail.get("production_countries", [])]
         origin_countries = detail.get("origin_country", [])
-        prod_companies = [c.get("name","").lower() for c in detail.get("production_companies", [])]
+        prod_companies  = [c.get("name","").lower() for c in detail.get("production_companies", [])]
 
-        au_by_country  = "AU" in prod_countries or "AU" in origin_countries
-        au_by_company  = any(
+        au_by_country = "AU" in prod_countries or "AU" in origin_countries
+        au_by_company = any(
             aus_co in co
             for co in prod_companies
             for aus_co in AUSTRALIAN_COMPANIES
         )
 
         if not au_by_country and not au_by_company:
-            continue  # not Australian by any TMDB signal — skip Wikipedia call entirely
+            # Log specifically for known films we want to track
+            log.debug(
+                f"  ✗ TMDB pre-filter rejected '{title}' ({year}) → "
+                f"matched '{tmdb_title}' (id={tmdb_id}) | "
+                f"countries={prod_countries} origin={origin_countries} | "
+                f"companies={prod_companies[:3]}"
+            )
+            continue
 
-        log.info(f"  ~ TMDB AU signal for '{title}' — verifying with Wikipedia")
+        log.info(f"  ~ TMDB AU signal for '{title}' (matched: '{tmdb_title}') — verifying with Wikipedia")
 
         # Step 2: Wikipedia nationality confirmation (only for TMDB-shortlisted films)
         if not verify_australian_on_wikipedia(title, year):

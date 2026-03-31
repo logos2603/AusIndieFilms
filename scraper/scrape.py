@@ -40,6 +40,26 @@ BLOCKLIST_TMDB_IDS = {
     1130852,  # Ka Whawhai Tonu — not Australian
 }
 
+# Known Australian production companies and funders
+AUSTRALIAN_COMPANIES = {
+    "screen australia", "abc", "australian broadcasting corporation",
+    "sbs", "special broadcasting service", "film victoria",
+    "screen nsw", "screen queensland", "screen west",
+    "south australian film corporation", "safc", "screen tasmania",
+    "northern territory screen", "act screen industry",
+    "adelaide film festival", "melbourne international film festival",
+    "miff", "sydney film festival",
+    "roadshow", "madman", "umbrella entertainment",
+    "transmission films", "foxtel", "stan originals",
+    "bunya productions", "porchlight films", "aquarius films",
+    "black labrador", "closer productions", "see-saw films",
+    "arenamedia", "matchbox pictures", "princess pictures",
+    "invisible republic", "orange entertainment", "wildbear",
+    "blackfella films", "secret sauce", "join the dots",
+    "where's the bear", "gristmill", "calamity films",
+    "hopscotch features", "fulcrum media", "good thing productions",
+}
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -355,32 +375,73 @@ def tmdb_get(path, params={}):
 
 
 def tmdb_search_film(title: str, year: int) -> Optional[dict]:
-    """Search TMDB for a film, return full details if found."""
-    data = tmdb_get("/search/movie", {
-        "query": title,
-        "year": year,
-        "language": "en-AU",
-    })
+    """Search TMDB for a film, return full details if found.
+    Prefers Australian results when multiple matches exist."""
+    def get_details(tmdb_id):
+        return tmdb_get(f"/movie/{tmdb_id}", {
+            "append_to_response": "credits,external_ids",
+            "language": "en-AU",
+        })
+
+    def au_score(result):
+        """Score a search result by how likely it is to be Australian."""
+        score = 0
+        if result.get("original_language") == "en":
+            score += 1
+        origin = result.get("origin_country", [])
+        if "AU" in origin:
+            score += 5
+        # Prefer results whose release year matches
+        release = (result.get("release_date") or "")[:4]
+        if release == str(year):
+            score += 2
+        elif release == str(year - 1) or release == str(year + 1):
+            score += 1
+        return score
+
+    # Search with year first
+    data = tmdb_get("/search/movie", {"query": title, "year": year, "language": "en-AU"})
     if not data or not data.get("results"):
         # Try without year constraint
         data = tmdb_get("/search/movie", {"query": title, "language": "en-AU"})
     if not data or not data.get("results"):
         return None
 
-    # Pick best match — prefer exact title match
     results = data["results"]
-    for r in results:
-        if r.get("title", "").lower() == title.lower():
-            return tmdb_get(f"/movie/{r['id']}", {
-                "append_to_response": "credits,external_ids",
-                "language": "en-AU",
-            })
 
-    # Fall back to first result
-    return tmdb_get(f"/movie/{results[0]['id']}", {
-        "append_to_response": "credits,external_ids",
-        "language": "en-AU",
-    })
+    # Sort by: exact title match first, then AU score
+    exact = [r for r in results if r.get("title", "").lower() == title.lower()]
+    others = [r for r in results if r.get("title", "").lower() != title.lower()]
+
+    # Among exact matches prefer Australian ones
+    exact.sort(key=au_score, reverse=True)
+    others.sort(key=au_score, reverse=True)
+
+    ranked = exact + others
+
+    # If top result has a strong AU signal, use it directly
+    if ranked and au_score(ranked[0]) >= 5:
+        return get_details(ranked[0]["id"])
+
+    # Otherwise fetch details for top 3 and pick the most Australian
+    candidates = []
+    for r in ranked[:3]:
+        detail = get_details(r["id"])
+        if detail:
+            candidates.append(detail)
+        time.sleep(0.1)
+
+    if not candidates:
+        return None
+
+    # Prefer the one with AU in production_countries or origin_country
+    for d in candidates:
+        countries = [c.get("iso_3166_1") for c in d.get("production_countries", [])]
+        origins = d.get("origin_country", [])
+        if "AU" in countries or "AU" in origins:
+            return d
+
+    return candidates[0]
 
 
 def is_australian(detail: dict) -> bool:
@@ -691,28 +752,46 @@ def run_scraper():
             except Exception:
                 pass
 
-        # Step 1: Wikipedia is primary nationality authority
-        if not verify_australian_on_wikipedia(title, year):
-            continue
-
-        # Step 2: Check for re-releases (reuses cached Wikipedia fetch)
-        if not verify_not_rerelease(title, year):
-            continue
-
-        # Step 3: TMDB lookup — for enrichment and runtime check
+        # Step 1: Fast TMDB pre-filter — cheap broad check before Wikipedia
         detail = tmdb_search_film(title, year)
         if not detail:
-            log.info(f"  ✗ Not found on TMDB: {title}")
             continue
 
         tmdb_id = detail.get("id")
 
-        # Step 4: Blocklist check
+        # Blocklist check early to avoid any further processing
         if tmdb_id in BLOCKLIST_TMDB_IDS:
-            log.info(f"  ✗ Blocklisted: {title}")
             continue
 
-        # Step 5: Runtime check
+        # Broad Australian signal from TMDB — pass if ANY of these are true:
+        # a) production_countries includes AU
+        # b) origin_country includes AU
+        # c) a known Australian production company is listed
+        prod_countries = [c.get("iso_3166_1","") for c in detail.get("production_countries", [])]
+        origin_countries = detail.get("origin_country", [])
+        prod_companies = [c.get("name","").lower() for c in detail.get("production_companies", [])]
+
+        au_by_country  = "AU" in prod_countries or "AU" in origin_countries
+        au_by_company  = any(
+            aus_co in co
+            for co in prod_companies
+            for aus_co in AUSTRALIAN_COMPANIES
+        )
+
+        if not au_by_country and not au_by_company:
+            continue  # not Australian by any TMDB signal — skip Wikipedia call entirely
+
+        log.info(f"  ~ TMDB AU signal for '{title}' — verifying with Wikipedia")
+
+        # Step 2: Wikipedia nationality confirmation (only for TMDB-shortlisted films)
+        if not verify_australian_on_wikipedia(title, year):
+            continue
+
+        # Step 3: Re-release check
+        if not verify_not_rerelease(title, year):
+            continue
+
+        # Step 4: Runtime check
         if not is_feature_film(detail):
             log.info(f"  ✗ Short film: {title} ({detail.get('runtime')} mins)")
             continue

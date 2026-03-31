@@ -54,6 +54,7 @@ BLOCKLIST_TMDB_IDS = {
     884692,   # incorrectly tagged
     51450,    # L'apprenti père Noël — not Australian
     1130852,  # Ka Whawhai Tonu — not Australian
+    1166222,  # Uvalde Mom (2023) — American documentary
 }
 
 # Known Australian production companies and funders
@@ -256,6 +257,10 @@ WIKI_TEMPLATES = {
         "{year} Toronto International Film Festival",
         "TIFF {year}",
     ],
+    "Directors Fortnight": [
+        "{year} Directors' Fortnight",
+        "Directors' Fortnight {year}",
+    ],
     "Rotterdam": [
         "{year} International Film Festival Rotterdam",
         "IFFR {year}",
@@ -373,6 +378,46 @@ def scrape_sxsw_pdf(year: int) -> list[dict]:
         return []
 
 
+def scrape_directors_fortnight(year: int) -> list[dict]:
+    """
+    Scrape film titles from the Directors' Fortnight (Quinzaine des cinéastes) website.
+    URL pattern: https://www.quinzaine-cineastes.fr/en/selection/{year}
+    Film titles appear in <h3> tags within film listing cards.
+    """
+    url = f"https://www.quinzaine-cineastes.fr/en/selection/{year}"
+    films = []
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        if r.status_code != 200:
+            log.warning(f"  Directors Fortnight {year} returned HTTP {r.status_code}")
+            return []
+
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        # Film titles are in <h3> tags — the English title is the second <h3>
+        # if there are two (original + translated), otherwise just the first
+        seen = set()
+        # Each film block contains one or two h3 tags (original title + English title)
+        # We want the English title where available, otherwise the original
+        for card in soup.find_all("a", href=re.compile(r"/en/film/")):
+            h3s = card.find_all("h3")
+            if not h3s:
+                continue
+            # Last h3 is typically the English title
+            title = h3s[-1].get_text(strip=True)
+            if not title or title.lower() in seen:
+                continue
+            if len(title) < 2 or len(title) > 100:
+                continue
+            seen.add(title.lower())
+            films.append({"title": title, "year": year, "festival": "Directors Fortnight"})
+
+        log.info(f"  Directors Fortnight {year}: {len(films)} films scraped")
+    except Exception as e:
+        log.warning(f"  Directors Fortnight {year} scrape failed: {e}")
+    return films
+
+
 def get_festival_films(festival: str, years: list[int]) -> list[dict]:
     """Get all films for a festival across given years, using Wikipedia as primary source.
     For SXSW, supplements Wikipedia with the official PDF archive."""
@@ -387,6 +432,13 @@ def get_festival_films(festival: str, years: list[int]) -> list[dict]:
                 all_films.extend(films)
                 found = True
                 break  # stop trying templates once one works
+
+        # For Directors' Fortnight: supplement with direct website scraping
+        if festival == "Directors Fortnight":
+            web_films = scrape_directors_fortnight(year)
+            if web_films:
+                all_films.extend(web_films)
+                found = True
 
         # For SXSW: supplement with (or fall back to) the official PDF archive
         if festival == "SXSW":

@@ -155,17 +155,30 @@ def fetch_wikipedia_festival_films(festival_name: str, wiki_title_template: str,
             r"^(File:|Image:|Category:|Wikipedia:|Template:|Help:|Portal:|"
             r"\d{4}|January|February|March|April|May|June|July|August|"
             r"September|October|November|December|United|France|Italy|"
-            r"Germany|Australia|USA|UK|Canada|Director|Film|Cinema|Award)",
+            r"Germany|Australia|USA|UK|Canada|Director|Film|Cinema|Award|"
+            r"Golden|Silver|Palme|Bear|Lion|Jury|Prix|Camera|Grand|Special|"
+            r"Best|Honorary|Main|Short|Documentary|Animation|Series|Section|"
+            r"Competition|Midnight|World|International|National|American|"
+            r"New|List|History|Overview)",
             re.I
         )
+        # Only keep links that look like film titles (mixed case, not all caps)
+        seen_links = set()
         for link in raw_links:
             link = link.strip()
-            if len(link) < 2 or len(link) > 100:
+            if len(link) < 3 or len(link) > 80:
+                continue
+            if link in seen_links:
                 continue
             if skip_patterns.match(link):
                 continue
-            if link.lower() in ("film", "cinema", "movie", "award", "prize"):
+            if link.lower() in ("film", "cinema", "movie", "award", "prize", "the", "a", "an"):
                 continue
+            # Skip if it looks like a person's name (First Last pattern with no other words)
+            name_like = re.match(r"^[A-Z][a-z]+ [A-Z][a-z]+$", link)
+            if name_like:
+                continue
+            seen_links.add(link)
             films.append({"title": link, "year": year, "festival": festival_name})
 
         log.info(f"Wikipedia [{festival_name} {year}]: {len(films)} candidate titles from '{title}'")
@@ -439,12 +452,13 @@ def run_scraper():
     field_names = {f.name for f in datafields(Film)}
     result_films: list = []
     checked = 0
+    australian_details: list = []  # collect AU films first, enrich after
 
     for (title_lower, year), info in candidates.items():
         checked += 1
         title = info["title"]
 
-        # Use cache if available and fresh
+        # Use cache if available and fresh — skip all API calls
         cache_key = (title_lower, year)
         if cache_key in existing_titles:
             cached = existing_titles[cache_key]
@@ -459,19 +473,25 @@ def run_scraper():
             except Exception:
                 pass
 
-        log.info(f"[{checked}/{len(candidates)}] Checking: {title} ({year})")
+        # Fast TMDB search — no sleep, just check if Australian feature
         detail = tmdb_search_film(title, year)
         if not detail:
-            log.info(f"  ✗ Not found on TMDB")
             continue
         if not is_australian(detail):
-            log.info(f"  ✗ Not Australian")
             continue
         if not is_feature_film(detail):
-            log.info(f"  ✗ Short film ({detail.get('runtime')} mins)")
+            log.info(f"  ✗ Short film: {title} ({detail.get('runtime')} mins)")
             continue
 
-        data = extract_tmdb_data(detail)
+        log.info(f"  ✓ [{checked}/{len(candidates)}] AUSTRALIAN FEATURE: {title} ({year})")
+        australian_details.append((info, detail))
+
+    # Now enrich only the Australian films (much smaller set)
+    log.info(f"\n── Step 2b: Enriching {len(australian_details)} Australian films ──")
+    for info, detail in australian_details:
+        title = info["title"]
+        year  = info["year"]
+        data  = extract_tmdb_data(detail)
         poster_path = data.pop("poster_path", "")
         poster_url  = download_poster(poster_path, data["tmdb_id"])
         time.sleep(0.2)
@@ -494,7 +514,7 @@ def run_scraper():
         time.sleep(0.5)
 
         result_films.append(asdict(film))
-        log.info(f"  ✓ AUSTRALIAN FEATURE: {film.title} ({film.year}) | {film.festivals}")
+        log.info(f"  Enriched: {film.title} ({film.year})")
 
     # Step 4: Screen Australia cross-reference
     log.info("\n── Step 3: Screen Australia cross-reference ──")

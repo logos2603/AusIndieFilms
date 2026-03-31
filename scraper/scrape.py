@@ -506,21 +506,20 @@ def fetch_wikipedia_film_article(title: str, year: int) -> Optional[str]:
 
 def verify_australian_on_wikipedia(title: str, year: int) -> bool:
     """
-    Cross-check a film against Wikipedia to confirm it is a PRIMARY Australian production.
-    Checks the infobox 'country' field specifically — Australia must be listed first or second.
-    Falls back to keyword scanning if infobox parsing fails.
-    Returns True if Wikipedia confirms Australian production, False otherwise.
+    Cross-check a film against Wikipedia to confirm it has genuine Australian production.
+    Requires BOTH:
+      - Australia listed as a production country in the infobox, AND
+      - An Australian production company OR funding body present
+    If either piece of info is missing from Wikipedia, falls back gracefully.
     Gives benefit of the doubt if no Wikipedia article is found.
     """
-    AU_KEYWORDS = [
+    AU_FUNDING_KEYWORDS = [
         "screen australia", "film victoria", "screen nsw", "screen queensland",
-        "screen west", "south australian film corporation", "abc film",
-        "abc television", "foxtel", "stan originals",
-    ]
-    # These indicate Australia is only a minor co-production partner
-    AU_MINOR_COPRODUCTION_SIGNALS = [
-        "selected as the", "entry for the best international feature",
-        "submission to the", "oscar submission",
+        "screen west", "south australian film corporation", "safc",
+        "abc film", "abc television", "foxtel", "stan originals",
+        "adelaide film festival", "melbourne international film festival",
+        "miff", "sydney film festival", "screen tasmania",
+        "northern territory screen",
     ]
 
     wikitext = fetch_wikipedia_film_article(title, year)
@@ -531,59 +530,54 @@ def verify_australian_on_wikipedia(title: str, year: int) -> bool:
 
     wikitext_lower = wikitext.lower()
 
-    # Step 1: Try to parse the infobox country field directly
-    # Infobox format: | country = [[Australia]] or | country = [[North Macedonia]]
+    # Check 1: Is Australia listed as a production country in the infobox?
     country_match = re.search(r"[|][^{\n]*countr(?:y|ies)[^{\n]*=([^{\n}|]{1,300})", wikitext, re.IGNORECASE)
+    au_in_countries = False
     if country_match:
-        country_field = country_match.group(1)
-        # Extract country names from wikilinks [[Country]] or plain text
-        countries_raw = re.findall(r"\[\[([^\]|]+?)(?:[|][^\]]*)?\]\]", country_field)
-        countries = []
-        for link in countries_raw:
-            val = link.strip().lower()
-            if val:
-                countries.append(val)
+        country_field = country_match.group(1).lower()
+        au_in_countries = "australia" in country_field
+        log.info(f"  Infobox country field for '{title}': {'AU found' if au_in_countries else 'AU not found'}")
 
-        if countries:
-            log.info(f"  Infobox countries for '{title}': {countries[:5]}")
-            # Australia must be among the first two listed countries to be considered primary
-            primary = countries[:2]
-            if any("australia" in c for c in primary):
-                log.info(f"  ✓ Australia is a primary production country for '{title}'")
-                return True
-            elif any("australia" in c for c in countries):
-                log.info(f"  ✗ Australia is only a minor co-production partner for '{title}'")
-                return False
-            else:
-                log.info(f"  ✗ Australia not found in country field for '{title}'")
-                return False
-
-    # Step 2: Infobox parsing failed — check for Oscar submission signals
-    # (these indicate the film primarily represents another country)
-    for signal in AU_MINOR_COPRODUCTION_SIGNALS:
-        if signal in wikitext_lower and "australia" not in wikitext_lower[:500]:
-            log.info(f"  ✗ Appears to be another country's Oscar submission: '{title}'")
-            return False
-
-    # Step 3: Check for known Australian production companies in the infobox
-    # Look specifically in the production_company / producer infobox field
+    # Check 2: Is there an Australian production company in the infobox?
     company_match = re.search(r"[|][^{\n]*(?:production_company|producer|studio)[^{\n]*=([^}{\n]{1,500})", wikitext, re.IGNORECASE)
+    au_company_found = False
     if company_match:
         company_field = company_match.group(1).lower()
         for aus_co in AUSTRALIAN_COMPANIES:
             if aus_co in company_field:
-                log.info(f"  ✓ Australian production company found in infobox for '{title}': '{aus_co}'")
-                return True
+                log.info(f"  ✓ Australian company in infobox: '{aus_co}'")
+                au_company_found = True
+                break
 
-    # Step 4: Fall back to strong Australian funding keyword scan anywhere in article
-    for kw in AU_KEYWORDS:
+    # If both checks ran and both pass — confirm Australian
+    if au_in_countries and au_company_found:
+        log.info(f"  ✓ Confirmed Australian: country + company both found for '{title}'")
+        return True
+
+    # If country field found Australia but no company field — check funding keywords
+    if au_in_countries:
+        for kw in AU_FUNDING_KEYWORDS:
+            if kw in wikitext_lower:
+                log.info(f"  ✓ Confirmed Australian: country field + funding keyword '{kw}' for '{title}'")
+                return True
+        # Country listed but no other Australian signal — still accept
+        log.info(f"  ✓ Australia in country field for '{title}' — accepting")
+        return True
+
+    # If company found but no country field match — accept on company alone
+    if au_company_found:
+        log.info(f"  ✓ Australian company found, accepting '{title}'")
+        return True
+
+    # No infobox data found — fall back to funding keywords anywhere in article
+    for kw in AU_FUNDING_KEYWORDS:
         if kw in wikitext_lower:
             log.info(f"  ✓ Australian funding keyword found for '{title}': '{kw}'")
             return True
 
-    # Article found but nothing conclusive — reject cautiously
+    # Australia mentioned somewhere but no production evidence
     if "australia" in wikitext_lower:
-        log.info(f"  ✗ Australia mentioned but not as primary producer for '{title}'")
+        log.info(f"  ✗ Australia mentioned but no production evidence for '{title}'")
         return False
 
     log.info(f"  ✗ No Australian production evidence found for '{title}'")

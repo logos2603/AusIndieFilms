@@ -2,145 +2,273 @@
   {
     "title": "Memoir of a Snail",
     "year": 2024,
-    "festivals": ["Venice", "Toronto (TIFF)"],
+    "festivals": [
+      "Venice",
+      "Toronto (TIFF)"
+    ],
     "director": "Adam Elliot",
     "synopsis": "Grace Pudel, a melancholic collector of snail paraphernalia, recounts her life story to her pet snail Sylvia — a tale of loss, loneliness, and ultimately, hope.",
     "poster_url": "https://image.tmdb.org/t/p/w500/aTvCtIUAfTJNW5qqFJLx3q4jOUj.jpg",
-    "tmdb_rating": 7.4, "imdb_id": "tt14248736", "imdb_rating": 7.3, "letterboxd_rating": 4.1,
+    "tmdb_rating": 7.4,
+    "imdb_id": "tt14248736",
+    "imdb_rating": 7.3,
+    "letterboxd_rating": 4.1,
     "letterboxd_url": "https://letterboxd.com/film/memoir-of-a-snail/",
     "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/memoir-of-a-snail-2024",
-    "genres": ["Animation", "Drama"], "runtime_mins": 94, "added_at": "2024-09-01T00:00:00"
-  },
-  {
-    "title": "Nitram",
-    "year": 2021,
-    "festivals": ["Cannes"],
-    "director": "Justin Kurzel",
-    "synopsis": "A searing portrait of Martin Bryant in the lead-up to the 1996 Port Arthur massacre — a confronting examination of failure, neglect, and the tragedy of gun violence in Australia.",
-    "poster_url": "https://image.tmdb.org/t/p/w500/qKDCHbOlYEgkrJrVRkW8bYOlzv3.jpg",
-    "tmdb_rating": 7.1, "imdb_id": "tt11181924", "imdb_rating": 7.2, "letterboxd_rating": 3.9,
-    "letterboxd_url": "https://letterboxd.com/film/nitram/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/nitram-2021",
-    "genres": ["Drama", "Crime"], "runtime_mins": 112, "added_at": "2021-07-06T00:00:00"
+    "genres": [
+      "Animation",
+      "Drama"
+    ],
+    "runtime_mins": 94,
+    "added_at": "2024-09-01T00:00:00"
   },
   {
     "title": "The Drover's Wife: The Legend of Molly Johnson",
     "year": 2021,
-    "festivals": ["Toronto (TIFF)", "Berlin"],
+    "festivals": [
+      "Toronto (TIFF)",
+      "Berlin"
+    ],
     "director": "Leah Purcell",
     "synopsis": "In 1893 New South Wales, a heavily pregnant woman must defend her homestead and children while her husband is away droving — a fierce, revisionist Australian western.",
     "poster_url": "https://image.tmdb.org/t/p/w500/wgFVNEHPnXQFSbg8ZN8r6RJYqcr.jpg",
-    "tmdb_rating": 6.4, "imdb_id": "tt9289934", "imdb_rating": 6.3, "letterboxd_rating": 3.5,
+    "tmdb_rating": 6.4,
+    "imdb_id": "tt9289934",
+    "imdb_rating": 6.3,
+    "letterboxd_rating": 3.5,
     "letterboxd_url": "https://letterboxd.com/film/the-drovers-wife-the-legend-of-molly-johnson/",
     "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/the-drovers-wife-2021",
-    "genres": ["Drama", "Western"], "runtime_mins": 108, "added_at": "2021-09-10T00:00:00"
+    "genres": [
+      "Drama",
+      "Western"
+    ],
+    "runtime_mins": 108,
+    "added_at": "2021-09-10T00:00:00"
+  },
+  {
+    "title": "Nitram",
+    "year": 2021,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Justin Kurzel",
+    "synopsis": "A searing portrait of Martin Bryant in the lead-up to the 1996 Port Arthur massacre — a confronting examination of failure, neglect, and the tragedy of gun violence in Australia.",
+    "poster_url": "https://image.tmdb.org/t/p/w500/qKDCHbOlYEgkrJrVRkW8bYOlzv3.jpg",
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt11181924",
+    "imdb_rating": 7.2,
+    "letterboxd_rating": 3.9,
+    "letterboxd_url": "https://letterboxd.com/film/nitram/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/nitram-2021",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "runtime_mins": 112,
+    "added_at": "2021-07-06T00:00:00"
   },
   {
     "title": "High Ground",
     "year": 2020,
-    "festivals": ["Berlin"],
+    "festivals": [
+      "Berlin"
+    ],
     "director": "Stephen Johnson",
     "synopsis": "A young Aboriginal man is torn between two worlds when he is recruited by an ex-soldier to hunt down Australia's most dangerous outlaw — his own uncle.",
     "poster_url": "https://image.tmdb.org/t/p/w500/2mZQmvFTwbPBXHVFQJzBPqgSjAA.jpg",
-    "tmdb_rating": 6.5, "imdb_id": "tt8688736", "imdb_rating": 6.4, "letterboxd_rating": 3.3,
+    "tmdb_rating": 6.5,
+    "imdb_id": "tt8688736",
+    "imdb_rating": 6.4,
+    "letterboxd_rating": 3.3,
     "letterboxd_url": "https://letterboxd.com/film/high-ground-2020/",
     "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/high-ground-2020",
-    "genres": ["Action", "Drama", "Thriller"], "runtime_mins": 104, "added_at": "2020-02-27T00:00:00"
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime_mins": 104,
+    "added_at": "2020-02-27T00:00:00"
   },
   {
     "title": "Babyteeth",
     "year": 2019,
-    "festivals": ["Venice", "Toronto (TIFF)"],
+    "festivals": [
+      "Venice",
+      "Toronto (TIFF)"
+    ],
     "director": "Shannon Murphy",
     "synopsis": "A seriously ill teenager falls in love with a small-time drug dealer, throwing her family into joyful, chaotic turmoil.",
     "poster_url": "https://image.tmdb.org/t/p/w500/jFh2Kk1VmGDy0QFp3BQrSiF7rCo.jpg",
-    "tmdb_rating": 7.1, "imdb_id": "tt7272062", "imdb_rating": 7.0, "letterboxd_rating": 3.9,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt7272062",
+    "imdb_rating": 7.0,
+    "letterboxd_rating": 3.9,
     "letterboxd_url": "https://letterboxd.com/film/babyteeth/",
     "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/babyteeth-2019",
-    "genres": ["Drama", "Romance"], "runtime_mins": 118, "added_at": "2019-09-02T00:00:00"
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 118,
+    "added_at": "2019-09-02T00:00:00"
   },
   {
     "title": "The Nightingale",
     "year": 2018,
-    "festivals": ["Venice"],
+    "festivals": [
+      "Venice"
+    ],
     "director": "Jennifer Kent",
     "synopsis": "Set in 1825 Tasmania, a young Irish convict woman chases a British officer through the wilderness, seeking justice for a terrible act of violence committed against her family.",
     "poster_url": "https://image.tmdb.org/t/p/w500/3RXpMLvlKLqBGxZqnMBEbDGH6nD.jpg",
-    "tmdb_rating": 7.1, "imdb_id": "tt5478478", "imdb_rating": 7.2, "letterboxd_rating": 3.9,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt5478478",
+    "imdb_rating": 7.2,
+    "letterboxd_rating": 3.9,
     "letterboxd_url": "https://letterboxd.com/film/the-nightingale-2018/",
     "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/the-nightingale-2018",
-    "genres": ["Drama", "Thriller"], "runtime_mins": 136, "added_at": "2018-09-06T00:00:00"
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "runtime_mins": 136,
+    "added_at": "2018-09-06T00:00:00"
   },
   {
     "title": "Sweet Country",
     "year": 2017,
-    "festivals": ["Venice", "Toronto (TIFF)"],
+    "festivals": [
+      "Venice",
+      "Toronto (TIFF)"
+    ],
     "director": "Warwick Thornton",
     "synopsis": "Australia, 1929. An Aboriginal farmhand goes on the run through the outback after killing a white man in self-defence, in this lyrical and devastating revisionist western.",
     "poster_url": "https://image.tmdb.org/t/p/w500/5UkzNSOK561c2QRy2Zr4AkADzLT.jpg",
-    "tmdb_rating": 7.0, "imdb_id": "tt5716952", "imdb_rating": 7.1, "letterboxd_rating": 3.8,
+    "tmdb_rating": 7.0,
+    "imdb_id": "tt5716952",
+    "imdb_rating": 7.1,
+    "letterboxd_rating": 3.8,
     "letterboxd_url": "https://letterboxd.com/film/sweet-country/",
     "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/sweet-country-2017",
-    "genres": ["Drama", "Western"], "runtime_mins": 113, "added_at": "2017-09-04T00:00:00"
-  },
-  {
-    "title": "The Babadook",
-    "year": 2014,
-    "festivals": ["Sundance", "Toronto (TIFF)"],
-    "director": "Jennifer Kent",
-    "synopsis": "A single mother and her troubled son discover a mysterious children's book that unleashes a terrifying supernatural presence — a landmark of modern Australian horror.",
-    "poster_url": "https://image.tmdb.org/t/p/w500/hno0JBkJQGkxGOBMqHOhLuTP2WX.jpg",
-    "tmdb_rating": 6.8, "imdb_id": "tt2321549", "imdb_rating": 6.8, "letterboxd_rating": 3.7,
-    "letterboxd_url": "https://letterboxd.com/film/the-babadook/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/the-babadook-2014",
-    "genres": ["Horror", "Drama"], "runtime_mins": 93, "added_at": "2014-01-17T00:00:00"
-  },
-  {
-    "title": "The Rover",
-    "year": 2014,
-    "festivals": ["Cannes"],
-    "director": "David Michôd",
-    "synopsis": "Ten years after the collapse of the world economy, a hardened drifter pursues the gang that stole his car through the Australian outback, with a wounded man as his only companion.",
-    "poster_url": "https://image.tmdb.org/t/p/w500/jcLQQJBHU3FNdONFcMbfMMXOsKw.jpg",
-    "tmdb_rating": 6.3, "imdb_id": "tt2345737", "imdb_rating": 6.3, "letterboxd_rating": 3.3,
-    "letterboxd_url": "https://letterboxd.com/film/the-rover/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/the-rover-2014",
-    "genres": ["Drama", "Thriller"], "runtime_mins": 103, "added_at": "2014-05-18T00:00:00"
-  },
-  {
-    "title": "Animal Kingdom",
-    "year": 2010,
-    "festivals": ["Sundance", "Toronto (TIFF)"],
-    "director": "David Michôd",
-    "synopsis": "A Melbourne teenager navigates the criminal world of his family, as his grandmother orchestrates a chilling power struggle with devastating consequences.",
-    "poster_url": "https://image.tmdb.org/t/p/w500/fBFInfkqfEqmFWb0P0eMVyeM1bU.jpg",
-    "tmdb_rating": 7.4, "imdb_id": "tt1313092", "imdb_rating": 7.5, "letterboxd_rating": 4.0,
-    "letterboxd_url": "https://letterboxd.com/film/animal-kingdom/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/animal-kingdom-2010",
-    "genres": ["Crime", "Drama", "Thriller"], "runtime_mins": 112, "added_at": "2010-01-23T00:00:00"
-  },
-  {
-    "title": "Samson & Delilah",
-    "year": 2009,
-    "festivals": ["Cannes"],
-    "director": "Warwick Thornton",
-    "synopsis": "Two young outcasts find each other on the margins of a remote Central Australian community — winner of the Caméra d'Or at Cannes. A tender, near-wordless love story.",
-    "poster_url": "https://image.tmdb.org/t/p/w500/3VEiZULGnNJEqY3c5tWGIfWdRBf.jpg",
-    "tmdb_rating": 7.3, "imdb_id": "tt1340123", "imdb_rating": 7.4, "letterboxd_rating": 4.0,
-    "letterboxd_url": "https://letterboxd.com/film/samson-and-delilah/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/samson-and-delilah-2009",
-    "genres": ["Drama", "Romance"], "runtime_mins": 101, "added_at": "2009-05-14T00:00:00"
+    "genres": [
+      "Drama",
+      "Western"
+    ],
+    "runtime_mins": 113,
+    "added_at": "2017-09-04T00:00:00"
   },
   {
     "title": "Tanna",
     "year": 2015,
-    "festivals": ["Venice"],
+    "festivals": [
+      "Venice"
+    ],
     "director": "Martin Butler, Bentley Dean",
     "synopsis": "Based on a true story from the island of Tanna in Vanuatu, two young people defy tribal custom and risk everything for the right to marry for love.",
     "poster_url": "https://image.tmdb.org/t/p/w500/8bW9MWQQM6qSMHcDEJCmwEIQW4t.jpg",
-    "tmdb_rating": 7.2, "imdb_id": "tt4481414", "imdb_rating": 7.3, "letterboxd_rating": 3.7,
+    "tmdb_rating": 7.2,
+    "imdb_id": "tt4481414",
+    "imdb_rating": 7.3,
+    "letterboxd_rating": 3.7,
     "letterboxd_url": "https://letterboxd.com/film/tanna/",
     "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/tanna-2015",
-    "genres": ["Drama", "Romance"], "runtime_mins": 104, "added_at": "2015-09-07T00:00:00"
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 104,
+    "added_at": "2015-09-07T00:00:00"
+  },
+  {
+    "title": "The Rover",
+    "year": 2014,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "David Michôd",
+    "synopsis": "Ten years after the collapse of the world economy, a hardened drifter pursues the gang that stole his car through the Australian outback, with a wounded man as his only companion.",
+    "poster_url": "https://image.tmdb.org/t/p/w500/jcLQQJBHU3FNdONFcMbfMMXOsKw.jpg",
+    "tmdb_rating": 6.3,
+    "imdb_id": "tt2345737",
+    "imdb_rating": 6.3,
+    "letterboxd_rating": 3.3,
+    "letterboxd_url": "https://letterboxd.com/film/the-rover/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/the-rover-2014",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "runtime_mins": 103,
+    "added_at": "2014-05-18T00:00:00"
+  },
+  {
+    "title": "The Babadook",
+    "year": 2014,
+    "festivals": [
+      "Sundance",
+      "Toronto (TIFF)"
+    ],
+    "director": "Jennifer Kent",
+    "synopsis": "A single mother and her troubled son discover a mysterious children's book that unleashes a terrifying supernatural presence — a landmark of modern Australian horror.",
+    "poster_url": "https://image.tmdb.org/t/p/w500/hno0JBkJQGkxGOBMqHOhLuTP2WX.jpg",
+    "tmdb_rating": 6.8,
+    "imdb_id": "tt2321549",
+    "imdb_rating": 6.8,
+    "letterboxd_rating": 3.7,
+    "letterboxd_url": "https://letterboxd.com/film/the-babadook/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/the-babadook-2014",
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "runtime_mins": 93,
+    "added_at": "2014-01-17T00:00:00"
+  },
+  {
+    "title": "Animal Kingdom",
+    "year": 2010,
+    "festivals": [
+      "Sundance",
+      "Toronto (TIFF)"
+    ],
+    "director": "David Michôd",
+    "synopsis": "A Melbourne teenager navigates the criminal world of his family, as his grandmother orchestrates a chilling power struggle with devastating consequences.",
+    "poster_url": "https://image.tmdb.org/t/p/w500/fBFInfkqfEqmFWb0P0eMVyeM1bU.jpg",
+    "tmdb_rating": 7.4,
+    "imdb_id": "tt1313092",
+    "imdb_rating": 7.5,
+    "letterboxd_rating": 4.0,
+    "letterboxd_url": "https://letterboxd.com/film/animal-kingdom/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/animal-kingdom-2010",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime_mins": 112,
+    "added_at": "2010-01-23T00:00:00"
+  },
+  {
+    "title": "Samson & Delilah",
+    "year": 2009,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Warwick Thornton",
+    "synopsis": "Two young outcasts find each other on the margins of a remote Central Australian community — winner of the Caméra d'Or at Cannes. A tender, near-wordless love story.",
+    "poster_url": "https://image.tmdb.org/t/p/w500/3VEiZULGnNJEqY3c5tWGIfWdRBf.jpg",
+    "tmdb_rating": 7.3,
+    "imdb_id": "tt1340123",
+    "imdb_rating": 7.4,
+    "letterboxd_rating": 4.0,
+    "letterboxd_url": "https://letterboxd.com/film/samson-and-delilah/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/samson-and-delilah-2009",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 101,
+    "added_at": "2009-05-14T00:00:00"
   }
 ]

@@ -220,6 +220,11 @@
       border-color: var(--gold);
     }
 
+    .narrative-tag {
+      color: var(--muted);
+      border-color: var(--border);
+    }
+
     .festival-tag {
       font-family: 'DM Mono', monospace;
       font-size: 0.55rem;
@@ -476,7 +481,9 @@
         "Toronto (TIFF)": "TIFF",
       };
       const isDoc = (f.genres || []).some(g => g.toLowerCase() === "documentary");
-      const docTag = isDoc ? `<span class="festival-tag doc-tag">Documentary</span>` : "";
+      const docTag = isDoc
+        ? `<span class="festival-tag doc-tag">Documentary</span>`
+        : `<span class="festival-tag narrative-tag">Narrative</span>`;
 
       const festivals = (f.festivals || [])
         .map(fest => {

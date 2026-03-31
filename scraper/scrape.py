@@ -1,8 +1,7 @@
 """
-Australian Festival Films Scraper — v2
-Fetches Australian films from major international film festivals,
-enriches with data from TMDB, IMDb, Letterboxd, and Screen Australia.
-Downloads posters locally so they always display correctly.
+Australian Festival Films Scraper — v3
+Strategy: Scrape festival websites directly for official selections,
+then cross-reference with TMDB to filter Australian films and enrich data.
 
 Run weekly via cron or GitHub Actions.
 """
@@ -15,7 +14,7 @@ import re
 import requests
 from datetime import datetime
 from pathlib import Path
-from dataclasses import dataclass, asdict, fields
+from dataclasses import dataclass, asdict, fields as datafields
 from typing import Optional
 from bs4 import BeautifulSoup
 
@@ -24,27 +23,12 @@ log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-TMDB_API_KEY  = os.environ.get("TMDB_API_KEY", "")
-BASE_DIR      = Path(__file__).parent.parent / "website"
-OUTPUT_FILE   = BASE_DIR / "data" / "films.json"
-POSTERS_DIR   = BASE_DIR / "posters"
+TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "")
+BASE_DIR     = Path(__file__).parent.parent / "website"
+OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
+POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 5   # how many years back to search
-
-FESTIVALS = ["Cannes", "Venice", "Berlin", "Sundance", "Toronto", "Rotterdam", "Tribeca", "SXSW"]
-
-# TMDB keyword search terms for each festival
-# Using multiple terms per festival increases recall
-FESTIVAL_KEYWORDS = {
-    "Cannes":     ["cannes film festival", "cannes"],
-    "Venice":     ["venice film festival", "venice international film festival"],
-    "Berlin":     ["berlin international film festival", "berlinale"],
-    "Sundance":   ["sundance film festival", "sundance"],
-    "Toronto":    ["toronto international film festival", "tiff"],
-    "Rotterdam":  ["international film festival rotterdam", "iffr", "rotterdam film festival"],
-    "Tribeca":    ["tribeca film festival", "tribeca"],
-    "SXSW":       ["sxsw", "south by southwest film festival"],
-}
+YEARS_BACK = 5
 
 HEADERS = {
     "User-Agent": (
@@ -83,6 +67,171 @@ class Film:
             self.added_at = datetime.utcnow().isoformat()
 
 
+# ── Festival scrapers ─────────────────────────────────────────────────────────
+# Each returns a list of {"title": str, "year": int, "festival": str}
+
+def scrape_sundance(year: int) -> list[dict]:
+    """Scrape Sundance official selections."""
+    films = []
+    url = f"https://www.sundance.org/festivals/sundance-film-festival/program/{year}/"
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        soup = BeautifulSoup(r.text, "html.parser")
+        # Film titles appear in various heading/link elements
+        for el in soup.find_all(["h2", "h3", "a"], class_=re.compile(r"film|title|program", re.I)):
+            text = el.get_text(strip=True)
+            if len(text) > 2 and len(text) < 100:
+                films.append({"title": text, "year": year, "festival": "Sundance"})
+    except Exception as e:
+        log.warning(f"Sundance {year} scrape failed: {e}")
+    return films
+
+
+def scrape_tribeca(year: int) -> list[dict]:
+    """Scrape Tribeca official selections via their API."""
+    films = []
+    # Tribeca exposes a JSON endpoint for their program
+    url = f"https://tribecafilm.com/filmguide?year={year}"
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        soup = BeautifulSoup(r.text, "html.parser")
+        for el in soup.find_all(["h2", "h3"], class_=re.compile(r"film|title", re.I)):
+            text = el.get_text(strip=True)
+            if 2 < len(text) < 100:
+                films.append({"title": text, "year": year, "festival": "Tribeca"})
+    except Exception as e:
+        log.warning(f"Tribeca {year} scrape failed: {e}")
+    return films
+
+
+def scrape_sxsw(year: int) -> list[dict]:
+    """Scrape SXSW film selections."""
+    films = []
+    url = f"https://www.sxsw.com/film/schedule/?fwp_year={year}"
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        soup = BeautifulSoup(r.text, "html.parser")
+        for el in soup.find_all(["h2", "h3", "h4"], class_=re.compile(r"title|film|event", re.I)):
+            text = el.get_text(strip=True)
+            if 2 < len(text) < 100:
+                films.append({"title": text, "year": year, "festival": "SXSW"})
+    except Exception as e:
+        log.warning(f"SXSW {year} scrape failed: {e}")
+    return films
+
+
+def fetch_wikipedia_festival_films(festival_name: str, wiki_title_template: str, year: int) -> list[dict]:
+    """
+    Fetch festival selections from Wikipedia — the most reliable source
+    as Wikipedia reliably lists official selections for major festivals.
+    Uses the Wikipedia API to fetch page content.
+    """
+    films = []
+    # Build the Wikipedia article title, e.g. "72nd Cannes Film Festival"
+    title = wiki_title_template.format(year=year)
+    url = "https://en.wikipedia.org/w/api.php"
+    params = {
+        "action": "parse",
+        "page": title,
+        "prop": "wikitext",
+        "format": "json",
+        "redirects": True,
+    }
+    try:
+        r = requests.get(url, params=params, headers=HEADERS, timeout=15)
+        data = r.json()
+        if "error" in data:
+            log.warning(f"Wikipedia: page not found — '{title}'")
+            return []
+
+        wikitext = data.get("parse", {}).get("wikitext", {}).get("*", "")
+
+        # Extract film titles from wikitext — they appear as [[Film Title]] links
+        # or in table rows. We extract all [[...]] wikilinks that look like film titles.
+        raw_links = re.findall(r"\[\[([^\]|#]+?)(?:\|[^\]]*)?\]\]", wikitext)
+
+        # Filter out non-film links (categories, people, countries, years etc.)
+        skip_patterns = re.compile(
+            r"^(File:|Image:|Category:|Wikipedia:|Template:|Help:|Portal:|"
+            r"\d{4}|January|February|March|April|May|June|July|August|"
+            r"September|October|November|December|United|France|Italy|"
+            r"Germany|Australia|USA|UK|Canada|Director|Film|Cinema|Award)",
+            re.I
+        )
+        for link in raw_links:
+            link = link.strip()
+            if len(link) < 2 or len(link) > 100:
+                continue
+            if skip_patterns.match(link):
+                continue
+            if link.lower() in ("film", "cinema", "movie", "award", "prize"):
+                continue
+            films.append({"title": link, "year": year, "festival": festival_name})
+
+        log.info(f"Wikipedia [{festival_name} {year}]: {len(films)} candidate titles from '{title}'")
+    except Exception as e:
+        log.warning(f"Wikipedia fetch failed for {festival_name} {year}: {e}")
+    return films
+
+
+# Wikipedia article title templates for each festival
+# {year} is replaced with the actual year
+WIKI_TEMPLATES = {
+    "Cannes":    [
+        "{year} Cannes Film Festival",
+        "Cannes Film Festival {year}",
+    ],
+    "Venice":    [
+        "{year} Venice International Film Festival",
+        "Venice Film Festival {year}",
+    ],
+    "Berlin":    [
+        "{year} Berlin International Film Festival",
+        "Berlinale {year}",
+    ],
+    "Sundance":  [
+        "{year} Sundance Film Festival",
+        "Sundance Film Festival {year}",
+    ],
+    "Toronto":   [
+        "{year} Toronto International Film Festival",
+        "TIFF {year}",
+    ],
+    "Rotterdam": [
+        "{year} International Film Festival Rotterdam",
+        "IFFR {year}",
+    ],
+    "Tribeca":   [
+        "{year} Tribeca Film Festival",
+        "Tribeca Film Festival {year}",
+    ],
+    "SXSW":      [
+        "{year} SXSW Film Festival",
+        "SXSW {year} film",
+    ],
+}
+
+
+def get_festival_films(festival: str, years: list[int]) -> list[dict]:
+    """Get all films for a festival across given years, using Wikipedia as primary source."""
+    all_films = []
+    templates = WIKI_TEMPLATES.get(festival, [])
+
+    for year in years:
+        found = False
+        for template in templates:
+            films = fetch_wikipedia_festival_films(festival, template, year)
+            if films:
+                all_films.extend(films)
+                found = True
+                break  # stop trying templates once one works
+        if not found:
+            log.warning(f"  No Wikipedia data found for {festival} {year}")
+        time.sleep(0.3)
+
+    return all_films
+
+
 # ── TMDB helpers ──────────────────────────────────────────────────────────────
 
 def tmdb_get(path, params={}):
@@ -101,98 +250,56 @@ def tmdb_get(path, params={}):
         return None
 
 
-def discover_australian_films(year):
-    """Discover feature films (70+ mins) with Australia as production country for a given year."""
-    films = []
-    page = 1
-    while True:
-        data = tmdb_get("/discover/movie", {
-            "with_origin_country": "AU",
-            "primary_release_year": year,
-            "sort_by": "vote_count.desc",
-            "with_runtime.gte": 70,   # feature films only
-            "page": page,
-        })
-        if not data:
-            break
-        results = data.get("results", [])
-        films.extend(results)
-        log.info(f"  AU discover {year} p{page}/{data.get('total_pages',1)}: {len(results)} films")
-        if page >= min(data.get("total_pages", 1), 25):
-            break
-        page += 1
-        time.sleep(0.25)
-    return films
+def tmdb_search_film(title: str, year: int) -> Optional[dict]:
+    """Search TMDB for a film, return full details if found."""
+    data = tmdb_get("/search/movie", {
+        "query": title,
+        "year": year,
+        "language": "en-AU",
+    })
+    if not data or not data.get("results"):
+        # Try without year constraint
+        data = tmdb_get("/search/movie", {"query": title, "language": "en-AU"})
+    if not data or not data.get("results"):
+        return None
 
-
-def get_festival_tmdb_ids(festival_name, years):
-    """
-    Get all TMDB movie IDs tagged with a festival keyword.
-    Searches multiple keyword variants and collects all matching IDs.
-    """
-    search_terms = FESTIVAL_KEYWORDS.get(festival_name, [festival_name.lower()])
-
-    # Find all keyword IDs for this festival
-    kw_ids = []
-    for term in search_terms:
-        data = tmdb_get("/search/keyword", {"query": term})
-        if not data:
-            continue
-        for kw in data.get("results", []):
-            kw_name = kw.get("name", "").lower()
-            # Only accept keywords that meaningfully match the festival
-            if any(word in kw_name for word in term.lower().split()):
-                kw_ids.append(kw["id"])
-                log.info(f"  [{festival_name}] keyword match: '{kw['name']}' (id={kw['id']})")
-        time.sleep(0.1)
-
-    if not kw_ids:
-        log.warning(f"  [{festival_name}] No keyword IDs found")
-        return set()
-
-    # Deduplicate keyword IDs
-    kw_ids = list(set(kw_ids))
-    kw_combined = "|".join(str(k) for k in kw_ids)  # TMDB OR logic
-
-    ids = set()
-    for year in years:
-        page = 1
-        while True:
-            data = tmdb_get("/discover/movie", {
-                "with_keywords": kw_combined,
-                "primary_release_year": year,
-                "page": page,
+    # Pick best match — prefer exact title match
+    results = data["results"]
+    for r in results:
+        if r.get("title", "").lower() == title.lower():
+            return tmdb_get(f"/movie/{r['id']}", {
+                "append_to_response": "credits,external_ids",
+                "language": "en-AU",
             })
-            if not data:
-                break
-            for m in data.get("results", []):
-                ids.add(m["id"])
-            if page >= data.get("total_pages", 1):
-                break
-            page += 1
-            time.sleep(0.25)
 
-    log.info(f"  {festival_name}: {len(ids)} tagged films across {years}")
-    return ids
-
-
-def get_full_details(tmdb_id):
-    return tmdb_get(f"/movie/{tmdb_id}", {
-        "append_to_response": "credits,external_ids,keywords",
+    # Fall back to first result
+    return tmdb_get(f"/movie/{results[0]['id']}", {
+        "append_to_response": "credits,external_ids",
         "language": "en-AU",
     })
 
 
-def extract_tmdb_data(detail):
+def is_australian(detail: dict) -> bool:
+    """Return True if TMDB lists Australia as a production country."""
+    countries = detail.get("production_countries", [])
+    return any(c.get("iso_3166_1") == "AU" for c in countries)
+
+
+def is_feature_film(detail: dict) -> bool:
+    """Return True if the film is 70+ minutes (feature length)."""
+    runtime = detail.get("runtime") or 0
+    return runtime >= 70
+
+
+def extract_tmdb_data(detail: dict) -> dict:
     director = ""
     for m in detail.get("credits", {}).get("crew", []):
         if m.get("job") == "Director":
             director = m.get("name", "")
             break
-
     return {
         "tmdb_id":      detail.get("id"),
-        "tmdb_rating":  round(detail.get("vote_average", 0) or 0, 1) or None,
+        "tmdb_rating":  round(detail.get("vote_average") or 0, 1) or None,
         "synopsis":     detail.get("overview", ""),
         "poster_path":  detail.get("poster_path", ""),
         "director":     director,
@@ -204,20 +311,19 @@ def extract_tmdb_data(detail):
 
 # ── Poster downloading ────────────────────────────────────────────────────────
 
-def download_poster(poster_path, tmdb_id):
-    """Download poster from TMDB and save locally. Returns relative URL path."""
+def download_poster(poster_path: str, tmdb_id: int) -> str:
     if not poster_path:
         return ""
     POSTERS_DIR.mkdir(parents=True, exist_ok=True)
     local_path = POSTERS_DIR / f"{tmdb_id}.jpg"
-    relative  = f"posters/{tmdb_id}.jpg"
+    relative   = f"posters/{tmdb_id}.jpg"
     if local_path.exists():
         return relative
     try:
         r = requests.get(f"https://image.tmdb.org/t/p/w500{poster_path}", timeout=20)
         if r.status_code == 200:
             local_path.write_bytes(r.content)
-            log.info(f"  ↓ poster saved: {tmdb_id}.jpg")
+            log.info(f"  ↓ poster: {tmdb_id}.jpg")
             return relative
     except Exception as e:
         log.warning(f"  Poster download error: {e}")
@@ -226,7 +332,7 @@ def download_poster(poster_path, tmdb_id):
 
 # ── IMDb ──────────────────────────────────────────────────────────────────────
 
-def fetch_imdb_rating(imdb_id):
+def fetch_imdb_rating(imdb_id: str) -> Optional[float]:
     if not imdb_id:
         return None
     try:
@@ -244,7 +350,7 @@ def fetch_imdb_rating(imdb_id):
 
 # ── Letterboxd ────────────────────────────────────────────────────────────────
 
-def fetch_letterboxd_data(title, year):
+def fetch_letterboxd_data(title: str, year: int) -> dict:
     slug = re.sub(r"[^a-z0-9\s-]", "", title.lower())
     slug = re.sub(r"\s+", "-", slug.strip())
     result = {"letterboxd_url": None, "letterboxd_rating": None}
@@ -268,7 +374,7 @@ def fetch_letterboxd_data(title, year):
 
 # ── Screen Australia ──────────────────────────────────────────────────────────
 
-def fetch_screen_australia_films():
+def fetch_screen_australia_films() -> dict:
     lookup = {}
     try:
         r = requests.get(
@@ -279,8 +385,7 @@ def fetch_screen_australia_films():
             import csv, io
             for row in csv.DictReader(io.StringIO(r.text)):
                 title = row.get("Title", "").strip()
-                year  = row.get("Year", "").strip()
-                if title and year:
+                if title:
                     slug = title.lower().replace(" ", "-")
                     lookup[title.lower()] = {
                         "screen_australia_url": f"https://www.screenaustralia.gov.au/the-screen-guide/t/{slug}",
@@ -302,31 +407,23 @@ def run_scraper():
     years = list(range(current_year - YEARS_BACK, current_year + 1))
     log.info(f"Searching years: {years}")
 
-    # Step 1: All Australian films
-    log.info("\n── Step 1: Discovering Australian films ──")
-    all_au: dict = {}
-    for year in years:
-        for m in discover_australian_films(year):
-            all_au[m["id"]] = m
-        time.sleep(0.5)
-    log.info(f"Total Australian films discovered: {len(all_au)}")
+    # Step 1: Collect all festival film candidates from Wikipedia
+    log.info("\n── Step 1: Collecting festival selections from Wikipedia ──")
+    candidates: dict = {}  # (title_lower, year) → {title, year, festivals: []}
 
-    # Step 2: Festival-tagged film IDs
-    log.info("\n── Step 2: Getting festival tags ──")
-    festival_map: dict = {}
-    for festival in FESTIVALS:
-        ids = get_festival_tmdb_ids(festival, years)
-        for tmdb_id in ids:
-            festival_map.setdefault(tmdb_id, [])
-            if festival not in festival_map[tmdb_id]:
-                festival_map[tmdb_id].append(festival)
-        time.sleep(0.5)
+    for festival in WIKI_TEMPLATES.keys():
+        log.info(f"\nFestival: {festival}")
+        films = get_festival_films(festival, years)
+        for f in films:
+            key = (f["title"].lower(), f["year"])
+            if key not in candidates:
+                candidates[key] = {"title": f["title"], "year": f["year"], "festivals": []}
+            if f["festival"] not in candidates[key]["festivals"]:
+                candidates[key]["festivals"].append(f["festival"])
 
-    # Intersection: Australian + festival-tagged
-    target_ids = set(all_au.keys()) & set(festival_map.keys())
-    log.info(f"Australian films with festival tags: {len(target_ids)}")
+    log.info(f"\nTotal unique festival candidates: {len(candidates)}")
 
-    # Step 3: Load existing cache
+    # Step 2: Load existing cache
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     existing: list = []
     if OUTPUT_FILE.exists():
@@ -335,47 +432,54 @@ def run_scraper():
         except Exception:
             existing = []
     existing_map: dict = {f["tmdb_id"]: f for f in existing if f.get("tmdb_id")}
+    existing_titles: dict = {(f.get("title","").lower(), f.get("year")): f for f in existing}
 
-    # Step 4: Enrich each film
-    log.info("\n── Step 3: Enriching films ──")
-    field_names = {f.name for f in fields(Film)}
+    # Step 3: TMDB lookup — filter to Australian feature films only
+    log.info("\n── Step 2: Matching candidates against TMDB (Australian features only) ──")
+    field_names = {f.name for f in datafields(Film)}
     result_films: list = []
+    checked = 0
 
-    for tmdb_id in sorted(target_ids):
-        title = all_au[tmdb_id].get("title", "Unknown")
-        log.info(f"Processing: {title} (id={tmdb_id})")
+    for (title_lower, year), info in candidates.items():
+        checked += 1
+        title = info["title"]
 
-        # Use cache if fresh (< 30 days)
-        if tmdb_id in existing_map:
-            cached = existing_map[tmdb_id]
+        # Use cache if available and fresh
+        cache_key = (title_lower, year)
+        if cache_key in existing_titles:
+            cached = existing_titles[cache_key]
             try:
                 age = (datetime.utcnow() - datetime.fromisoformat(cached.get("added_at", "2000-01-01"))).days
                 if age < 30:
-                    for fest in festival_map.get(tmdb_id, []):
+                    for fest in info["festivals"]:
                         if fest not in cached.get("festivals", []):
                             cached["festivals"].append(fest)
                     result_films.append(cached)
-                    log.info(f"  (cached, {age}d old)")
                     continue
             except Exception:
                 pass
 
-        detail = get_full_details(tmdb_id)
+        log.info(f"[{checked}/{len(candidates)}] Checking: {title} ({year})")
+        detail = tmdb_search_film(title, year)
         if not detail:
+            log.info(f"  ✗ Not found on TMDB")
+            continue
+        if not is_australian(detail):
+            log.info(f"  ✗ Not Australian")
+            continue
+        if not is_feature_film(detail):
+            log.info(f"  ✗ Short film ({detail.get('runtime')} mins)")
             continue
 
         data = extract_tmdb_data(detail)
         poster_path = data.pop("poster_path", "")
-        poster_url  = download_poster(poster_path, tmdb_id)
+        poster_url  = download_poster(poster_path, data["tmdb_id"])
         time.sleep(0.2)
-
-        raw_year = all_au[tmdb_id].get("release_date", "0000")[:4]
-        year = int(raw_year) if raw_year.isdigit() else 0
 
         film = Film(
             title=title,
             year=year,
-            festivals=festival_map.get(tmdb_id, []),
+            festivals=info["festivals"],
             poster_url=poster_url,
             **{k: v for k, v in data.items() if k in field_names},
         )
@@ -389,25 +493,20 @@ def run_scraper():
         film.letterboxd_url    = lb["letterboxd_url"]
         time.sleep(0.5)
 
-        # Skip short films as a safety net
-        if film.runtime_mins and film.runtime_mins < 70:
-            log.info(f"  ✗ Skipping short film: {film.title} ({film.runtime_mins} mins)")
-            continue
-
         result_films.append(asdict(film))
-        log.info(f"  ✓ {film.title} ({film.year}) | festivals: {film.festivals}")
+        log.info(f"  ✓ AUSTRALIAN FEATURE: {film.title} ({film.year}) | {film.festivals}")
 
-    # Step 5: Screen Australia
-    log.info("\n── Step 4: Screen Australia cross-reference ──")
+    # Step 4: Screen Australia cross-reference
+    log.info("\n── Step 3: Screen Australia cross-reference ──")
     sa = fetch_screen_australia_films()
     for film in result_films:
         match = sa.get(film.get("title", "").lower())
         if match and not film.get("screen_australia_url"):
             film["screen_australia_url"] = match["screen_australia_url"]
 
-    # Step 6: Merge + save
-    new_map = {f["tmdb_id"]: f for f in result_films if f.get("tmdb_id")}
-    merged  = list({**existing_map, **new_map}.values())
+    # Step 5: Merge + save
+    new_map    = {f["tmdb_id"]: f for f in result_films if f.get("tmdb_id")}
+    merged     = list({**existing_map, **new_map}.values())
     merged.sort(key=lambda f: (-(f.get("year") or 0), f.get("title", "")))
 
     OUTPUT_FILE.write_text(json.dumps(merged, indent=2, ensure_ascii=False))

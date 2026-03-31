@@ -453,7 +453,7 @@
     function filmCard(f, i) {
       const delay = Math.min(i * 40, 400);
       const poster = f.poster_url
-        ? `<img class="card-poster" src="${f.poster_url}" alt="${escHtml(f.title)} poster" loading="lazy" />`
+        ? `<img class="card-poster" src="${f.poster_url}" alt="${escHtml(f.title)} poster" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="card-poster-placeholder" style="display:none">🎬</div>`
         : `<div class="card-poster-placeholder">🎬</div>`;
 
       const festivals = (f.festivals || [])

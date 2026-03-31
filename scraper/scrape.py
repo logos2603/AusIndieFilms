@@ -399,6 +399,7 @@ def fetch_wikipedia_film_article(title: str, year: int) -> Optional[str]:
     """
     Fetch the wikitext for a film's Wikipedia article.
     Tries several common title formats. Returns wikitext or None.
+    Includes retry with exponential backoff to handle rate limiting.
     """
     params = {
         "action": "parse",
@@ -407,21 +408,38 @@ def fetch_wikipedia_film_article(title: str, year: int) -> Optional[str]:
         "redirects": True,
     }
     for page_title in [f"{title} ({year} film)", f"{title} (film)", title]:
-        try:
-            r = requests.get(
-                "https://en.wikipedia.org/w/api.php",
-                params={**params, "page": page_title},
-                headers=HEADERS,
-                timeout=10,
-            )
-            data = r.json()
-            if "error" in data:
-                continue
-            wikitext = data.get("parse", {}).get("wikitext", {}).get("*", "")
-            if wikitext:
-                return wikitext
-        except Exception as e:
-            log.warning(f"  Wikipedia fetch failed for '{page_title}': {e}")
+        for attempt in range(3):  # up to 3 retries per title format
+            try:
+                time.sleep(0.5 + attempt)  # 0.5s, 1.5s, 2.5s between attempts
+                r = requests.get(
+                    "https://en.wikipedia.org/w/api.php",
+                    params={**params, "page": page_title},
+                    headers={**HEADERS, "Api-User-Agent": "AusFilmScraper/1.0 (film research tool)"},
+                    timeout=15,
+                )
+                if r.status_code == 429:
+                    wait = 5 * (attempt + 1)
+                    log.warning(f"  Wikipedia rate limited — waiting {wait}s")
+                    time.sleep(wait)
+                    continue
+                if not r.text.strip():
+                    log.warning(f"  Wikipedia empty response for '{page_title}', retrying...")
+                    time.sleep(2 * (attempt + 1))
+                    continue
+                data = r.json()
+                if "error" in data:
+                    break  # page not found, try next title format
+                wikitext = data.get("parse", {}).get("wikitext", {}).get("*", "")
+                if wikitext:
+                    return wikitext
+                break
+            except ValueError as e:
+                # JSON parse error — usually empty response from rate limiting
+                log.warning(f"  Wikipedia rate limit likely hit for '{page_title}' (attempt {attempt+1}/3): {e}")
+                time.sleep(3 * (attempt + 1))
+            except Exception as e:
+                log.warning(f"  Wikipedia fetch failed for '{page_title}': {e}")
+                break
     return None
 
 

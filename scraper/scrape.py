@@ -33,6 +33,11 @@ YEARS_BACK = 5
 # TMDB IDs to explicitly exclude (films incorrectly tagged as Australian in TMDB)
 BLOCKLIST_TMDB_IDS = {
     1115379,  # Only the River Flows (2023) — Chinese film, incorrectly tagged
+    289450,   # Driving Miss Daisy — not Australian
+    984056,   # Berlin — not Australian
+    884692,   # incorrectly tagged
+    51450,    # L'apprenti père Noël — not Australian
+    1130852,  # Ka Whawhai Tonu — not Australian
 }
 
 HEADERS = {
@@ -668,19 +673,28 @@ def run_scraper():
             except Exception:
                 pass
 
-        # Fast TMDB search — no sleep, just check if Australian feature
-        detail = tmdb_search_film(title, year)
-        if not detail:
-            continue
-        if not is_australian(detail):
-            continue
-        if detail.get("id") in BLOCKLIST_TMDB_IDS:
-            log.info(f"  ✗ Blocklisted: {title}")
-            continue
+        # Step 1: Wikipedia is primary nationality authority
         if not verify_australian_on_wikipedia(title, year):
             continue
+
+        # Step 2: Check for re-releases (reuses cached Wikipedia fetch)
         if not verify_not_rerelease(title, year):
             continue
+
+        # Step 3: TMDB lookup — for enrichment and runtime check
+        detail = tmdb_search_film(title, year)
+        if not detail:
+            log.info(f"  ✗ Not found on TMDB: {title}")
+            continue
+
+        tmdb_id = detail.get("id")
+
+        # Step 4: Blocklist check
+        if tmdb_id in BLOCKLIST_TMDB_IDS:
+            log.info(f"  ✗ Blocklisted: {title}")
+            continue
+
+        # Step 5: Runtime check
         if not is_feature_film(detail):
             log.info(f"  ✗ Short film: {title} ({detail.get('runtime')} mins)")
             continue

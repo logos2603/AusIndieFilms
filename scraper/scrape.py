@@ -113,6 +113,10 @@ class Film:
     screen_australia_url: Optional[str] = None
     genres: list = None
     runtime_mins: Optional[int] = None
+    revenue: Optional[int] = None
+    budget: Optional[int] = None
+    distributor: str = ""
+    distributor_intl: str = ""
     added_at: str = ""
 
     def __post_init__(self):
@@ -496,7 +500,7 @@ def tmdb_search_film(title: str, year: int) -> Optional[dict]:
     Prefers Australian results when multiple matches exist."""
     def get_details(tmdb_id):
         return tmdb_get(f"/movie/{tmdb_id}", {
-            "append_to_response": "credits,external_ids",
+            "append_to_response": "credits,external_ids,release_dates",
             "language": "en-AU",
         })
 
@@ -743,15 +747,39 @@ def extract_tmdb_data(detail: dict) -> dict:
         if m.get("job") == "Director" and m.get("name")
     ])
     director = ", ".join(directors[:2]) if directors else ""
+    # Extract distributors from release_dates
+    # AU distributor: note field from Australian release entry
+    # International distributor: note field from US release entry (most reliable proxy)
+    au_distributor   = ""
+    intl_distributor = ""
+
+    for entry in detail.get("release_dates", {}).get("results", []):
+        iso = entry.get("iso_3166_1", "")
+        for rd in entry.get("release_dates", []):
+            note = rd.get("note", "").strip()
+            if not note:
+                continue
+            if iso == "AU" and not au_distributor:
+                au_distributor = note
+            elif iso == "US" and not intl_distributor:
+                intl_distributor = note
+
+    revenue = detail.get("revenue") or None
+    budget  = detail.get("budget") or None
+
     return {
-        "tmdb_id":      detail.get("id"),
-        "tmdb_rating":  round(detail.get("vote_average") or 0, 1) or None,
-        "synopsis":     detail.get("overview", ""),
-        "poster_path":  detail.get("poster_path", ""),
-        "director":     director,
-        "imdb_id":      detail.get("external_ids", {}).get("imdb_id", ""),
-        "genres":       [g["name"] for g in detail.get("genres", [])],
-        "runtime_mins": detail.get("runtime") or None,
+        "tmdb_id":           detail.get("id"),
+        "tmdb_rating":       round(detail.get("vote_average") or 0, 1) or None,
+        "synopsis":          detail.get("overview", ""),
+        "poster_path":       detail.get("poster_path", ""),
+        "director":          director,
+        "imdb_id":           detail.get("external_ids", {}).get("imdb_id", ""),
+        "genres":            [g["name"] for g in detail.get("genres", [])],
+        "runtime_mins":      detail.get("runtime") or None,
+        "revenue":           revenue,
+        "budget":            budget,
+        "distributor":       au_distributor,
+        "distributor_intl":  intl_distributor,
     }
 
 

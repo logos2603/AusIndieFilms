@@ -38,6 +38,7 @@ SEED_FILMS = [
     ("Monolith",                    2023, ["SXSW"]),
     ("The Moogai",                  2024, ["SXSW"]),
     ("Talk to Me",                  2022, ["Sundance", "SXSW"]),
+    ("Dangerous Animals",           2025, ["Cannes"]),
     ("The Drover's Wife: The Legend of Molly Johnson", 2021, ["Toronto", "Berlin"]),
     ("Babyteeth",                   2019, ["Venice", "Toronto"]),
     ("The Nightingale",             2018, ["Venice"]),

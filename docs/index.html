@@ -84,12 +84,31 @@
     .controls {
       max-width: 1400px;
       margin: 0 auto;
-      padding: 1.5rem 2rem;
+      padding: 1.25rem 2rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .controls-row {
       display: flex;
       gap: 1rem;
-      flex-wrap: wrap;
       align-items: center;
-      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      padding-bottom: 1rem;
+    }
+
+    .controls-row + .controls-row {
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+
+    .row-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+      min-width: 3.5rem;
     }
 
     .search-wrap {
@@ -135,6 +154,29 @@
       background: var(--ink);
       color: var(--sand);
       border-color: var(--ink);
+    }
+
+    /* Category pills — Narrative & Documentary */
+    .pill.category-narrative {
+      color: var(--muted);
+      border-color: var(--muted);
+    }
+    .pill.category-narrative:hover,
+    .pill.category-narrative.active {
+      background: var(--muted);
+      color: var(--sand);
+      border-color: var(--muted);
+    }
+
+    .pill.category-doc {
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+    .pill.category-doc:hover,
+    .pill.category-doc.active {
+      background: var(--gold);
+      color: var(--sand);
+      border-color: var(--gold);
     }
 
     .sort-select {
@@ -352,29 +394,43 @@
   </header>
 
   <div class="controls">
-    <div class="search-wrap">
-      <input type="text" id="search" placeholder="Search by title, director, genre…" />
+
+    <!-- Row 1: Search + Sort -->
+    <div class="controls-row">
+      <div class="search-wrap" style="flex:1;min-width:200px">
+        <input type="text" id="search" placeholder="Search by title, director, genre…" />
+      </div>
+      <select class="sort-select" id="sort">
+        <option value="year-desc">Newest first</option>
+        <option value="year-asc">Oldest first</option>
+        <option value="title-asc">A → Z</option>
+        <option value="rating-desc">Highest rated</option>
+      </select>
     </div>
 
-    <div class="filter-group" id="festival-filters">
-      <button class="pill active" data-festival="all">All Festivals</button>
-      <button class="pill" data-festival="Cannes">Cannes</button>
-      <button class="pill" data-festival="Venice">Venice</button>
-      <button class="pill" data-festival="Berlin">Berlin</button>
-      <button class="pill" data-festival="Sundance">Sundance</button>
-      <button class="pill" data-festival="Toronto">TIFF</button>
-      <button class="pill" data-festival="Rotterdam (IFFR)">Rotterdam</button>
-      <button class="pill" data-festival="SXSW">SXSW</button>
+    <!-- Row 2: Festival filters -->
+    <div class="controls-row">
+      <span class="row-label">Festival</span>
+      <div class="filter-group" id="festival-filters">
+        <button class="pill active" data-festival="all">All</button>
+        <button class="pill" data-festival="Cannes">Cannes</button>
+        <button class="pill" data-festival="Venice">Venice</button>
+        <button class="pill" data-festival="Berlin">Berlin</button>
+        <button class="pill" data-festival="Sundance">Sundance</button>
+        <button class="pill" data-festival="Toronto">TIFF</button>
+        <button class="pill" data-festival="Rotterdam">Rotterdam</button>
+        <button class="pill" data-festival="SXSW">SXSW</button>
+        <button class="pill" data-festival="Sitges">Sitges</button>
+      </div>
     </div>
 
-    <button class="pill" id="doc-filter" data-doc="false">Documentaries</button>
+    <!-- Row 3: Category filters -->
+    <div class="controls-row">
+      <span class="row-label">Filter</span>
+      <button class="pill category-narrative" id="narrative-filter">Narrative</button>
+      <button class="pill category-doc" id="doc-filter">Documentary</button>
+    </div>
 
-    <select class="sort-select" id="sort">
-      <option value="year-desc">Newest first</option>
-      <option value="year-asc">Oldest first</option>
-      <option value="title-asc">A → Z</option>
-      <option value="rating-desc">Highest rated</option>
-    </select>
   </div>
 
   <div class="grid" id="grid"></div>
@@ -413,6 +469,7 @@
     }
 
     let docsOnly = false;
+    let narrativeOnly = false;
 
     function filtered() {
       let films = [...allFilms];
@@ -429,6 +486,12 @@
       if (docsOnly) {
         films = films.filter(f =>
           (f.genres || []).some(g => g.toLowerCase() === "documentary")
+        );
+      }
+
+      if (narrativeOnly) {
+        films = films.filter(f =>
+          !(f.genres || []).some(g => g.toLowerCase() === "documentary")
         );
       }
 
@@ -553,7 +616,17 @@
 
     document.getElementById("doc-filter").addEventListener("click", function() {
       docsOnly = !docsOnly;
+      if (docsOnly) narrativeOnly = false;
       this.classList.toggle("active", docsOnly);
+      document.getElementById("narrative-filter").classList.toggle("active", false);
+      render();
+    });
+
+    document.getElementById("narrative-filter").addEventListener("click", function() {
+      narrativeOnly = !narrativeOnly;
+      if (narrativeOnly) docsOnly = false;
+      this.classList.toggle("active", narrativeOnly);
+      document.getElementById("doc-filter").classList.toggle("active", false);
       render();
     });
 

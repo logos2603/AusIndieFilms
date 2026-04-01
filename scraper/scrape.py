@@ -28,7 +28,7 @@ BASE_DIR     = Path(__file__).parent.parent / "website"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 10
+YEARS_BACK = 5
 
 # Known Australian festival films to always include regardless of scrape results
 # Add films here if they are confirmed Australian but not being picked up automatically
@@ -37,7 +37,7 @@ SEED_FILMS = [
     ("Audrey",                      2024, ["SXSW"]),
     ("Monolith",                    2023, ["SXSW"]),
     ("The Moogai",                  2024, ["SXSW"]),
-    ("Talk to Me",                  2023, ["Sundance"]),
+    ("Talk to Me",                  2022, ["Sundance", "SXSW"]),
     ("The Drover's Wife: The Legend of Molly Johnson", 2021, ["Toronto", "Berlin"]),
     ("Babyteeth",                   2019, ["Venice", "Toronto"]),
     ("The Nightingale",             2018, ["Venice"]),
@@ -54,7 +54,14 @@ BLOCKLIST_TMDB_IDS = {
     884692,   # incorrectly tagged
     51450,    # L'apprenti père Noël — not Australian
     1130852,  # Ka Whawhai Tonu — not Australian
-    1166222,  # Uvalde Mom (2023) — American documentary
+}
+
+# Title-based blocklist — catches films regardless of TMDB ID
+# Use when TMDB ID is unknown or unreliable
+BLOCKLIST_TITLES = {
+    "uvalde mom",           # American documentary
+    "three thousand years of longing",  # not primarily Australian despite AU co-production
+    "lilith fair: building a mystery",  # Canadian/American
 }
 
 # Known Australian production companies and funders
@@ -847,6 +854,17 @@ def run_scraper():
             if f["festival"] not in candidates[key]["festivals"]:
                 candidates[key]["festivals"].append(f["festival"])
 
+    # Inject seed films as guaranteed candidates — these bypass PDF/Wikipedia discovery
+    # but still go through all nationality and quality checks
+    for seed_title, seed_year, seed_festivals in SEED_FILMS:
+        key = (seed_title.lower(), seed_year)
+        if key not in candidates:
+            candidates[key] = {"title": seed_title, "year": seed_year, "festivals": []}
+            log.info(f"  + Seed film added: {seed_title} ({seed_year})")
+        for fest in seed_festivals:
+            if fest not in candidates[key]["festivals"]:
+                candidates[key]["festivals"].append(fest)
+
     log.info(f"\nTotal unique festival candidates: {len(candidates)}")
 
     # Step 2: Load existing cache
@@ -895,8 +913,11 @@ def run_scraper():
         tmdb_id   = detail.get("id")
         tmdb_title = detail.get("title", "")
 
-        # Blocklist check early to avoid any further processing
+        # Blocklist checks — by TMDB ID and by title
         if tmdb_id in BLOCKLIST_TMDB_IDS:
+            continue
+        if title.lower() in BLOCKLIST_TITLES:
+            log.info(f"  ✗ Title blocklisted: '{title}'")
             continue
 
         # Broad Australian signal from TMDB — pass if ANY of these are true:

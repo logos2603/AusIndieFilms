@@ -378,6 +378,176 @@
     }
 
     .last-updated { color: var(--rust); }
+
+    /* ── Modal ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(26, 22, 18, 0.7);
+      z-index: 100;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal {
+      background: var(--card-bg);
+      width: 100%;
+      max-width: 680px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-top: 1px solid var(--border);
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .modal-overlay.open .modal {
+      transform: translateY(0);
+    }
+
+    .modal-inner {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 0;
+    }
+
+    @media (max-width: 540px) {
+      .modal-inner { grid-template-columns: 1fr; }
+      .modal-poster-col { display: none; }
+    }
+
+    .modal-poster-col img,
+    .modal-poster-col .modal-poster-placeholder {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      display: block;
+      background: var(--border);
+    }
+
+    .modal-poster-col .modal-poster-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--muted);
+    }
+
+    .modal-content {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 1.2rem;
+      padding: 0;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .modal-close:hover { color: var(--ink); }
+
+    .modal-title {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    .modal-title span {
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    .modal-director {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .modal-festivals {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .modal-synopsis {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+
+    .modal-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 0.75rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+
+    .modal-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .modal-meta-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.55rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .modal-meta-value {
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    .modal-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+
+    .modal-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--rust);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rust);
+      padding-bottom: 1px;
+      transition: opacity 0.15s;
+    }
+
+    .modal-link:hover { opacity: 0.7; }
+
+    /* Make cards clickable */
+    .card { cursor: pointer; }
+
   </style>
 </head>
 <body>
@@ -568,7 +738,7 @@
       ].filter(Boolean).join("");
 
       return `
-        <div class="card" style="animation-delay:${delay}ms">
+        <div class="card" data-idx="${i}" style="animation-delay:${delay}ms">
           ${poster}
           <div class="card-body">
             <div class="card-festivals">${festivals}${docTag}</div>
@@ -589,6 +759,12 @@
           <span class="rating-source">${source}</span>
           <span class="rating-value">★ ${value}</span>
         </div>`;
+    }
+
+    function formatCurrency(amount) {
+      if (amount >= 1000000) return `$${(amount / 1000000).toFixed(1)}M`;
+      if (amount >= 1000)    return `$${(amount / 1000).toFixed(0)}K`;
+      return `$${amount}`;
     }
 
     function escHtml(str) {
@@ -635,7 +811,120 @@
       render();
     });
 
+
+    // ── Modal ──────────────────────────────────────────────────────────────────
+
+    const overlay   = document.getElementById("modal-overlay");
+    const modal     = document.getElementById("modal");
+
+    function openModal(film) {
+      const FESTIVAL_LABELS = { "Toronto": "TIFF", "Toronto (TIFF)": "TIFF" };
+
+      // Poster
+      const posterCol = document.getElementById("modal-poster-col");
+      if (film.poster_url) {
+        posterCol.innerHTML = `<img src="${film.poster_url}" alt="${escHtml(film.title)}" />`;
+      } else {
+        posterCol.innerHTML = `<div class="modal-poster-placeholder">🎬</div>`;
+      }
+
+      // Title + director
+      document.getElementById("modal-title").innerHTML =
+        `${escHtml(film.title)} <span>${film.year}</span>`;
+      document.getElementById("modal-director").textContent =
+        film.director ? `dir. ${film.director}` : "";
+
+      // Festivals
+      document.getElementById("modal-festivals").innerHTML =
+        (film.festivals || []).map(f => {
+          const label = FESTIVAL_LABELS[f] || f;
+          return `<span class="festival-tag">${escHtml(label)}</span>`;
+        }).join("") +
+        ((film.genres||[]).some(g=>g.toLowerCase()==="documentary")
+          ? `<span class="festival-tag doc-tag">Documentary</span>`
+          : `<span class="festival-tag narrative-tag">Narrative</span>`);
+
+      // Synopsis
+      document.getElementById("modal-synopsis").textContent =
+        film.synopsis || "No synopsis available.";
+
+      // Meta grid
+      const meta = [];
+      if (film.runtime_mins) meta.push(["Runtime", `${film.runtime_mins} min`]);
+      if (film.genres && film.genres.length) meta.push(["Genres", film.genres.join(", ")]);
+      if (film.imdb_rating)       meta.push(["IMDb", `★ ${film.imdb_rating.toFixed(1)}`]);
+      if (film.letterboxd_rating) meta.push(["Letterboxd", `★ ${film.letterboxd_rating.toFixed(1)}`]);
+      if (film.distributor_intl)  meta.push(["Intl. Distributor", film.distributor_intl]);
+      if (film.distributor)       meta.push(["AU Distributor", film.distributor]);
+      if (film.budget && film.budget > 0)   meta.push(["Budget", formatCurrency(film.budget)]);
+      if (film.revenue && film.revenue > 0) meta.push(["Box Office", formatCurrency(film.revenue)]);
+      document.getElementById("modal-meta-grid").innerHTML =
+        meta.map(([label, val]) => `
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">${label}</span>
+            <span class="modal-meta-value">${escHtml(String(val))}</span>
+          </div>`).join("");
+
+      // Links
+      const links = [];
+      if (film.imdb_id)
+        links.push(`<a class="modal-link" href="https://www.imdb.com/title/${film.imdb_id}/" target="_blank" rel="noopener">IMDb ↗</a>`);
+      if (film.letterboxd_url)
+        links.push(`<a class="modal-link" href="${film.letterboxd_url}" target="_blank" rel="noopener">Letterboxd ↗</a>`);
+      if (film.screen_australia_url)
+        links.push(`<a class="modal-link" href="${film.screen_australia_url}" target="_blank" rel="noopener">Screen Australia ↗</a>`);
+      const linksEl = document.getElementById("modal-links");
+      linksEl.innerHTML = links.join("");
+      linksEl.style.display = links.length ? "flex" : "none";
+
+      overlay.classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      overlay.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    document.getElementById("modal-close").addEventListener("click", closeModal);
+    overlay.addEventListener("click", e => { if (e.target === overlay) closeModal(); });
+    document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+    // Open modal on card click — delegated from grid
+    document.getElementById("grid").addEventListener("click", e => {
+      const card = e.target.closest(".card");
+      if (!card) return;
+      // Don't open if clicking a link inside the card
+      if (e.target.closest("a")) return;
+      const idx = parseInt(card.dataset.idx, 10);
+      const films = filtered();
+      if (films[idx]) openModal(films[idx]);
+    });
+
     loadFilms();
   </script>
+
+  <!-- Film detail modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <div class="modal-inner">
+        <div class="modal-poster-col" id="modal-poster-col"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <div class="modal-title" id="modal-title"></div>
+              <div class="modal-director" id="modal-director"></div>
+            </div>
+            <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+          </div>
+          <div class="modal-festivals" id="modal-festivals"></div>
+          <div class="modal-synopsis" id="modal-synopsis"></div>
+          <div class="modal-meta-grid" id="modal-meta-grid"></div>
+          <div class="modal-links" id="modal-links"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

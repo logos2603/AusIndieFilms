@@ -28,7 +28,7 @@ BASE_DIR     = Path(__file__).parent.parent / "docs"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 10
+YEARS_BACK = 5
 
 # Known Australian festival films to always include regardless of scrape results
 # Add films here if they are confirmed Australian but not being picked up automatically
@@ -432,6 +432,106 @@ def scrape_directors_fortnight(year: int) -> list[dict]:
     except Exception as e:
         log.warning(f"  Directors Fortnight {year} scrape failed: {e}")
     return films
+
+
+# ── Screen Australia festival scraper ────────────────────────────────────────
+
+# Map Screen Australia festival names to our internal festival names
+SA_FESTIVAL_MAP = {
+    "cannes film festival":                          "Cannes",
+    "berlin international film festival":            "Berlin",
+    "sundance film festival":                        "Sundance",
+    "toronto international film festival":           "Toronto",
+    "international film festival rotterdam":         "Rotterdam",
+    "south by southwest film":                       "SXSW",
+    "venice international film festival":            "Venice",
+    "sitges international fantastic film festival":  "Sitges",
+    "directors' fortnight":                          "Directors Fortnight",
+}
+
+def scrape_screen_australia_festivals(years: list[int]) -> dict:
+    """
+    Scrape Screen Australia's definitive list of Australian films at
+    international festivals. Returns a dict keyed by (title_lower, year)
+    with {title, year, festivals: [], screen_australia_url} values.
+    """
+    url = "https://www.screenaustralia.gov.au/australian-success/australian-screenings-at-international-festivals"
+    results = {}
+
+    try:
+        log.info("Fetching Screen Australia festival listings...")
+        r = requests.get(url, headers=HEADERS, timeout=30)
+        if r.status_code != 200:
+            log.warning(f"Screen Australia returned HTTP {r.status_code}")
+            return results
+
+        soup = BeautifulSoup(r.text, "html.parser")
+        current_year = None
+
+        # The page lists entries under year headings (h3) then film entries (h4 + p)
+        # Each entry has: h4 with film title link, p with section + festival name
+        for el in soup.find_all(["h3", "h4"]):
+            if el.name == "h3":
+                # Year heading
+                try:
+                    current_year = int(el.get_text(strip=True))
+                except ValueError:
+                    current_year = None
+                continue
+
+            if el.name == "h4" and current_year and current_year in years:
+                # Film entry
+                link = el.find("a")
+                if not link:
+                    continue
+
+                title = link.get_text(strip=True)
+                sa_url = link.get("href", "")
+                if sa_url and not sa_url.startswith("http"):
+                    sa_url = "https://www.screenaustralia.gov.au" + sa_url
+
+                # Get the festival name from the next <p> sibling
+                festival_name = ""
+                next_p = el.find_next_sibling("p")
+                if not next_p:
+                    # Try parent's next sibling
+                    parent = el.parent
+                    if parent:
+                        next_p = parent.find_next_sibling()
+
+                if next_p:
+                    # Festival link is inside the <p>
+                    fest_link = next_p.find("a")
+                    if fest_link:
+                        festival_name = fest_link.get_text(strip=True).lower()
+
+                # Map to our festival names
+                mapped = None
+                for key, val in SA_FESTIVAL_MAP.items():
+                    if key in festival_name:
+                        mapped = val
+                        break
+
+                if not mapped:
+                    continue  # festival not in our tracked list
+
+                key = (title.lower(), current_year)
+                if key not in results:
+                    results[key] = {
+                        "title": title,
+                        "year": current_year,
+                        "festivals": [],
+                        "screen_australia_url": sa_url,
+                    }
+                if mapped not in results[key]["festivals"]:
+                    results[key]["festivals"].append(mapped)
+
+        log.info(f"Screen Australia: found {len(results)} unique film/year entries across tracked festivals")
+
+    except Exception as e:
+        log.error(f"Screen Australia festival scrape failed: {e}")
+
+    return results
 
 
 def get_festival_films(festival: str, years: list[int]) -> list[dict]:
@@ -1034,13 +1134,14 @@ def run_scraper():
         result_films.append(asdict(film))
         log.info(f"  Enriched: {film.title} ({film.year})")
 
-    # Step 4: Screen Australia cross-reference
-    log.info("\n── Step 3: Screen Australia cross-reference ──")
-    sa = fetch_screen_australia_films()
+    # Step 4: Screen Australia URL — use what we already fetched in Step 1b
+    log.info("\n── Step 3: Applying Screen Australia URLs ──")
     for film in result_films:
-        match = sa.get(film.get("title", "").lower())
-        if match and not film.get("screen_australia_url"):
-            film["screen_australia_url"] = match["screen_australia_url"]
+        if not film.get("screen_australia_url"):
+            key = (film.get("title", "").lower(), film.get("year"))
+            sa_entry = sa_entries.get(key)
+            if sa_entry and sa_entry.get("screen_australia_url"):
+                film["screen_australia_url"] = sa_entry["screen_australia_url"]
 
     # Step 5: Merge + save
     new_map    = {f["tmdb_id"]: f for f in result_films if f.get("tmdb_id")}

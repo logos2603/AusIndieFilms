@@ -24,11 +24,11 @@ log = logging.getLogger(__name__)
 # ── Config ────────────────────────────────────────────────────────────────────
 
 TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "")
-BASE_DIR     = Path(__file__).parent.parent / "website"
+BASE_DIR     = Path(__file__).parent.parent / "docs"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 10
+YEARS_BACK = 5
 
 # Known Australian festival films to always include regardless of scrape results
 # Add films here if they are confirmed Australian but not being picked up automatically
@@ -278,6 +278,10 @@ WIKI_TEMPLATES = {
         "{year} South by Southwest Film Festival",
         "South by Southwest {year} film",
     ],
+    "Sitges":    [
+        "{edition}th Sitges Film Festival",
+        "{edition}th Sitges International Film Festival",
+    ],
 }
 
 
@@ -435,7 +439,7 @@ def get_festival_films(festival: str, years: list[int]) -> list[dict]:
     for year in years:
         found = False
         for template in templates:
-            films = fetch_wikipedia_festival_films(festival, template, year)
+            films = fetch_wikipedia_festival_films(festival, resolved, year)
             if films:
                 all_films.extend(films)
                 found = True

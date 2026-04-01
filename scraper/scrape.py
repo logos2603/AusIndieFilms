@@ -730,11 +730,12 @@ def verify_not_rerelease(title: str, festival_year: int) -> bool:
 
 
 def extract_tmdb_data(detail: dict) -> dict:
-    director = ""
-    for m in detail.get("credits", {}).get("crew", []):
-        if m.get("job") == "Director":
-            director = m.get("name", "")
-            break
+    directors = sorted([
+        m.get("name", "")
+        for m in detail.get("credits", {}).get("crew", [])
+        if m.get("job") == "Director" and m.get("name")
+    ])
+    director = ", ".join(directors[:2]) if directors else ""
     return {
         "tmdb_id":      detail.get("id"),
         "tmdb_rating":  round(detail.get("vote_average") or 0, 1) or None,

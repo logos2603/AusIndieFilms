@@ -432,13 +432,20 @@ def scrape_directors_fortnight(year: int) -> list[dict]:
 
 def get_festival_films(festival: str, years: list[int]) -> list[dict]:
     """Get all films for a festival across given years, using Wikipedia as primary source.
-    For SXSW, supplements Wikipedia with the official PDF archive."""
+    For SXSW, supplements Wikipedia with the official PDF archive.
+    For Sitges, uses ordinal edition numbers (festival started 1968)."""
     all_films = []
     templates = WIKI_TEMPLATES.get(festival, [])
 
     for year in years:
         found = False
         for template in templates:
+            # Sitges uses ordinal edition numbers: 2024 = 57th (year - 1967)
+            if "{edition}" in template:
+                edition = year - 1967
+                resolved = template.replace("{edition}", str(edition)).replace("{year}", str(year))
+            else:
+                resolved = template.replace("{year}", str(year))
             films = fetch_wikipedia_festival_films(festival, resolved, year)
             if films:
                 all_films.extend(films)

@@ -1136,12 +1136,13 @@ def run_scraper():
 
     # Step 4: Screen Australia URL — use what we already fetched in Step 1b
     log.info("\n── Step 3: Applying Screen Australia URLs ──")
+    _sa = locals().get("sa_entries", {})
     for film in result_films:
         if not film.get("screen_australia_url"):
             key = (film.get("title", "").lower(), film.get("year"))
-            sa_entry = sa_entries.get(key)
-            if sa_entry and sa_entry.get("screen_australia_url"):
-                film["screen_australia_url"] = sa_entry["screen_australia_url"]
+            sa_match = _sa.get(key)
+            if sa_match and sa_match.get("screen_australia_url"):
+                film["screen_australia_url"] = sa_match["screen_australia_url"]
 
     # Step 5: Merge + save
     new_map    = {f["tmdb_id"]: f for f in result_films if f.get("tmdb_id")}

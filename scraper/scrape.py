@@ -117,6 +117,7 @@ class Film:
     budget: Optional[int] = None
     distributor: str = ""
     distributor_intl: str = ""
+    sales_agent: str = ""
     added_at: str = ""
 
     def __post_init__(self):
@@ -846,22 +847,44 @@ def extract_tmdb_data(detail: dict) -> dict:
         if m.get("job") == "Director" and m.get("name")
     ])
     director = ", ".join(directors[:2]) if directors else ""
-    # Extract distributors from release_dates
-    # AU distributor: note field from Australian release entry
-    # International distributor: note field from US release entry (most reliable proxy)
+    # Extract distributors from release_dates notes
+    # TMDB release_dates notes contain the theatrical distributor per country
     au_distributor   = ""
     intl_distributor = ""
+    sales_agent      = ""
+
+    # Known festival names to exclude from distributor fields
+    FESTIVAL_WORDS = {
+        "film festival", "sundance", "cannes", "venice", "berlin", "berlinale",
+        "toronto", "tiff", "sxsw", "south by southwest", "rotterdam", "iffr",
+        "sitges", "tribeca", "tribeca", "hot docs", "telluride",
+    }
+
+    def is_festival_name(s):
+        s_lower = s.lower()
+        return any(fw in s_lower for fw in FESTIVAL_WORDS)
 
     for entry in detail.get("release_dates", {}).get("results", []):
         iso = entry.get("iso_3166_1", "")
         for rd in entry.get("release_dates", []):
             note = rd.get("note", "").strip()
-            if not note:
+            if not note or is_festival_name(note):
                 continue
             if iso == "AU" and not au_distributor:
                 au_distributor = note
             elif iso == "US" and not intl_distributor:
                 intl_distributor = note
+            elif iso == "GB" and not intl_distributor:
+                intl_distributor = note
+
+    # Sales agent — look for "sales" keyword in production companies
+    SALES_KEYWORDS = {"sales", "international", "cinema", "films intl", "ici", "mpi"}
+    for company in detail.get("production_companies", []):
+        name = company.get("name", "")
+        name_lower = name.lower()
+        if any(kw in name_lower for kw in SALES_KEYWORDS) and "australia" not in name_lower:
+            if not sales_agent:
+                sales_agent = name
 
     revenue = detail.get("revenue") or None
     budget  = detail.get("budget") or None
@@ -879,6 +902,7 @@ def extract_tmdb_data(detail: dict) -> dict:
         "budget":            budget,
         "distributor":       au_distributor,
         "distributor_intl":  intl_distributor,
+        "sales_agent":       sales_agent,
     }
 
 

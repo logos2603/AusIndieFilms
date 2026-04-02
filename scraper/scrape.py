@@ -981,22 +981,43 @@ def run_scraper():
     years = list(range(current_year - YEARS_BACK, current_year + 1))
     log.info(f"Searching years: {years}")
 
-    # Step 1: Collect all festival film candidates from Wikipedia
-    log.info("\n── Step 1: Collecting festival selections from Wikipedia ──")
-    candidates: dict = {}  # (title_lower, year) → {title, year, festivals: []}
+    # ── Step 1: Screen Australia — primary definitive source ─────────────────
+    log.info("\n── Step 1: Fetching Screen Australia definitive festival list ──")
+    candidates: dict = {}  # (title_lower, year) → {title, year, festivals: [], screen_australia_url}
+    sa_entries = scrape_screen_australia_festivals(years)
+    for key, sa_data in sa_entries.items():
+        candidates[key] = {
+            "title":                sa_data["title"],
+            "year":                 sa_data["year"],
+            "festivals":            list(sa_data["festivals"]),
+            "screen_australia_url": sa_data.get("screen_australia_url", ""),
+        }
+    log.info(f"Screen Australia: {len(candidates)} candidates loaded")
 
+    # ── Step 1b: Wikipedia + PDFs — add extra festivals to SA films only ──────
+    # We don't use Wikipedia to discover new films — only to find additional
+    # festival appearances for films already confirmed by Screen Australia.
+    log.info("\n── Step 1b: Adding extra festival data from Wikipedia / PDFs ──")
+    wiki_titles: dict = {}  # (title_lower, year) → set of festivals
     for festival in WIKI_TEMPLATES.keys():
-        log.info(f"\nFestival: {festival}")
         films = get_festival_films(festival, years)
         for f in films:
             key = (f["title"].lower(), f["year"])
-            if key not in candidates:
-                candidates[key] = {"title": f["title"], "year": f["year"], "festivals": []}
-            if f["festival"] not in candidates[key]["festivals"]:
-                candidates[key]["festivals"].append(f["festival"])
+            if key not in wiki_titles:
+                wiki_titles[key] = set()
+            wiki_titles[key].add(f["festival"])
 
-    # Inject seed films as guaranteed candidates — these bypass PDF/Wikipedia discovery
-    # but still go through all nationality and quality checks
+    # Merge wiki festivals into SA candidates only
+    wiki_added = 0
+    for key, festivals in wiki_titles.items():
+        if key in candidates:
+            for fest in festivals:
+                if fest not in candidates[key]["festivals"]:
+                    candidates[key]["festivals"].append(fest)
+                    wiki_added += 1
+    log.info(f"Wikipedia/PDFs added {wiki_added} extra festival tags to existing SA films")
+
+    # ── Seed films — guaranteed candidates ───────────────────────────────────
     for seed_title, seed_year, seed_festivals in SEED_FILMS:
         key = (seed_title.lower(), seed_year)
         if key not in candidates:
@@ -1019,12 +1040,14 @@ def run_scraper():
     existing_map: dict = {f["tmdb_id"]: f for f in existing if f.get("tmdb_id")}
     existing_titles: dict = {(f.get("title","").lower(), f.get("year")): f for f in existing}
 
-    # Step 3: TMDB lookup — filter to Australian feature films only
-    log.info("\n── Step 2: Matching candidates against TMDB (Australian features only) ──")
+    # Step 2: TMDB enrichment — Screen Australia guarantees nationality,
+    # so we just look up metadata (poster, rating, runtime etc.) and
+    # skip the slow Wikipedia nationality verification entirely.
+    log.info("\n── Step 2: Enriching candidates via TMDB ──")
     field_names = {f.name for f in datafields(Film)}
     result_films: list = []
     checked = 0
-    australian_details: list = []  # collect AU films first, enrich after
+    australian_details: list = []
 
     for (title_lower, year), info in candidates.items():
         checked += 1
@@ -1040,68 +1063,35 @@ def run_scraper():
                     for fest in info["festivals"]:
                         if fest not in cached.get("festivals", []):
                             cached["festivals"].append(fest)
+                    if info.get("screen_australia_url") and not cached.get("screen_australia_url"):
+                        cached["screen_australia_url"] = info["screen_australia_url"]
                     result_films.append(cached)
                     continue
             except Exception:
                 pass
 
-        # Step 1: Fast TMDB pre-filter — cheap broad check before Wikipedia
+        # Search TMDB for metadata
         detail = tmdb_search_film(title, year)
         if not detail:
-            log.debug(f"  ✗ TMDB: no result for '{title}' ({year})")
+            log.warning(f"  ✗ TMDB: no result for '{title}' ({year}) — skipping")
             continue
 
-        tmdb_id   = detail.get("id")
-        tmdb_title = detail.get("title", "")
+        tmdb_id = detail.get("id")
 
-        # Blocklist checks — by TMDB ID and by title
+        # Blocklist checks
         if tmdb_id in BLOCKLIST_TMDB_IDS:
+            log.info(f"  ✗ TMDB ID blocklisted: '{title}'")
             continue
         if title.lower() in BLOCKLIST_TITLES:
             log.info(f"  ✗ Title blocklisted: '{title}'")
             continue
 
-        # Broad Australian signal from TMDB — pass if ANY of these are true:
-        # a) production_countries includes AU
-        # b) origin_country includes AU
-        # c) a known Australian production company is listed
-        prod_countries  = [c.get("iso_3166_1","") for c in detail.get("production_countries", [])]
-        origin_countries = detail.get("origin_country", [])
-        prod_companies  = [c.get("name","").lower() for c in detail.get("production_companies", [])]
-
-        au_by_country = "AU" in prod_countries or "AU" in origin_countries
-        au_by_company = any(
-            aus_co in co
-            for co in prod_companies
-            for aus_co in AUSTRALIAN_COMPANIES
-        )
-
-        if not au_by_country and not au_by_company:
-            # Log specifically for known films we want to track
-            log.debug(
-                f"  ✗ TMDB pre-filter rejected '{title}' ({year}) → "
-                f"matched '{tmdb_title}' (id={tmdb_id}) | "
-                f"countries={prod_countries} origin={origin_countries} | "
-                f"companies={prod_companies[:3]}"
-            )
-            continue
-
-        log.info(f"  ~ TMDB AU signal for '{title}' (matched: '{tmdb_title}') — verifying with Wikipedia")
-
-        # Step 2: Wikipedia nationality confirmation (only for TMDB-shortlisted films)
-        if not verify_australian_on_wikipedia(title, year):
-            continue
-
-        # Step 3: Re-release check
-        if not verify_not_rerelease(title, year):
-            continue
-
-        # Step 4: Runtime check
+        # Skip short films — runtime sanity check still useful
         if not is_feature_film(detail):
             log.info(f"  ✗ Short film: {title} ({detail.get('runtime')} mins)")
             continue
 
-        log.info(f"  ✓ [{checked}/{len(candidates)}] AUSTRALIAN FEATURE: {title} ({year})")
+        log.info(f"  ✓ [{checked}/{len(candidates)}] {title} ({year})")
         australian_details.append((info, detail))
 
     # Now enrich only the Australian films (much smaller set)
@@ -1134,15 +1124,20 @@ def run_scraper():
         result_films.append(asdict(film))
         log.info(f"  Enriched: {film.title} ({film.year})")
 
-    # Step 4: Screen Australia URL — use what we already fetched in Step 1b
+    # Step 4: Apply Screen Australia URLs to any films not already stamped
     log.info("\n── Step 3: Applying Screen Australia URLs ──")
-    _sa = locals().get("sa_entries", {})
     for film in result_films:
         if not film.get("screen_australia_url"):
             key = (film.get("title", "").lower(), film.get("year"))
-            sa_match = _sa.get(key)
+            sa_match = sa_entries.get(key)
             if sa_match and sa_match.get("screen_australia_url"):
                 film["screen_australia_url"] = sa_match["screen_australia_url"]
+        # Also carry SA URL from candidates dict (already fetched in Step 1a)
+        if not film.get("screen_australia_url"):
+            key = (film.get("title", "").lower(), film.get("year"))
+            cand = candidates.get(key, {})
+            if cand.get("screen_australia_url"):
+                film["screen_australia_url"] = cand["screen_australia_url"]
 
     # Step 5: Merge + save
     new_map    = {f["tmdb_id"]: f for f in result_films if f.get("tmdb_id")}

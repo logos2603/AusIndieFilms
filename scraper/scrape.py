@@ -28,7 +28,7 @@ BASE_DIR     = Path(__file__).parent.parent / "docs"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 16
+YEARS_BACK = 5
 
 # Known Australian festival films to always include regardless of scrape results
 # Add films here if they are confirmed Australian but not being picked up automatically
@@ -67,14 +67,14 @@ BLOCKLIST_TITLES = {
 
 # ── Manual distribution data ──────────────────────────────────────────────────
 # Sourced from IMDb company credits pages and trade press (Variety, Deadline, Screen Daily)
-# Keyed by TMDB ID — find at themoviedb.org/movie/<ID>
+# Keyed by IMDb ID (tt-number) — verified from imdb.com URLs
 # Fields: sales_agent (intl sales), distributor (AU theatrical), distributor_intl (US/UK theatrical)
 # All fields optional — only include what you know
 MANUAL_FILM_DATA = {
 
     # ── Talk to Me (2022) — tt10638522 / tmdb 943822 ──
     # Sales: Bankside Films (worldwide). AU: Umbrella Entertainment. US: A24
-    943822: {
+    "tt10638522": {  # Talk to Me (2022)
         "sales_agent":      "Bankside Films",
         "distributor":      "Umbrella Entertainment",
         "distributor_intl": "A24",
@@ -82,21 +82,21 @@ MANUAL_FILM_DATA = {
 
     # ── Birdeater (2023) — tt20674132 / tmdb 1117321 ──
     # AU: Umbrella Entertainment. US: Dark Sky Films. No intl sales agent listed.
-    1117321: {
+    "tt20674132": {  # Birdeater (2023)
         "distributor":      "Umbrella Entertainment",
         "distributor_intl": "Dark Sky Films",
     },
 
     # ── Late Night with the Devil (2023) — tt14966898 / tmdb 1029825 ──
     # Sales: AGC International (worldwide). Cinetic Media (US negotiator). AU: no separate AU listed. US/UK: IFC Films / Shudder
-    1029825: {
+    "tt14966898": {  # Late Night with the Devil (2023)
         "sales_agent":      "AGC International",
         "distributor_intl": "IFC Films / Shudder",
     },
 
     # ── Nitram (2021) — tt13694628 / tmdb 793409 ──
     # Sales: Wild Bunch International (worldwide). AU: Madman Entertainment. US: IFC Films
-    793409: {
+    "tt13694628": {  # Nitram (2021)
         "sales_agent":      "Wild Bunch International",
         "distributor":      "Madman Entertainment",
         "distributor_intl": "IFC Films",
@@ -104,14 +104,14 @@ MANUAL_FILM_DATA = {
 
     # ── Memoir of a Snail (2024) — tt23770030 / tmdb 1232448 ──
     # Sales: Anton (worldwide) / Charades (worldwide). AU: Sharmill Films. US: MUBI
-    1232448: {
+    "tt23770030": {  # Memoir of a Snail (2024)
         "sales_agent":      "Anton / Charades",
         "distributor_intl": "MUBI",
     },
 
     # ── Relic (2020) — tt9072352 / tmdb 604155 ──
     # Sales: Film Constellation (intl) / AGBO Films (early). AU: Umbrella Entertainment. US: IFC Midnight
-    604155: {
+    "tt9072352": {   # Relic (2020)
         "sales_agent":      "Film Constellation",
         "distributor":      "Umbrella Entertainment",
         "distributor_intl": "IFC Midnight",
@@ -119,7 +119,7 @@ MANUAL_FILM_DATA = {
 
     # ── Babyteeth (2019) — tt8399664 / tmdb 561218 ──
     # Sales: Beta Cinema (Germany, worldwide). AU: Universal Pictures. US: IFC Films
-    561218: {
+    "tt8399664": {   # Babyteeth (2019)
         "sales_agent":      "Beta Cinema",
         "distributor":      "Universal Pictures",
         "distributor_intl": "IFC Films",
@@ -127,7 +127,7 @@ MANUAL_FILM_DATA = {
 
     # ── You Won't Be Alone (2022) — tt8296030 / tmdb 806108 ──
     # Sales: Bankside Films (worldwide). AU: Madman Films. US: Focus Features
-    806108: {
+    "tt8296030": {   # You Won't Be Alone (2022)
         "sales_agent":      "Bankside Films",
         "distributor":      "Madman Films",
         "distributor_intl": "Focus Features",
@@ -135,7 +135,7 @@ MANUAL_FILM_DATA = {
 
     # ── The New Boy (2023) — tt18180926 / tmdb 952516 ──
     # Sales: The Veterans (worldwide). AU: Roadshow Films. US: Vertical Entertainment
-    952516: {
+    "tt18180926": {  # The New Boy (2023)
         "sales_agent":      "The Veterans",
         "distributor":      "Roadshow Films",
         "distributor_intl": "Vertical Entertainment",
@@ -143,7 +143,7 @@ MANUAL_FILM_DATA = {
 
     # ── Monolith (2022) — tt18298588 / tmdb 1000305 ──
     # Sales: XYZ Films (N. America) / Blue Finch Films (UK). AU: Bonsai Films. US: Well Go USA
-    1000305: {
+    "tt18298588": {  # Monolith (2022)
         "sales_agent":      "XYZ Films",
         "distributor":      "Bonsai Films",
         "distributor_intl": "Well Go USA Entertainment",
@@ -151,7 +151,7 @@ MANUAL_FILM_DATA = {
 
     # ── The Babadook (2014) — tt2321549 / tmdb 242224 ──
     # Sales: Causeway Films (early). AU: Umbrella Entertainment. US: IFC Midnight
-    242224: {
+    "tt2321549": {   # The Babadook (2014)
         "sales_agent":      "Causeway Films",
         "distributor":      "Umbrella Entertainment",
         "distributor_intl": "IFC Midnight",
@@ -159,7 +159,7 @@ MANUAL_FILM_DATA = {
 
     # ── The Nightingale (2018) — tt7984734 / tmdb 584867 ──
     # Sales: Bankside Films (worldwide). AU: Causeway Films / Umbrella. US: IFC Films
-    584867: {
+    "tt7984734": {   # The Nightingale (2018)
         "sales_agent":      "Bankside Films",
         "distributor":      "Umbrella Entertainment",
         "distributor_intl": "IFC Films",
@@ -167,7 +167,7 @@ MANUAL_FILM_DATA = {
 
     # ── Sweet Country (2017) — tt6958212 / tmdb 480041 ──
     # Sales: Memento International. AU: Transmission Films. US: Kino Lorber
-    480041: {
+    "tt6958212": {   # Sweet Country (2017)
         "sales_agent":      "Memento International",
         "distributor":      "Transmission Films",
         "distributor_intl": "Kino Lorber",
@@ -175,15 +175,11 @@ MANUAL_FILM_DATA = {
 
     # ── Nitram (2021) alternate TMDB ID check ──
     # (in case TMDB ID differs — leaving both)
-    738971: {
-        "sales_agent":      "Wild Bunch International",
-        "distributor":      "Madman Entertainment",
-        "distributor_intl": "IFC Films",
-    },
+
 
     # ── Animal Kingdom (2010) — tt1313092 / tmdb 39254 ──
     # Sales: Memento Films International. AU: Madman Entertainment. US: Sony Pictures Classics
-    39254: {
+    "tt1313092": {   # Animal Kingdom (2010)
         "sales_agent":      "Memento Films International",
         "distributor":      "Madman Entertainment",
         "distributor_intl": "Sony Pictures Classics",
@@ -191,7 +187,7 @@ MANUAL_FILM_DATA = {
 
     # ── Samson & Delilah (2009) — tt1340123 / tmdb 34772 ──
     # Sales: Memento Films International. AU: Madman Entertainment. US: Kino Lorber
-    34772: {
+    "tt1340123": {   # Samson & Delilah (2009)
         "sales_agent":      "Memento Films International",
         "distributor":      "Madman Entertainment",
         "distributor_intl": "Kino Lorber",
@@ -203,7 +199,7 @@ MANUAL_FILM_DATA = {
 
     # ── Furiosa: A Mad Max Saga (2024) — tt12037194 / tmdb 718821 ──
     # Sales: Rocket Science (intl). AU: Roadshow Films. US: Paramount Pictures
-    718821: {
+    "tt12037194": {  # Furiosa: A Mad Max Saga (2024)
         "sales_agent":      "Rocket Science",
         "distributor":      "Roadshow Films",
         "distributor_intl": "Paramount Pictures",
@@ -211,7 +207,7 @@ MANUAL_FILM_DATA = {
 
     # ── Better Man (2024) — tt14208742 / tmdb 1064213 ──
     # Sales: Rocket Science (intl). AU: Roadshow Films. US: Paramount Pictures
-    1064213: {
+    "tt14208742": {  # Better Man (2024)
         "sales_agent":      "Rocket Science",
         "distributor":      "Roadshow Films",
         "distributor_intl": "Paramount Pictures",
@@ -219,42 +215,42 @@ MANUAL_FILM_DATA = {
 
     # ── Went Up the Hill (2024) — tt14303268 / tmdb 1219902 ──
     # Sales: Bankside Films / CAA Media Finance. AU: (TBC). US: Greenwich Entertainment
-    1219902: {
+    "tt14303268": {  # Went Up the Hill (2024)
         "sales_agent":      "Bankside Films",
         "distributor_intl": "Greenwich Entertainment",
     },
 
     # ── Every Little Thing (2024) — tt29340714 / tmdb 1367014 ──
     # Sales: Dogwoof. AU: (streaming). US: Kino Lorber
-    1367014: {
+    "tt29340714": {  # Every Little Thing (2024)
         "sales_agent":      "Dogwoof",
         "distributor_intl": "Kino Lorber",
     },
 
     # ── The Moogai (2024) — tt21328456 / tmdb 1359671 ──
     # Sales: Bankside Films. US: Samuel Goldwyn Films
-    1359671: {
+    "tt21328456": {  # The Moogai (2024)
         "sales_agent":      "Bankside Films",
         "distributor_intl": "Samuel Goldwyn Films",
     },
 
     # ── Audrey (2024) — tt10939802 / tmdb 1133751 ──
     # AU: Rialto Distribution. UK: Vertigo Releasing. US: Sunrise Films
-    1133751: {
+    "tt10939802": {  # Audrey (2024)
         "distributor":      "Rialto Distribution",
         "distributor_intl": "Sunrise Films",
     },
 
     # ── Together (2025) — tt31806461 / tmdb 1370637 ──
     # Sales: WME Independent (worldwide). US/worldwide: Neon
-    1370637: {
+    "tt31806461": {  # Together (2025)
         "sales_agent":      "WME Independent",
         "distributor_intl": "Neon",
     },
 
     # ── We Bury the Dead (2025) — tt15397070 / tmdb 1233075 ──
     # Sales: Neon International. AU: Umbrella Entertainment (exec). US: Vertical Entertainment. UK: Signature Entertainment
-    1233075: {
+    "tt15397070": {  # We Bury the Dead (2025)
         "sales_agent":      "Neon International",
         "distributor":      "Umbrella Entertainment",
         "distributor_intl": "Vertical Entertainment",
@@ -262,21 +258,21 @@ MANUAL_FILM_DATA = {
 
     # ── Dangerous Animals (2025) — tt32299316 / tmdb 1388417 ──
     # Sales: LD Entertainment / Range Select. US: IFC Films / Shudder
-    1388417: {
+    "tt32299316": {  # Dangerous Animals (2025)
         "sales_agent":      "LD Entertainment",
         "distributor_intl": "IFC Films / Shudder",
     },
 
     # ── Deeper (2025) — tt34546353 / tmdb 1399060 ──
     # Sales: Dogwoof. Worldwide: Netflix
-    1399060: {
+    "tt34546353": {  # Deeper (2025)
         "sales_agent":      "Dogwoof",
         "distributor_intl": "Netflix",
     },
 
     # ── The Royal Hotel (2023) — tt15072632 / tmdb 927107 ──
     # Sales: HanWay Films / Cross City Films. AU: Transmission Films. US: Neon
-    927107: {
+    "tt15072632": {  # The Royal Hotel (2023)
         "sales_agent":      "HanWay Films",
         "distributor":      "Transmission Films",
         "distributor_intl": "Neon",
@@ -284,7 +280,7 @@ MANUAL_FILM_DATA = {
 
     # ── Shayda (2023) — tt20903900 / tmdb 1040982 ──
     # Sales: HanWay Films. AU: Madman Entertainment. US: Sony Pictures Classics
-    1040982: {
+    "tt20903900": {  # Shayda (2023)
         "sales_agent":      "HanWay Films",
         "distributor":      "Madman Entertainment",
         "distributor_intl": "Sony Pictures Classics",
@@ -292,15 +288,15 @@ MANUAL_FILM_DATA = {
 
     # ── Run Rabbit Run (2023) — tt12547822 / tmdb 969946 ──
     # Sales: XYZ Films. Worldwide: Netflix
-    969946: {
+    "tt12547822": {  # Run Rabbit Run (2023)
         "sales_agent":      "XYZ Films",
         "distributor_intl": "Netflix",
     },
 
     # ── Add more films below following the same pattern ──
-    # Find TMDB ID at themoviedb.org/movie/<ID>
+    # Find IMDb ID at imdb.com (tt-number in the URL)
     # Source distributor info from imdb.com/title/<imdb_id>/companycredits
-    # tmdb_id: {"sales_agent": "...", "distributor": "...", "distributor_intl": "..."},
+    # "tt1234567": {"sales_agent": "...", "distributor": "...", "distributor_intl": "..."},
 }
 
 # Known Australian production companies and funders
@@ -1507,7 +1503,7 @@ def run_scraper():
             time.sleep(1)
 
         # Manual data wins over everything — applied last, unconditionally
-        manual = MANUAL_FILM_DATA.get(film.tmdb_id)
+        manual = MANUAL_FILM_DATA.get(film.imdb_id)
         if manual:
             dist_fields = {"sales_agent", "distributor", "distributor_intl"}
             for field, val in manual.items():

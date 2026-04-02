@@ -1482,35 +1482,38 @@ def run_scraper():
         poster_url  = download_poster(poster_path, data["tmdb_id"])
         time.sleep(0.2)
 
-        # Apply manual overrides (sales agent, distributors etc.)
-        manual = MANUAL_FILM_DATA.get(data.get("tmdb_id"))
-        if manual:
-            for field, val in manual.items():
-                if field in field_names and val:
-                    data[field] = val
-
+        # ── Distribution data priority: manual > IMDb scrape > TMDB watch/providers ──
+        # Build the Film object first from TMDB data (watch/providers as base fallback)
+        film_field_names = {f.name for f in datafields(Film)}
         film = Film(
             title=title,
             year=year,
             festivals=info["festivals"],
             screen_australia_url=info.get("screen_australia_url", ""),
             poster_url=poster_url,
-            **{k: v for k, v in data.items() if k in field_names},
+            **{k: v for k, v in data.items() if k in film_field_names},
         )
 
         if film.imdb_id:
             film.imdb_rating = fetch_imdb_rating(film.imdb_id)
-            # Fetch company credits from IMDb for any fields not covered by manual data
-            if not any([film.sales_agent, film.distributor, film.distributor_intl]):
-                cc = fetch_imdb_company_credits(film.imdb_id)
-                if cc:
-                    film.sales_agent      = film.sales_agent      or cc.get("sales_agent", "")
-                    film.distributor      = film.distributor      or cc.get("distributor", "")
-                    film.distributor_intl = film.distributor_intl or cc.get("distributor_intl", "")
-                    if any(cc.values()):
-                        log.info(f"  IMDb credits: {cc}")
-                time.sleep(0.5)
-            time.sleep(0.5)
+            # IMDb company credits override TMDB watch/providers for dist fields
+            cc = fetch_imdb_company_credits(film.imdb_id)
+            if cc:
+                if cc.get("sales_agent"):      film.sales_agent      = cc["sales_agent"]
+                if cc.get("distributor"):      film.distributor      = cc["distributor"]
+                if cc.get("distributor_intl"): film.distributor_intl = cc["distributor_intl"]
+                if any(cc.values()):
+                    log.info(f"  IMDb credits: {cc}")
+            time.sleep(1)
+
+        # Manual data wins over everything — applied last, unconditionally
+        manual = MANUAL_FILM_DATA.get(film.tmdb_id)
+        if manual:
+            dist_fields = {"sales_agent", "distributor", "distributor_intl"}
+            for field, val in manual.items():
+                if field in dist_fields and val:
+                    setattr(film, field, val)
+            log.info(f"  Manual override: {manual}")
 
         lb = fetch_letterboxd_data(film.title, film.year)
         film.letterboxd_rating = lb["letterboxd_rating"]

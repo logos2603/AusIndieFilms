@@ -28,7 +28,7 @@ BASE_DIR     = Path(__file__).parent.parent / "docs"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 5
+YEARS_BACK = 16
 
 # Known Australian festival films to always include regardless of scrape results
 # Add films here if they are confirmed Australian but not being picked up automatically

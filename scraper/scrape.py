@@ -28,7 +28,7 @@ BASE_DIR     = Path(__file__).parent.parent / "docs"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 16
+YEARS_BACK = 5
 
 # Known Australian festival films to always include regardless of scrape results
 # Add films here if they are confirmed Australian but not being picked up automatically
@@ -1088,32 +1088,12 @@ def extract_tmdb_data(detail: dict) -> dict:
     intl_distributor = ""
     sales_agent      = ""
 
-    providers = detail.get("watch/providers", {}).get("results", {})
-
-    # AU distributor — flatrate (streaming) or rent/buy (theatrical) providers for AU
-    au_providers = providers.get("AU", {})
-    for ptype in ("flatrate", "rent", "buy"):
-        for p in au_providers.get(ptype, []):
-            name = p.get("provider_name", "").strip()
-            if name and not au_distributor:
-                au_distributor = name
-                break
-        if au_distributor:
-            break
-
-    # Intl distributor — check US first, then GB as proxy
-    for iso in ("US", "GB"):
-        region_providers = providers.get(iso, {})
-        for ptype in ("flatrate", "rent", "buy"):
-            for p in region_providers.get(ptype, []):
-                name = p.get("provider_name", "").strip()
-                if name and not intl_distributor:
-                    intl_distributor = name
-                    break
-            if intl_distributor:
-                break
-        if intl_distributor:
-            break
+    # TMDB watch/providers returns streaming platforms, not theatrical distributors.
+    # We deliberately leave distributor fields blank here — they will be filled
+    # by IMDb company credits (more accurate) and manual data (highest priority).
+    # Leaving these empty avoids polluting fields with names like "Netflix",
+    # "AMC Plus", "Apple TV Channel" etc. which are not the theatrical distributors.
+    pass  # distributor fields intentionally left blank — filled downstream
 
     # Sales agent — production companies that are known sales agents
     # These are typically smaller companies with "sales", "intl", or "world" in name

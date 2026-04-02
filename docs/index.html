@@ -156,6 +156,35 @@
       border-color: var(--ink);
     }
 
+    .year-filter-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .year-input {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      width: 4.5rem;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--ink);
+      padding: 0.35rem 0;
+      color: var(--ink);
+      outline: none;
+      text-align: center;
+    }
+
+    .year-input::placeholder { color: var(--muted); }
+
+    .year-sep {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--muted);
+    }
+
     /* Category pills — Narrative & Documentary */
     .pill.category-narrative {
       color: var(--muted);
@@ -594,9 +623,14 @@
       </div>
     </div>
 
-    <!-- Row 3: Category filters -->
+    <!-- Row 3: Year + Category filters -->
     <div class="controls-row">
       <span class="row-label">Filter</span>
+      <div class="year-filter-wrap">
+        <input class="year-input" id="year-from" type="number" placeholder="From" min="1980" max="2030" />
+        <span class="year-sep">—</span>
+        <input class="year-input" id="year-to" type="number" placeholder="To" min="1980" max="2030" />
+      </div>
       <button class="pill category-narrative" id="narrative-filter">Narrative</button>
       <button class="pill category-doc" id="doc-filter">Documentary</button>
     </div>
@@ -662,6 +696,8 @@
 
     let docsOnly = false;
     let narrativeOnly = false;
+    let yearFrom = null;
+    let yearTo = null;
 
     function filtered() {
       let films = [...allFilms];
@@ -686,6 +722,9 @@
           !(f.genres || []).some(g => g.toLowerCase() === "documentary")
         );
       }
+
+      if (yearFrom !== null) films = films.filter(f => f.year >= yearFrom);
+      if (yearTo   !== null) films = films.filter(f => f.year <= yearTo);
 
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
@@ -830,6 +869,18 @@
 
     document.getElementById("sort").addEventListener("change", e => {
       sortBy = e.target.value;
+      render();
+    });
+
+    document.getElementById("year-from").addEventListener("input", e => {
+      const v = parseInt(e.target.value);
+      yearFrom = isNaN(v) ? null : v;
+      render();
+    });
+
+    document.getElementById("year-to").addEventListener("input", e => {
+      const v = parseInt(e.target.value);
+      yearTo = isNaN(v) ? null : v;
       render();
     });
 

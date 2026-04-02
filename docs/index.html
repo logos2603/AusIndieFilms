@@ -610,6 +610,28 @@
     <p>Last updated: <span class="last-updated" id="last-updated">–</span></p>
   </footer>
 
+  <!-- Film detail modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <div class="modal-inner">
+        <div class="modal-poster-col" id="modal-poster-col"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <div class="modal-title" id="modal-title"></div>
+              <div class="modal-director" id="modal-director"></div>
+            </div>
+            <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+          </div>
+          <div class="modal-festivals" id="modal-festivals"></div>
+          <div class="modal-synopsis" id="modal-synopsis"></div>
+          <div class="modal-meta-grid" id="modal-meta-grid"></div>
+          <div class="modal-links" id="modal-links"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
     let allFilms = [];
     let activeFestival = "all";
@@ -903,28 +925,5 @@
 
     loadFilms();
   </script>
-
-  <!-- Film detail modal -->
-  <div class="modal-overlay" id="modal-overlay">
-    <div class="modal" id="modal" role="dialog" aria-modal="true">
-      <div class="modal-inner">
-        <div class="modal-poster-col" id="modal-poster-col"></div>
-        <div class="modal-content">
-          <div class="modal-header">
-            <div>
-              <div class="modal-title" id="modal-title"></div>
-              <div class="modal-director" id="modal-director"></div>
-            </div>
-            <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
-          </div>
-          <div class="modal-festivals" id="modal-festivals"></div>
-          <div class="modal-synopsis" id="modal-synopsis"></div>
-          <div class="modal-meta-grid" id="modal-meta-grid"></div>
-          <div class="modal-links" id="modal-links"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </body>
 </html>

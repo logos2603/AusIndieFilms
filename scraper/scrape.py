@@ -65,6 +65,244 @@ BLOCKLIST_TITLES = {
     "lilith fair: building a mystery",  # Canadian/American
 }
 
+# ── Manual distribution data ──────────────────────────────────────────────────
+# Sourced from IMDb company credits pages and trade press (Variety, Deadline, Screen Daily)
+# Keyed by TMDB ID — find at themoviedb.org/movie/<ID>
+# Fields: sales_agent (intl sales), distributor (AU theatrical), distributor_intl (US/UK theatrical)
+# All fields optional — only include what you know
+MANUAL_FILM_DATA = {
+
+    # ── Talk to Me (2022) — tt10638522 / tmdb 943822 ──
+    # Sales: Bankside Films (worldwide). AU: Umbrella Entertainment. US: A24
+    943822: {
+        "sales_agent":      "Bankside Films",
+        "distributor":      "Umbrella Entertainment",
+        "distributor_intl": "A24",
+    },
+
+    # ── Birdeater (2023) — tt20674132 / tmdb 1117321 ──
+    # AU: Umbrella Entertainment. US: Dark Sky Films. No intl sales agent listed.
+    1117321: {
+        "distributor":      "Umbrella Entertainment",
+        "distributor_intl": "Dark Sky Films",
+    },
+
+    # ── Late Night with the Devil (2023) — tt14966898 / tmdb 1029825 ──
+    # Sales: AGC International (worldwide). Cinetic Media (US negotiator). AU: no separate AU listed. US/UK: IFC Films / Shudder
+    1029825: {
+        "sales_agent":      "AGC International",
+        "distributor_intl": "IFC Films / Shudder",
+    },
+
+    # ── Nitram (2021) — tt13694628 / tmdb 793409 ──
+    # Sales: Wild Bunch International (worldwide). AU: Madman Entertainment. US: IFC Films
+    793409: {
+        "sales_agent":      "Wild Bunch International",
+        "distributor":      "Madman Entertainment",
+        "distributor_intl": "IFC Films",
+    },
+
+    # ── Memoir of a Snail (2024) — tt23770030 / tmdb 1232448 ──
+    # Sales: Anton (worldwide) / Charades (worldwide). AU: Sharmill Films. US: MUBI
+    1232448: {
+        "sales_agent":      "Anton / Charades",
+        "distributor_intl": "MUBI",
+    },
+
+    # ── Relic (2020) — tt9072352 / tmdb 604155 ──
+    # Sales: Film Constellation (intl) / AGBO Films (early). AU: Umbrella Entertainment. US: IFC Midnight
+    604155: {
+        "sales_agent":      "Film Constellation",
+        "distributor":      "Umbrella Entertainment",
+        "distributor_intl": "IFC Midnight",
+    },
+
+    # ── Babyteeth (2019) — tt8399664 / tmdb 561218 ──
+    # Sales: Beta Cinema (Germany, worldwide). AU: Universal Pictures. US: IFC Films
+    561218: {
+        "sales_agent":      "Beta Cinema",
+        "distributor":      "Universal Pictures",
+        "distributor_intl": "IFC Films",
+    },
+
+    # ── You Won't Be Alone (2022) — tt8296030 / tmdb 806108 ──
+    # Sales: Bankside Films (worldwide). AU: Madman Films. US: Focus Features
+    806108: {
+        "sales_agent":      "Bankside Films",
+        "distributor":      "Madman Films",
+        "distributor_intl": "Focus Features",
+    },
+
+    # ── The New Boy (2023) — tt18180926 / tmdb 952516 ──
+    # Sales: The Veterans (worldwide). AU: Roadshow Films. US: Vertical Entertainment
+    952516: {
+        "sales_agent":      "The Veterans",
+        "distributor":      "Roadshow Films",
+        "distributor_intl": "Vertical Entertainment",
+    },
+
+    # ── Monolith (2022) — tt18298588 / tmdb 1000305 ──
+    # Sales: XYZ Films (N. America) / Blue Finch Films (UK). AU: Bonsai Films. US: Well Go USA
+    1000305: {
+        "sales_agent":      "XYZ Films",
+        "distributor":      "Bonsai Films",
+        "distributor_intl": "Well Go USA Entertainment",
+    },
+
+    # ── The Babadook (2014) — tt2321549 / tmdb 242224 ──
+    # Sales: Causeway Films (early). AU: Umbrella Entertainment. US: IFC Midnight
+    242224: {
+        "sales_agent":      "Causeway Films",
+        "distributor":      "Umbrella Entertainment",
+        "distributor_intl": "IFC Midnight",
+    },
+
+    # ── The Nightingale (2018) — tt7984734 / tmdb 584867 ──
+    # Sales: Bankside Films (worldwide). AU: Causeway Films / Umbrella. US: IFC Films
+    584867: {
+        "sales_agent":      "Bankside Films",
+        "distributor":      "Umbrella Entertainment",
+        "distributor_intl": "IFC Films",
+    },
+
+    # ── Sweet Country (2017) — tt6958212 / tmdb 480041 ──
+    # Sales: Memento International. AU: Transmission Films. US: Kino Lorber
+    480041: {
+        "sales_agent":      "Memento International",
+        "distributor":      "Transmission Films",
+        "distributor_intl": "Kino Lorber",
+    },
+
+    # ── Nitram (2021) alternate TMDB ID check ──
+    # (in case TMDB ID differs — leaving both)
+    738971: {
+        "sales_agent":      "Wild Bunch International",
+        "distributor":      "Madman Entertainment",
+        "distributor_intl": "IFC Films",
+    },
+
+    # ── Animal Kingdom (2010) — tt1313092 / tmdb 39254 ──
+    # Sales: Memento Films International. AU: Madman Entertainment. US: Sony Pictures Classics
+    39254: {
+        "sales_agent":      "Memento Films International",
+        "distributor":      "Madman Entertainment",
+        "distributor_intl": "Sony Pictures Classics",
+    },
+
+    # ── Samson & Delilah (2009) — tt1340123 / tmdb 34772 ──
+    # Sales: Memento Films International. AU: Madman Entertainment. US: Kino Lorber
+    34772: {
+        "sales_agent":      "Memento Films International",
+        "distributor":      "Madman Entertainment",
+        "distributor_intl": "Kino Lorber",
+    },
+
+    # ════════════════════════════════════════════════════════
+    # POST-2015 FILMS — sourced from Variety/Deadline/Screen Daily
+    # ════════════════════════════════════════════════════════
+
+    # ── Furiosa: A Mad Max Saga (2024) — tt12037194 / tmdb 718821 ──
+    # Sales: Rocket Science (intl). AU: Roadshow Films. US: Paramount Pictures
+    718821: {
+        "sales_agent":      "Rocket Science",
+        "distributor":      "Roadshow Films",
+        "distributor_intl": "Paramount Pictures",
+    },
+
+    # ── Better Man (2024) — tt14208742 / tmdb 1064213 ──
+    # Sales: Rocket Science (intl). AU: Roadshow Films. US: Paramount Pictures
+    1064213: {
+        "sales_agent":      "Rocket Science",
+        "distributor":      "Roadshow Films",
+        "distributor_intl": "Paramount Pictures",
+    },
+
+    # ── Went Up the Hill (2024) — tt14303268 / tmdb 1219902 ──
+    # Sales: Bankside Films / CAA Media Finance. AU: (TBC). US: Greenwich Entertainment
+    1219902: {
+        "sales_agent":      "Bankside Films",
+        "distributor_intl": "Greenwich Entertainment",
+    },
+
+    # ── Every Little Thing (2024) — tt29340714 / tmdb 1367014 ──
+    # Sales: Dogwoof. AU: (streaming). US: Kino Lorber
+    1367014: {
+        "sales_agent":      "Dogwoof",
+        "distributor_intl": "Kino Lorber",
+    },
+
+    # ── The Moogai (2024) — tt21328456 / tmdb 1359671 ──
+    # Sales: Bankside Films. US: Samuel Goldwyn Films
+    1359671: {
+        "sales_agent":      "Bankside Films",
+        "distributor_intl": "Samuel Goldwyn Films",
+    },
+
+    # ── Audrey (2024) — tt10939802 / tmdb 1133751 ──
+    # AU: Rialto Distribution. UK: Vertigo Releasing. US: Sunrise Films
+    1133751: {
+        "distributor":      "Rialto Distribution",
+        "distributor_intl": "Sunrise Films",
+    },
+
+    # ── Together (2025) — tt31806461 / tmdb 1370637 ──
+    # Sales: WME Independent (worldwide). US/worldwide: Neon
+    1370637: {
+        "sales_agent":      "WME Independent",
+        "distributor_intl": "Neon",
+    },
+
+    # ── We Bury the Dead (2025) — tt15397070 / tmdb 1233075 ──
+    # Sales: Neon International. AU: Umbrella Entertainment (exec). US: Vertical Entertainment. UK: Signature Entertainment
+    1233075: {
+        "sales_agent":      "Neon International",
+        "distributor":      "Umbrella Entertainment",
+        "distributor_intl": "Vertical Entertainment",
+    },
+
+    # ── Dangerous Animals (2025) — tt32299316 / tmdb 1388417 ──
+    # Sales: LD Entertainment / Range Select. US: IFC Films / Shudder
+    1388417: {
+        "sales_agent":      "LD Entertainment",
+        "distributor_intl": "IFC Films / Shudder",
+    },
+
+    # ── Deeper (2025) — tt34546353 / tmdb 1399060 ──
+    # Sales: Dogwoof. Worldwide: Netflix
+    1399060: {
+        "sales_agent":      "Dogwoof",
+        "distributor_intl": "Netflix",
+    },
+
+    # ── The Royal Hotel (2023) — tt15072632 / tmdb 927107 ──
+    # Sales: HanWay Films / Cross City Films. AU: Transmission Films. US: Neon
+    927107: {
+        "sales_agent":      "HanWay Films",
+        "distributor":      "Transmission Films",
+        "distributor_intl": "Neon",
+    },
+
+    # ── Shayda (2023) — tt20903900 / tmdb 1040982 ──
+    # Sales: HanWay Films. AU: Madman Entertainment. US: Sony Pictures Classics
+    1040982: {
+        "sales_agent":      "HanWay Films",
+        "distributor":      "Madman Entertainment",
+        "distributor_intl": "Sony Pictures Classics",
+    },
+
+    # ── Run Rabbit Run (2023) — tt12547822 / tmdb 969946 ──
+    # Sales: XYZ Films. Worldwide: Netflix
+    969946: {
+        "sales_agent":      "XYZ Films",
+        "distributor_intl": "Netflix",
+    },
+
+    # ── Add more films below following the same pattern ──
+    # Find TMDB ID at themoviedb.org/movie/<ID>
+    # Source distributor info from imdb.com/title/<imdb_id>/companycredits
+    # tmdb_id: {"sales_agent": "...", "distributor": "...", "distributor_intl": "..."},
+}
+
 # Known Australian production companies and funders
 AUSTRALIAN_COMPANIES = {
     "screen australia", "abc", "australian broadcasting corporation",
@@ -945,6 +1183,81 @@ def download_poster(poster_path: str, tmdb_id: int) -> str:
 
 # ── IMDb ──────────────────────────────────────────────────────────────────────
 
+def fetch_imdb_company_credits(imdb_id: str) -> dict:
+    """
+    Scrape IMDb company credits page for distributor and sales agent info.
+    Returns dict with keys: sales_agent, distributor, distributor_intl.
+    Falls back gracefully to empty dict if blocked or unavailable.
+    """
+    if not imdb_id:
+        return {}
+    try:
+        url = f"https://www.imdb.com/title/{imdb_id}/companycredits"
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        if r.status_code != 200:
+            return {}
+
+        soup = BeautifulSoup(r.text, "html.parser")
+        result = {}
+
+        # IMDb company credits page has sections with id="distributors" and id="sales"
+        # Each section is an <h4> followed by a <ul> of companies with territory notes
+
+        AU_TERMS  = {"australia", "aus", "au"}
+        US_TERMS  = {"united states", "usa", "u.s.", "north america"}
+        WORLD_TERMS = {"world", "worldwide", "international", "all territories"}
+        SALES_SECTION_IDS = {"sales", "miscellaneous"}
+
+        def clean(text):
+            # Strip territory/year notes in parentheses — e.g. "(Australia, 2022)(theatrical)"
+            return re.sub(r"\s*\(.*?\)", "", text).strip()
+
+        def note_lower(li):
+            return li.get_text(" ", strip=True).lower()
+
+        sections = {}
+        for h4 in soup.find_all("h4"):
+            sid = h4.get("id", "").lower()
+            ul = h4.find_next_sibling("ul")
+            if ul:
+                sections[sid] = ul
+
+        # ── Distributors ──
+        dist_ul = sections.get("distributors")
+        if dist_ul:
+            for li in dist_ul.find_all("li"):
+                text_lower = note_lower(li)
+                name_tag = li.find("a") or li
+                name = clean(name_tag.get_text(strip=True) if li.find("a") else li.get_text(strip=True))
+                if not name:
+                    continue
+                if any(t in text_lower for t in AU_TERMS) and not result.get("distributor"):
+                    result["distributor"] = name
+                elif (any(t in text_lower for t in US_TERMS) or
+                      any(t in text_lower for t in WORLD_TERMS)) and not result.get("distributor_intl"):
+                    result["distributor_intl"] = name
+
+        # ── Sales agents ──
+        for sid in ("sales", "miscellaneous"):
+            sales_ul = sections.get(sid)
+            if sales_ul and not result.get("sales_agent"):
+                for li in sales_ul.find_all("li"):
+                    text_lower = note_lower(li)
+                    # Only pick entries explicitly flagged as worldwide/international sales
+                    if any(t in text_lower for t in WORLD_TERMS) or "sales" in text_lower:
+                        name_tag = li.find("a") or li
+                        name = clean(name_tag.get_text(strip=True))
+                        if name:
+                            result["sales_agent"] = name
+                            break
+
+        return result
+
+    except Exception as e:
+        log.debug(f"  IMDb company credits fetch failed for {imdb_id}: {e}")
+        return {}
+
+
 def fetch_imdb_rating(imdb_id: str) -> Optional[float]:
     if not imdb_id:
         return None
@@ -1169,17 +1482,35 @@ def run_scraper():
         poster_url  = download_poster(poster_path, data["tmdb_id"])
         time.sleep(0.2)
 
+        # Apply manual overrides (sales agent, distributors etc.)
+        manual = MANUAL_FILM_DATA.get(data.get("tmdb_id"))
+        if manual:
+            for field, val in manual.items():
+                if field in field_names and val:
+                    data[field] = val
+
         film = Film(
             title=title,
             year=year,
             festivals=info["festivals"],
+            screen_australia_url=info.get("screen_australia_url", ""),
             poster_url=poster_url,
             **{k: v for k, v in data.items() if k in field_names},
         )
 
         if film.imdb_id:
             film.imdb_rating = fetch_imdb_rating(film.imdb_id)
-            time.sleep(1)
+            # Fetch company credits from IMDb for any fields not covered by manual data
+            if not any([film.sales_agent, film.distributor, film.distributor_intl]):
+                cc = fetch_imdb_company_credits(film.imdb_id)
+                if cc:
+                    film.sales_agent      = film.sales_agent      or cc.get("sales_agent", "")
+                    film.distributor      = film.distributor      or cc.get("distributor", "")
+                    film.distributor_intl = film.distributor_intl or cc.get("distributor_intl", "")
+                    if any(cc.values()):
+                        log.info(f"  IMDb credits: {cc}")
+                time.sleep(0.5)
+            time.sleep(0.5)
 
         lb = fetch_letterboxd_data(film.title, film.year)
         film.letterboxd_rating = lb["letterboxd_rating"]

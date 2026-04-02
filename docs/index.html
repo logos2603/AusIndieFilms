@@ -386,9 +386,9 @@
       inset: 0;
       background: rgba(26, 22, 18, 0.7);
       z-index: 100;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
-      padding: 0;
+      padding: 2rem;
     }
 
     .modal-overlay.open {
@@ -398,18 +398,18 @@
     .modal {
       background: var(--card-bg);
       width: 100%;
-      max-width: 680px;
+      max-width: 720px;
       max-height: 90vh;
       overflow-y: auto;
-      border-top: 1px solid var(--border);
-      border-left: 1px solid var(--border);
-      border-right: 1px solid var(--border);
-      transform: translateY(100%);
-      transition: transform 0.3s ease;
+      border: 1px solid var(--border);
+      transform: translateY(24px);
+      opacity: 0;
+      transition: transform 0.25s ease, opacity 0.25s ease;
     }
 
     .modal-overlay.open .modal {
       transform: translateY(0);
+      opacity: 1;
     }
 
     .modal-inner {
@@ -876,6 +876,7 @@
       if (film.genres && film.genres.length) meta.push(["Genres", film.genres.join(", ")]);
       if (film.imdb_rating)       meta.push(["IMDb", `★ ${film.imdb_rating.toFixed(1)}`]);
       if (film.letterboxd_rating) meta.push(["Letterboxd", `★ ${film.letterboxd_rating.toFixed(1)}`]);
+      if (film.sales_agent)       meta.push(["Intl. Sales Agent", film.sales_agent]);
       if (film.distributor_intl)  meta.push(["Intl. Distributor", film.distributor_intl]);
       if (film.distributor)       meta.push(["AU Distributor", film.distributor]);
       if (film.budget && film.budget > 0)   meta.push(["Budget", formatCurrency(film.budget)]);

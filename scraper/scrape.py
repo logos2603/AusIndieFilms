@@ -28,7 +28,7 @@ BASE_DIR     = Path(__file__).parent.parent / "docs"
 OUTPUT_FILE  = BASE_DIR / "data" / "films.json"
 POSTERS_DIR  = BASE_DIR / "posters"
 
-YEARS_BACK = 16
+YEARS_BACK = 5
 
 # Known Australian festival films to always include regardless of scrape results
 # Add films here if they are confirmed Australian but not being picked up automatically
@@ -470,61 +470,60 @@ def scrape_screen_australia_festivals(years: list[int]) -> dict:
 
         # The page lists entries under year headings (h3) then film entries (h4 + p)
         # Each entry has: h4 with film title link, p with section + festival name
-        for el in soup.find_all(["h3", "h4"]):
-            if el.name == "h3":
-                # Year heading
+        # The page uses <li> elements containing:
+        #   <h3> for year headings  OR
+        #   <h4><a>Title</a></h4> + <a>Festival link</a> for film entries
+        current_year = None
+        for li in soup.find_all("li"):
+            h3 = li.find("h3")
+            if h3:
                 try:
-                    current_year = int(el.get_text(strip=True))
+                    current_year = int(h3.get_text(strip=True))
                 except ValueError:
-                    current_year = None
+                    pass
                 continue
 
-            if el.name == "h4" and current_year and current_year in years:
-                # Film entry
-                link = el.find("a")
-                if not link:
-                    continue
+            h4 = li.find("h4")
+            if not h4 or not current_year or current_year not in years:
+                continue
 
-                title = link.get_text(strip=True)
-                sa_url = link.get("href", "")
-                if sa_url and not sa_url.startswith("http"):
-                    sa_url = "https://www.screenaustralia.gov.au" + sa_url
+            # Title is the first link (inside h4)
+            all_links = li.find_all("a")
+            if not all_links:
+                continue
 
-                # Get the festival name from the next <p> sibling
-                festival_name = ""
-                next_p = el.find_next_sibling("p")
-                if not next_p:
-                    # Try parent's next sibling
-                    parent = el.parent
-                    if parent:
-                        next_p = parent.find_next_sibling()
+            title_link = all_links[0]
+            title = title_link.get_text(strip=True)
+            sa_url = title_link.get("href", "")
+            if sa_url and not sa_url.startswith("http"):
+                sa_url = "https://www.screenaustralia.gov.au" + sa_url
 
-                if next_p:
-                    # Festival link is inside the <p>
-                    fest_link = next_p.find("a")
-                    if fest_link:
-                        festival_name = fest_link.get_text(strip=True).lower()
+            # Festival is the second link (sibling of h4 inside li)
+            if len(all_links) < 2:
+                continue
+            fest_link = all_links[1]
+            festival_name = fest_link.get_text(strip=True).lower()
 
-                # Map to our festival names
-                mapped = None
-                for key, val in SA_FESTIVAL_MAP.items():
-                    if key in festival_name:
-                        mapped = val
-                        break
+            # Map to our festival names
+            mapped = None
+            for key, val in SA_FESTIVAL_MAP.items():
+                if key in festival_name:
+                    mapped = val
+                    break
 
-                if not mapped:
-                    continue  # festival not in our tracked list
+            if not mapped:
+                continue  # festival not in our tracked list
 
-                key = (title.lower(), current_year)
-                if key not in results:
-                    results[key] = {
-                        "title": title,
-                        "year": current_year,
-                        "festivals": [],
-                        "screen_australia_url": sa_url,
-                    }
-                if mapped not in results[key]["festivals"]:
-                    results[key]["festivals"].append(mapped)
+            key = (title.lower(), current_year)
+            if key not in results:
+                results[key] = {
+                    "title": title,
+                    "year": current_year,
+                    "festivals": [],
+                    "screen_australia_url": sa_url,
+                }
+            if mapped not in results[key]["festivals"]:
+                results[key]["festivals"].append(mapped)
 
         log.info(f"Screen Australia: found {len(results)} unique film/year entries across tracked festivals")
 
@@ -1007,15 +1006,26 @@ def run_scraper():
                 wiki_titles[key] = set()
             wiki_titles[key].add(f["festival"])
 
-    # Merge wiki festivals into SA candidates only
+    # Merge wiki festivals — add to SA candidates, or promote to candidate
+    # if SA fetch failed (sa_entries empty) so we always have something
+    sa_failed = len(sa_entries) == 0
     wiki_added = 0
+    wiki_new = 0
     for key, festivals in wiki_titles.items():
         if key in candidates:
             for fest in festivals:
                 if fest not in candidates[key]["festivals"]:
                     candidates[key]["festivals"].append(fest)
                     wiki_added += 1
-    log.info(f"Wikipedia/PDFs added {wiki_added} extra festival tags to existing SA films")
+        elif sa_failed:
+            # SA returned nothing — fall back to Wikipedia as discovery source
+            title, year = key[0], key[1]
+            candidates[key] = {"title": title, "year": year, "festivals": list(festivals)}
+            wiki_new += 1
+    if sa_failed:
+        log.warning(f"Screen Australia returned 0 results — using Wikipedia as fallback ({wiki_new} candidates)")
+    else:
+        log.info(f"Wikipedia/PDFs added {wiki_added} extra festival tags to existing SA films")
 
     # ── Seed films — guaranteed candidates ───────────────────────────────────
     for seed_title, seed_year, seed_festivals in SEED_FILMS:

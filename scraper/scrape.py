@@ -600,7 +600,7 @@ def tmdb_search_film(title: str, year: int) -> Optional[dict]:
     Prefers Australian results when multiple matches exist."""
     def get_details(tmdb_id):
         return tmdb_get(f"/movie/{tmdb_id}", {
-            "append_to_response": "credits,external_ids,release_dates",
+            "append_to_response": "credits,external_ids,release_dates,watch/providers",
             "language": "en-AU",
         })
 
@@ -847,44 +847,60 @@ def extract_tmdb_data(detail: dict) -> dict:
         if m.get("job") == "Director" and m.get("name")
     ])
     director = ", ".join(directors[:2]) if directors else ""
-    # Extract distributors from release_dates notes
-    # TMDB release_dates notes contain the theatrical distributor per country
+    # ── Distributors from watch/providers ──
+    # TMDB watch/providers gives us the actual streaming/theatrical distributors
+    # per country — much more reliable than the release_dates note field
     au_distributor   = ""
     intl_distributor = ""
     sales_agent      = ""
 
-    # Known festival names to exclude from distributor fields
-    FESTIVAL_WORDS = {
-        "film festival", "sundance", "cannes", "venice", "berlin", "berlinale",
-        "toronto", "tiff", "sxsw", "south by southwest", "rotterdam", "iffr",
-        "sitges", "tribeca", "tribeca", "hot docs", "telluride",
+    providers = detail.get("watch/providers", {}).get("results", {})
+
+    # AU distributor — flatrate (streaming) or rent/buy (theatrical) providers for AU
+    au_providers = providers.get("AU", {})
+    for ptype in ("flatrate", "rent", "buy"):
+        for p in au_providers.get(ptype, []):
+            name = p.get("provider_name", "").strip()
+            if name and not au_distributor:
+                au_distributor = name
+                break
+        if au_distributor:
+            break
+
+    # Intl distributor — check US first, then GB as proxy
+    for iso in ("US", "GB"):
+        region_providers = providers.get(iso, {})
+        for ptype in ("flatrate", "rent", "buy"):
+            for p in region_providers.get(ptype, []):
+                name = p.get("provider_name", "").strip()
+                if name and not intl_distributor:
+                    intl_distributor = name
+                    break
+            if intl_distributor:
+                break
+        if intl_distributor:
+            break
+
+    # Sales agent — production companies that are known sales agents
+    # These are typically smaller companies with "sales", "intl", or "world" in name
+    SALES_KEYWORDS = {
+        "sales", "world sales", "intl sales", "international sales",
+        "mk2", "films boutique", "wild bunch", "memento", "vision films",
+        "alchemy", "protagonist", "sierra/affinity", "endeavor content",
+        "cornerstone", "kinology", "hanway", "studiocanal intl"
     }
-
-    def is_festival_name(s):
-        s_lower = s.lower()
-        return any(fw in s_lower for fw in FESTIVAL_WORDS)
-
-    for entry in detail.get("release_dates", {}).get("results", []):
-        iso = entry.get("iso_3166_1", "")
-        for rd in entry.get("release_dates", []):
-            note = rd.get("note", "").strip()
-            if not note or is_festival_name(note):
-                continue
-            if iso == "AU" and not au_distributor:
-                au_distributor = note
-            elif iso == "US" and not intl_distributor:
-                intl_distributor = note
-            elif iso == "GB" and not intl_distributor:
-                intl_distributor = note
-
-    # Sales agent — look for "sales" keyword in production companies
-    SALES_KEYWORDS = {"sales", "international", "cinema", "films intl", "ici", "mpi"}
+    EXCLUDE_WORDS = {
+        "australia", "australian", "production", "studio", "pictures",
+        "entertainment", "media", "screen"
+    }
     for company in detail.get("production_companies", []):
-        name = company.get("name", "")
+        name = company.get("name", "").strip()
         name_lower = name.lower()
-        if any(kw in name_lower for kw in SALES_KEYWORDS) and "australia" not in name_lower:
+        if (any(kw in name_lower for kw in SALES_KEYWORDS) and
+                not any(ex in name_lower for ex in EXCLUDE_WORDS)):
             if not sales_agent:
                 sales_agent = name
+                break
 
     revenue = detail.get("revenue") or None
     budget  = detail.get("budget") or None
@@ -1124,6 +1140,21 @@ def run_scraper():
         if not is_feature_film(detail):
             log.info(f"  ✗ Short film: {title} ({detail.get('runtime')} mins)")
             continue
+
+        # Re-release check — skip if the film originally released more than 10 years
+        # before the festival year. This catches retrospectives like Muriel's Wedding (1994)
+        # appearing at Berlin 2023. We allow a 10-year window to accommodate genuine
+        # re-releases and anniversary screenings of recent films.
+        release_date = detail.get("release_date", "")
+        if release_date:
+            try:
+                original_year = int(release_date[:4])
+                gap = year - original_year
+                if gap > 10:
+                    log.info(f"  ✗ Re-release: '{title}' originally {original_year}, festival year {year} ({gap}yr gap)")
+                    continue
+            except (ValueError, TypeError):
+                pass
 
         log.info(f"  ✓ [{checked}/{len(candidates)}] {title} ({year})")
         australian_details.append((info, detail))

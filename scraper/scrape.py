@@ -293,6 +293,120 @@ MANUAL_FILM_DATA = {
         "distributor_intl": "Netflix",
     },
 
+    # ════════════════════════════════════════════════════════
+    # 2020s FILMS — targeted research pass (April 2026)
+    # ════════════════════════════════════════════════════════
+
+    # ── High Ground (2020) — tt8688736 ──
+    # Sales: Playtime (Paris, intl). AU: Madman Entertainment. US: Samuel Goldwyn Films
+    "tt8688736": {  # High Ground (2020)
+        "sales_agent":      "Playtime",
+        "distributor":      "Madman Entertainment",
+        "distributor_intl": "Samuel Goldwyn Films",
+    },
+
+    # ── The Drover's Wife: The Legend of Molly Johnson (2021) — tt9289934 ──
+    # Sales: Memento International. AU: Roadshow Films. US: Samuel Goldwyn Films
+    "tt9289934": {  # The Drover's Wife (2021)
+        "sales_agent":      "Memento International",
+        "distributor":      "Roadshow Films",
+        "distributor_intl": "Samuel Goldwyn Films",
+    },
+
+    # ── Bring Her Back (2025) — tt32246771 ──
+    # Sales: A24 (worldwide). AU: Sony Pictures Releasing International (Stage 6 Films).
+    # Intl (excl. US/Canada/China/Russia/Japan): Sony Pictures Worldwide Acquisitions
+    "tt32246771": {  # Bring Her Back (2025)
+        "sales_agent":      "A24",
+        "distributor":      "Sony Pictures Releasing International",
+        "distributor_intl": "A24",
+    },
+
+    # ── The Surfer (2024) — tt27813235 ──
+    # Sales: North.Five.Six (intl) / WME Independent (N. America).
+    # AU: Madman Entertainment. US: Roadside Attractions / Lionsgate
+    "tt27813235": {  # The Surfer (2024)
+        "sales_agent":      "North.Five.Six / WME Independent",
+        "distributor":      "Madman Entertainment",
+        "distributor_intl": "Roadside Attractions",
+    },
+
+    # ── EPiC: Elvis Presley in Concert (2025) — tt35003538 ──
+    # Sales: handled via Neon/Universal deal. US: Neon. Intl: Universal Pictures International
+    "tt35003538": {  # EPiC: Elvis Presley in Concert (2025)
+        "distributor_intl": "Neon / Universal Pictures International",
+    },
+
+    # ── Lesbian Space Princess (2025) — tt29781139 ──
+    # Sales: Blue Finch Films (intl). AU/NZ: Umbrella Entertainment. US: Cineverse. UK: Peccadillo Pictures
+    "tt29781139": {  # Lesbian Space Princess (2025)
+        "sales_agent":      "Blue Finch Films",
+        "distributor":      "Umbrella Entertainment",
+        "distributor_intl": "Cineverse",
+    },
+
+    # ── Fwends (2025) — IMDb ID not confirmed; no major sales deal found ──
+    # Berlin Caligari Prize winner. No confirmed theatrical distributor or sales agent.
+    # Skipping until IMDb ID verified.
+
+    # ── Leviticus (2026) — tt39143902 ──
+    # Sales: WME Independent. AU/NZ: Maslow Entertainment. Worldwide (excl. AU/NZ): Neon
+    "tt39143902": {  # Leviticus (2026)
+        "sales_agent":      "WME Independent",
+        "distributor":      "Maslow Entertainment",
+        "distributor_intl": "Neon",
+    },
+
+    # ── Saccharine (2026) — tt35050712 ──
+    # Sales: XYZ Films (worldwide). AU: Stan (streaming). US/UK: IFC Films / Shudder
+    "tt35050712": {  # Saccharine (2026)
+        "sales_agent":      "XYZ Films",
+        "distributor":      "Stan",
+        "distributor_intl": "IFC Films / Shudder",
+    },
+
+    # ── Wolfram (2025/2026) — tt36826227 ──
+    # Sales: Paradise City Sales (Paris). No confirmed AU theatrical distributor yet.
+    "tt36826227": {  # Wolfram (2025/2026)
+        "sales_agent":      "Paradise City Sales",
+    },
+
+    # ── First Light (2025) — tt32208816 ──
+    # Sales: Independent Entertainment (UK, worldwide excl. AU/NZ). AU/NZ: Bonsai Films.
+    "tt32208816": {  # First Light (2025)
+        "sales_agent":      "Independent Entertainment",
+        "distributor":      "Bonsai Films",
+    },
+
+    # ── Of An Age (2022) — tt14967472 ──
+    # Sales: Bankside Films. AU: Roadshow Films / Bonsai Films (co-distribute). US: Focus Features
+    "tt14967472": {  # Of An Age (2022)
+        "sales_agent":      "Bankside Films",
+        "distributor":      "Roadshow Films",
+        "distributor_intl": "Focus Features",
+    },
+
+    # ── Housekeeping for Beginners (2023) — tt24244436 ──
+    # Sales: New Europe Film Sales. US: Focus Features. Intl: Universal Pictures International
+    "tt24244436": {  # Housekeeping for Beginners (2023)
+        "sales_agent":      "New Europe Film Sales",
+        "distributor_intl": "Focus Features",
+    },
+
+    # ── Jimpa (2025) — tt23745668 ──
+    # Sales: Protagonist Pictures (worldwide). AU/NZ: Kismet Movies. US: Kino Lorber. Europe: Cinéart.
+    "tt23745668": {  # Jimpa (2025)
+        "sales_agent":      "Protagonist Pictures",
+        "distributor":      "Kismet Movies",
+        "distributor_intl": "Kino Lorber",
+    },
+
+    # ── Sentient (2026) — tt39149925 ──
+    # Sales: Dogwoof (worldwide). No confirmed AU theatrical distributor.
+    "tt39149925": {  # Sentient (2026)
+        "sales_agent":      "Dogwoof",
+    },
+
     # ── Add more films below following the same pattern ──
     # Find IMDb ID at imdb.com (tt-number in the URL)
     # Source distributor info from imdb.com/title/<imdb_id>/companycredits

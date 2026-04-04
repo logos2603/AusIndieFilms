@@ -103,10 +103,12 @@ MANUAL_FILM_DATA = {
     },
 
     # ── Memoir of a Snail (2024) — tt23770030 / tmdb 1232448 ──
-    # Sales: Anton (worldwide) / Charades (worldwide). AU: Sharmill Films. US: MUBI
+    # Sales: Anton (London) / Charades (Paris) jointly. AU: Madman Entertainment. US: IFC Films
+    # Source: Variety review production credit block; Animation Magazine; Deadline acquisition report
     "tt23770030": {  # Memoir of a Snail (2024)
         "sales_agent":      "Anton / Charades",
-        "distributor_intl": "MUBI",
+        "distributor":      "Madman Entertainment",
+        "distributor_intl": "IFC Films",
     },
 
     # ── Relic (2020) — tt9072352 / tmdb 604155 ──
@@ -126,7 +128,8 @@ MANUAL_FILM_DATA = {
     },
 
     # ── You Won't Be Alone (2022) — tt8296030 / tmdb 806108 ──
-    # Sales: Bankside Films (worldwide). AU: Madman Films. US: Focus Features
+    # Sales: Bankside Films (worldwide). AU: Madman Films. US: Focus Features / Universal Intl
+    # Source: Causeway Films website; Screen Daily Sundance review; Wikipedia
     "tt8296030": {   # You Won't Be Alone (2022)
         "sales_agent":      "Bankside Films",
         "distributor":      "Madman Films",
@@ -314,10 +317,10 @@ MANUAL_FILM_DATA = {
     },
 
     # ── Bring Her Back (2025) — tt32246771 ──
-    # Sales: A24 (worldwide). AU: Sony Pictures Releasing International (Stage 6 Films).
-    # Intl (excl. US/Canada/China/Russia/Japan): Sony Pictures Worldwide Acquisitions
+    # No traditional intl sales agent — A24 retained US domestic, Sony Pictures Worldwide Acquisitions
+    # took all international (excl. Canada, China, Russia, Japan). AU: Sony/Stage 6 Films (theatrical)
+    # Source: IMDb companycredits; Deadline acquisition report; Wikipedia
     "tt32246771": {  # Bring Her Back (2025)
-        "sales_agent":      "A24",
         "distributor":      "Sony Pictures Releasing International",
         "distributor_intl": "A24",
     },
@@ -407,10 +410,92 @@ MANUAL_FILM_DATA = {
         "sales_agent":      "Dogwoof",
     },
 
-    # ── Add more films below following the same pattern ──
-    # Find IMDb ID at imdb.com (tt-number in the URL)
-    # Source distributor info from imdb.com/title/<imdb_id>/companycredits
-    # "tt1234567": {"sales_agent": "...", "distributor": "...", "distributor_intl": "..."},
+    # ════════════════════════════════════════════════════════
+    # ADDITIONAL 2020s FILMS — comprehensive pass (April 2026)
+    # Sources: trade press production credit blocks (Variety/THR/Screen Daily/if.com.au)
+    # ════════════════════════════════════════════════════════
+
+    # ── The Stranger (2022) — tt11897478 ──
+    # Sales: Rocket Science (intl) / CAA Media Finance (co-rep). AU: Transmission Films. Worldwide: Netflix
+    "tt11897478": {  # The Stranger (2022)
+        "sales_agent":      "Rocket Science",
+        "distributor":      "Transmission Films",
+        "distributor_intl": "Netflix",
+    },
+
+    # ── Blueback (2022) — tt14201576 ──
+    # Sales: HanWay Films (worldwide). AU/NZ: Roadshow Films. US: Quiver Distribution
+    "tt14201576": {  # Blueback (2022)
+        "sales_agent":      "HanWay Films",
+        "distributor":      "Roadshow Films",
+        "distributor_intl": "Quiver Distribution",
+    },
+
+    # ── Blaze (2022) — tt11018264 ──
+    # Sales: mk2 Films (worldwide). AU/NZ: Bonsai Films. US: Gravitas Ventures
+    "tt11018264": {  # Blaze (2022)
+        "sales_agent":      "mk2 Films",
+        "distributor":      "Bonsai Films",
+        "distributor_intl": "Gravitas Ventures",
+    },
+
+    # ── Sweet As (2022) — tt21047794 ──
+    # Sales: Sphere Films (rest of world). AU/NZ: Roadshow Films.
+    "tt21047794": {  # Sweet As (2022)
+        "sales_agent":      "Sphere Films",
+        "distributor":      "Roadshow Films",
+    },
+
+    # ── Seriously Red (2022) — tt4586828 ──
+    # Sales: Arclight Films (worldwide). AU: Roadshow Films. US: Gravitas Ventures / Lionsgate
+    "tt4586828": {  # Seriously Red (2022)
+        "sales_agent":      "Arclight Films",
+        "distributor":      "Roadshow Films",
+        "distributor_intl": "Gravitas Ventures",
+    },
+
+    # ── The Survival of Kindness (2022) — tt15831022 ──
+    # Sales: Fandango SPA (Italy, worldwide). AU: Umbrella Entertainment.
+    "tt15831022": {  # The Survival of Kindness (2022)
+        "sales_agent":      "Fandango SPA",
+        "distributor":      "Umbrella Entertainment",
+    },
+
+    # ── Limbo (2023) — tt21833834 ──
+    # No traditional intl sales agent; AU: Madman Films. US: Music Box Films / Brainstorm Media
+    "tt21833834": {  # Limbo (2023)
+        "distributor":      "Madman Films",
+        "distributor_intl": "Music Box Films",
+    },
+
+    # ════════════════════════════════════════════════════════
+    # GAP-FILL PASS — April 2026 (second sweep)
+    # ════════════════════════════════════════════════════════
+
+    # ── Good Luck to You, Leo Grande (2022) — tt13352968 ──
+    # AU director Sophie Hyde; UK production. Sundance premiere.
+    # Sales: Cornerstone Films. AU: Roadshow Films. US: Searchlight/Hulu
+    "tt13352968": {  # Good Luck to You, Leo Grande (2022)
+        "sales_agent":      "Cornerstone Films",
+        "distributor":      "Roadshow Films",
+        "distributor_intl": "Searchlight Pictures / Hulu",
+    },
+
+    # ── Inside (2024) — tt29424168 ──
+    # Dir. Charles Williams (2018 Palme d'Or short). MIFF WP, Tribeca 2025.
+    # Sales: Goodfellas. AU/NZ: Bonsai Films. US: Quiver Distribution
+    "tt29424168": {  # Inside (2024)
+        "sales_agent":      "Goodfellas",
+        "distributor":      "Bonsai Films",
+        "distributor_intl": "Quiver Distribution",
+    },
+
+    # ── Clean (2022) — tt17658456 ──
+    # Documentary, dir. Lachlan McLeod. SXSW + MIFF premiere.
+    # Sales: Rocket Science. Released via SBS in Australia (no theatrical distributor).
+    "tt17658456": {  # Clean (2022)
+        "sales_agent":      "Rocket Science",
+    },
 }
 
 # Known Australian production companies and funders

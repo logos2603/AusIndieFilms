@@ -111,6 +111,56 @@
       min-width: 3.5rem;
     }
 
+    /* Boxed label for Festival / Filter row headers */
+    .row-label-boxed {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.65rem;
+      line-height: 1;
+    }
+
+    /* Year group — outlined cluster connecting label + inputs */
+    .year-group {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      border: 1px solid var(--border);
+    }
+
+    .year-group-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.35rem 0.65rem;
+      border-right: 1px solid var(--border);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+    }
+
+    .year-group .year-input {
+      border-bottom: none;
+      padding: 0.35rem 0.4rem;
+      width: 3.8rem;
+      text-align: center;
+    }
+
+    .year-group .year-sep {
+      display: flex;
+      align-items: center;
+      padding: 0 0.1rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--muted);
+    }
+
     .search-wrap {
       flex: 1;
       min-width: 200px;
@@ -609,7 +659,7 @@
 
     <!-- Row 2: Festival filters -->
     <div class="controls-row">
-      <span class="row-label">Festival</span>
+      <span class="row-label-boxed">Festival</span>
       <div class="filter-group" id="festival-filters">
         <button class="pill active" data-festival="all">All</button>
         <button class="pill" data-festival="Cannes">Cannes</button>
@@ -625,9 +675,9 @@
 
     <!-- Row 3: Year + Category filters -->
     <div class="controls-row">
-      <span class="row-label">Filter</span>
-      <div class="year-filter-wrap">
-        <span class="row-label">Year</span>
+      <span class="row-label-boxed">Filter</span>
+      <div class="year-group">
+        <span class="year-group-label">Year</span>
         <input class="year-input" id="year-from" type="number" placeholder="From" min="1980" max="2030" />
         <span class="year-sep">—</span>
         <input class="year-input" id="year-to" type="number" placeholder="To" min="1980" max="2030" />

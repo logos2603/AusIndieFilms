@@ -81,16 +81,20 @@ MANUAL_FILM_DATA = {
     },
 
     # ── Birdeater (2023) — tt20674132 / tmdb 1117321 ──
-    # AU: Umbrella Entertainment. US: Dark Sky Films. No intl sales agent listed.
+    # Sales: Blue Finch Films (worldwide excl. AU/NZ). AU: Umbrella Entertainment. US: Dark Sky Films.
+    # Source: Variety Jan 2024; Blue Finch Films international sales catalogue
     "tt20674132": {  # Birdeater (2023)
+        "sales_agent":      "Blue Finch Films",
         "distributor":      "Umbrella Entertainment",
         "distributor_intl": "Dark Sky Films",
     },
 
     # ── Late Night with the Devil (2023) — tt14966898 / tmdb 1029825 ──
-    # Sales: AGC International (worldwide). Cinetic Media (US negotiator). AU: no separate AU listed. US/UK: IFC Films / Shudder
+    # Sales: AGC International (worldwide). AU: Maslow Entertainment. US/UK: IFC Films / Shudder
+    # Source: Honi Soit review credit; Wikipedia; Variety acquisition report
     "tt14966898": {  # Late Night with the Devil (2023)
         "sales_agent":      "AGC International",
+        "distributor":      "Maslow Entertainment",
         "distributor_intl": "IFC Films / Shudder",
     },
 
@@ -217,23 +221,26 @@ MANUAL_FILM_DATA = {
     },
 
     # ── Went Up the Hill (2024) — tt14303268 / tmdb 1219902 ──
-    # Sales: Bankside Films / CAA Media Finance. AU: (TBC). US: Greenwich Entertainment
+    # Sales: Bankside Films / CAA Media Finance. AU: Vendetta Films. US: Greenwich Entertainment
     "tt14303268": {  # Went Up the Hill (2024)
         "sales_agent":      "Bankside Films",
+        "distributor":      "Vendetta Films",
         "distributor_intl": "Greenwich Entertainment",
     },
 
     # ── Every Little Thing (2024) — tt29340714 / tmdb 1367014 ──
-    # Sales: Dogwoof. AU: (streaming). US: Kino Lorber
+    # Sales: Dogwoof. AU/NZ: Umbrella Entertainment. US: Kino Lorber
     "tt29340714": {  # Every Little Thing (2024)
         "sales_agent":      "Dogwoof",
+        "distributor":      "Umbrella Entertainment",
         "distributor_intl": "Kino Lorber",
     },
 
     # ── The Moogai (2024) — tt21328456 / tmdb 1359671 ──
-    # Sales: Bankside Films. US: Samuel Goldwyn Films
+    # Sales: Bankside Films. AU: Maslow Entertainment. US: Samuel Goldwyn Films
     "tt21328456": {  # The Moogai (2024)
         "sales_agent":      "Bankside Films",
+        "distributor":      "Maslow Entertainment",
         "distributor_intl": "Samuel Goldwyn Films",
     },
 
@@ -245,9 +252,11 @@ MANUAL_FILM_DATA = {
     },
 
     # ── Together (2025) — tt31806461 / tmdb 1370637 ──
-    # Sales: WME Independent (worldwide). US/worldwide: Neon
+    # Sales: WME Independent (worldwide). AU: Kismet Movies. US/worldwide: Neon
+    # Source: Wikipedia; Spotlight review; Variety acquisition report
     "tt31806461": {  # Together (2025)
         "sales_agent":      "WME Independent",
+        "distributor":      "Kismet Movies",
         "distributor_intl": "Neon",
     },
 
@@ -260,17 +269,20 @@ MANUAL_FILM_DATA = {
     },
 
     # ── Dangerous Animals (2025) — tt32299316 / tmdb 1388417 ──
-    # Sales: LD Entertainment / Range Select. US: IFC Films / Shudder
+    # Sales: LD Entertainment / Range Select. AU: Kismet Movies. US: IFC Films / Shudder
+    # Source: Wikipedia; IF Magazine; Sydney Film Festival programme
     "tt32299316": {  # Dangerous Animals (2025)
         "sales_agent":      "LD Entertainment",
+        "distributor":      "Kismet Movies",
         "distributor_intl": "IFC Films / Shudder",
     },
 
     # ── Deeper (2025) — tt34546353 / tmdb 1399060 ──
-    # Sales: Dogwoof. Worldwide: Netflix
+    # Sales: Dogwoof (worldwide). AU: Madman Films. Worldwide VOD: Dogwoof direct
+    # Source: Deadline acquisition; Social News XYZ trailer release; Dogwoof releasing page
     "tt34546353": {  # Deeper (2025)
         "sales_agent":      "Dogwoof",
-        "distributor_intl": "Netflix",
+        "distributor":      "Madman Films",
     },
 
     # ── The Royal Hotel (2023) — tt15072632 / tmdb 927107 ──
@@ -290,7 +302,7 @@ MANUAL_FILM_DATA = {
     },
 
     # ── Run Rabbit Run (2023) — tt12547822 / tmdb 969946 ──
-    # Sales: XYZ Films. Worldwide: Netflix
+    # Sales: XYZ Films. Worldwide (incl. AU): Netflix direct — no separate AU theatrical distributor
     "tt12547822": {  # Run Rabbit Run (2023)
         "sales_agent":      "XYZ Films",
         "distributor_intl": "Netflix",
@@ -369,9 +381,11 @@ MANUAL_FILM_DATA = {
     },
 
     # ── Wolfram (2025/2026) — tt36826227 ──
-    # Sales: Paradise City Sales (Paris). No confirmed AU theatrical distributor yet.
+    # Sales: Paradise City Sales (Paris). AU: Dark Matter Distribution / Bonsai Films (co-distributing)
+    # Source: Variety May 2025; IF Magazine trailer release
     "tt36826227": {  # Wolfram (2025/2026)
         "sales_agent":      "Paradise City Sales",
+        "distributor":      "Dark Matter Distribution / Bonsai Films",
     },
 
     # ── First Light (2025) — tt32208816 ──
@@ -390,9 +404,11 @@ MANUAL_FILM_DATA = {
     },
 
     # ── Housekeeping for Beginners (2023) — tt24244436 ──
-    # Sales: New Europe Film Sales. US: Focus Features. Intl: Universal Pictures International
+    # Sales: New Europe Film Sales. AU: Maslow Entertainment. US: Focus Features. Intl: Universal Pictures International
+    # Source: Wikipedia; ScreenHub Australia; Variety acquisition
     "tt24244436": {  # Housekeeping for Beginners (2023)
         "sales_agent":      "New Europe Film Sales",
+        "distributor":      "Maslow Entertainment",
         "distributor_intl": "Focus Features",
     },
 
@@ -1629,16 +1645,16 @@ def run_scraper():
             log.info(f"  ✗ Short film: {title} ({detail.get('runtime')} mins)")
             continue
 
-        # Re-release check — skip if the film originally released more than 10 years
+        # Re-release check — skip if the film originally released 10 or more years
         # before the festival year. This catches retrospectives like Muriel's Wedding (1994)
-        # appearing at Berlin 2023. We allow a 10-year window to accommodate genuine
+        # appearing at Berlin 2023. We allow up to a 9-year window to accommodate genuine
         # re-releases and anniversary screenings of recent films.
         release_date = detail.get("release_date", "")
         if release_date:
             try:
                 original_year = int(release_date[:4])
                 gap = year - original_year
-                if gap > 10:
+                if gap >= 10:
                     log.info(f"  ✗ Re-release: '{title}' originally {original_year}, festival year {year} ({gap}yr gap)")
                     continue
             except (ValueError, TypeError):

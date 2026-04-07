@@ -280,6 +280,12 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.5rem;
+      transition: grid-template-columns 0.2s;
+    }
+
+    .grid.compact {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
     }
 
     /* ── Card ── */
@@ -409,6 +415,83 @@
       margin-left: auto;
       display: flex;
       gap: 0.5rem;
+    }
+
+    /* ── Compact card overrides ── */
+    .grid.compact .card-body {
+      padding: 0.6rem 0.7rem;
+      gap: 0.25rem;
+    }
+
+    .grid.compact .card-festivals,
+    .grid.compact .card-synopsis,
+    .grid.compact .card-links,
+    .grid.compact .card-meta {
+      display: none;
+    }
+
+    .grid.compact .card-title {
+      font-size: 0.78rem;
+      font-weight: 500;
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .grid.compact .card-director {
+      font-size: 0.65rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .compact-meta {
+      display: none;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-top: 0.25rem;
+      border-top: 1px solid var(--border);
+      margin-top: 0.1rem;
+      letter-spacing: 0.03em;
+    }
+
+    .grid.compact .compact-meta { display: block; }
+
+    /* ── View toggle button ── */
+    .view-toggle {
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--border);
+    }
+
+    .view-btn {
+      background: transparent;
+      border: none;
+      padding: 0.4rem 0.6rem;
+      cursor: pointer;
+      color: var(--muted);
+      line-height: 1;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .view-btn + .view-btn {
+      border-left: 1px solid var(--border);
+    }
+
+    .view-btn.active {
+      background: var(--ink);
+      color: var(--sand);
+    }
+
+    .view-btn svg {
+      display: block;
+      width: 14px;
+      height: 14px;
     }
 
     .card-link {
@@ -644,7 +727,7 @@
 
   <div class="controls">
 
-    <!-- Row 1: Search + Sort -->
+    <!-- Row 1: Search + Sort + View toggle -->
     <div class="controls-row">
       <div class="search-wrap" style="flex:1;min-width:200px">
         <input type="text" id="search" placeholder="Search by title, director, genre…" />
@@ -655,6 +738,22 @@
         <option value="title-asc">A → Z</option>
         <option value="rating-desc">Highest rated</option>
       </select>
+      <div class="view-toggle">
+        <button class="view-btn active" id="view-default" title="Default view">
+          <svg viewBox="0 0 14 14" fill="currentColor">
+            <rect x="0" y="0" width="6" height="6"/><rect x="8" y="0" width="6" height="6"/>
+            <rect x="0" y="8" width="6" height="6"/><rect x="8" y="8" width="6" height="6"/>
+          </svg>
+        </button>
+        <button class="view-btn" id="view-compact" title="Compact view">
+          <svg viewBox="0 0 14 14" fill="currentColor">
+            <rect x="0" y="0" width="3" height="3"/><rect x="4" y="0" width="3" height="3"/><rect x="8" y="0" width="3" height="3"/><rect x="12" y="0" width="2" height="3"/>
+            <rect x="0" y="4" width="3" height="3"/><rect x="4" y="4" width="3" height="3"/><rect x="8" y="4" width="3" height="3"/><rect x="12" y="4" width="2" height="3"/>
+            <rect x="0" y="8" width="3" height="3"/><rect x="4" y="8" width="3" height="3"/><rect x="8" y="8" width="3" height="3"/><rect x="12" y="8" width="2" height="3"/>
+            <rect x="0" y="12" width="3" height="2"/><rect x="4" y="12" width="3" height="2"/><rect x="8" y="12" width="3" height="2"/><rect x="12" y="12" width="2" height="2"/>
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Row 2: Festival filters -->
@@ -857,6 +956,12 @@
             <div class="card-title">${escHtml(f.title)} <span style="color:var(--muted);font-weight:300">${f.year}</span></div>
             ${f.director ? `<div class="card-director">dir. ${escHtml(f.director)}</div>` : ""}
             ${f.synopsis ? `<div class="card-synopsis">${escHtml(f.synopsis)}</div>` : ""}
+            <div class="compact-meta">${
+              [
+                (f.festivals || []).map(ft => ({"Toronto":"TIFF","Toronto (TIFF)":"TIFF"})[ft] || ft).join(" · "),
+                f.imdb_rating ? `★ ${f.imdb_rating.toFixed(1)}` : (f.letterboxd_rating ? `★ ${f.letterboxd_rating.toFixed(1)}` : ""),
+              ].filter(Boolean).join("  ·  ")
+            }</div>
             <div class="card-meta">
               ${ratings}
               ${links ? `<div class="card-links">${links}</div>` : ""}
@@ -921,6 +1026,19 @@
     document.getElementById("sort").addEventListener("change", e => {
       sortBy = e.target.value;
       render();
+    });
+
+    // ── View toggle ─────────────────────────────────────────────────────────────
+    document.getElementById("view-default").addEventListener("click", () => {
+      document.getElementById("grid").classList.remove("compact");
+      document.getElementById("view-default").classList.add("active");
+      document.getElementById("view-compact").classList.remove("active");
+    });
+
+    document.getElementById("view-compact").addEventListener("click", () => {
+      document.getElementById("grid").classList.add("compact");
+      document.getElementById("view-compact").classList.add("active");
+      document.getElementById("view-default").classList.remove("active");
     });
 
     document.getElementById("year-from").addEventListener("input", e => {

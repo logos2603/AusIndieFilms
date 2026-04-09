@@ -567,11 +567,14 @@ class Film:
     distributor: str = ""
     distributor_intl: str = ""
     sales_agent: str = ""
+    producers: list = None
     added_at: str = ""
 
     def __post_init__(self):
         if self.genres is None:
             self.genres = []
+        if self.producers is None:
+            self.producers = []
         if not self.added_at:
             self.added_at = datetime.utcnow().isoformat()
 
@@ -1491,6 +1494,30 @@ def fetch_letterboxd_data(title: str, year: int) -> dict:
 
 # ── Screen Australia ──────────────────────────────────────────────────────────
 
+def fetch_screen_australia_producers(sa_url: str) -> list:
+    """Fetch producer names from a Screen Australia film page."""
+    try:
+        r = requests.get(sa_url, headers=HEADERS, timeout=15)
+        if r.status_code != 200:
+            return []
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(r.text, "html.parser")
+        # SA pages use <dt>Producer</dt><dd>Name1  Name2</dd> structure
+        for dt in soup.find_all("dt"):
+            if dt.get_text(strip=True).lower() == "producer":
+                dd = dt.find_next_sibling("dd")
+                if dd:
+                    links = dd.find_all("a")
+                    if links:
+                        return [a.get_text(strip=True) for a in links if a.get_text(strip=True)]
+                    import re
+                    names = re.split(r"\s{2,}", dd.get_text(strip=True))
+                    return [n.strip() for n in names if n.strip()]
+    except Exception as e:
+        log.warning(f"SA producers fetch failed for {sa_url}: {e}")
+    return []
+
+
 def fetch_screen_australia_films() -> dict:
     lookup = {}
     try:
@@ -1710,6 +1737,14 @@ def run_scraper():
         film.letterboxd_rating = lb["letterboxd_rating"]
         film.letterboxd_url    = lb["letterboxd_url"]
         time.sleep(0.5)
+
+        # Fetch producers from Screen Australia if we have a URL
+        sa_url = info.get("screen_australia_url", "")
+        if sa_url and not film.producers:
+            film.producers = fetch_screen_australia_producers(sa_url)
+            if film.producers:
+                log.info(f"  SA producers: {film.producers}")
+            time.sleep(0.5)
 
         result_films.append(asdict(film))
         log.info(f"  Enriched: {film.title} ({film.year})")

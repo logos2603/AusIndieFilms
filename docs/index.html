@@ -874,6 +874,7 @@
       </div>
       <button class="pill category-narrative" id="narrative-filter">Narrative</button>
       <button class="pill category-doc" id="doc-filter">Documentary</button>
+      <button class="pill" id="clear-filters" style="margin-left:auto;border-color:var(--muted);color:var(--muted);display:none">Clear filters</button>
     </div>
 
   </div>
@@ -909,7 +910,7 @@
 
   <script>
     let allFilms = [];
-    let activeFestival = "all";
+    let activeFestivals = new Set();
     let searchQuery = "";
     let sortBy = "year-desc";
 
@@ -945,11 +946,11 @@
     function filtered() {
       let films = [...allFilms];
 
-      if (activeFestival !== "all") {
+      if (activeFestivals.size > 0) {
         films = films.filter(f =>
           f.festivals && f.festivals.some(fest => {
             const norm = fest === "Toronto (TIFF)" ? "Toronto" : fest;
-            return norm.toLowerCase().includes(activeFestival.toLowerCase());
+            return activeFestivals.has(norm);
           })
         );
       }
@@ -1097,12 +1098,65 @@
       render();
     });
 
+    function updateClearBtn() {
+      const isDefault =
+        activeFestivals.size === 0 &&
+        activeGenres.size === 0 &&
+        !docsOnly && !narrativeOnly &&
+        yearFrom === 2000 && yearTo === 2026;
+      document.getElementById("clear-filters").style.display = isDefault ? "none" : "";
+    }
+
+    function clearAllFilters() {
+      activeFestivals.clear();
+      activeGenres.clear();
+      docsOnly = false;
+      narrativeOnly = false;
+      yearFrom = 2000;
+      yearTo = 2026;
+
+      // Reset festival pills
+      document.querySelectorAll("#festival-filters .pill").forEach(p => p.classList.remove("active"));
+      document.querySelector("[data-festival='all']").classList.add("active");
+
+      // Reset category pills
+      document.getElementById("doc-filter").classList.remove("active");
+      document.getElementById("narrative-filter").classList.remove("active");
+
+      // Reset year inputs
+      document.getElementById("year-from").value = 2000;
+      document.getElementById("year-to").value = 2026;
+
+      // Reset genre menu
+      document.querySelectorAll(".genre-menu-item").forEach(i => i.classList.remove("checked"));
+      updateGenreBtn();
+
+      updateClearBtn();
+      render();
+    }
+
     document.getElementById("festival-filters").addEventListener("click", e => {
       const btn = e.target.closest(".pill");
       if (!btn) return;
-      activeFestival = btn.dataset.festival;
-      document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
-      btn.classList.add("active");
+      const fest = btn.dataset.festival;
+      if (fest === "all") {
+        activeFestivals.clear();
+        document.querySelectorAll("#festival-filters .pill").forEach(p => p.classList.remove("active"));
+        btn.classList.add("active");
+      } else {
+        document.querySelector("[data-festival='all']").classList.remove("active");
+        if (activeFestivals.has(fest)) {
+          activeFestivals.delete(fest);
+          btn.classList.remove("active");
+          if (activeFestivals.size === 0) {
+            document.querySelector("[data-festival='all']").classList.add("active");
+          }
+        } else {
+          activeFestivals.add(fest);
+          btn.classList.add("active");
+        }
+      }
+      updateClearBtn();
       render();
     });
 
@@ -1111,6 +1165,7 @@
       if (docsOnly) narrativeOnly = false;
       this.classList.toggle("active", docsOnly);
       document.getElementById("narrative-filter").classList.toggle("active", false);
+      updateClearBtn();
       render();
     });
 
@@ -1119,8 +1174,11 @@
       if (narrativeOnly) docsOnly = false;
       this.classList.toggle("active", narrativeOnly);
       document.getElementById("doc-filter").classList.toggle("active", false);
+      updateClearBtn();
       render();
     });
+
+    document.getElementById("clear-filters").addEventListener("click", clearAllFilters);
 
     document.getElementById("sort").addEventListener("change", e => {
       sortBy = e.target.value;
@@ -1174,6 +1232,7 @@
             item.classList.add("checked");
           }
           updateGenreBtn();
+          updateClearBtn();
           render();
         });
       });
@@ -1202,12 +1261,14 @@
     document.getElementById("year-from").addEventListener("input", e => {
       const v = parseInt(e.target.value);
       yearFrom = isNaN(v) ? null : v;
+      updateClearBtn();
       render();
     });
 
     document.getElementById("year-to").addEventListener("input", e => {
       const v = parseInt(e.target.value);
       yearTo = isNaN(v) ? null : v;
+      updateClearBtn();
       render();
     });
 

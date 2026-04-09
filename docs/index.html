@@ -462,7 +462,94 @@
 
     .grid.compact .compact-meta { display: block; }
 
-    /* ── View toggle button ── */
+    /* ── Genre multi-select dropdown ── */
+    .genre-dropdown {
+      position: relative;
+    }
+
+    .genre-btn {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.85rem;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .genre-btn:hover, .genre-btn.active {
+      border-color: var(--ink);
+      color: var(--ink);
+    }
+
+    .genre-btn .genre-count {
+      background: var(--ink);
+      color: var(--sand);
+      border-radius: 0;
+      padding: 0.1rem 0.35rem;
+      font-size: 0.55rem;
+      line-height: 1.4;
+    }
+
+    .genre-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      background: var(--sand);
+      border: 1px solid var(--border);
+      z-index: 100;
+      min-width: 160px;
+      max-height: 260px;
+      overflow-y: auto;
+    }
+
+    .genre-menu.open { display: block; }
+
+    .genre-menu-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.45rem 0.85rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background 0.1s;
+      user-select: none;
+    }
+
+    .genre-menu-item:hover { background: var(--border); color: var(--ink); }
+
+    .genre-menu-item.checked { color: var(--ink); }
+
+    .genre-checkbox {
+      width: 10px;
+      height: 10px;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.5rem;
+      color: var(--sand);
+      background: transparent;
+      transition: background 0.1s, border-color 0.1s;
+    }
+
+    .genre-menu-item.checked .genre-checkbox {
+      background: var(--ink);
+      border-color: var(--ink);
+    }
     .view-toggle {
       display: flex;
       gap: 0;
@@ -781,6 +868,10 @@
         <span class="year-sep">—</span>
         <input class="year-input" id="year-to" type="number" placeholder="To" min="1980" max="2030" />
       </div>
+      <div class="genre-dropdown" id="genre-dropdown">
+        <button class="genre-btn" id="genre-btn">Genre</button>
+        <div class="genre-menu" id="genre-menu"></div>
+      </div>
       <button class="pill category-narrative" id="narrative-filter">Narrative</button>
       <button class="pill category-doc" id="doc-filter">Documentary</button>
     </div>
@@ -828,6 +919,7 @@
         allFilms = await res.json();
         document.getElementById("film-count").textContent = allFilms.length;
         setLastUpdated();
+        buildGenreMenu();
         render();
       } catch (e) {
         document.getElementById("grid").innerHTML =
@@ -848,6 +940,7 @@
     let narrativeOnly = false;
     let yearFrom = null;
     let yearTo = null;
+    let activeGenres = new Set();
 
     function filtered() {
       let films = [...allFilms];
@@ -875,6 +968,12 @@
 
       if (yearFrom !== null) films = films.filter(f => f.year >= yearFrom);
       if (yearTo   !== null) films = films.filter(f => f.year <= yearTo);
+
+      if (activeGenres.size > 0) {
+        films = films.filter(f =>
+          (f.genres || []).some(g => activeGenres.has(g.toLowerCase()))
+        );
+      }
 
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
@@ -1039,6 +1138,65 @@
       document.getElementById("grid").classList.add("compact");
       document.getElementById("view-compact").classList.add("active");
       document.getElementById("view-default").classList.remove("active");
+    });
+
+    // ── Genre dropdown ──────────────────────────────────────────────────────────
+    function buildGenreMenu() {
+      const excluded = new Set(["documentary", "history", "tv movie"]);
+      const counts = {};
+      allFilms.forEach(f => {
+        (f.genres || []).forEach(g => {
+          const key = g.toLowerCase();
+          if (!excluded.has(key)) counts[key] = (counts[key] || 0) + 1;
+        });
+      });
+      const genres = Object.entries(counts)
+        .filter(([, c]) => c >= 2)
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map(([g]) => g);
+
+      const menu = document.getElementById("genre-menu");
+      menu.innerHTML = genres.map(g => `
+        <div class="genre-menu-item" data-genre="${g}">
+          <span class="genre-checkbox">✓</span>
+          ${g.charAt(0).toUpperCase() + g.slice(1)}
+        </div>`).join("");
+
+      menu.querySelectorAll(".genre-menu-item").forEach(item => {
+        item.addEventListener("click", e => {
+          e.stopPropagation();
+          const g = item.dataset.genre;
+          if (activeGenres.has(g)) {
+            activeGenres.delete(g);
+            item.classList.remove("checked");
+          } else {
+            activeGenres.add(g);
+            item.classList.add("checked");
+          }
+          updateGenreBtn();
+          render();
+        });
+      });
+    }
+
+    function updateGenreBtn() {
+      const btn = document.getElementById("genre-btn");
+      if (activeGenres.size > 0) {
+        btn.classList.add("active");
+        btn.innerHTML = `Genre <span class="genre-count">${activeGenres.size}</span>`;
+      } else {
+        btn.classList.remove("active");
+        btn.textContent = "Genre";
+      }
+    }
+
+    document.getElementById("genre-btn").addEventListener("click", e => {
+      e.stopPropagation();
+      document.getElementById("genre-menu").classList.toggle("open");
+    });
+
+    document.addEventListener("click", () => {
+      document.getElementById("genre-menu").classList.remove("open");
     });
 
     document.getElementById("year-from").addEventListener("input", e => {

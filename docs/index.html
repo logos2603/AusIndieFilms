@@ -864,9 +864,9 @@
       <span class="row-label-boxed">Filter</span>
       <div class="year-group">
         <span class="year-group-label">Year</span>
-        <input class="year-input" id="year-from" type="number" placeholder="From" min="1980" max="2030" />
+        <input class="year-input" id="year-from" type="number" placeholder="From" min="1980" max="2030" value="2000" />
         <span class="year-sep">—</span>
-        <input class="year-input" id="year-to" type="number" placeholder="To" min="1980" max="2030" />
+        <input class="year-input" id="year-to" type="number" placeholder="To" min="1980" max="2030" value="2026" />
       </div>
       <div class="genre-dropdown" id="genre-dropdown">
         <button class="genre-btn" id="genre-btn">Genre</button>
@@ -938,8 +938,8 @@
 
     let docsOnly = false;
     let narrativeOnly = false;
-    let yearFrom = null;
-    let yearTo = null;
+    let yearFrom = 2000;
+    let yearTo = 2026;
     let activeGenres = new Set();
 
     function filtered() {

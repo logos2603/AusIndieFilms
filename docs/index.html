@@ -1313,6 +1313,7 @@
       const meta = [];
       if (film.runtime_mins) meta.push(["Runtime", `${film.runtime_mins} min`]);
       if (film.genres && film.genres.length) meta.push(["Genres", film.genres.join(", ")]);
+      if (film.producers && film.producers.length) meta.push(["Producers", film.producers.join(", ")]);
       if (film.imdb_rating)       meta.push(["IMDb", `★ ${film.imdb_rating.toFixed(1)}`]);
       if (film.letterboxd_rating) meta.push(["Letterboxd", `★ ${film.letterboxd_rating.toFixed(1)}`]);
       if (film.sales_agent)       meta.push(["Intl. Sales Agent", film.sales_agent]);

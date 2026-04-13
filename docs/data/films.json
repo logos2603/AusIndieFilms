@@ -54,39 +54,6 @@
     "added_at": "2026-04-07T05:08:17.677013"
   },
   {
-    "title": "Jimpa",
-    "year": 2026,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Sophie Hyde",
-    "synopsis": "Hannah and her non-binary teenager Frances visit her gay grandfather Jimpa in Amsterdam. Frances expresses a desire to stay with their grandfather for a year, challenging Hannah's parenting beliefs and forcing her to confront past issues.",
-    "poster_url": "posters/1286491.jpg",
-    "tmdb_id": 1286491,
-    "tmdb_rating": 7.2,
-    "imdb_id": "tt23745668",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.31,
-    "letterboxd_url": "https://letterboxd.com/film/jimpa/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Jimpa-2026/40321",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 113,
-    "revenue": null,
-    "budget": null,
-    "distributor": "Kismet Movies",
-    "distributor_intl": "Kino Lorber",
-    "sales_agent": "Protagonist Pictures",
-    "producers": [
-      "Sophie Hyde",
-      "Liam Heyen",
-      "Bryan Mason",
-      "Marleen Slot"
-    ],
-    "added_at": "2026-04-09T02:53:38.590861"
-  },
-  {
     "title": "Leviticus",
     "year": 2026,
     "festivals": [
@@ -393,6 +360,39 @@
     "added_at": "2026-04-07T05:08:33.799077"
   },
   {
+    "title": "Jimpa",
+    "year": 2025,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Sophie Hyde",
+    "synopsis": "Hannah and her non-binary teenager Frances visit her gay grandfather Jimpa in Amsterdam. Frances expresses a desire to stay with their grandfather for a year, challenging Hannah's parenting beliefs and forcing her to confront past issues.",
+    "poster_url": "posters/1286491.jpg",
+    "tmdb_id": 1286491,
+    "tmdb_rating": 7.2,
+    "imdb_id": "tt23745668",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.3,
+    "letterboxd_url": "https://letterboxd.com/film/jimpa/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Jimpa-2025/40321",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 113,
+    "revenue": null,
+    "budget": null,
+    "distributor": "Kismet Movies",
+    "distributor_intl": "Kino Lorber",
+    "sales_agent": "Protagonist Pictures",
+    "producers": [
+      "Sophie Hyde",
+      "Liam Heyen",
+      "Bryan Mason",
+      "Marleen Slot"
+    ],
+    "added_at": "2026-04-13T09:19:16.648521"
+  },
+  {
     "title": "Lesbian Space Princess",
     "year": 2025,
     "festivals": [
@@ -448,39 +448,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:08:52.888445"
-  },
-  {
-    "title": "Memoir of a Snail",
-    "year": 2025,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Adam Elliot",
-    "synopsis": "Forcibly separated from her twin brother when they are orphaned, a melancholic misfit learns how to find confidence within herself amid the clutter of misfortunes and everyday life.",
-    "poster_url": "posters/1064486.jpg",
-    "tmdb_id": 1064486,
-    "tmdb_rating": 8.0,
-    "imdb_id": "tt23770030",
-    "imdb_rating": null,
-    "letterboxd_rating": 4.17,
-    "letterboxd_url": "https://letterboxd.com/film/memoir-of-a-snail/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Memoir-of-a-Snail-2025/37700",
-    "genres": [
-      "Animation",
-      "Drama",
-      "Comedy"
-    ],
-    "runtime_mins": 94,
-    "revenue": 7,
-    "budget": 4350000,
-    "distributor": "Madman Entertainment",
-    "distributor_intl": "IFC Films",
-    "sales_agent": "Anton / Charades",
-    "producers": [
-      "Adam Elliot",
-      "Liz Kearney"
-    ],
-    "added_at": "2026-04-09T02:53:42.653492"
   },
   {
     "title": "Never Get Busted!",
@@ -565,42 +532,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:08:57.874399"
-  },
-  {
-    "title": "Surfer, The",
-    "year": 2025,
-    "festivals": [
-      "Rotterdam",
-      "SXSW"
-    ],
-    "director": "Lorcan Finnegan",
-    "synopsis": "A man returns to the idyllic beach of his childhood to surf with his son. When he is humiliated by a group of locals, the man is drawn into a conflict that keeps rising and pushes him to his breaking point.",
-    "poster_url": "posters/1128655.jpg",
-    "tmdb_id": 1128655,
-    "tmdb_rating": 5.7,
-    "imdb_id": "tt27813235",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Surfer-2025/41812",
-    "genres": [
-      "Thriller",
-      "Drama"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "Madman Entertainment",
-    "distributor_intl": "Roadside Attractions",
-    "sales_agent": "North.Five.Six / WME Independent",
-    "producers": [
-      "Robert Connolly",
-      "James Grandison",
-      "Brunella Cocchiglia",
-      "Nathan Klingher",
-      "Leonora Darby"
-    ],
-    "added_at": "2026-04-09T02:53:46.863516"
   },
   {
     "title": "Together",
@@ -886,11 +817,78 @@
     "added_at": "2026-04-07T05:09:07.486244"
   },
   {
-    "title": "Moogai, The",
+    "title": "Memoir of a Snail",
     "year": 2024,
     "festivals": [
-      "SXSW",
-      "Sundance"
+      "Sitges"
+    ],
+    "director": "Adam Elliot",
+    "synopsis": "Forcibly separated from her twin brother when they are orphaned, a melancholic misfit learns how to find confidence within herself amid the clutter of misfortunes and everyday life.",
+    "poster_url": "posters/1064486.jpg",
+    "tmdb_id": 1064486,
+    "tmdb_rating": 8.0,
+    "imdb_id": "tt23770030",
+    "imdb_rating": null,
+    "letterboxd_rating": 4.17,
+    "letterboxd_url": "https://letterboxd.com/film/memoir-of-a-snail/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Memoir-of-a-Snail-2024/37700",
+    "genres": [
+      "Animation",
+      "Drama",
+      "Comedy"
+    ],
+    "runtime_mins": 94,
+    "revenue": 7,
+    "budget": 4350000,
+    "distributor": "Madman Entertainment",
+    "distributor_intl": "IFC Films",
+    "sales_agent": "Anton / Charades",
+    "producers": [
+      "Adam Elliot",
+      "Liz Kearney"
+    ],
+    "added_at": "2026-04-13T09:19:26.198830"
+  },
+  {
+    "title": "Surfer, The",
+    "year": 2024,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Lorcan Finnegan",
+    "synopsis": "A man returns to the idyllic beach of his childhood to surf with his son. When he is humiliated by a group of locals, the man is drawn into a conflict that keeps rising and pushes him to his breaking point.",
+    "poster_url": "posters/1128655.jpg",
+    "tmdb_id": 1128655,
+    "tmdb_rating": 5.7,
+    "imdb_id": "tt27813235",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Surfer-2024/41812",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "Madman Entertainment",
+    "distributor_intl": "Roadside Attractions",
+    "sales_agent": "North.Five.Six / WME Independent",
+    "producers": [
+      "Robert Connolly",
+      "James Grandison",
+      "Brunella Cocchiglia",
+      "Nathan Klingher",
+      "Leonora Darby"
+    ],
+    "added_at": "2026-04-13T09:19:21.743218"
+  },
+  {
+    "title": "The Moogai",
+    "year": 2024,
+    "festivals": [
+      "SXSW"
     ],
     "director": "Jon Bell",
     "synopsis": "A young Aboriginal couple brings home their second baby. What should be a joyous time takes a sinister turn, as the baby's mother starts seeing a malevolent spirit she is convinced is trying to take her baby.",
@@ -899,9 +897,9 @@
     "tmdb_rating": 5.9,
     "imdb_id": "tt21609514",
     "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Moogai-2024/38262",
+    "letterboxd_rating": 2.84,
+    "letterboxd_url": "https://letterboxd.com/film/the-moogai-2024/",
+    "screen_australia_url": "",
     "genres": [
       "Horror",
       "Mystery"
@@ -912,12 +910,8 @@
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
-    "producers": [
-      "Samantha Jennings",
-      "Mitchell Stanley",
-      "Kristina Ceyton"
-    ],
-    "added_at": "2026-04-09T02:53:50.578881"
+    "producers": [],
+    "added_at": "2026-04-13T09:23:00.403229"
   },
   {
     "title": "Went Up the Hill",
@@ -1060,40 +1054,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:09:54.658789"
-  },
-  {
-    "title": "Blueback",
-    "year": 2023,
-    "festivals": [
-      "Sundance"
-    ],
-    "director": "Robert Connolly",
-    "synopsis": "Based on the best-selling novel by Tim Winton, Blueback is a timely tale about the ocean, a beautiful marine creature, and a young girl’s power to change the world.",
-    "poster_url": "posters/807132.jpg",
-    "tmdb_id": 807132,
-    "tmdb_rating": 6.5,
-    "imdb_id": "tt14201576",
-    "imdb_rating": null,
-    "letterboxd_rating": 2.92,
-    "letterboxd_url": "https://letterboxd.com/film/blueback/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Blueback-2023/38458",
-    "genres": [
-      "Family",
-      "Drama",
-      "Adventure"
-    ],
-    "runtime_mins": 102,
-    "revenue": null,
-    "budget": null,
-    "distributor": "Roadshow Films",
-    "distributor_intl": "Quiver Distribution",
-    "sales_agent": "HanWay Films",
-    "producers": [
-      "Liz Kearney",
-      "James Grandison",
-      "Robert Connolly"
-    ],
-    "added_at": "2026-04-09T02:54:02.515815"
   },
   {
     "title": "Convert, The",
@@ -1438,69 +1398,6 @@
     "added_at": "2026-04-07T05:09:45.822520"
   },
   {
-    "title": "Sweet As",
-    "year": 2023,
-    "festivals": [
-      "Berlin"
-    ],
-    "director": "Jub Clerc",
-    "synopsis": "With problems on the home front, 15-year-old Murra is on the verge of lashing out. That is, until her policeman uncle thwarts her self-destructive behaviour with a lifeline: a “photo-safari for at-risk kids”. Murra isn’t entirely convinced, but she soon joins cantankerous Kylie, uptight Sean, happy-go-lucky Elvis, and camp counsellors Fernando and Michelle on a transformative bus trip to the Pilbara. On the trail, the teens learn about fun, friendship and first crushes, as well as the forces of ‘reality’ that puncture the bubble of youth.",
-    "poster_url": "posters/985779.jpg",
-    "tmdb_id": 985779,
-    "tmdb_rating": 6.0,
-    "imdb_id": "tt21047794",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/sweet-as/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Sweet-As-2023/37622",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 87,
-    "revenue": null,
-    "budget": null,
-    "distributor": "Roadshow Films",
-    "distributor_intl": "",
-    "sales_agent": "Sphere Films",
-    "producers": [
-      "Liz Kearney"
-    ],
-    "added_at": "2026-04-09T02:53:54.511552"
-  },
-  {
-    "title": "Talk to Me",
-    "year": 2023,
-    "festivals": [
-      "Berlin",
-      "SXSW",
-      "Sundance"
-    ],
-    "director": "Danny Philippou, Michael Philippou",
-    "synopsis": "When a group of friends discover how to conjure spirits using an embalmed hand, they become hooked on the new thrill, until one of them goes too far and unleashes terrifying supernatural forces.",
-    "poster_url": "posters/1008042.jpg",
-    "tmdb_id": 1008042,
-    "tmdb_rating": 7.1,
-    "imdb_id": "tt10638522",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.39,
-    "letterboxd_url": "https://letterboxd.com/film/talk-to-me-2023/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Talk-to-Me-2023/38731",
-    "genres": [
-      "Horror"
-    ],
-    "runtime_mins": 95,
-    "revenue": 91959188,
-    "budget": 4500000,
-    "distributor": "Umbrella Entertainment",
-    "distributor_intl": "A24",
-    "sales_agent": "Bankside Films",
-    "producers": [
-      "Kristina Ceyton",
-      "Samantha Jennings"
-    ],
-    "added_at": "2026-04-09T02:53:58.687398"
-  },
-  {
     "title": "You'll Never Find Me",
     "year": 2023,
     "festivals": [
@@ -1611,6 +1508,40 @@
     "distributor_intl": "Gravitas Ventures",
     "sales_agent": "mk2 Films",
     "added_at": "2026-04-07T05:10:30.968424"
+  },
+  {
+    "title": "Blueback",
+    "year": 2022,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Robert Connolly",
+    "synopsis": "Based on the best-selling novel by Tim Winton, Blueback is a timely tale about the ocean, a beautiful marine creature, and a young girl’s power to change the world.",
+    "poster_url": "posters/807132.jpg",
+    "tmdb_id": 807132,
+    "tmdb_rating": 6.5,
+    "imdb_id": "tt14201576",
+    "imdb_rating": null,
+    "letterboxd_rating": 2.92,
+    "letterboxd_url": "https://letterboxd.com/film/blueback/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Blueback-2022/38458",
+    "genres": [
+      "Family",
+      "Drama",
+      "Adventure"
+    ],
+    "runtime_mins": 102,
+    "revenue": null,
+    "budget": null,
+    "distributor": "Roadshow Films",
+    "distributor_intl": "Quiver Distribution",
+    "sales_agent": "HanWay Films",
+    "producers": [
+      "Liz Kearney",
+      "James Grandison",
+      "Robert Connolly"
+    ],
+    "added_at": "2026-04-13T09:19:30.875384"
   },
   {
     "title": "Clean",
@@ -1841,6 +1772,65 @@
     "added_at": "2026-04-07T05:10:24.356147"
   },
   {
+    "title": "Sweet As",
+    "year": 2022,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Jub Clerc",
+    "synopsis": "With problems on the home front, 15-year-old Murra is on the verge of lashing out. That is, until her policeman uncle thwarts her self-destructive behaviour with a lifeline: a “photo-safari for at-risk kids”. Murra isn’t entirely convinced, but she soon joins cantankerous Kylie, uptight Sean, happy-go-lucky Elvis, and camp counsellors Fernando and Michelle on a transformative bus trip to the Pilbara. On the trail, the teens learn about fun, friendship and first crushes, as well as the forces of ‘reality’ that puncture the bubble of youth.",
+    "poster_url": "posters/985779.jpg",
+    "tmdb_id": 985779,
+    "tmdb_rating": 6.0,
+    "imdb_id": "tt21047794",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.3,
+    "letterboxd_url": "https://letterboxd.com/film/sweet-as-2022/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Sweet-As-2022/37622",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 87,
+    "revenue": null,
+    "budget": null,
+    "distributor": "Roadshow Films",
+    "distributor_intl": "",
+    "sales_agent": "Sphere Films",
+    "producers": [
+      "Liz Kearney"
+    ],
+    "added_at": "2026-04-13T09:19:35.842132"
+  },
+  {
+    "title": "Talk to Me",
+    "year": 2022,
+    "festivals": [
+      "Sundance",
+      "SXSW"
+    ],
+    "director": "Danny Philippou, Michael Philippou",
+    "synopsis": "When a group of friends discover how to conjure spirits using an embalmed hand, they become hooked on the new thrill, until one of them goes too far and unleashes terrifying supernatural forces.",
+    "poster_url": "posters/1008042.jpg",
+    "tmdb_id": 1008042,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt10638522",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.47,
+    "letterboxd_url": "https://letterboxd.com/film/talk-to-me-2022/",
+    "screen_australia_url": "",
+    "genres": [
+      "Horror"
+    ],
+    "runtime_mins": 95,
+    "revenue": 91959188,
+    "budget": 4500000,
+    "distributor": "Umbrella Entertainment",
+    "distributor_intl": "A24",
+    "sales_agent": "Bankside Films",
+    "producers": [],
+    "added_at": "2026-04-13T09:23:02.725115"
+  },
+  {
     "title": "We Are Still Here",
     "year": 2022,
     "festivals": [
@@ -1926,42 +1916,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:11:13.004552"
-  },
-  {
-    "title": "Drover's Wife The Legend of Molly Johnson, The",
-    "year": 2021,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Leah Purcell",
-    "synopsis": "In 1893, heavily pregnant Molly Johnson and her children struggle in isolation to survive the harsh Australian landscape after her husband left to go droving sheep in the high country. One day, she finds a shackled Aboriginal fugitive named Yakada wounded on her property. As an unlikely bond begins to form between them he reveals secrets about her true identity. Realizing Molly’s husband is actually missing, new town lawman Nate Clintoff starts being suspicious and sends his constable to investigate.",
-    "poster_url": "posters/722800.jpg",
-    "tmdb_id": 722800,
-    "tmdb_rating": 5.7,
-    "imdb_id": "tt11162490",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Drovers-Wife-The-Legend-of-Molly-Johnson-2021/34709",
-    "genres": [
-      "Drama",
-      "Western",
-      "Thriller"
-    ],
-    "runtime_mins": 109,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Bain Stewart",
-      "David Jowsey",
-      "Angela Littlejohn",
-      "Greer Simpkin",
-      "Leah Purcell"
-    ],
-    "added_at": "2026-04-09T02:54:07.349710"
   },
   {
     "title": "Friends and Strangers",
@@ -2105,6 +2059,37 @@
     "added_at": "2026-04-07T05:11:15.043006"
   },
   {
+    "title": "The Drover's Wife: The Legend of Molly Johnson",
+    "year": 2021,
+    "festivals": [
+      "Toronto",
+      "Berlin"
+    ],
+    "director": "Leah Purcell",
+    "synopsis": "In 1893, heavily pregnant Molly Johnson and her children struggle in isolation to survive the harsh Australian landscape after her husband left to go droving sheep in the high country. One day, she finds a shackled Aboriginal fugitive named Yakada wounded on her property. As an unlikely bond begins to form between them he reveals secrets about her true identity. Realizing Molly’s husband is actually missing, new town lawman Nate Clintoff starts being suspicious and sends his constable to investigate.",
+    "poster_url": "posters/722800.jpg",
+    "tmdb_id": 722800,
+    "tmdb_rating": 5.7,
+    "imdb_id": "tt11162490",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.27,
+    "letterboxd_url": "https://letterboxd.com/film/the-drovers-wife-the-legend-of-molly-johnson/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Western",
+      "Thriller"
+    ],
+    "runtime_mins": 109,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-04-13T09:23:04.926396"
+  },
+  {
     "title": "Under the Volcano",
     "year": 2021,
     "festivals": [
@@ -2159,38 +2144,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:11:02.042430"
-  },
-  {
-    "title": "Babyteeth",
-    "year": 2020,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Shannon Murphy",
-    "synopsis": "A terminally ill teen upsets her parents when she falls in love with a small-time drug dealer.",
-    "poster_url": "posters/522098.jpg",
-    "tmdb_id": 522098,
-    "tmdb_rating": 6.9,
-    "imdb_id": "tt8399664",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.75,
-    "letterboxd_url": "https://letterboxd.com/film/babyteeth/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Babyteeth-2020/34173",
-    "genres": [
-      "Drama",
-      "Comedy",
-      "Romance"
-    ],
-    "runtime_mins": 118,
-    "revenue": 989310,
-    "budget": null,
-    "distributor": "Universal Pictures",
-    "distributor_intl": "IFC Films",
-    "sales_agent": "Beta Cinema",
-    "producers": [
-      "Alex White"
-    ],
-    "added_at": "2026-04-09T02:54:11.400224"
   },
   {
     "title": "Black Water: Abyss",
@@ -2417,42 +2370,6 @@
     "added_at": "2026-04-07T05:11:21.598465"
   },
   {
-    "title": "True History of the Kelly Gang",
-    "year": 2020,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Justin Kurzel",
-    "synopsis": "Set against the badlands of Australia where the English rule with a bloody fist and the Irish endure, Ned Kelly discovers he comes from a line of Irish rebels — an uncompromising army of cross dressing bandits immortalised for terrorising their oppressors back in Ireland. Fuelled by the unfair arrest of his mother, Kelly recruits a wild bunch of warriors to plot one of the most audacious attacks of anarchy and rebellion the country has ever seen.",
-    "poster_url": "posters/501395.jpg",
-    "tmdb_id": 501395,
-    "tmdb_rating": 5.9,
-    "imdb_id": "tt4844140",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.27,
-    "letterboxd_url": "https://letterboxd.com/film/true-history-of-the-kelly-gang/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/True-History-of-the-Kelly-Gang-2020/32526",
-    "genres": [
-      "Crime",
-      "Drama",
-      "Western",
-      "Thriller"
-    ],
-    "runtime_mins": 125,
-    "revenue": 471152,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Liz Watts",
-      "Hal Vogel",
-      "Justin Kurzel",
-      "Paul Ranford"
-    ],
-    "added_at": "2026-04-09T02:54:15.033924"
-  },
-  {
     "title": "'I Used to be Normal': A Boyband Fangirl Story",
     "year": 2019,
     "festivals": [
@@ -2562,6 +2479,39 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:12:06.995154"
+  },
+  {
+    "title": "Babyteeth",
+    "year": 2019,
+    "festivals": [
+      "Venice",
+      "Toronto"
+    ],
+    "director": "Shannon Murphy",
+    "synopsis": "A terminally ill teen upsets her parents when she falls in love with a small-time drug dealer.",
+    "poster_url": "posters/522098.jpg",
+    "tmdb_id": 522098,
+    "tmdb_rating": 6.9,
+    "imdb_id": "tt8399664",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.75,
+    "letterboxd_url": "https://letterboxd.com/film/babyteeth/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Babyteeth-2019/34173",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Romance"
+    ],
+    "runtime_mins": 118,
+    "revenue": 989310,
+    "budget": null,
+    "distributor": "Universal Pictures",
+    "distributor_intl": "IFC Films",
+    "sales_agent": "Beta Cinema",
+    "producers": [
+      "Alex White"
+    ],
+    "added_at": "2026-04-13T09:19:52.934872"
   },
   {
     "title": "Blackbird",
@@ -2902,6 +2852,42 @@
     "added_at": "2026-04-07T05:12:13.817044"
   },
   {
+    "title": "True History of the Kelly Gang",
+    "year": 2019,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Justin Kurzel",
+    "synopsis": "Set against the badlands of Australia where the English rule with a bloody fist and the Irish endure, Ned Kelly discovers he comes from a line of Irish rebels — an uncompromising army of cross dressing bandits immortalised for terrorising their oppressors back in Ireland. Fuelled by the unfair arrest of his mother, Kelly recruits a wild bunch of warriors to plot one of the most audacious attacks of anarchy and rebellion the country has ever seen.",
+    "poster_url": "posters/501395.jpg",
+    "tmdb_id": 501395,
+    "tmdb_rating": 5.9,
+    "imdb_id": "tt4844140",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.27,
+    "letterboxd_url": "https://letterboxd.com/film/true-history-of-the-kelly-gang/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/True-History-of-the-Kelly-Gang-2019/32526",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Western",
+      "Thriller"
+    ],
+    "runtime_mins": 125,
+    "revenue": 471152,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Liz Watts",
+      "Hal Vogel",
+      "Justin Kurzel",
+      "Paul Ranford"
+    ],
+    "added_at": "2026-04-13T09:19:48.237918"
+  },
+  {
     "title": "Brothers' Nest",
     "year": 2018,
     "festivals": [
@@ -3156,41 +3142,6 @@
     "added_at": "2026-04-07T05:12:45.117410"
   },
   {
-    "title": "Nightingale, The",
-    "year": 2018,
-    "festivals": [
-      "Venice"
-    ],
-    "director": "Jennifer Kent",
-    "synopsis": "In 1825, Clare, a 21-year-old Irish convict, chases a British soldier through the rugged Tasmanian wilderness, bent on revenge for a terrible act of violence he committed against her family. She enlists the services of an Aboriginal tracker who is also marked by trauma from his own violence-filled past.",
-    "poster_url": "posters/400090.jpg",
-    "tmdb_id": 400090,
-    "tmdb_rating": 7.1,
-    "imdb_id": "tt4068576",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Nightingale-2018/33157",
-    "genres": [
-      "Drama",
-      "Thriller",
-      "Western"
-    ],
-    "runtime_mins": 136,
-    "revenue": 855756,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Kristina Ceyton",
-      "Bruna Papandrea",
-      "Steve Hutensky",
-      "Jennifer Kent"
-    ],
-    "added_at": "2026-04-09T02:54:32.125453"
-  },
-  {
     "title": "Rockabul",
     "year": 2018,
     "festivals": [
@@ -3219,39 +3170,34 @@
     "added_at": "2026-04-07T05:12:35.409029"
   },
   {
-    "title": "Sweet Country",
+    "title": "The Nightingale",
     "year": 2018,
     "festivals": [
-      "Rotterdam",
-      "Sundance"
+      "Venice"
     ],
-    "director": "Warwick Thornton",
-    "synopsis": "In 1929, an Australian Aboriginal stockman kills a white station owner in self-defense and goes on the lam, pursued by a posse.",
-    "poster_url": "posters/468210.jpg",
-    "tmdb_id": 468210,
-    "tmdb_rating": 6.6,
-    "imdb_id": "tt6958212",
+    "director": "Jennifer Kent",
+    "synopsis": "In 1825, Clare, a 21-year-old Irish convict, chases a British soldier through the rugged Tasmanian wilderness, bent on revenge for a terrible act of violence he committed against her family. She enlists the services of an Aboriginal tracker who is also marked by trauma from his own violence-filled past.",
+    "poster_url": "posters/400090.jpg",
+    "tmdb_id": 400090,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt4068576",
     "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/sweet-country/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Sweet-Country-2018/32482",
+    "letterboxd_rating": 3.73,
+    "letterboxd_url": "https://letterboxd.com/film/the-nightingale-2018/",
+    "screen_australia_url": "",
     "genres": [
-      "Western",
-      "Crime",
+      "Drama",
       "Thriller",
-      "Drama"
+      "Western"
     ],
-    "runtime_mins": 113,
-    "revenue": null,
+    "runtime_mins": 136,
+    "revenue": 855756,
     "budget": null,
-    "distributor": "Transmission Films",
-    "distributor_intl": "Kino Lorber",
-    "sales_agent": "Memento International",
-    "producers": [
-      "David Jowsey",
-      "Greer Simpkin"
-    ],
-    "added_at": "2026-04-09T02:54:27.766477"
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-04-13T09:23:07.418836"
   },
   {
     "title": "Top Knot Detective",
@@ -3429,38 +3375,6 @@
     "added_at": "2026-04-07T05:13:35.349435"
   },
   {
-    "title": "Boys in the Trees",
-    "year": 2017,
-    "festivals": [
-      "Sitges"
-    ],
-    "director": "Nicholas Verso",
-    "synopsis": "On Halloween 1997, two estranged teen skaters embark on a surreal journey through their memories, dreams and fears.",
-    "poster_url": "posters/409164.jpg",
-    "tmdb_id": 409164,
-    "tmdb_rating": 6.6,
-    "imdb_id": "tt3445580",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.29,
-    "letterboxd_url": "https://letterboxd.com/film/boys-in-the-trees/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Boys-in-the-Trees-2017/32655",
-    "genres": [
-      "Drama",
-      "Horror",
-      "Thriller"
-    ],
-    "runtime_mins": 112,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "John Molloy"
-    ],
-    "added_at": "2026-04-09T02:54:35.926126"
-  },
-  {
     "title": "Breath",
     "year": 2017,
     "festivals": [
@@ -3626,39 +3540,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:13:06.545004"
-  },
-  {
-    "title": "Hounds of Love",
-    "year": 2017,
-    "festivals": [
-      "Sitges",
-      "SXSW"
-    ],
-    "director": "Ben Young",
-    "synopsis": "When Vicki Maloney is randomly abducted from a suburban street by a disturbed couple, she soon observes the dynamic between her captors and quickly realises she must drive a wedge between them if she is to survive.",
-    "poster_url": "posters/408439.jpg",
-    "tmdb_id": 408439,
-    "tmdb_rating": 6.1,
-    "imdb_id": "tt3896738",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.32,
-    "letterboxd_url": "https://letterboxd.com/film/hounds-of-love/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Hounds-of-Love-2017/34006",
-    "genres": [
-      "Crime",
-      "Drama",
-      "Horror"
-    ],
-    "runtime_mins": 108,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Melissa Kelly"
-    ],
-    "added_at": "2026-04-09T02:54:40.638063"
   },
   {
     "title": "Killing Ground",
@@ -3830,6 +3711,41 @@
     "added_at": "2026-04-07T05:13:49.530166"
   },
   {
+    "title": "Sweet Country",
+    "year": 2017,
+    "festivals": [
+      "Toronto",
+      "Venice"
+    ],
+    "director": "Warwick Thornton",
+    "synopsis": "In 1929, an Australian Aboriginal stockman kills a white station owner in self-defense and goes on the lam, pursued by a posse.",
+    "poster_url": "posters/468210.jpg",
+    "tmdb_id": 468210,
+    "tmdb_rating": 6.6,
+    "imdb_id": "tt6958212",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.63,
+    "letterboxd_url": "https://letterboxd.com/film/sweet-country-2017/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Sweet-Country-2017/32482",
+    "genres": [
+      "Western",
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
+    "runtime_mins": 113,
+    "revenue": null,
+    "budget": null,
+    "distributor": "Transmission Films",
+    "distributor_intl": "Kino Lorber",
+    "sales_agent": "Memento International",
+    "producers": [
+      "David Jowsey",
+      "Greer Simpkin"
+    ],
+    "added_at": "2026-04-13T09:19:57.565100"
+  },
+  {
     "title": "West of Sunshine",
     "year": 2017,
     "festivals": [
@@ -3912,6 +3828,39 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:13:59.694664"
+  },
+  {
+    "title": "Boys in the Trees",
+    "year": 2016,
+    "festivals": [
+      "Toronto",
+      "Venice"
+    ],
+    "director": "Nicholas Verso",
+    "synopsis": "On Halloween 1997, two estranged teen skaters embark on a surreal journey through their memories, dreams and fears.",
+    "poster_url": "posters/409164.jpg",
+    "tmdb_id": 409164,
+    "tmdb_rating": 6.6,
+    "imdb_id": "tt3445580",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.29,
+    "letterboxd_url": "https://letterboxd.com/film/boys-in-the-trees/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Boys-in-the-Trees-2016/32655",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller"
+    ],
+    "runtime_mins": 112,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "John Molloy"
+    ],
+    "added_at": "2026-04-13T09:20:02.266177"
   },
   {
     "title": "Girl Asleep",
@@ -4000,6 +3949,38 @@
     "added_at": "2026-04-07T05:14:16.003118"
   },
   {
+    "title": "Hounds of Love",
+    "year": 2016,
+    "festivals": [
+      "Venice"
+    ],
+    "director": "Ben Young",
+    "synopsis": "When Vicki Maloney is randomly abducted from a suburban street by a disturbed couple, she soon observes the dynamic between her captors and quickly realises she must drive a wedge between them if she is to survive.",
+    "poster_url": "posters/408439.jpg",
+    "tmdb_id": 408439,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt3896738",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.32,
+    "letterboxd_url": "https://letterboxd.com/film/hounds-of-love/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Hounds-of-Love-2016/34006",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Horror"
+    ],
+    "runtime_mins": 108,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Melissa Kelly"
+    ],
+    "added_at": "2026-04-13T09:20:06.930134"
+  },
+  {
     "title": "Joe Cinque's Consolation",
     "year": 2016,
     "festivals": [
@@ -4083,71 +4064,6 @@
     "added_at": "2026-04-07T05:14:02.032579"
   },
   {
-    "title": "Tanna",
-    "year": 2016,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Bentley Dean, Martin Butler",
-    "synopsis": "In a traditional tribal society in the South Pacific, a young girl, Wawa, falls in love with her chief’s grandson, Dain. When an inter-tribal war escalates, Wawa is unknowingly betrothed as part of a peace deal. The young lovers run away, refusing her arranged fate. They must choose between their hearts and the future of the tribe, while the villagers must wrestle with preserving their traditional culture and adapting it to the increasing outside demands for individual freedom.",
-    "poster_url": "posters/359151.jpg",
-    "tmdb_id": 359151,
-    "tmdb_rating": 6.6,
-    "imdb_id": "tt4239726",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.57,
-    "letterboxd_url": "https://letterboxd.com/film/tanna/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Tanna-2016/33719",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Carolyn Johnson",
-      "Bentley Dean",
-      "Martin Butler"
-    ],
-    "added_at": "2026-04-09T02:54:45.640113"
-  },
-  {
-    "title": "Wyrmwood: Road of the Dead",
-    "year": 2016,
-    "festivals": [
-      "Sitges"
-    ],
-    "director": "Kiah Roache-Turner",
-    "synopsis": "Barry is a talented mechanic and family man whose life is torn apart on the eve of a zombie apocalypse. His sister, Brooke, is kidnapped by a sinister team of gas-mask wearing soldiers and experimented on by a psychotic doctor. While Brooke plans her escape Barry goes out on the road to find her and teams up with Benny, a fellow survivor – together they must arm themselves and prepare to battle their way through hordes of flesh-eating monsters in a harsh Australian bushland.",
-    "poster_url": "posters/290999.jpg",
-    "tmdb_id": 290999,
-    "tmdb_rating": 6.0,
-    "imdb_id": "tt2535470",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.08,
-    "letterboxd_url": "https://letterboxd.com/film/wyrmwood-road-of-the-dead/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Wyrmwood--Road-of-the-Dead-2016/31883",
-    "genres": [
-      "Horror",
-      "Action",
-      "Comedy"
-    ],
-    "runtime_mins": 98,
-    "revenue": 111141,
-    "budget": 160000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Tristan Roache-Turner"
-    ],
-    "added_at": "2026-04-09T02:54:50.511473"
-  },
-  {
     "title": "Beast",
     "year": 2015,
     "festivals": [
@@ -4175,37 +4091,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:14:50.845512"
-  },
-  {
-    "title": "Charlie's Country",
-    "year": 2015,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Rolf de Heer",
-    "synopsis": "Blackfella Charlie is getting older, and he's out of sorts. The intervention is making life more difficult on his remote community, what with the proper policing of whitefella laws that don't generally make much sense, and Charlie's kin and ken seeming more interested in going along with things than doing anything about it. So Charlie takes off, to live the old way, but in doing so sets off a chain of events in his life that has him return to his community chastened, and somewhat the wiser.",
-    "poster_url": "posters/265349.jpg",
-    "tmdb_id": 265349,
-    "tmdb_rating": 7.0,
-    "imdb_id": "tt3244512",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.72,
-    "letterboxd_url": "https://letterboxd.com/film/charlies-country/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Charlies-Country-2015/31708",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 108,
-    "revenue": 658179,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Nils Erik Nielsen",
-      "Peter Djigirr"
-    ],
-    "added_at": "2026-04-09T02:54:59.214029"
   },
   {
     "title": "Daughter, The",
@@ -4346,37 +4231,6 @@
     "added_at": "2026-04-07T05:15:22.658799"
   },
   {
-    "title": "Electric Boogaloo: The Wild, Untold Story Of Cannon Films",
-    "year": 2015,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Mark Hartley",
-    "synopsis": "A documentary about the rise and fall of the Cannon Film Group, the legendary independent film company helmed by Israeli cousins Menahem Golan and Yoram Globus.",
-    "poster_url": "posters/282041.jpg",
-    "tmdb_id": 282041,
-    "tmdb_rating": 7.2,
-    "imdb_id": "tt2125501",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.71,
-    "letterboxd_url": "https://letterboxd.com/film/electric-boogaloo-the-wild-untold-story-of-cannon-films/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Electric-Boogaloo--The-Wild,-Untold-Story-Of-Cannon-Films-2015/31053",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 107,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Veronica Fury",
-      "Brett Ratner"
-    ],
-    "added_at": "2026-04-09T02:55:03.338170"
-  },
-  {
     "title": "Elixir",
     "year": 2015,
     "festivals": [
@@ -4462,40 +4316,6 @@
     "added_at": "2026-04-07T05:14:22.894230"
   },
   {
-    "title": "Little Death, The",
-    "year": 2015,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Josh Lawson",
-    "synopsis": "A comedy film that looks into the loosely connected lives of people with strange sexual fantasies.",
-    "poster_url": "posters/276844.jpg",
-    "tmdb_id": 276844,
-    "tmdb_rating": 6.7,
-    "imdb_id": "tt2785032",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Little-Death-2015/28262",
-    "genres": [
-      "Drama",
-      "Comedy",
-      "Romance"
-    ],
-    "runtime_mins": 96,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Jamie Hilton",
-      "Michael Petroni",
-      "Matt Reeder"
-    ],
-    "added_at": "2026-04-09T02:55:08.051475"
-  },
-  {
     "title": "Looking for Grace",
     "year": 2015,
     "festivals": [
@@ -4579,40 +4399,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:15:11.673293"
-  },
-  {
-    "title": "Paper Planes",
-    "year": 2015,
-    "festivals": [
-      "Berlin"
-    ],
-    "director": "Robert Connolly",
-    "synopsis": "Dylan discovers he has a talent for making paper planes. He has a chance to compete in a world championship, but he'll have to face bullies and self-doubt to do so.",
-    "poster_url": "posters/286875.jpg",
-    "tmdb_id": 286875,
-    "tmdb_rating": 6.0,
-    "imdb_id": "tt3328716",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/paper-planes-2015/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Paper-Planes-2015/31877",
-    "genres": [
-      "Comedy",
-      "Family",
-      "Drama"
-    ],
-    "runtime_mins": 96,
-    "revenue": 7646700,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Robert Connolly",
-      "Maggie Miles",
-      "Liz Kearney"
-    ],
-    "added_at": "2026-04-09T02:54:55.278672"
   },
   {
     "title": "Partisan",
@@ -4783,6 +4569,39 @@
     "added_at": "2026-04-07T05:14:46.102805"
   },
   {
+    "title": "Tanna",
+    "year": 2015,
+    "festivals": [
+      "Venice"
+    ],
+    "director": "Bentley Dean, Martin Butler",
+    "synopsis": "In a traditional tribal society in the South Pacific, a young girl, Wawa, falls in love with her chief’s grandson, Dain. When an inter-tribal war escalates, Wawa is unknowingly betrothed as part of a peace deal. The young lovers run away, refusing her arranged fate. They must choose between their hearts and the future of the tribe, while the villagers must wrestle with preserving their traditional culture and adapting it to the increasing outside demands for individual freedom.",
+    "poster_url": "posters/359151.jpg",
+    "tmdb_id": 359151,
+    "tmdb_rating": 6.6,
+    "imdb_id": "tt4239726",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.57,
+    "letterboxd_url": "https://letterboxd.com/film/tanna/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Tanna-2015/33719",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Carolyn Johnson",
+      "Bentley Dean",
+      "Martin Butler"
+    ],
+    "added_at": "2026-04-13T09:20:11.627397"
+  },
+  {
     "title": "That Sugar Film",
     "year": 2015,
     "festivals": [
@@ -4921,37 +4740,36 @@
     "added_at": "2026-04-07T05:15:46.064435"
   },
   {
-    "title": "Canopy",
+    "title": "Charlie's Country",
     "year": 2014,
     "festivals": [
-      "Rotterdam"
+      "Cannes",
+      "Toronto"
     ],
-    "director": "Aaron Wilson",
-    "synopsis": "Wartime, 1942. Singapore. An Australian fighter pilot shot down in combat awakens suspended in the treetops. As night devours day, he must navigate through dangerous jungle in search of sanctuary.",
-    "poster_url": "posters/215946.jpg",
-    "tmdb_id": 215946,
-    "tmdb_rating": 5.8,
-    "imdb_id": "tt2232578",
+    "director": "Rolf de Heer",
+    "synopsis": "Blackfella Charlie is getting older, and he's out of sorts. The intervention is making life more difficult on his remote community, what with the proper policing of whitefella laws that don't generally make much sense, and Charlie's kin and ken seeming more interested in going along with things than doing anything about it. So Charlie takes off, to live the old way, but in doing so sets off a chain of events in his life that has him return to his community chastened, and somewhat the wiser.",
+    "poster_url": "posters/265349.jpg",
+    "tmdb_id": 265349,
+    "tmdb_rating": 7.0,
+    "imdb_id": "tt3244512",
     "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/canopy-2014/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Canopy-2014/32545",
+    "letterboxd_rating": 3.72,
+    "letterboxd_url": "https://letterboxd.com/film/charlies-country/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Charlies-Country-2014/31708",
     "genres": [
-      "War",
-      "Adventure",
       "Drama"
     ],
-    "runtime_mins": 80,
-    "revenue": null,
+    "runtime_mins": 108,
+    "revenue": 658179,
     "budget": null,
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [
-      "Katrina Fleming",
-      "Aaron Wilson"
+      "Nils Erik Nielsen",
+      "Peter Djigirr"
     ],
-    "added_at": "2026-04-09T02:55:12.664931"
+    "added_at": "2026-04-13T09:20:16.128282"
   },
   {
     "title": "Cut Snake",
@@ -5007,6 +4825,38 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:15:29.652535"
+  },
+  {
+    "title": "Electric Boogaloo: The Wild, Untold Story Of Cannon Films",
+    "year": 2014,
+    "festivals": [
+      "Sitges",
+      "Toronto"
+    ],
+    "director": "Mark Hartley",
+    "synopsis": "A documentary about the rise and fall of the Cannon Film Group, the legendary independent film company helmed by Israeli cousins Menahem Golan and Yoram Globus.",
+    "poster_url": "posters/282041.jpg",
+    "tmdb_id": 282041,
+    "tmdb_rating": 7.2,
+    "imdb_id": "tt2125501",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.71,
+    "letterboxd_url": "https://letterboxd.com/film/electric-boogaloo-the-wild-untold-story-of-cannon-films/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Electric-Boogaloo--The-Wild,-Untold-Story-Of-Cannon-Films-2014/31053",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 107,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Veronica Fury",
+      "Brett Ratner"
+    ],
+    "added_at": "2026-04-13T09:20:21.019106"
   },
   {
     "title": "Infinite Man, The",
@@ -5068,6 +4918,40 @@
     "added_at": "2026-04-07T05:16:06.032030"
   },
   {
+    "title": "Little Death, The",
+    "year": 2014,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Josh Lawson",
+    "synopsis": "A comedy film that looks into the loosely connected lives of people with strange sexual fantasies.",
+    "poster_url": "posters/276844.jpg",
+    "tmdb_id": 276844,
+    "tmdb_rating": 6.7,
+    "imdb_id": "tt2785032",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Little-Death-2014/28262",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Romance"
+    ],
+    "runtime_mins": 96,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Jamie Hilton",
+      "Michael Petroni",
+      "Matt Reeder"
+    ],
+    "added_at": "2026-04-13T09:20:29.810721"
+  },
+  {
     "title": "Mule, The",
     "year": 2014,
     "festivals": [
@@ -5095,6 +4979,40 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:15:56.869374"
+  },
+  {
+    "title": "Paper Planes",
+    "year": 2014,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Robert Connolly",
+    "synopsis": "Dylan discovers he has a talent for making paper planes. He has a chance to compete in a world championship, but he'll have to face bullies and self-doubt to do so.",
+    "poster_url": "posters/286875.jpg",
+    "tmdb_id": 286875,
+    "tmdb_rating": 6.0,
+    "imdb_id": "tt3328716",
+    "imdb_rating": null,
+    "letterboxd_rating": 2.79,
+    "letterboxd_url": "https://letterboxd.com/film/paper-planes/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Paper-Planes-2014/31877",
+    "genres": [
+      "Comedy",
+      "Family",
+      "Drama"
+    ],
+    "runtime_mins": 96,
+    "revenue": 7646700,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Robert Connolly",
+      "Maggie Miles",
+      "Liz Kearney"
+    ],
+    "added_at": "2026-04-13T09:20:34.263836"
   },
   {
     "title": "Predestination",
@@ -5242,36 +5160,36 @@
     "added_at": "2026-04-07T05:15:31.699558"
   },
   {
-    "title": "Ukraine is Not a Brothel",
+    "title": "Wyrmwood: Road of the Dead",
     "year": 2014,
     "festivals": [
-      "SXSW"
+      "Sitges"
     ],
-    "director": "Kitty Green",
-    "synopsis": "Ukraine's topless feminist sensation Femen has created a media frenzy across Europe, but before they take the world by storm, these bold and beautiful women must confront the dark and perverse forces that power their organisation.",
-    "poster_url": "posters/219077.jpg",
-    "tmdb_id": 219077,
-    "tmdb_rating": 5.6,
-    "imdb_id": "tt3136842",
+    "director": "Kiah Roache-Turner",
+    "synopsis": "Barry is a talented mechanic and family man whose life is torn apart on the eve of a zombie apocalypse. His sister, Brooke, is kidnapped by a sinister team of gas-mask wearing soldiers and experimented on by a psychotic doctor. While Brooke plans her escape Barry goes out on the road to find her and teams up with Benny, a fellow survivor – together they must arm themselves and prepare to battle their way through hordes of flesh-eating monsters in a harsh Australian bushland.",
+    "poster_url": "posters/290999.jpg",
+    "tmdb_id": 290999,
+    "tmdb_rating": 6.0,
+    "imdb_id": "tt2535470",
     "imdb_rating": null,
-    "letterboxd_rating": 3.43,
-    "letterboxd_url": "https://letterboxd.com/film/ukraine-is-not-a-brothel/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Ukraine-is-Not-a-Brothel-2014/32481",
+    "letterboxd_rating": 3.08,
+    "letterboxd_url": "https://letterboxd.com/film/wyrmwood-road-of-the-dead/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Wyrmwood--Road-of-the-Dead-2014/31883",
     "genres": [
-      "Documentary"
+      "Horror",
+      "Action",
+      "Comedy"
     ],
-    "runtime_mins": 78,
-    "revenue": null,
-    "budget": null,
+    "runtime_mins": 98,
+    "revenue": 111141,
+    "budget": 160000,
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [
-      "Kitty Green",
-      "Jonathan auf der Heide",
-      "Michael Latham"
+      "Tristan Roache-Turner"
     ],
-    "added_at": "2026-04-09T02:55:16.766318"
+    "added_at": "2026-04-13T09:20:25.046757"
   },
   {
     "title": "100 Bloody Acres",
@@ -5356,6 +5274,39 @@
     "added_at": "2026-04-07T05:16:41.501301"
   },
   {
+    "title": "Canopy",
+    "year": 2013,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Aaron Wilson",
+    "synopsis": "Wartime, 1942. Singapore. An Australian fighter pilot shot down in combat awakens suspended in the treetops. As night devours day, he must navigate through dangerous jungle in search of sanctuary.",
+    "poster_url": "posters/215946.jpg",
+    "tmdb_id": 215946,
+    "tmdb_rating": 5.8,
+    "imdb_id": "tt2232578",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.15,
+    "letterboxd_url": "https://letterboxd.com/film/canopy/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Canopy-2013/32545",
+    "genres": [
+      "War",
+      "Adventure",
+      "Drama"
+    ],
+    "runtime_mins": 80,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Katrina Fleming",
+      "Aaron Wilson"
+    ],
+    "added_at": "2026-04-13T09:20:43.506417"
+  },
+  {
     "title": "Felony",
     "year": 2013,
     "festivals": [
@@ -5411,42 +5362,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:16:29.288474"
-  },
-  {
-    "title": "Lore",
-    "year": 2013,
-    "festivals": [
-      "Berlin",
-      "Rotterdam"
-    ],
-    "director": "Cate Shortland",
-    "synopsis": "After being abandoned by their Nazi parents at the end of World War II, five German siblings embark on a harrowing journey across their war-torn country. Led by the eldest, 14 year-old Lore, the children are forced to confront their parents’ actions and the reality of a new world.",
-    "poster_url": "posters/121835.jpg",
-    "tmdb_id": 121835,
-    "tmdb_rating": 6.8,
-    "imdb_id": "tt1996310",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.64,
-    "letterboxd_url": "https://letterboxd.com/film/lore/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Lore-2013/26836",
-    "genres": [
-      "Drama",
-      "War",
-      "Thriller"
-    ],
-    "runtime_mins": 109,
-    "revenue": 970000,
-    "budget": 4000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Liz Watts",
-      "Karsten Stöter",
-      "Benny Dreschsel",
-      "Paul Welsh"
-    ],
-    "added_at": "2026-04-09T02:55:23.185481"
   },
   {
     "title": "Make Hummus Not War",
@@ -5704,39 +5619,6 @@
     "added_at": "2026-04-07T05:16:54.771762"
   },
   {
-    "title": "Satellite Boy",
-    "year": 2013,
-    "festivals": [
-      "Berlin"
-    ],
-    "director": "Catriona McKenzie",
-    "synopsis": "When his grandfather's drive-in cinema and home in the outback town of Wyndham is threatened with demolition, a twelve-year-old Aboriginal boy must journey through Australia's bush country — equipped only with ancient survival skills — to stop the city developers.",
-    "poster_url": "posters/128204.jpg",
-    "tmdb_id": 128204,
-    "tmdb_rating": 5.9,
-    "imdb_id": "tt2234397",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.35,
-    "letterboxd_url": "https://letterboxd.com/film/satellite-boy/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Satellite-Boy-2013/11423",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Family"
-    ],
-    "runtime_mins": 90,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "David Jowsey",
-      "Julie Ryan"
-    ],
-    "added_at": "2026-04-09T02:55:28.075691"
-  },
-  {
     "title": "Tracks",
     "year": 2013,
     "festivals": [
@@ -5764,6 +5646,38 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:16:52.547763"
+  },
+  {
+    "title": "Ukraine is Not a Brothel",
+    "year": 2013,
+    "festivals": [
+      "Venice"
+    ],
+    "director": "Kitty Green",
+    "synopsis": "Ukraine's topless feminist sensation Femen has created a media frenzy across Europe, but before they take the world by storm, these bold and beautiful women must confront the dark and perverse forces that power their organisation.",
+    "poster_url": "posters/219077.jpg",
+    "tmdb_id": 219077,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt3136842",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.43,
+    "letterboxd_url": "https://letterboxd.com/film/ukraine-is-not-a-brothel/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Ukraine-is-Not-a-Brothel-2013/32481",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 78,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Kitty Green",
+      "Jonathan auf der Heide",
+      "Michael Latham"
+    ],
+    "added_at": "2026-04-13T09:20:48.124037"
   },
   {
     "title": "Wolf Creek 2",
@@ -5960,37 +5874,6 @@
     "added_at": "2026-04-07T05:17:10.615635"
   },
   {
-    "title": "Hail",
-    "year": 2012,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Amiel Courtin-Wilson",
-    "synopsis": "Fresh from a Melbourne jail, Dan is reunited with the love of his life, Leanne. A fierce, passionate and tender couple who have learnt to appreciate the simplest pleasures in life, Dan and Leanne celebrate, and when surrounded by friends he announces he has resolved to go straight.",
-    "poster_url": "posters/92642.jpg",
-    "tmdb_id": 92642,
-    "tmdb_rating": 7.8,
-    "imdb_id": "tt1782453",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.61,
-    "letterboxd_url": "https://letterboxd.com/film/hail-2012/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Hail-2012/29968",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 104,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Michael Cody",
-      "Amiel Courtin-Wilson"
-    ],
-    "added_at": "2026-04-09T02:55:34.336598"
-  },
-  {
     "title": "I'm the One",
     "year": 2012,
     "festivals": [
@@ -6050,6 +5933,41 @@
     "added_at": "2026-04-07T05:16:59.346892"
   },
   {
+    "title": "Lore",
+    "year": 2012,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Cate Shortland",
+    "synopsis": "After being abandoned by their Nazi parents at the end of World War II, five German siblings embark on a harrowing journey across their war-torn country. Led by the eldest, 14 year-old Lore, the children are forced to confront their parents’ actions and the reality of a new world.",
+    "poster_url": "posters/121835.jpg",
+    "tmdb_id": 121835,
+    "tmdb_rating": 6.8,
+    "imdb_id": "tt1996310",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.64,
+    "letterboxd_url": "https://letterboxd.com/film/lore/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Lore-2012/26836",
+    "genres": [
+      "Drama",
+      "War",
+      "Thriller"
+    ],
+    "runtime_mins": 109,
+    "revenue": 970000,
+    "budget": 4000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Liz Watts",
+      "Karsten Stöter",
+      "Benny Dreschsel",
+      "Paul Welsh"
+    ],
+    "added_at": "2026-04-13T09:20:53.074425"
+  },
+  {
     "title": "Maker, The",
     "year": 2012,
     "festivals": [
@@ -6103,6 +6021,39 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:17:23.549769"
+  },
+  {
+    "title": "Satellite Boy",
+    "year": 2012,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Catriona McKenzie",
+    "synopsis": "When his grandfather's drive-in cinema and home in the outback town of Wyndham is threatened with demolition, a twelve-year-old Aboriginal boy must journey through Australia's bush country — equipped only with ancient survival skills — to stop the city developers.",
+    "poster_url": "posters/128204.jpg",
+    "tmdb_id": 128204,
+    "tmdb_rating": 5.9,
+    "imdb_id": "tt2234397",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.35,
+    "letterboxd_url": "https://letterboxd.com/film/satellite-boy/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Satellite-Boy-2012/11423",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Family"
+    ],
+    "runtime_mins": 90,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "David Jowsey",
+      "Julie Ryan"
+    ],
+    "added_at": "2026-04-13T09:20:57.793192"
   },
   {
     "title": "Scarlet Road",
@@ -6216,37 +6167,6 @@
     "added_at": "2026-04-07T05:17:16.199385"
   },
   {
-    "title": "Animal Kingdom",
-    "year": 2011,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "David Michôd",
-    "synopsis": "Joshua “J” is taken in by his extended family after his mother dies of an overdose. The clan, ruled by J’s scheming grandmother, is heavily involved in criminal activities, and J is soon indoctrinated into their way of life. But J is given a chance to take another path when a cop seeks to help him.",
-    "poster_url": "posters/44629.jpg",
-    "tmdb_id": 44629,
-    "tmdb_rating": 6.8,
-    "imdb_id": "tt1313092",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.76,
-    "letterboxd_url": "https://letterboxd.com/film/animal-kingdom/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Animal-Kingdom-2011/26297",
-    "genres": [
-      "Crime",
-      "Drama"
-    ],
-    "runtime_mins": 113,
-    "revenue": 1000000,
-    "budget": 5000000,
-    "distributor": "Madman Entertainment",
-    "distributor_intl": "Sony Pictures Classics",
-    "sales_agent": "Memento Films International",
-    "producers": [
-      "Liz Watts"
-    ],
-    "added_at": "2026-04-09T02:55:43.803212"
-  },
-  {
     "title": "Attack",
     "year": 2011,
     "festivals": [
@@ -6358,37 +6278,35 @@
     "added_at": "2026-04-07T05:18:12.927179"
   },
   {
-    "title": "Griff The Invisible",
+    "title": "Hail",
     "year": 2011,
     "festivals": [
-      "Berlin"
+      "Venice"
     ],
-    "director": "Leon Ford",
-    "synopsis": "Griff, office worker by day, superhero by night, has his world turned upside down when he meets Melody, a beautiful young scientist who shares his passion for the impossible.",
-    "poster_url": "posters/66942.jpg",
-    "tmdb_id": 66942,
-    "tmdb_rating": 5.7,
-    "imdb_id": "tt1509803",
+    "director": "Amiel Courtin-Wilson",
+    "synopsis": "Fresh from a Melbourne jail, Dan is reunited with the love of his life, Leanne. A fierce, passionate and tender couple who have learnt to appreciate the simplest pleasures in life, Dan and Leanne celebrate, and when surrounded by friends he announces he has resolved to go straight.",
+    "poster_url": "posters/92642.jpg",
+    "tmdb_id": 92642,
+    "tmdb_rating": 7.8,
+    "imdb_id": "tt1782453",
     "imdb_rating": null,
-    "letterboxd_rating": 3.18,
-    "letterboxd_url": "https://letterboxd.com/film/griff-the-invisible/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Griff-The-Invisible-2011/26265",
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/hail-2011/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Hail-2011/29968",
     "genres": [
-      "Romance",
-      "Comedy",
-      "Drama",
-      "Fantasy"
+      "Drama"
     ],
-    "runtime_mins": 93,
+    "runtime_mins": 104,
     "revenue": null,
-    "budget": 2902660,
+    "budget": null,
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [
-      "Nicole O'Donohue"
+      "Michael Cody",
+      "Amiel Courtin-Wilson"
     ],
-    "added_at": "2026-04-09T02:55:38.841533"
+    "added_at": "2026-04-13T09:21:02.321001"
   },
   {
     "title": "Hunter, The",
@@ -6502,36 +6420,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:17:39.108192"
-  },
-  {
-    "title": "Machete Maidens Unleashed!",
-    "year": 2011,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Mark Hartley",
-    "synopsis": "In the final decades of the 20th century, the Philippines was a country where low-budget exploitation-film producers were free to make nearly any kind of movie they wanted, any way they pleased. It was a country with extremely lax labor regulations and a very permissive attitude towards cultural expression. As a result, it became a hotbed for the production of cheapie movies. Their history and the genre itself are detailed in this breezy, nostalgic documentary.",
-    "poster_url": "posters/70115.jpg",
-    "tmdb_id": 70115,
-    "tmdb_rating": 6.6,
-    "imdb_id": "tt1623757",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.53,
-    "letterboxd_url": "https://letterboxd.com/film/machete-maidens-unleashed/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Machete-Maidens-Unleashed!-2011/26965",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 85,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Veronica Fury"
-    ],
-    "added_at": "2026-04-09T02:55:48.472699"
   },
   {
     "title": "Mad Bastards",
@@ -6732,37 +6620,36 @@
     "added_at": "2026-04-07T05:17:48.119274"
   },
   {
-    "title": "Wasted on the Young",
-    "year": 2011,
+    "title": "Animal Kingdom",
+    "year": 2010,
     "festivals": [
-      "SXSW"
+      "Sundance",
+      "Toronto"
     ],
-    "director": "Ben C. Lucas",
-    "synopsis": "When a high school party goes dangerously off the rails, one teenager finds that revenge is just a computer click away.",
-    "poster_url": "posters/70418.jpg",
-    "tmdb_id": 70418,
-    "tmdb_rating": 5.5,
-    "imdb_id": "tt1647483",
+    "director": "David Michôd",
+    "synopsis": "Joshua “J” is taken in by his extended family after his mother dies of an overdose. The clan, ruled by J’s scheming grandmother, is heavily involved in criminal activities, and J is soon indoctrinated into their way of life. But J is given a chance to take another path when a cop seeks to help him.",
+    "poster_url": "posters/44629.jpg",
+    "tmdb_id": 44629,
+    "tmdb_rating": 6.8,
+    "imdb_id": "tt1313092",
     "imdb_rating": null,
-    "letterboxd_rating": 3.16,
-    "letterboxd_url": "https://letterboxd.com/film/wasted-on-the-young/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Wasted-on-the-Young-2011/26581",
+    "letterboxd_rating": 3.76,
+    "letterboxd_url": "https://letterboxd.com/film/animal-kingdom/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Animal-Kingdom-2010/26297",
     "genres": [
-      "Drama",
-      "Thriller",
-      "Romance"
+      "Crime",
+      "Drama"
     ],
-    "runtime_mins": 97,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
+    "runtime_mins": 113,
+    "revenue": 1000000,
+    "budget": 5000000,
+    "distributor": "Madman Entertainment",
+    "distributor_intl": "Sony Pictures Classics",
+    "sales_agent": "Memento Films International",
     "producers": [
-      "Aidan O'Bryan",
-      "Janelle Landers"
+      "Liz Watts"
     ],
-    "added_at": "2026-04-09T02:55:51.650222"
+    "added_at": "2026-04-13T09:21:11.275876"
   },
   {
     "title": "Blame",
@@ -6790,40 +6677,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:19:04.013440"
-  },
-  {
-    "title": "Bran Nue Dae",
-    "year": 2010,
-    "festivals": [
-      "Berlin",
-      "Sundance"
-    ],
-    "director": "Rachel Perkins",
-    "synopsis": "In the Summer of 1965 a young man is filled with the life of the idyllic old pearling port Broome - fishing, hanging out with his mates and his girl. However his mother returns him to the religious mission for further schooling. After being punished for an act of youthful rebellion, he runs away from the mission on a journey that ultimately leads him back home.",
-    "poster_url": "posters/38415.jpg",
-    "tmdb_id": 38415,
-    "tmdb_rating": 5.4,
-    "imdb_id": "tt1148165",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.21,
-    "letterboxd_url": "https://letterboxd.com/film/bran-nue-dae/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Bran-Nue-Dae-2010/23843",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "runtime_mins": 85,
-    "revenue": 6812530,
-    "budget": 7000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Robyn Kershaw",
-      "Graeme Isaac"
-    ],
-    "added_at": "2026-04-09T02:55:56.460755"
   },
   {
     "title": "Cane Toads: The Conquest",
@@ -6936,6 +6789,39 @@
     "added_at": "2026-04-07T05:18:53.617367"
   },
   {
+    "title": "Griff The Invisible",
+    "year": 2010,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Leon Ford",
+    "synopsis": "Griff, office worker by day, superhero by night, has his world turned upside down when he meets Melody, a beautiful young scientist who shares his passion for the impossible.",
+    "poster_url": "posters/66942.jpg",
+    "tmdb_id": 66942,
+    "tmdb_rating": 5.7,
+    "imdb_id": "tt1509803",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.18,
+    "letterboxd_url": "https://letterboxd.com/film/griff-the-invisible/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Griff-The-Invisible-2010/26265",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama",
+      "Fantasy"
+    ],
+    "runtime_mins": 93,
+    "revenue": null,
+    "budget": 2902660,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Nicole O'Donohue"
+    ],
+    "added_at": "2026-04-13T09:21:16.044074"
+  },
+  {
     "title": "Jucy",
     "year": 2010,
     "festivals": [
@@ -6963,67 +6849,35 @@
     "added_at": "2026-04-07T05:19:08.291005"
   },
   {
-    "title": "Loved Ones, The",
+    "title": "Machete Maidens Unleashed!",
     "year": 2010,
     "festivals": [
-      "SXSW"
+      "Sitges",
+      "Toronto"
     ],
-    "director": "Sean Byrne",
-    "synopsis": "When Brent turns down his classmate Lola's invitation to the prom, she concocts a wildly violent plan for revenge.",
-    "poster_url": "posters/46420.jpg",
-    "tmdb_id": 46420,
-    "tmdb_rating": 6.7,
-    "imdb_id": "tt1316536",
+    "director": "Mark Hartley",
+    "synopsis": "In the final decades of the 20th century, the Philippines was a country where low-budget exploitation-film producers were free to make nearly any kind of movie they wanted, any way they pleased. It was a country with extremely lax labor regulations and a very permissive attitude towards cultural expression. As a result, it became a hotbed for the production of cheapie movies. Their history and the genre itself are detailed in this breezy, nostalgic documentary.",
+    "poster_url": "posters/70115.jpg",
+    "tmdb_id": 70115,
+    "tmdb_rating": 6.6,
+    "imdb_id": "tt1623757",
     "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Loved-Ones-2010/26447",
+    "letterboxd_rating": 3.53,
+    "letterboxd_url": "https://letterboxd.com/film/machete-maidens-unleashed/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Machete-Maidens-Unleashed!-2010/26965",
     "genres": [
-      "Horror"
+      "Documentary"
     ],
-    "runtime_mins": 84,
-    "revenue": 358399,
-    "budget": 4000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Mark Lazarus",
-      "Michael Boughen"
-    ],
-    "added_at": "2026-04-09T02:56:10.306384"
-  },
-  {
-    "title": "My Tehran For Sale",
-    "year": 2010,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Granaz Moussavi",
-    "synopsis": "Marzieh is a young female actress living in Tehran. The authorities ban her theatre work and, like all young people in Iran, she is forced to lead a secret life in order to express herself artistically. At an underground rave, she meets Iranian born Saman, now an Australian citizen, who offers her a way out of her country and the possibility of living without fear.",
-    "poster_url": "posters/77574.jpg",
-    "tmdb_id": 77574,
-    "tmdb_rating": 5.2,
-    "imdb_id": "tt1368864",
-    "imdb_rating": null,
-    "letterboxd_rating": 2.8,
-    "letterboxd_url": "https://letterboxd.com/film/my-tehran-for-sale/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/My-Tehran-For-Sale-2010/24650",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 96,
+    "runtime_mins": 85,
     "revenue": null,
-    "budget": 623000,
+    "budget": null,
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [
-      "Julie Ryan",
-      "Kate Croser",
-      "Granaz Moussavi"
+      "Veronica Fury"
     ],
-    "added_at": "2026-04-09T02:56:00.543210"
+    "added_at": "2026-04-13T09:21:06.638802"
   },
   {
     "title": "Primal",
@@ -7113,37 +6967,6 @@
     "added_at": "2026-04-07T05:18:45.119984"
   },
   {
-    "title": "Samson & Delilah",
-    "year": 2010,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Warwick Thornton",
-    "synopsis": "Samson, a cheeky 15-year-old boy, and Delilah, live in an isolated Aboriginal community in the Central Australian desert. The two teenagers soon discover that life outside the community can be cruel. Lost, unwanted and alone they discover that life isn’t always fair, but love never judges.",
-    "poster_url": "posters/47075.jpg",
-    "tmdb_id": 47075,
-    "tmdb_rating": 6.3,
-    "imdb_id": "tt1340123",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/samson-delilah/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Samson---Delilah-2010/20947",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "runtime_mins": 101,
-    "revenue": null,
-    "budget": null,
-    "distributor": "Madman Entertainment",
-    "distributor_intl": "Kino Lorber",
-    "sales_agent": "Memento Films International",
-    "producers": [
-      "Kath Shelper"
-    ],
-    "added_at": "2026-04-09T02:56:05.527661"
-  },
-  {
     "title": "Schooner of Blood",
     "year": 2010,
     "festivals": [
@@ -7223,6 +7046,39 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:18:49.402278"
+  },
+  {
+    "title": "Wasted on the Young",
+    "year": 2010,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Ben C. Lucas",
+    "synopsis": "When a high school party goes dangerously off the rails, one teenager finds that revenge is just a computer click away.",
+    "poster_url": "posters/70418.jpg",
+    "tmdb_id": 70418,
+    "tmdb_rating": 5.5,
+    "imdb_id": "tt1647483",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.16,
+    "letterboxd_url": "https://letterboxd.com/film/wasted-on-the-young/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Wasted-on-the-Young-2010/26581",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Romance"
+    ],
+    "runtime_mins": 97,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Aidan O'Bryan",
+      "Janelle Landers"
+    ],
+    "added_at": "2026-04-13T09:21:20.696703"
   },
   {
     "title": "Accidents Happen",
@@ -7361,6 +7217,39 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:19:49.729078"
+  },
+  {
+    "title": "Bran Nue Dae",
+    "year": 2009,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Rachel Perkins",
+    "synopsis": "In the Summer of 1965 a young man is filled with the life of the idyllic old pearling port Broome - fishing, hanging out with his mates and his girl. However his mother returns him to the religious mission for further schooling. After being punished for an act of youthful rebellion, he runs away from the mission on a journey that ultimately leads him back home.",
+    "poster_url": "posters/38415.jpg",
+    "tmdb_id": 38415,
+    "tmdb_rating": 5.4,
+    "imdb_id": "tt1148165",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.21,
+    "letterboxd_url": "https://letterboxd.com/film/bran-nue-dae/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Bran-Nue-Dae-2009/23843",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 85,
+    "revenue": 6812530,
+    "budget": 7000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Robyn Kershaw",
+      "Graeme Isaac"
+    ],
+    "added_at": "2026-04-13T09:21:34.434125"
   },
   {
     "title": "Bright Star",
@@ -7560,6 +7449,38 @@
     "added_at": "2026-04-07T05:19:56.485675"
   },
   {
+    "title": "Loved Ones, The",
+    "year": 2009,
+    "festivals": [
+      "Sitges",
+      "Toronto"
+    ],
+    "director": "Sean Byrne",
+    "synopsis": "When Brent turns down his classmate Lola's invitation to the prom, she concocts a wildly violent plan for revenge.",
+    "poster_url": "posters/46420.jpg",
+    "tmdb_id": 46420,
+    "tmdb_rating": 6.7,
+    "imdb_id": "tt1316536",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Loved-Ones-2009/26447",
+    "genres": [
+      "Horror"
+    ],
+    "runtime_mins": 84,
+    "revenue": 358399,
+    "budget": 4000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Mark Lazarus",
+      "Michael Boughen"
+    ],
+    "added_at": "2026-04-13T09:21:29.990837"
+  },
+  {
     "title": "Mao's Last Dancer",
     "year": 2009,
     "festivals": [
@@ -7619,6 +7540,38 @@
     "added_at": "2026-04-07T05:19:12.906312"
   },
   {
+    "title": "My Tehran For Sale",
+    "year": 2009,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Granaz Moussavi",
+    "synopsis": "Marzieh is a young female actress living in Tehran. The authorities ban her theatre work and, like all young people in Iran, she is forced to lead a secret life in order to express herself artistically. At an underground rave, she meets Iranian born Saman, now an Australian citizen, who offers her a way out of her country and the possibility of living without fear.",
+    "poster_url": "posters/77574.jpg",
+    "tmdb_id": 77574,
+    "tmdb_rating": 5.2,
+    "imdb_id": "tt1368864",
+    "imdb_rating": null,
+    "letterboxd_rating": 2.8,
+    "letterboxd_url": "https://letterboxd.com/film/my-tehran-for-sale/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/My-Tehran-For-Sale-2009/24650",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 96,
+    "revenue": null,
+    "budget": 623000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Julie Ryan",
+      "Kate Croser",
+      "Granaz Moussavi"
+    ],
+    "added_at": "2026-04-13T09:21:39.227382"
+  },
+  {
     "title": "My Year Without Sex",
     "year": 2009,
     "festivals": [
@@ -7645,38 +7598,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:20:03.730432"
-  },
-  {
-    "title": "Not Quite Hollywood",
-    "year": 2009,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Mark Hartley",
-    "synopsis": "As Australian cinema broke through to international audiences in the 1970s through respected art house films like Peter Weir's \"Picnic At Hanging Rock,\" a new underground of low-budget exploitation filmmakers were turning out considerably less highbrow fare. Documentary filmmaker Mark Hartley explores this unbridled era of sex and violence, complete with clips from some of the scene's most outrageous flicks and interviews with the renegade filmmakers themselves.",
-    "poster_url": "posters/16194.jpg",
-    "tmdb_id": 16194,
-    "tmdb_rating": 6.8,
-    "imdb_id": "tt0996966",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.75,
-    "letterboxd_url": "https://letterboxd.com/film/not-quite-hollywood/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Not-Quite-Hollywood-2009/23848",
-    "genres": [
-      "Comedy",
-      "Documentary"
-    ],
-    "runtime_mins": 103,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Craig Griffin",
-      "Michael Lynch"
-    ],
-    "added_at": "2026-04-09T02:56:14.904550"
   },
   {
     "title": "Rats and Cats",
@@ -7707,6 +7628,38 @@
     "added_at": "2026-04-07T05:19:38.133083"
   },
   {
+    "title": "Samson & Delilah",
+    "year": 2009,
+    "festivals": [
+      "Cannes",
+      "Toronto"
+    ],
+    "director": "Warwick Thornton",
+    "synopsis": "Samson, a cheeky 15-year-old boy, and Delilah, live in an isolated Aboriginal community in the Central Australian desert. The two teenagers soon discover that life outside the community can be cruel. Lost, unwanted and alone they discover that life isn’t always fair, but love never judges.",
+    "poster_url": "posters/47075.jpg",
+    "tmdb_id": 47075,
+    "tmdb_rating": 6.3,
+    "imdb_id": "tt1340123",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/samson-delilah/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Samson---Delilah-2009/20947",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 101,
+    "revenue": null,
+    "budget": null,
+    "distributor": "Madman Entertainment",
+    "distributor_intl": "Kino Lorber",
+    "sales_agent": "Memento Films International",
+    "producers": [
+      "Kath Shelper"
+    ],
+    "added_at": "2026-04-13T09:21:25.470404"
+  },
+  {
     "title": "Stolen",
     "year": 2009,
     "festivals": [
@@ -7730,38 +7683,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:20:06.360161"
-  },
-  {
-    "title": "Three Blind Mice",
-    "year": 2009,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Matthew Newton",
-    "synopsis": "Three young Navy officers hit Sydney for one last night on land before being shipped over to the Gulf to fight. Sam has been mistreated at sea and is going AWOL, Dean has a fiancé and the future in-laws to meet, and Harry just loves playing cards. Throughout the night the boys lose each other, find themselves, and along the way discover courage, friendship and redemption.",
-    "poster_url": "posters/35358.jpg",
-    "tmdb_id": 35358,
-    "tmdb_rating": 5.3,
-    "imdb_id": "tt1239388",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/three-blind-mice-2009/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Three-Blind-Mice-2009/25092",
-    "genres": [
-      "Romance",
-      "Drama",
-      "Comedy"
-    ],
-    "runtime_mins": 94,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Ben Davis"
-    ],
-    "added_at": "2026-04-09T02:56:19.723042"
   },
   {
     "title": "Van Diemen's Land",
@@ -7906,37 +7827,6 @@
     "added_at": "2026-04-07T05:20:10.865140"
   },
   {
-    "title": "Corroboree",
-    "year": 2008,
-    "festivals": [
-      "Berlin"
-    ],
-    "director": "Ben Hackworth",
-    "synopsis": "A beautiful young man has been summoned to an eerie meditation retreat by a dying theatre director. The young man has been given a tape of instructions; over a weekend he must perform scenes from the director's life. He visits different rooms encountering five actresses who all portray key women in the director's life. They rehearse the boy to play the lead role in an as yet 'unmade film'. The dying director watches young boy's progress as he searches to inhabit the director's identity. It's an Alice in Wonderland tale and an unpredictable journey of self discovery for all concerned...",
-    "poster_url": "posters/126631.jpg",
-    "tmdb_id": 126631,
-    "tmdb_rating": 3.6,
-    "imdb_id": "tt0906747",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/corroboree/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Corroboree-2008/24524",
-    "genres": [
-      "Drama",
-      "Mystery"
-    ],
-    "runtime_mins": 95,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Matteo Bruno"
-    ],
-    "added_at": "2026-04-09T02:56:24.428040"
-  },
-  {
     "title": "Disgrace",
     "year": 2008,
     "festivals": [
@@ -8046,6 +7936,38 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:20:24.683765"
+  },
+  {
+    "title": "Not Quite Hollywood",
+    "year": 2008,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Mark Hartley",
+    "synopsis": "As Australian cinema broke through to international audiences in the 1970s through respected art house films like Peter Weir's \"Picnic At Hanging Rock,\" a new underground of low-budget exploitation filmmakers were turning out considerably less highbrow fare. Documentary filmmaker Mark Hartley explores this unbridled era of sex and violence, complete with clips from some of the scene's most outrageous flicks and interviews with the renegade filmmakers themselves.",
+    "poster_url": "posters/16194.jpg",
+    "tmdb_id": 16194,
+    "tmdb_rating": 6.8,
+    "imdb_id": "tt0996966",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.75,
+    "letterboxd_url": "https://letterboxd.com/film/not-quite-hollywood/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Not-Quite-Hollywood-2008/23848",
+    "genres": [
+      "Comedy",
+      "Documentary"
+    ],
+    "runtime_mins": 103,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Craig Griffin",
+      "Michael Lynch"
+    ],
+    "added_at": "2026-04-13T09:21:43.729091"
   },
   {
     "title": "Son Of A Lion",
@@ -8162,24 +8084,25 @@
     "added_at": "2026-04-07T05:20:29.501372"
   },
   {
-    "title": "Unfinished Sky",
+    "title": "Three Blind Mice",
     "year": 2008,
     "festivals": [
-      "Rotterdam"
+      "Toronto"
     ],
-    "director": "Peter Duncan",
-    "synopsis": "An Outback farmer takes in an Afghani woman who has fled from a brothel.",
-    "poster_url": "posters/103902.jpg",
-    "tmdb_id": 103902,
-    "tmdb_rating": 6.2,
-    "imdb_id": "tt0838231",
+    "director": "Matthew Newton",
+    "synopsis": "Three young Navy officers hit Sydney for one last night on land before being shipped over to the Gulf to fight. Sam has been mistreated at sea and is going AWOL, Dean has a fiancé and the future in-laws to meet, and Harry just loves playing cards. Throughout the night the boys lose each other, find themselves, and along the way discover courage, friendship and redemption.",
+    "poster_url": "posters/35358.jpg",
+    "tmdb_id": 35358,
+    "tmdb_rating": 5.3,
+    "imdb_id": "tt1239388",
     "imdb_rating": null,
     "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/unfinished-sky/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Unfinished-Sky-2008/22259",
+    "letterboxd_url": "https://letterboxd.com/film/three-blind-mice-2008/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Three-Blind-Mice-2008/25092",
     "genres": [
       "Romance",
-      "Drama"
+      "Drama",
+      "Comedy"
     ],
     "runtime_mins": 94,
     "revenue": null,
@@ -8188,10 +8111,9 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [
-      "Cathy Rodda",
-      "Anton Smit"
+      "Ben Davis"
     ],
-    "added_at": "2026-04-09T02:56:29.192774"
+    "added_at": "2026-04-13T09:21:48.266197"
   },
   {
     "title": "Yes Madam, Sir",
@@ -8277,6 +8199,37 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:21:06.250074"
+  },
+  {
+    "title": "Corroboree",
+    "year": 2007,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Ben Hackworth",
+    "synopsis": "A beautiful young man has been summoned to an eerie meditation retreat by a dying theatre director. The young man has been given a tape of instructions; over a weekend he must perform scenes from the director's life. He visits different rooms encountering five actresses who all portray key women in the director's life. They rehearse the boy to play the lead role in an as yet 'unmade film'. The dying director watches young boy's progress as he searches to inhabit the director's identity. It's an Alice in Wonderland tale and an unpredictable journey of self discovery for all concerned...",
+    "poster_url": "posters/126631.jpg",
+    "tmdb_id": 126631,
+    "tmdb_rating": 3.6,
+    "imdb_id": "tt0906747",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/corroboree/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Corroboree-2007/24524",
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
+    "runtime_mins": 95,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Matteo Bruno"
+    ],
+    "added_at": "2026-04-13T09:21:52.654681"
   },
   {
     "title": "Death Defying Acts",
@@ -8588,37 +8541,36 @@
     "added_at": "2026-04-07T05:21:22.980807"
   },
   {
-    "title": "Ten Canoes",
+    "title": "Unfinished Sky",
     "year": 2007,
     "festivals": [
-      "Rotterdam"
+      "Toronto"
     ],
-    "director": "Peter Djigirr, Rolf de Heer",
-    "synopsis": "A story within a story within a story. In Australia's Northern Territory, an Aboriginal narrator tells a story about his ancestors on a goose hunt. A youngster on the hunt is being tempted to adultery with his elder brother's wife, so an elder tells him a story from the mythical past about how evil can slip in and cause havoc unless prevented by virtue according to customary tribal law.",
-    "poster_url": "posters/14064.jpg",
-    "tmdb_id": 14064,
-    "tmdb_rating": 6.7,
-    "imdb_id": "tt0466399",
+    "director": "Peter Duncan",
+    "synopsis": "An Outback farmer takes in an Afghani woman who has fled from a brothel.",
+    "poster_url": "posters/103902.jpg",
+    "tmdb_id": 103902,
+    "tmdb_rating": 6.2,
+    "imdb_id": "tt0838231",
     "imdb_rating": null,
-    "letterboxd_rating": 3.69,
-    "letterboxd_url": "https://letterboxd.com/film/ten-canoes/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Ten-Canoes-2007/19397",
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/unfinished-sky/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Unfinished-Sky-2007/22259",
     "genres": [
-      "Adventure",
-      "Comedy",
+      "Romance",
       "Drama"
     ],
-    "runtime_mins": 90,
-    "revenue": 300000,
-    "budget": 2000000,
+    "runtime_mins": 94,
+    "revenue": null,
+    "budget": null,
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [
-      "Rolf de Heer",
-      "Julie Ryan"
+      "Cathy Rodda",
+      "Anton Smit"
     ],
-    "added_at": "2026-04-09T02:56:34.001593"
+    "added_at": "2026-04-13T09:21:57.255534"
   },
   {
     "title": "West",
@@ -8766,38 +8718,6 @@
     "added_at": "2026-04-07T05:21:37.916358"
   },
   {
-    "title": "Look Both Ways",
-    "year": 2006,
-    "festivals": [
-      "Cannes",
-      "Rotterdam"
-    ],
-    "director": "Sarah Watt",
-    "synopsis": "During one unusually hot weekend, four friends struggle after hearing some life-changing news.",
-    "poster_url": "posters/16151.jpg",
-    "tmdb_id": 16151,
-    "tmdb_rating": 6.0,
-    "imdb_id": "tt0382806",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.38,
-    "letterboxd_url": "https://letterboxd.com/film/look-both-ways/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Look-Both-Ways-2006/18738",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Bridget Ikin"
-    ],
-    "added_at": "2026-04-09T02:56:42.630408"
-  },
-  {
     "title": "Macbeth",
     "year": 2006,
     "festivals": [
@@ -8853,45 +8773,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:21:29.430168"
-  },
-  {
-    "title": "Proposition, The",
-    "year": 2006,
-    "festivals": [
-      "Berlin",
-      "Sundance"
-    ],
-    "director": "John Hillcoat",
-    "synopsis": "In 1880s Australia, a lawman offers renegade Charlie Burns a difficult choice. In order to save his younger brother from the gallows, Charlie must hunt down and kill his older brother, who is wanted for rape and murder. Venturing into one of the Outback's most inhospitable regions, Charlie faces a terrible moral dilemma that can end only in violence.",
-    "poster_url": "posters/16608.jpg",
-    "tmdb_id": 16608,
-    "tmdb_rating": 7.0,
-    "imdb_id": "tt0421238",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Proposition-2006/20385",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Crime",
-      "Drama",
-      "Thriller",
-      "Western"
-    ],
-    "runtime_mins": 104,
-    "revenue": 5048693,
-    "budget": 2000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Chris Brown",
-      "Jackie O'Sullivan",
-      "Chiara Menage",
-      "Cat Villiers"
-    ],
-    "added_at": "2026-04-09T02:56:38.152704"
   },
   {
     "title": "Rampage",
@@ -8980,6 +8861,40 @@
     "added_at": "2026-04-07T05:21:42.805397"
   },
   {
+    "title": "Ten Canoes",
+    "year": 2006,
+    "festivals": [
+      "Cannes",
+      "Toronto"
+    ],
+    "director": "Peter Djigirr, Rolf de Heer",
+    "synopsis": "A story within a story within a story. In Australia's Northern Territory, an Aboriginal narrator tells a story about his ancestors on a goose hunt. A youngster on the hunt is being tempted to adultery with his elder brother's wife, so an elder tells him a story from the mythical past about how evil can slip in and cause havoc unless prevented by virtue according to customary tribal law.",
+    "poster_url": "posters/14064.jpg",
+    "tmdb_id": 14064,
+    "tmdb_rating": 6.7,
+    "imdb_id": "tt0466399",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.7,
+    "letterboxd_url": "https://letterboxd.com/film/ten-canoes/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Ten-Canoes-2006/19397",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
+    "runtime_mins": 90,
+    "revenue": 300000,
+    "budget": 2000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Rolf de Heer",
+      "Julie Ryan"
+    ],
+    "added_at": "2026-04-13T09:22:01.927766"
+  },
+  {
     "title": "Unfolding Florence - The Many Lives of Florence Broadhurst",
     "year": 2006,
     "festivals": [
@@ -9033,6 +8948,75 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:21:57.649379"
+  },
+  {
+    "title": "Look Both Ways",
+    "year": 2005,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Sarah Watt",
+    "synopsis": "During one unusually hot weekend, four friends struggle after hearing some life-changing news.",
+    "poster_url": "posters/16151.jpg",
+    "tmdb_id": 16151,
+    "tmdb_rating": 6.0,
+    "imdb_id": "tt0382806",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.38,
+    "letterboxd_url": "https://letterboxd.com/film/look-both-ways/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Look-Both-Ways-2005/18738",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Bridget Ikin"
+    ],
+    "added_at": "2026-04-13T09:22:06.358686"
+  },
+  {
+    "title": "Proposition, The",
+    "year": 2005,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "John Hillcoat",
+    "synopsis": "In 1880s Australia, a lawman offers renegade Charlie Burns a difficult choice. In order to save his younger brother from the gallows, Charlie must hunt down and kill his older brother, who is wanted for rape and murder. Venturing into one of the Outback's most inhospitable regions, Charlie faces a terrible moral dilemma that can end only in violence.",
+    "poster_url": "posters/16608.jpg",
+    "tmdb_id": 16608,
+    "tmdb_rating": 7.0,
+    "imdb_id": "tt0421238",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Proposition-2005/20385",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Drama",
+      "Thriller",
+      "Western"
+    ],
+    "runtime_mins": 104,
+    "revenue": 5048693,
+    "budget": 2000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Chris Brown",
+      "Jackie O'Sullivan",
+      "Chiara Menage",
+      "Cat Villiers"
+    ],
+    "added_at": "2026-04-13T09:22:11.135719"
   },
   {
     "title": "Wolf Creek",
@@ -9346,36 +9330,6 @@
     "added_at": "2026-04-07T05:22:24.612327"
   },
   {
-    "title": "Australian Rules",
-    "year": 2003,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Paul Goldman",
-    "synopsis": "16-year-old Gary Black is an average football player, budding wordsmith and reluctant hero. Gary helps his local Australian Rules football team win the local championship by accident, but celebrations turn to violence when Gary's Aboriginal best friend, Dumby Red is denied the \"Best and Fairest\" medal because of the racism of local officials.",
-    "poster_url": "posters/27018.jpg",
-    "tmdb_id": 27018,
-    "tmdb_rating": 5.7,
-    "imdb_id": "tt0285006",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.22,
-    "letterboxd_url": "https://letterboxd.com/film/australian-rules/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Australian-Rules-2003/16326",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 95,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Mark Lazarus"
-    ],
-    "added_at": "2026-04-09T02:56:46.776240"
-  },
-  {
     "title": "Beginnings",
     "year": 2003,
     "festivals": [
@@ -9402,38 +9356,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:22:34.150145"
-  },
-  {
-    "title": "Beneath Clouds",
-    "year": 2003,
-    "festivals": [
-      "Rotterdam",
-      "Sundance"
-    ],
-    "director": "Ivan Sen",
-    "synopsis": "The story of Lena, the light-skinned daughter of an Aboriginal mother and Irish father and Vaughn, a Murri boy doing time in a minimum security prison in North West NSW. Dramatic events throw them together on a journey with no money and no transport. To Lena, Vaughn represents the life she is running away from. To Vaughn, Lena embodies the society that has rejected him. And for a very short amount of time, they experience a rare true happiness together.",
-    "poster_url": "posters/60109.jpg",
-    "tmdb_id": 60109,
-    "tmdb_rating": 6.3,
-    "imdb_id": "tt0295876",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.42,
-    "letterboxd_url": "https://letterboxd.com/film/beneath-clouds/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Beneath-Clouds-2003/14990",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "runtime_mins": 90,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Teresa-Jayne Hanlon"
-    ],
-    "added_at": "2026-04-09T02:56:50.899714"
   },
   {
     "title": "Blow",
@@ -9634,40 +9556,6 @@
     "added_at": "2026-04-07T05:22:42.717530"
   },
   {
-    "title": "Rabbit-Proof Fence",
-    "year": 2003,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Phillip Noyce",
-    "synopsis": "In 1931, three Aboriginal girls escape after being plucked from their homes to be trained as domestic staff, and set off on a trek across the Outback.",
-    "poster_url": "posters/9555.jpg",
-    "tmdb_id": 9555,
-    "tmdb_rating": 7.0,
-    "imdb_id": "tt0252444",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.52,
-    "letterboxd_url": "https://letterboxd.com/film/rabbit-proof-fence/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Rabbit-Proof-Fence-2003/14493",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "History"
-    ],
-    "runtime_mins": 94,
-    "revenue": 16200000,
-    "budget": 6000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "HanWay Films",
-    "producers": [
-      "Phillip Noyce",
-      "John Winter",
-      "Christine Olsen"
-    ],
-    "added_at": "2026-04-09T02:56:55.902850"
-  },
-  {
     "title": "Radiance",
     "year": 2003,
     "festivals": [
@@ -9721,38 +9609,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:22:49.731725"
-  },
-  {
-    "title": "Tracker, The",
-    "year": 2003,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Rolf de Heer",
-    "synopsis": "Somewhere in Australia in the early 20th century outback, an Aboriginal man is accused of murdering a white woman.  Three white men are on a mission to capture him with the help of an experienced Indigenous man.",
-    "poster_url": "posters/13439.jpg",
-    "tmdb_id": 13439,
-    "tmdb_rating": 6.8,
-    "imdb_id": "tt0212132",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Tracker-2003/16248",
-    "genres": [
-      "Drama",
-      "History"
-    ],
-    "runtime_mins": 90,
-    "revenue": 442000,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Rolf de Heer",
-      "Julie Ryan"
-    ],
-    "added_at": "2026-04-09T02:56:59.815428"
   },
   {
     "title": "Undead",
@@ -9844,6 +9700,67 @@
     "added_at": "2026-04-07T05:22:53.970602"
   },
   {
+    "title": "Australian Rules",
+    "year": 2002,
+    "festivals": [
+      "Sundance"
+    ],
+    "director": "Paul Goldman",
+    "synopsis": "16-year-old Gary Black is an average football player, budding wordsmith and reluctant hero. Gary helps his local Australian Rules football team win the local championship by accident, but celebrations turn to violence when Gary's Aboriginal best friend, Dumby Red is denied the \"Best and Fairest\" medal because of the racism of local officials.",
+    "poster_url": "posters/27018.jpg",
+    "tmdb_id": 27018,
+    "tmdb_rating": 5.7,
+    "imdb_id": "tt0285006",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.22,
+    "letterboxd_url": "https://letterboxd.com/film/australian-rules/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Australian-Rules-2002/16326",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 95,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Mark Lazarus"
+    ],
+    "added_at": "2026-04-13T09:22:20.182131"
+  },
+  {
+    "title": "Beneath Clouds",
+    "year": 2002,
+    "festivals": [
+      "Berlin"
+    ],
+    "director": "Ivan Sen",
+    "synopsis": "The story of Lena, the light-skinned daughter of an Aboriginal mother and Irish father and Vaughn, a Murri boy doing time in a minimum security prison in North West NSW. Dramatic events throw them together on a journey with no money and no transport. To Lena, Vaughn represents the life she is running away from. To Vaughn, Lena embodies the society that has rejected him. And for a very short amount of time, they experience a rare true happiness together.",
+    "poster_url": "posters/60109.jpg",
+    "tmdb_id": 60109,
+    "tmdb_rating": 6.3,
+    "imdb_id": "tt0295876",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.42,
+    "letterboxd_url": "https://letterboxd.com/film/beneath-clouds/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Beneath-Clouds-2002/14990",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 90,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Teresa-Jayne Hanlon"
+    ],
+    "added_at": "2026-04-13T09:22:15.446581"
+  },
+  {
     "title": "Black and White",
     "year": 2002,
     "festivals": [
@@ -9869,39 +9786,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:23:21.543889"
-  },
-  {
-    "title": "Diaries of Vaslav Nijinsky",
-    "year": 2002,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Paul Cox",
-    "synopsis": "Dramatization of Russian ballet star Vaclav Nijinsky's diaries which detail his madness as well as his homosexual relationship with Ballet Russe impresario Sergei Diaghilev and his marriage to his Hungarian wife.",
-    "poster_url": "posters/267345.jpg",
-    "tmdb_id": 267345,
-    "tmdb_rating": 3.6,
-    "imdb_id": "tt0295480",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Diaries-of-Vaslav-Nijinsky-2002/3106",
-    "genres": [
-      "Drama",
-      "Documentary"
-    ],
-    "runtime_mins": 95,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Paul Cox",
-      "Kevin Lucas",
-      "Aanya Whitehead"
-    ],
-    "added_at": "2026-04-09T02:57:04.299884"
   },
   {
     "title": "Dirty Deeds",
@@ -9962,37 +9846,6 @@
     "added_at": "2026-04-07T05:23:08.012474"
   },
   {
-    "title": "La Spagnola",
-    "year": 2002,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Steve Jacobs",
-    "synopsis": "Lola, a hot-blooded Spaniard, is deserted by her husband for a cool and calculating Aussie blonde. Lola is pregnant again but she and their daughter Lucia are left to starve while Ricardo spends all their savings on a sleek new set of wheels for his mistress. When he dies unexpectedly the family fortune, one flash car, remains with the mistress. Despite all his betrayals, Lucia sides with her father. Desperate and destitute in a country she doesn't like or understand, Lola's quest for revenge begins. Caught in the tempests of begrudging love, revenge, sibling rivalry, jealousy and passion, fourteen year old Lucia must find the strength to survive on her own terms. Aided to break free of her mother by her eccentric Aunt Manolo she struggles to find her own identity and her own quest for justice puts her on a collision course with her mother.",
-    "poster_url": "posters/115506.jpg",
-    "tmdb_id": 115506,
-    "tmdb_rating": 5.0,
-    "imdb_id": "tt0290867",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/la-spagnola/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/La-Spagnola-2002/11790",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "runtime_mins": 87,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Anna Maria Monticelli"
-    ],
-    "added_at": "2026-04-09T02:57:08.738631"
-  },
-  {
     "title": "Nugget, The",
     "year": 2002,
     "festivals": [
@@ -10018,6 +9871,72 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:23:26.701842"
+  },
+  {
+    "title": "Rabbit-Proof Fence",
+    "year": 2002,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Phillip Noyce",
+    "synopsis": "In 1931, three Aboriginal girls escape after being plucked from their homes to be trained as domestic staff, and set off on a trek across the Outback.",
+    "poster_url": "posters/9555.jpg",
+    "tmdb_id": 9555,
+    "tmdb_rating": 7.0,
+    "imdb_id": "tt0252444",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.52,
+    "letterboxd_url": "https://letterboxd.com/film/rabbit-proof-fence/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Rabbit-Proof-Fence-2002/14493",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "History"
+    ],
+    "runtime_mins": 94,
+    "revenue": 16200000,
+    "budget": 6000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "HanWay Films",
+    "producers": [
+      "Phillip Noyce",
+      "John Winter",
+      "Christine Olsen"
+    ],
+    "added_at": "2026-04-13T09:22:24.812192"
+  },
+  {
+    "title": "Tracker, The",
+    "year": 2002,
+    "festivals": [
+      "Venice"
+    ],
+    "director": "Rolf de Heer",
+    "synopsis": "Somewhere in Australia in the early 20th century outback, an Aboriginal man is accused of murdering a white woman.  Three white men are on a mission to capture him with the help of an experienced Indigenous man.",
+    "poster_url": "posters/13439.jpg",
+    "tmdb_id": 13439,
+    "tmdb_rating": 6.8,
+    "imdb_id": "tt0212132",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Tracker-2002/16248",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "runtime_mins": 90,
+    "revenue": 442000,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Rolf de Heer",
+      "Julie Ryan"
+    ],
+    "added_at": "2026-04-13T09:22:29.399668"
   },
   {
     "title": "Tree",
@@ -10102,37 +10021,37 @@
     "added_at": "2026-04-07T05:23:48.672755"
   },
   {
-    "title": "Chopper",
+    "title": "Diaries of Vaslav Nijinsky",
     "year": 2001,
     "festivals": [
-      "Rotterdam",
-      "Sundance"
+      "Toronto"
     ],
-    "director": "Andrew Dominik",
-    "synopsis": "The true and infamous story of Australia's notorious criminal Mark 'Chopper' Read and his years of crime, interest in violence, drugs and prostitutes.",
-    "poster_url": "posters/9519.jpg",
-    "tmdb_id": 9519,
-    "tmdb_rating": 6.8,
-    "imdb_id": "tt0221073",
+    "director": "Paul Cox",
+    "synopsis": "Dramatization of Russian ballet star Vaclav Nijinsky's diaries which detail his madness as well as his homosexual relationship with Ballet Russe impresario Sergei Diaghilev and his marriage to his Hungarian wife.",
+    "poster_url": "posters/267345.jpg",
+    "tmdb_id": 267345,
+    "tmdb_rating": 3.6,
+    "imdb_id": "tt0295480",
     "imdb_rating": null,
-    "letterboxd_rating": 3.64,
-    "letterboxd_url": "https://letterboxd.com/film/chopper/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Chopper-2001/9843",
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Diaries-of-Vaslav-Nijinsky-2001/3106",
     "genres": [
-      "Crime",
       "Drama",
-      "Thriller"
+      "Documentary"
     ],
-    "runtime_mins": 94,
-    "revenue": 236185,
+    "runtime_mins": 95,
+    "revenue": null,
     "budget": null,
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [
-      "Michele Bennett"
+      "Paul Cox",
+      "Kevin Lucas",
+      "Aanya Whitehead"
     ],
-    "added_at": "2026-04-09T02:57:12.561662"
+    "added_at": "2026-04-13T09:22:33.780624"
   },
   {
     "title": "Diplomat, The",
@@ -10167,41 +10086,6 @@
     "added_at": "2026-04-07T05:23:32.976173"
   },
   {
-    "title": "Dish, The",
-    "year": 2001,
-    "festivals": [
-      "Sundance"
-    ],
-    "director": "Rob Sitch",
-    "synopsis": "A group of maverick scientists on a remote Australian sheep farm are the globe's only hope for obtaining the epic images of man's first steps on the moon.",
-    "poster_url": "posters/5257.jpg",
-    "tmdb_id": 5257,
-    "tmdb_rating": 6.7,
-    "imdb_id": "tt0205873",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Dish-2001/14705",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "History"
-    ],
-    "runtime_mins": 101,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Santo Cilauro",
-      "Tom Gleisner",
-      "Jane Kennedy",
-      "Rob Sitch"
-    ],
-    "added_at": "2026-04-09T02:57:26.143955"
-  },
-  {
     "title": "Facing the Music",
     "year": 2001,
     "festivals": [
@@ -10230,37 +10114,35 @@
     "added_at": "2026-04-07T05:23:52.790634"
   },
   {
-    "title": "Goddess of 1967, The",
+    "title": "La Spagnola",
     "year": 2001,
     "festivals": [
-      "Rotterdam"
+      "Toronto"
     ],
-    "director": "Clara Law",
-    "synopsis": "A rich, young businessman travels to Australia with the intention of buying a 1967 Citroën DS. Once he arrives, things do not go to plan, and he must drive the DS into the outback alongside a blind young woman in order to track down its seller.",
-    "poster_url": "posters/46226.jpg",
-    "tmdb_id": 46226,
-    "tmdb_rating": 6.3,
-    "imdb_id": "tt0255195",
+    "director": "Steve Jacobs",
+    "synopsis": "Lola, a hot-blooded Spaniard, is deserted by her husband for a cool and calculating Aussie blonde. Lola is pregnant again but she and their daughter Lucia are left to starve while Ricardo spends all their savings on a sleek new set of wheels for his mistress. When he dies unexpectedly the family fortune, one flash car, remains with the mistress. Despite all his betrayals, Lucia sides with her father. Desperate and destitute in a country she doesn't like or understand, Lola's quest for revenge begins. Caught in the tempests of begrudging love, revenge, sibling rivalry, jealousy and passion, fourteen year old Lucia must find the strength to survive on her own terms. Aided to break free of her mother by her eccentric Aunt Manolo she struggles to find her own identity and her own quest for justice puts her on a collision course with her mother.",
+    "poster_url": "posters/115506.jpg",
+    "tmdb_id": 115506,
+    "tmdb_rating": 5.0,
+    "imdb_id": "tt0290867",
     "imdb_rating": null,
     "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Goddess-of-1967-2001/14813",
+    "letterboxd_url": "https://letterboxd.com/film/la-spagnola/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/La-Spagnola-2001/11790",
     "genres": [
-      "Comedy",
       "Drama",
-      "Romance"
+      "Comedy"
     ],
-    "runtime_mins": 119,
+    "runtime_mins": 87,
     "revenue": null,
     "budget": null,
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [
-      "Peter Sainsbury",
-      "Eddie Fong"
+      "Anna Maria Monticelli"
     ],
-    "added_at": "2026-04-09T02:57:17.365289"
+    "added_at": "2026-04-13T09:22:38.244862"
   },
   {
     "title": "Lantana",
@@ -10401,34 +10283,6 @@
     "added_at": "2026-04-07T05:24:02.183944"
   },
   {
-    "title": "Walk the Talk",
-    "year": 2001,
-    "festivals": [
-      "Rotterdam"
-    ],
-    "director": "Shirley Barrett",
-    "synopsis": "A well-meaning but misguided talent agent uses his paraplegic girlfriend's government compensation to fund his quest to resurrect a faded club singer's career.",
-    "poster_url": "posters/210750.jpg",
-    "tmdb_id": 210750,
-    "tmdb_rating": 7.0,
-    "imdb_id": "tt0221691",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/walk-the-talk/",
-    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Walk-the-Talk-2001/15063",
-    "genres": [],
-    "runtime_mins": 111,
-    "revenue": null,
-    "budget": 3500000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [
-      "Jan Chapman"
-    ],
-    "added_at": "2026-04-09T02:57:21.275199"
-  },
-  {
     "title": "Calling, The",
     "year": 2000,
     "festivals": [
@@ -10455,6 +10309,38 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:24:04.406769"
+  },
+  {
+    "title": "Chopper",
+    "year": 2000,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Andrew Dominik",
+    "synopsis": "The true and infamous story of Australia's notorious criminal Mark 'Chopper' Read and his years of crime, interest in violence, drugs and prostitutes.",
+    "poster_url": "posters/9519.jpg",
+    "tmdb_id": 9519,
+    "tmdb_rating": 6.8,
+    "imdb_id": "tt0221073",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.64,
+    "letterboxd_url": "https://letterboxd.com/film/chopper/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Chopper-2000/9843",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime_mins": 94,
+    "revenue": 236185,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Michele Bennett"
+    ],
+    "added_at": "2026-04-13T09:22:42.691415"
   },
   {
     "title": "Deadline",
@@ -10511,6 +10397,75 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:24:35.795095"
+  },
+  {
+    "title": "Dish, The",
+    "year": 2000,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Rob Sitch",
+    "synopsis": "A group of maverick scientists on a remote Australian sheep farm are the globe's only hope for obtaining the epic images of man's first steps on the moon.",
+    "poster_url": "posters/5257.jpg",
+    "tmdb_id": 5257,
+    "tmdb_rating": 6.7,
+    "imdb_id": "tt0205873",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Dish-2000/14705",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "History"
+    ],
+    "runtime_mins": 101,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Santo Cilauro",
+      "Tom Gleisner",
+      "Jane Kennedy",
+      "Rob Sitch"
+    ],
+    "added_at": "2026-04-13T09:22:47.578171"
+  },
+  {
+    "title": "Goddess of 1967, The",
+    "year": 2000,
+    "festivals": [
+      "Toronto",
+      "Venice"
+    ],
+    "director": "Clara Law",
+    "synopsis": "A rich, young businessman travels to Australia with the intention of buying a 1967 Citroën DS. Once he arrives, things do not go to plan, and he must drive the DS into the outback alongside a blind young woman in order to track down its seller.",
+    "poster_url": "posters/46226.jpg",
+    "tmdb_id": 46226,
+    "tmdb_rating": 6.3,
+    "imdb_id": "tt0255195",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/The-Goddess-of-1967-2000/14813",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 119,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Peter Sainsbury",
+      "Eddie Fong"
+    ],
+    "added_at": "2026-04-13T09:22:51.519902"
   },
   {
     "title": "Holy Smoke",
@@ -10764,6 +10719,34 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:24:11.139009"
+  },
+  {
+    "title": "Walk the Talk",
+    "year": 2000,
+    "festivals": [
+      "Toronto"
+    ],
+    "director": "Shirley Barrett",
+    "synopsis": "A well-meaning but misguided talent agent uses his paraplegic girlfriend's government compensation to fund his quest to resurrect a faded club singer's career.",
+    "poster_url": "posters/210750.jpg",
+    "tmdb_id": 210750,
+    "tmdb_rating": 7.0,
+    "imdb_id": "tt0221691",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/walk-the-talk-2000/",
+    "screen_australia_url": "https://www.screenaustralia.gov.au/the-screen-guide/t/Walk-the-Talk-2000/15063",
+    "genres": [],
+    "runtime_mins": 111,
+    "revenue": null,
+    "budget": 3500000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [
+      "Jan Chapman"
+    ],
+    "added_at": "2026-04-13T09:22:55.870889"
   },
   {
     "title": "better than sex",

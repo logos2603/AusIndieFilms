@@ -562,36 +562,6 @@
     "added_at": "2026-04-20T12:02:55.589431"
   },
   {
-    "title": "austin, texas",
-    "year": 2026,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "",
-    "synopsis": "Texas Stampede in Austin ~ Day 2 was a professional wrestling event promoted by Tokyo Joshi Pro-Wrestling (TJPW), held on March 18, 2026 at Palmer Events Center in Austin, Texas, USA.",
-    "poster_url": "posters/1649548.jpg",
-    "tmdb_id": 1649548,
-    "tmdb_rating": 7.0,
-    "imdb_id": null,
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Action",
-      "Drama",
-      "Comedy"
-    ],
-    "runtime_mins": 119,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:22:55.329527"
-  },
-  {
     "title": "ben'imana",
     "year": 2026,
     "festivals": [
@@ -690,7 +660,7 @@
     "tmdb_rating": null,
     "imdb_id": "tt15005870",
     "imdb_rating": null,
-    "letterboxd_rating": 2.94,
+    "letterboxd_rating": 3.01,
     "letterboxd_url": "https://letterboxd.com/film/butterfly-jam-2026/",
     "screen_australia_url": "",
     "genres": [
@@ -703,7 +673,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:35.283449"
+    "added_at": "2026-07-27T06:10:33.241004"
   },
   {
     "title": "che guevara: the last companions",
@@ -940,6 +910,35 @@
     "added_at": "2026-06-01T07:42:00.748396"
   },
   {
+    "title": "edie arnold is a loser",
+    "year": 2026,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Kade Atwood, Megan Rico",
+    "synopsis": "Timid dork Edie accidentally takes the spotlight when she starts a punk band with her fellow “turds”, becoming an icon to the rest of the losers at her all-girls Catholic school while managing to piss off the hot girls, the nuns, and the horniest altar boy you’ve ever seen.",
+    "poster_url": "posters/1620477.jpg",
+    "tmdb_id": 1620477,
+    "tmdb_rating": null,
+    "imdb_id": "tt36173361",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.58,
+    "letterboxd_url": "https://letterboxd.com/film/edie-arnold-is-a-loser/",
+    "screen_australia_url": "",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "runtime_mins": 73,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:35.050356"
+  },
+  {
     "title": "elephants in the fog",
     "year": 2026,
     "festivals": [
@@ -1108,7 +1107,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:54:31.707887"
+    "added_at": "2026-07-27T06:11:37.178711"
   },
   {
     "title": "flesh and fuel",
@@ -2196,6 +2195,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T13:19:42.787059"
+  },
+  {
+    "title": "noah kahan: out of body",
+    "year": 2026,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Nick Sweeney",
+    "synopsis": "After rocketing to global fame, singer-songwriter Noah Kahan returns to his Vermont roots to get back in tune with himself.",
+    "poster_url": "posters/1492341.jpg",
+    "tmdb_id": 1492341,
+    "tmdb_rating": 8.3,
+    "imdb_id": "tt37172278",
+    "imdb_rating": null,
+    "letterboxd_rating": 4.27,
+    "letterboxd_url": "https://letterboxd.com/film/noah-kahan-out-of-body/",
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary",
+      "Music"
+    ],
+    "runtime_mins": 96,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:39.907048"
   },
   {
     "title": "once upon a time in harlem",
@@ -4921,6 +4949,36 @@
     "added_at": "2026-04-27T13:41:47.177171"
   },
   {
+    "title": "austin, texas",
+    "year": 2025,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "",
+    "synopsis": "Texas Stampede in Austin ~ Day 2 was a professional wrestling event promoted by Tokyo Joshi Pro-Wrestling (TJPW), held on March 18, 2026 at Palmer Events Center in Austin, Texas, USA.",
+    "poster_url": "posters/1649548.jpg",
+    "tmdb_id": 1649548,
+    "tmdb_rating": 7.0,
+    "imdb_id": null,
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Action",
+      "Drama",
+      "Comedy"
+    ],
+    "runtime_mins": 119,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:22.214576"
+  },
+  {
     "title": "ballad of a small player",
     "year": 2025,
     "festivals": [
@@ -5754,7 +5812,7 @@
     "added_at": "2026-04-20T12:01:56.349988"
   },
   {
-    "title": "deaf president now!",
+    "title": "deaf president now!*",
     "year": 2025,
     "festivals": [
       "SXSW"
@@ -5779,7 +5837,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:22:41.635147"
+    "added_at": "2026-07-27T06:11:29.723129"
   },
   {
     "title": "death does not exist",
@@ -6336,7 +6394,7 @@
     "added_at": "2026-06-29T08:05:24.597471"
   },
   {
-    "title": "fantasy life*",
+    "title": "fantasy life",
     "year": 2025,
     "festivals": [
       "SXSW"
@@ -6363,7 +6421,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:22:44.122749"
+    "added_at": "2026-07-27T06:11:32.031417"
   },
   {
     "title": "father mother sister brother",
@@ -8814,7 +8872,7 @@
     "added_at": "2026-04-27T13:41:39.351880"
   },
   {
-    "title": "nirvanna the band the show the movie",
+    "title": "nirvanna the band the show the movie*",
     "year": 2025,
     "festivals": [
       "SXSW"
@@ -8826,23 +8884,22 @@
     "tmdb_rating": 7.6,
     "imdb_id": "tt35522483",
     "imdb_rating": null,
-    "letterboxd_rating": 4.26,
+    "letterboxd_rating": 4.25,
     "letterboxd_url": "https://letterboxd.com/film/nirvanna-the-band-the-show-the-movie/",
     "screen_australia_url": "",
     "genres": [
       "Comedy",
       "Science Fiction",
-      "Adventure",
-      "Music"
+      "Adventure"
     ],
     "runtime_mins": 101,
-    "revenue": 4087357,
+    "revenue": 5191174,
     "budget": 1200000,
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:22:39.281257"
+    "added_at": "2026-07-27T06:11:27.497115"
   },
   {
     "title": "no beast. so fierce.",
@@ -10058,7 +10115,7 @@
     "added_at": "2026-04-20T13:43:43.802687"
   },
   {
-    "title": "slanted",
+    "title": "slanted*",
     "year": 2025,
     "festivals": [
       "SXSW"
@@ -10067,7 +10124,7 @@
     "synopsis": "An insecure Chinese-American teenager undergoes experimental surgery to appear white, hoping to secure the prom queen title and peer acceptance.",
     "poster_url": "posters/1297446.jpg",
     "tmdb_id": 1297446,
-    "tmdb_rating": 6.0,
+    "tmdb_rating": 5.9,
     "imdb_id": "tt32490110",
     "imdb_rating": null,
     "letterboxd_rating": 2.8,
@@ -10085,7 +10142,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:22:27.531556"
+    "added_at": "2026-07-27T06:11:23.128735"
   },
   {
     "title": "sly lives! (aka the burden of black genius)",
@@ -11658,7 +11715,7 @@
     "added_at": "2026-06-01T07:40:07.962176"
   },
   {
-    "title": "the python hunt",
+    "title": "the python hunt*",
     "year": 2025,
     "festivals": [
       "SXSW"
@@ -11670,7 +11727,7 @@
     "tmdb_rating": 7.0,
     "imdb_id": "tt35514288",
     "imdb_rating": null,
-    "letterboxd_rating": 3.88,
+    "letterboxd_rating": 3.86,
     "letterboxd_url": "https://letterboxd.com/film/the-python-hunt/",
     "screen_australia_url": "",
     "genres": [
@@ -11683,7 +11740,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:22:29.997815"
+    "added_at": "2026-07-27T06:11:25.352290"
   },
   {
     "title": "the richest woman in the world",
@@ -19042,7 +19099,7 @@
     "tmdb_rating": 5.2,
     "imdb_id": "tt26449042",
     "imdb_rating": null,
-    "letterboxd_rating": 2.89,
+    "letterboxd_rating": 2.93,
     "letterboxd_url": "https://letterboxd.com/film/pet-shop-days/",
     "screen_australia_url": "",
     "genres": [
@@ -19057,7 +19114,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:54:14.337003"
+    "added_at": "2026-07-27T06:11:17.743723"
   },
   {
     "title": "pimpinero: blood and oil",
@@ -21211,10 +21268,10 @@
     "synopsis": "A young Aboriginal couple brings home their second baby. What should be a joyous time takes a sinister turn, as the baby's mother starts seeing a malevolent spirit she is convinced is trying to take her baby.",
     "poster_url": "posters/1043725.jpg",
     "tmdb_id": 1043725,
-    "tmdb_rating": 6.0,
+    "tmdb_rating": 6.2,
     "imdb_id": "tt21609514",
     "imdb_rating": null,
-    "letterboxd_rating": 2.82,
+    "letterboxd_rating": 2.87,
     "letterboxd_url": "https://letterboxd.com/film/the-moogai-2024/",
     "screen_australia_url": "",
     "genres": [
@@ -21228,7 +21285,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:54:16.622565"
+    "added_at": "2026-07-27T06:11:20.070024"
   },
   {
     "title": "the moon thieves",
@@ -23938,6 +23995,36 @@
     "added_at": "2026-04-20T13:40:51.200835"
   },
   {
+    "title": "among thieves",
+    "year": 2023,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "John Francis Daley, Jonathan Goldstein",
+    "synopsis": "A charming thief and a band of unlikely adventurers undertake an epic heist to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.",
+    "poster_url": "posters/493529.jpg",
+    "tmdb_id": 493529,
+    "tmdb_rating": 7.4,
+    "imdb_id": "tt2906216",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/among-thieves/",
+    "screen_australia_url": "",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Comedy"
+    ],
+    "runtime_mins": 134,
+    "revenue": 208200000,
+    "budget": 151000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:15.650513"
+  },
+  {
     "title": "an endless sunday",
     "year": 2023,
     "festivals": [
@@ -25032,36 +25119,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-08T07:08:47.488380"
-  },
-  {
-    "title": "dungeons & dragons: honor among thieves",
-    "year": 2023,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "John Francis Daley, Jonathan Goldstein",
-    "synopsis": "A charming thief and a band of unlikely adventurers undertake an epic heist to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.",
-    "poster_url": "posters/493529.jpg",
-    "tmdb_id": 493529,
-    "tmdb_rating": 7.4,
-    "imdb_id": "tt2906216",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.52,
-    "letterboxd_url": "https://letterboxd.com/film/dungeons-dragons-honor-among-thieves/",
-    "screen_australia_url": "",
-    "genres": [
-      "Adventure",
-      "Fantasy",
-      "Comedy"
-    ],
-    "runtime_mins": 134,
-    "revenue": 208200000,
-    "budget": 151000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:20:39.370573"
   },
   {
     "title": "déserts",
@@ -28063,35 +28120,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:40:10.726931"
-  },
-  {
-    "title": "residente",
-    "year": 2023,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Residente",
-    "synopsis": "After taking a DNA test, Latin America's most decorated artist – René Pérez (AKA Residente) – embarks on a global adventure to trace the footsteps of his ancestors and record his latest album.",
-    "poster_url": "posters/433413.jpg",
-    "tmdb_id": 433413,
-    "tmdb_rating": 7.0,
-    "imdb_id": "tt6414866",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.63,
-    "letterboxd_url": "https://letterboxd.com/film/residente/",
-    "screen_australia_url": "",
-    "genres": [
-      "Music",
-      "Documentary"
-    ],
-    "runtime_mins": 90,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:22:13.601156"
   },
   {
     "title": "riddle of fire",
@@ -31545,7 +31573,7 @@
     "distributor_intl": "A24",
     "sales_agent": "Bankside Films",
     "producers": [],
-    "added_at": "2026-06-22T07:54:33.978813"
+    "added_at": "2026-07-27T06:11:42.243314"
   },
   {
     "title": "We Are Still Here",
@@ -35285,6 +35313,32 @@
     "added_at": "2026-06-08T07:08:40.653598"
   },
   {
+    "title": "shorts competition",
+    "year": 2022,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "",
+    "synopsis": "Short Films featured at the 2017 Vancouver Latin American Film Festival.  THE DIVER (Esteban Arrangoiz | Mexico) - AYA (Francesca Canepa Sarmiento | Peru) - LANDSCAPE FOR A PERSON (Florencia Levy | Argentina) - CÅSUCKA (Dalia Huerta Cano and Iván Puig | Mexico) - CENTAURO  (Nicolás Suárez | Argentina) - THE HOMICIDE  (Maysel Bello | Cuba) - THE CATS (Alejandro Ríos | Mexico) - SWEDISH COUSIN (Inés Barrionuevo | Argentina)",
+    "poster_url": "posters/353339.jpg",
+    "tmdb_id": 353339,
+    "tmdb_rating": null,
+    "imdb_id": "",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [],
+    "runtime_mins": 104,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:14.744411"
+  },
+  {
     "title": "slash/back",
     "year": 2022,
     "festivals": [
@@ -35701,10 +35755,10 @@
     "synopsis": "Jaakko and Sirpa have never met face to face, but talk on the phone every day. When Jaakko hears news about Sirpa's declining health, he decides to go meet her in another city. It's not the easiest decision, because he's blind and paralyzed from the chest down  - and he has to make the journey alone. To get there, Jaakko must rely on the help of five strangers. What could go wrong?",
     "poster_url": "posters/716855.jpg",
     "tmdb_id": 716855,
-    "tmdb_rating": 7.2,
+    "tmdb_rating": 7.1,
     "imdb_id": "tt13328824",
     "imdb_rating": null,
-    "letterboxd_rating": 3.78,
+    "letterboxd_rating": 3.79,
     "letterboxd_url": "https://letterboxd.com/film/the-blind-man-who-did-not-want-to-see-titanic/",
     "screen_australia_url": "",
     "genres": [
@@ -35719,7 +35773,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:54:07.595429"
+    "added_at": "2026-07-27T06:11:10.343471"
   },
   {
     "title": "the blue caftan",
@@ -36856,6 +36910,35 @@
     "added_at": "2026-07-13T06:16:55.967648"
   },
   {
+    "title": "times of mojo nixon",
+    "year": 2022,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Matt Eskey",
+    "synopsis": "On a bicycle trip across the country, a young Neill Kirby McMillan Jr. experiences The Mojo Revelation and becomes Mojo Nixon.  After teaming up with the enigmatic Skid Roper, he unexpectedly finds mainstream success during the Golden Age of MTV.",
+    "poster_url": "posters/682751.jpg",
+    "tmdb_id": 682751,
+    "tmdb_rating": 2.0,
+    "imdb_id": "tt11916334",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary",
+      "Music"
+    ],
+    "runtime_mins": 85,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:12.570844"
+  },
+  {
     "title": "to kill a tiger",
     "year": 2022,
     "festivals": [
@@ -37819,37 +37902,6 @@
     "distributor_intl": "",
     "sales_agent": "",
     "added_at": "2026-04-07T05:11:15.043006"
-  },
-  {
-    "title": "The Drover's Wife: The Legend of Molly Johnson",
-    "year": 2021,
-    "festivals": [
-      "Toronto",
-      "Berlin"
-    ],
-    "director": "Leah Purcell",
-    "synopsis": "In 1893, heavily pregnant Molly Johnson and her children struggle in isolation to survive the harsh Australian landscape after her husband left to go droving sheep in the high country. One day, she finds a shackled Aboriginal fugitive named Yakada wounded on her property. As an unlikely bond begins to form between them he reveals secrets about her true identity. Realizing Molly’s husband is actually missing, new town lawman Nate Clintoff starts being suspicious and sends his constable to investigate.",
-    "poster_url": "posters/722800.jpg",
-    "tmdb_id": 722800,
-    "tmdb_rating": 5.9,
-    "imdb_id": "tt11162490",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.28,
-    "letterboxd_url": "https://letterboxd.com/film/the-drovers-wife-the-legend-of-molly-johnson/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Western",
-      "Thriller"
-    ],
-    "runtime_mins": 109,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:23:15.103312"
   },
   {
     "title": "Under the Volcano",
@@ -39667,7 +39719,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:27.365520"
+    "added_at": "2026-07-27T06:10:25.112481"
   },
   {
     "title": "la colline où rugissent les lionnes",
@@ -39695,7 +39747,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:31.321765"
+    "added_at": "2026-07-27T06:10:29.171099"
   },
   {
     "title": "la légende du roi crabe",
@@ -39723,7 +39775,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:33.304270"
+    "added_at": "2026-07-27T06:10:31.202483"
   },
   {
     "title": "last night in soho",
@@ -40183,6 +40235,36 @@
     "added_at": "2026-04-27T13:00:53.137478"
   },
   {
+    "title": "molly johnson",
+    "year": 2021,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Leah Purcell",
+    "synopsis": "In 1893, heavily pregnant Molly Johnson and her children struggle in isolation to survive the harsh Australian landscape after her husband left to go droving sheep in the high country. One day, she finds a shackled Aboriginal fugitive named Yakada wounded on her property. As an unlikely bond begins to form between them he reveals secrets about her true identity. Realizing Molly’s husband is actually missing, new town lawman Nate Clintoff starts being suspicious and sends his constable to investigate.",
+    "poster_url": "posters/722800.jpg",
+    "tmdb_id": 722800,
+    "tmdb_rating": 5.9,
+    "imdb_id": "tt11162490",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Western",
+      "Thriller"
+    ],
+    "runtime_mins": 109,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:06.260366"
+  },
+  {
     "title": "moma",
     "year": 2021,
     "festivals": [
@@ -40531,34 +40613,6 @@
     "added_at": "2026-04-27T13:37:56.599195"
   },
   {
-    "title": "of a $47 billion unicorn",
-    "year": 2021,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Jed Rothstein",
-    "synopsis": "Explore the rise and fall of one of the biggest corporate flameouts and venture capitalist bubbles in recent years – the story of WeWork, and its hippie-messianic leader Adam Neumann.",
-    "poster_url": "posters/795622.jpg",
-    "tmdb_id": 795622,
-    "tmdb_rating": 6.6,
-    "imdb_id": "tt11188154",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 104,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:20:36.235129"
-  },
-  {
     "title": "of the san jose",
     "year": 2021,
     "festivals": [
@@ -40676,6 +40730,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T11:03:43.447905"
+  },
+  {
+    "title": "or the making and breaking of a $47 billion unicorn",
+    "year": 2021,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Jed Rothstein",
+    "synopsis": "Explore the rise and fall of one of the biggest corporate flameouts and venture capitalist bubbles in recent years – the story of WeWork, and its hippie-messianic leader Adam Neumann.",
+    "poster_url": "posters/795622.jpg",
+    "tmdb_id": 795622,
+    "tmdb_rating": 6.6,
+    "imdb_id": "tt11188154",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 104,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:08.311567"
   },
   {
     "title": "oss 117: from africa with love",
@@ -41195,32 +41277,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:00:55.634477"
-  },
-  {
-    "title": "shorts competition",
-    "year": 2021,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "",
-    "synopsis": "Short Films featured at the 2017 Vancouver Latin American Film Festival.  THE DIVER (Esteban Arrangoiz | Mexico) - AYA (Francesca Canepa Sarmiento | Peru) - LANDSCAPE FOR A PERSON (Florencia Levy | Argentina) - CÅSUCKA (Dalia Huerta Cano and Iván Puig | Mexico) - CENTAURO  (Nicolás Suárez | Argentina) - THE HOMICIDE  (Maysel Bello | Cuba) - THE CATS (Alejandro Ríos | Mexico) - SWEDISH COUSIN (Inés Barrionuevo | Argentina)",
-    "poster_url": "posters/353339.jpg",
-    "tmdb_id": 353339,
-    "tmdb_rating": null,
-    "imdb_id": "",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [],
-    "runtime_mins": 104,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:20:38.441120"
   },
   {
     "title": "son of monarchs",
@@ -42288,7 +42344,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:25.373998"
+    "added_at": "2026-07-27T06:10:23.080616"
   },
   {
     "title": "try harder!",
@@ -42838,7 +42894,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:29.342423"
+    "added_at": "2026-07-27T06:10:27.149770"
   },
   {
     "title": "& terrace at",
@@ -42868,6 +42924,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T08:01:14.365257"
+  },
+  {
+    "title": "11:00am 11:00am 11:00am",
+    "year": 2020,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Christian Koller",
+    "synopsis": "The purpose of this dashboard arranged film is to give a better overview on the timeline of the events unfolding on 11 September 2001. The footage and events are synchronized in realtime. The film starts exactly one hour before the first plane hits the World Trade Center.",
+    "poster_url": "posters/1481550.jpg",
+    "tmdb_id": 1481550,
+    "tmdb_rating": null,
+    "imdb_id": null,
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 253,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:05.351664"
   },
   {
     "title": "2 welcome",
@@ -43009,34 +43093,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T12:54:52.885526"
-  },
-  {
-    "title": "9:00pm",
-    "year": 2020,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Christian Koller",
-    "synopsis": "The purpose of this dashboard arranged film is to give a better overview on the timeline of the events unfolding on 11 September 2001. The footage and events are synchronized in realtime. The film starts exactly one hour before the first plane hits the World Trade Center.",
-    "poster_url": "posters/1481550.jpg",
-    "tmdb_id": 1481550,
-    "tmdb_rating": null,
-    "imdb_id": null,
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 253,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:20:24.058524"
   },
   {
     "title": "9to5: the story of a movement",
@@ -43459,34 +43515,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T12:20:14.945099"
-  },
-  {
-    "title": "after truth: disinformation and",
-    "year": 2020,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Andrew Rossi",
-    "synopsis": "An investigation into the ongoing threat caused by the phenomenon of “fake news” in the U.S., focusing on the real-life consequences that disinformation, conspiracy theories and false news stories have on the average citizen.",
-    "poster_url": "posters/680438.jpg",
-    "tmdb_id": 680438,
-    "tmdb_rating": 6.7,
-    "imdb_id": "tt11615038",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 95,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:20:20.939711"
   },
   {
     "title": "akilla's escape",
@@ -44641,7 +44669,7 @@
     "added_at": "2026-06-29T07:57:35.160683"
   },
   {
-    "title": "competition competition",
+    "title": "competition",
     "year": 2020,
     "festivals": [
       "SXSW"
@@ -44653,8 +44681,8 @@
     "tmdb_rating": 5.4,
     "imdb_id": "tt11671438",
     "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
+    "letterboxd_rating": 2.89,
+    "letterboxd_url": "https://letterboxd.com/film/competition/",
     "screen_australia_url": "",
     "genres": [
       "Thriller",
@@ -44667,7 +44695,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:20:16.842985"
+    "added_at": "2026-07-27T06:10:49.864363"
   },
   {
     "title": "complex",
@@ -45704,6 +45732,35 @@
     "added_at": "2026-04-20T12:19:48.020468"
   },
   {
+    "title": "frank zappa.",
+    "year": 2020,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Alex Winter",
+    "synopsis": "With the help of more than 10,000 dedicated Zappa fans, this is the long-awaited definitive documentary project of Alex Winter documenting the life and career of enigmatic groundbreaking rock star Frank Zappa. Alex also utilizes in this picture thousands of hours of painstakingly digitized videos, photos, audio, writing, and everything in between from Zappa's private archives. These chronicles have never been brought to a public audience before, until now.",
+    "poster_url": "posters/353047.jpg",
+    "tmdb_id": 353047,
+    "tmdb_rating": 7.3,
+    "imdb_id": "tt4881578",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/frank-zappa/",
+    "screen_australia_url": "",
+    "genres": [
+      "Music",
+      "Documentary"
+    ],
+    "runtime_mins": 129,
+    "revenue": null,
+    "budget": 1126036,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:03.211100"
+  },
+  {
     "title": "freak power",
     "year": 2020,
     "festivals": [
@@ -46101,7 +46158,7 @@
     "added_at": "2026-04-20T13:17:36.016495"
   },
   {
-    "title": "have a good trip: adventures in",
+    "title": "have a good trip: adventures in psychedelics tells the epic story",
     "year": 2020,
     "festivals": [
       "SXSW"
@@ -46127,7 +46184,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:20:24.991933"
+    "added_at": "2026-07-27T06:10:56.916967"
   },
   {
     "title": "heaven: to the land of happiness",
@@ -48417,34 +48474,6 @@
     "added_at": "2026-06-15T08:08:03.049367"
   },
   {
-    "title": "pink flamingo",
-    "year": 2020,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Javier Polo Gandía",
-    "synopsis": "A square sound engineer employs unusual research efforts to reveal the secrets behind the quintessential icon of kitsch, the Pink Flamingo. His bizarre adventure will unexpectedly turn into a creative journey to self-discovery.",
-    "poster_url": "posters/681951.jpg",
-    "tmdb_id": 681951,
-    "tmdb_rating": 5.6,
-    "imdb_id": "tt9249166",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/pink-flamingo/",
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 86,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:20:14.579340"
-  },
-  {
     "title": "pink skies ahead",
     "year": 2020,
     "festivals": [
@@ -49982,6 +50011,34 @@
     "added_at": "2026-07-06T06:58:05.076821"
   },
   {
+    "title": "the cost of fake news",
+    "year": 2020,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Andrew Rossi",
+    "synopsis": "An investigation into the ongoing threat caused by the phenomenon of “fake news” in the U.S., focusing on the real-life consequences that disinformation, conspiracy theories and false news stories have on the average citizen.",
+    "poster_url": "posters/680438.jpg",
+    "tmdb_id": 680438,
+    "tmdb_rating": 6.7,
+    "imdb_id": "tt11615038",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 95,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:10:53.957854"
+  },
+  {
     "title": "the cost of silence",
     "year": 2020,
     "festivals": [
@@ -50437,6 +50494,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T12:20:38.021248"
+  },
+  {
+    "title": "the mystery of the pink flamingo",
+    "year": 2020,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Javier Polo Gandía",
+    "synopsis": "A square sound engineer employs unusual research efforts to reveal the secrets behind the quintessential icon of kitsch, the Pink Flamingo. His bizarre adventure will unexpectedly turn into a creative journey to self-discovery.",
+    "poster_url": "posters/681951.jpg",
+    "tmdb_id": 681951,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt9249166",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.41,
+    "letterboxd_url": "https://letterboxd.com/film/the-mystery-of-the-pink-flamingo/",
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 86,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:11:01.039740"
   },
   {
     "title": "the new corporation: the unfortunately necessary sequel",
@@ -51302,35 +51387,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-15T08:08:33.285036"
-  },
-  {
-    "title": "times of mojo nixon",
-    "year": 2020,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Matt Eskey",
-    "synopsis": "On a bicycle trip across the country, a young Neill Kirby McMillan Jr. experiences The Mojo Revelation and becomes Mojo Nixon.  After teaming up with the enigmatic Skid Roper, he unexpectedly finds mainstream success during the Golden Age of MTV.",
-    "poster_url": "posters/682751.jpg",
-    "tmdb_id": 682751,
-    "tmdb_rating": 2.0,
-    "imdb_id": "tt11916334",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary",
-      "Music"
-    ],
-    "runtime_mins": 85,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:20:29.356009"
   },
   {
     "title": "timmy failure: mistakes were made",
@@ -52282,35 +52338,6 @@
     "added_at": "2026-06-29T08:00:29.149576"
   },
   {
-    "title": "zappa",
-    "year": 2020,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Alex Winter",
-    "synopsis": "With the help of more than 10,000 dedicated Zappa fans, this is the long-awaited definitive documentary project of Alex Winter documenting the life and career of enigmatic groundbreaking rock star Frank Zappa. Alex also utilizes in this picture thousands of hours of painstakingly digitized videos, photos, audio, writing, and everything in between from Zappa's private archives. These chronicles have never been brought to a public audience before, until now.",
-    "poster_url": "posters/353047.jpg",
-    "tmdb_id": 353047,
-    "tmdb_rating": 7.3,
-    "imdb_id": "tt4881578",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.79,
-    "letterboxd_url": "https://letterboxd.com/film/zappa-2020/",
-    "screen_australia_url": "",
-    "genres": [
-      "Music",
-      "Documentary"
-    ],
-    "runtime_mins": 129,
-    "revenue": null,
-    "budget": 1126036,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:20:33.934815"
-  },
-  {
     "title": "'I Used to be Normal': A Boyband Fangirl Story",
     "year": 2019,
     "festivals": [
@@ -52493,7 +52520,7 @@
     "tmdb_rating": 6.9,
     "imdb_id": "tt8399664",
     "imdb_rating": null,
-    "letterboxd_rating": 3.75,
+    "letterboxd_rating": 3.74,
     "letterboxd_url": "https://letterboxd.com/film/babyteeth/",
     "screen_australia_url": "",
     "genres": [
@@ -52508,7 +52535,7 @@
     "distributor_intl": "IFC Films",
     "sales_agent": "Beta Cinema",
     "producers": [],
-    "added_at": "2026-06-22T07:54:38.594525"
+    "added_at": "2026-07-27T06:11:44.525637"
   },
   {
     "title": "Blackbird",
@@ -53210,7 +53237,7 @@
     "tmdb_rating": 6.2,
     "imdb_id": "tt8903840",
     "imdb_rating": null,
-    "letterboxd_rating": 3.24,
+    "letterboxd_rating": 3.26,
     "letterboxd_url": "https://letterboxd.com/film/alice-et-le-maire/",
     "screen_australia_url": "",
     "genres": [
@@ -53224,7 +53251,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:12.387922"
+    "added_at": "2026-07-27T06:10:10.011731"
   },
   {
     "title": "all about yves",
@@ -53927,7 +53954,7 @@
     "synopsis": "Peru, at the height of the political crisis of the 1980s. Georgina is a young woman from the Andes whose newborn daughter is stolen at a fake health clinic. Her desperate search for the child leads her to the headquarters of a major newspaper, where she meets Pedro Campos, a lonely journalist who takes on the investigation. Based on a true story.",
     "poster_url": "posters/582925.jpg",
     "tmdb_id": 582925,
-    "tmdb_rating": 6.5,
+    "tmdb_rating": 6.4,
     "imdb_id": "tt1824932",
     "imdb_rating": null,
     "letterboxd_rating": null,
@@ -53943,7 +53970,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:14.867053"
+    "added_at": "2026-07-27T06:10:12.288257"
   },
   {
     "title": "cannes",
@@ -55179,7 +55206,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:16.876176"
+    "added_at": "2026-07-27T06:10:14.374325"
   },
   {
     "title": "koko-di koko-da",
@@ -56184,7 +56211,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:18.945696"
+    "added_at": "2026-07-27T06:10:16.552947"
   },
   {
     "title": "once in trubchevsk",
@@ -56486,7 +56513,7 @@
     "tmdb_rating": 6.0,
     "imdb_id": "tt10228188",
     "imdb_rating": null,
-    "letterboxd_rating": 3.39,
+    "letterboxd_rating": 3.38,
     "letterboxd_url": "https://letterboxd.com/film/por-el-dinero/",
     "screen_australia_url": "",
     "genres": [
@@ -56500,7 +56527,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:20.944464"
+    "added_at": "2026-07-27T06:10:18.597517"
   },
   {
     "title": "portrait of a lady on fire",
@@ -58547,7 +58574,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:23.113065"
+    "added_at": "2026-07-27T06:10:20.839714"
   },
   {
     "title": "utah",
@@ -59265,7 +59292,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:54:40.852058"
+    "added_at": "2026-07-27T06:11:46.718986"
   },
   {
     "title": "Top Knot Detective",
@@ -60336,6 +60363,34 @@
     "added_at": "2026-06-29T07:55:23.389013"
   },
   {
+    "title": "cowboys cheerleaders",
+    "year": 2018,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Dana Adam Shapiro",
+    "synopsis": "Daughters of the Sexual Revolution is the never-before-told story of Suzanne Mitchell, the fiercely-loyal den mother of the original Dallas Cowboys Cheerleaders.",
+    "poster_url": "posters/502159.jpg",
+    "tmdb_id": 502159,
+    "tmdb_rating": 7.3,
+    "imdb_id": "tt7980152",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 86,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:10:41.852503"
+  },
+  {
     "title": "crime + punishment",
     "year": 2018,
     "festivals": [
@@ -61311,6 +61366,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T10:59:23.291025"
+  },
+  {
+    "title": "jeannette, the childhood of joan of arc bruno dumont narrative feature global u.s.",
+    "year": 2018,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Bruno Dumont",
+    "synopsis": "France, 1425. During the Hundred Years’ War, Jeannette, age of 8, looks after her sheep in the small village of Domremy. One day she tells her friend Hauviette how she cannot bear the suffering caused by the English. Madame Gervaise, a nun, tries to reason with the young girl, but she is ready to take up arms for the salvation of souls and the liberation of the Kingdom of France. Carried by her faith, she will become Joan of Arc.",
+    "poster_url": "posters/399049.jpg",
+    "tmdb_id": 399049,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt6340264",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 107,
+    "revenue": 3600,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:10:43.935342"
   },
   {
     "title": "jeremiah terminator leroy",
@@ -64645,34 +64728,6 @@
     "added_at": "2026-04-20T12:52:51.030537"
   },
   {
-    "title": "the untold story of the dallas",
-    "year": 2018,
-    "festivals": [
-      "SXSW"
-    ],
-    "director": "Dana Adam Shapiro",
-    "synopsis": "Daughters of the Sexual Revolution is the never-before-told story of Suzanne Mitchell, the fiercely-loyal den mother of the original Dallas Cowboys Cheerleaders.",
-    "poster_url": "posters/502159.jpg",
-    "tmdb_id": 502159,
-    "tmdb_rating": 7.3,
-    "imdb_id": "tt7980152",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 86,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:20:08.220609"
-  },
-  {
     "title": "the vice of hope",
     "year": 2018,
     "festivals": [
@@ -66120,7 +66175,7 @@
     "tmdb_rating": 6.6,
     "imdb_id": "tt6958212",
     "imdb_rating": null,
-    "letterboxd_rating": 3.63,
+    "letterboxd_rating": 3.62,
     "letterboxd_url": "https://letterboxd.com/film/sweet-country-2017/",
     "screen_australia_url": "",
     "genres": [
@@ -66136,7 +66191,7 @@
     "distributor_intl": "Kino Lorber",
     "sales_agent": "Memento International",
     "producers": [],
-    "added_at": "2026-06-22T07:54:43.068342"
+    "added_at": "2026-07-27T06:11:48.861302"
   },
   {
     "title": "Wolfe",
@@ -68903,34 +68958,6 @@
     "added_at": "2026-04-27T12:57:52.737899"
   },
   {
-    "title": "jeannette, l’enfance de jeanne d’arc",
-    "year": 2017,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Bruno Dumont",
-    "synopsis": "France, 1425. During the Hundred Years’ War, Jeannette, age of 8, looks after her sheep in the small village of Domremy. One day she tells her friend Hauviette how she cannot bear the suffering caused by the English. Madame Gervaise, a nun, tries to reason with the young girl, but she is ready to take up arms for the salvation of souls and the liberation of the Kingdom of France. Carried by her faith, she will become Joan of Arc.",
-    "poster_url": "posters/399049.jpg",
-    "tmdb_id": 399049,
-    "tmdb_rating": 6.1,
-    "imdb_id": "tt6340264",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 107,
-    "revenue": 3600,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:19:56.504256"
-  },
-  {
     "title": "jim & andy: the great beyond",
     "year": 2017,
     "festivals": [
@@ -69272,6 +69299,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:34:43.864195"
+  },
+  {
+    "title": "le ride",
+    "year": 2017,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Chloé Zhao",
+    "synopsis": "Once a rising star of the rodeo circuit, and a gifted horse trainer, young cowboy Brady is warned that his riding days are over after a horse crushed his skull at a rodeo. In an attempt to regain control of his own fate, Brady undertakes a search for a new identity and what it means to be a man in the heartland of the United States.",
+    "poster_url": "posters/453278.jpg",
+    "tmdb_id": 453278,
+    "tmdb_rating": 7.3,
+    "imdb_id": "tt6217608",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/le-ride/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Western"
+    ],
+    "runtime_mins": 103,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:10:37.431024"
   },
   {
     "title": "lean on pete",
@@ -70990,6 +71046,35 @@
     "added_at": "2026-07-13T06:11:50.523498"
   },
   {
+    "title": "residente",
+    "year": 2017,
+    "festivals": [
+      "SXSW"
+    ],
+    "director": "Residente",
+    "synopsis": "After taking a DNA test, Latin America's most decorated artist – René Pérez (AKA Residente) – embarks on a global adventure to trace the footsteps of his ancestors and record his latest album.",
+    "poster_url": "posters/433413.jpg",
+    "tmdb_id": 433413,
+    "tmdb_rating": 7.0,
+    "imdb_id": "tt6414866",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.62,
+    "letterboxd_url": "https://letterboxd.com/film/residente/",
+    "screen_australia_url": "",
+    "genres": [
+      "Music",
+      "Documentary"
+    ],
+    "runtime_mins": 90,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:10:39.690161"
+  },
+  {
     "title": "return to montauk",
     "year": 2017,
     "festivals": [
@@ -72570,35 +72655,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:54:15.470898"
-  },
-  {
-    "title": "the rider",
-    "year": 2017,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Chloé Zhao",
-    "synopsis": "Once a rising star of the rodeo circuit, and a gifted horse trainer, young cowboy Brady is warned that his riding days are over after a horse crushed his skull at a rodeo. In an attempt to regain control of his own fate, Brady undertakes a search for a new identity and what it means to be a man in the heartland of the United States.",
-    "poster_url": "posters/453278.jpg",
-    "tmdb_id": 453278,
-    "tmdb_rating": 7.3,
-    "imdb_id": "tt6217608",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.98,
-    "letterboxd_url": "https://letterboxd.com/film/the-rider/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Western"
-    ],
-    "runtime_mins": 103,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:19:58.746336"
   },
   {
     "title": "the royal hibiscus hotel",
@@ -78830,7 +78886,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-06-22T07:53:37.323887"
+    "added_at": "2026-07-27T06:10:35.395054"
   },
   {
     "title": "mercenaire",
@@ -78918,34 +78974,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:52:35.491120"
-  },
-  {
-    "title": "miloš forman",
-    "year": 2016,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Miloslav Šmídmajer",
-    "synopsis": "Why did Milos Forman have to make certain films the way he did? Where does his inner strength come from? What is the story of his life?",
-    "poster_url": "posters/420510.jpg",
-    "tmdb_id": 420510,
-    "tmdb_rating": 6.5,
-    "imdb_id": "tt1427689",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:10:22.901762"
   },
   {
     "title": "miss stevens",
@@ -90259,34 +90287,6 @@
     "added_at": "2026-04-20T10:52:56.119266"
   },
   {
-    "title": "cannes",
-    "year": 2014,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "James Toback",
-    "synopsis": "SEDUCED AND ABANDONED combines acting legend Alec Baldwin with director James Toback as they lead us on a troublesome and often hilarious journey of raising financing for their next feature film. Moving from director to financier to star actor, the two players provide us with a unique look behind the curtain at the world's biggest and most glamourous film festival, shining a light on the bitter-sweet relationship filmmakers have with Cannes and the film business. Featuring insights from directors Martin Scorsese, 'Bernando Bertolucci' and Roman Polanski; actors Ryan Gosling and Jessica Chastain and a host of film distribution luminaries.",
-    "poster_url": "posters/193645.jpg",
-    "tmdb_id": 193645,
-    "tmdb_rating": 6.2,
-    "imdb_id": "tt2402179",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:07:55.196998"
-  },
-  {
     "title": "catch me daddy",
     "year": 2014,
     "festivals": [
@@ -96193,6 +96193,34 @@
     "added_at": "2026-04-27T13:25:29.239275"
   },
   {
+    "title": "cannes",
+    "year": 2013,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "James Toback",
+    "synopsis": "SEDUCED AND ABANDONED combines acting legend Alec Baldwin with director James Toback as they lead us on a troublesome and often hilarious journey of raising financing for their next feature film. Moving from director to financier to star actor, the two players provide us with a unique look behind the curtain at the world's biggest and most glamourous film festival, shining a light on the bitter-sweet relationship filmmakers have with Cannes and the film business. Featuring insights from directors Martin Scorsese, 'Bernando Bertolucci' and Roman Polanski; actors Ryan Gosling and Jessica Chastain and a host of film distribution luminaries.",
+    "poster_url": "posters/193645.jpg",
+    "tmdb_id": 193645,
+    "tmdb_rating": 6.2,
+    "imdb_id": "tt2402179",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:30.971690"
+  },
+  {
     "title": "celestial wives of the meadow mari",
     "year": 2013,
     "festivals": [
@@ -96418,35 +96446,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-22T07:48:53.902859"
-  },
-  {
-    "title": "el verano de los peces voladores",
-    "year": 2013,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Marcela Said",
-    "synopsis": "Manena is the headstrong adolescent daughter of Pancho, a rich Chilean landowner who devotes his vacation to one thing : the invasion of his artificial lagoon by carps. While he employs increasingly radical methods, Manena has her first romantic experiences and hearbreak - and discovers a silent world in the shadow of her own : that of the Mapuche Indians who demand access to the land and clash with her father.",
-    "poster_url": "posters/191719.jpg",
-    "tmdb_id": 191719,
-    "tmdb_rating": 5.3,
-    "imdb_id": "tt2884186",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "runtime_mins": 87,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:47.104686"
   },
   {
     "title": "elelwani",
@@ -97360,10 +97359,10 @@
     "added_at": "2026-04-27T12:54:47.283555"
   },
   {
-    "title": "jodorowsky’s dune",
+    "title": "jodorowsky's dune",
     "year": 2013,
     "festivals": [
-      "Directors Fortnight"
+      "Cannes"
     ],
     "director": "Frank Pavich",
     "synopsis": "In 1974, Chilean-French director Alejandro Jodorowsky embarked on the quixotic project of adapting Frank Herbert's influential novel Dune (1969) for the big screen. After investing two years, and millions of dollars, the gigantic project ended in failure; but the artists Jodorowsky brought together to carry it out continued to work together, and ended up laying the foundations for modern science fiction cinema.",
@@ -97385,7 +97384,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-13T06:13:49.086898"
+    "added_at": "2026-07-27T06:08:37.593544"
   },
   {
     "title": "joseph gordon-levitt",
@@ -97562,35 +97561,6 @@
     "added_at": "2026-07-06T06:55:35.965750"
   },
   {
-    "title": "la danza de la realidad",
-    "year": 2013,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Alejandro Jodorowsky",
-    "synopsis": "'Having broken away from my illusory self, I was desperately seeking a path and a meaning to life.' This phrase perfectly sums up Alejandro Jodorowsky’s biographical project: reconstituting the incredible adventure of his life. He was born in 1929 Tocopilla, a coastal town on edge of the Chilean desert, where he discovered the fundamentals of reality, as he underwent an unhappy and alienated childhood as part of an uprooted family.",
-    "poster_url": "posters/137698.jpg",
-    "tmdb_id": 137698,
-    "tmdb_rating": 7.2,
-    "imdb_id": "tt2301592",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.85,
-    "letterboxd_url": "https://letterboxd.com/film/la-danza-de-la-realidad/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Fantasy"
-    ],
-    "runtime_mins": 130,
-    "revenue": 558636,
-    "budget": 3000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:51.218391"
-  },
-  {
     "title": "la fille du 14 juillet",
     "year": 2013,
     "festivals": [
@@ -97757,34 +97727,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:44:30.926160"
-  },
-  {
-    "title": "les garçons et guillaume, à table !",
-    "year": 2013,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Guillaume Gallienne",
-    "synopsis": "How to become a man when your mother and your closed circle have decided otherwise? This is the challenge Guillaume took up. The film recounts Guillaume's tragicomic battle from the young age of eight, as he adopts the role of a girl then of a homosexual... until, aged 30, he meets the woman who, after his mother, will become the other woman in his life. Beyond this story of a heterosexual coming-out, the film tells the tale of an actor who never stopped loving women, maybe even a little too much.",
-    "poster_url": "posters/190880.jpg",
-    "tmdb_id": 190880,
-    "tmdb_rating": 6.6,
-    "imdb_id": "tt2315200",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy"
-    ],
-    "runtime_mins": 85,
-    "revenue": null,
-    "budget": 10735974,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:53.472180"
   },
   {
     "title": "life's a breeze",
@@ -98104,6 +98046,34 @@
     "added_at": "2026-04-27T13:27:03.742289"
   },
   {
+    "title": "me, myself and mum",
+    "year": 2013,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Guillaume Gallienne",
+    "synopsis": "How to become a man when your mother and your closed circle have decided otherwise? This is the challenge Guillaume took up. The film recounts Guillaume's tragicomic battle from the young age of eight, as he adopts the role of a girl then of a homosexual... until, aged 30, he meets the woman who, after his mother, will become the other woman in his life. Beyond this story of a heterosexual coming-out, the film tells the tale of an actor who never stopped loving women, maybe even a little too much.",
+    "poster_url": "posters/190880.jpg",
+    "tmdb_id": 190880,
+    "tmdb_rating": 6.6,
+    "imdb_id": "tt2315200",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.48,
+    "letterboxd_url": "https://letterboxd.com/film/me-myself-and-mum/",
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime_mins": 85,
+    "revenue": null,
+    "budget": 10735974,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:39.873615"
+  },
+  {
     "title": "medeas",
     "year": 2013,
     "festivals": [
@@ -98158,6 +98128,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:28:24.541224"
+  },
+  {
+    "title": "miloš forman",
+    "year": 2013,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Miloslav Šmídmajer",
+    "synopsis": "Why did Milos Forman have to make certain films the way he did? Where does his inner strength come from? What is the story of his life?",
+    "poster_url": "posters/420510.jpg",
+    "tmdb_id": 420510,
+    "tmdb_rating": 6.5,
+    "imdb_id": "tt1427689",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:33.021913"
   },
   {
     "title": "mother of george",
@@ -99311,6 +99309,35 @@
     "added_at": "2026-06-29T07:44:39.678838"
   },
   {
+    "title": "the dance of reality",
+    "year": 2013,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Alejandro Jodorowsky",
+    "synopsis": "'Having broken away from my illusory self, I was desperately seeking a path and a meaning to life.' This phrase perfectly sums up Alejandro Jodorowsky’s biographical project: reconstituting the incredible adventure of his life. He was born in 1929 Tocopilla, a coastal town on edge of the Chilean desert, where he discovered the fundamentals of reality, as he underwent an unhappy and alienated childhood as part of an uprooted family.",
+    "poster_url": "posters/137698.jpg",
+    "tmdb_id": 137698,
+    "tmdb_rating": 7.2,
+    "imdb_id": "tt2301592",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.83,
+    "letterboxd_url": "https://letterboxd.com/film/the-dance-of-reality/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Fantasy"
+    ],
+    "runtime_mins": 130,
+    "revenue": 558636,
+    "budget": 3000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:35.094424"
+  },
+  {
     "title": "the dark matter of love",
     "year": 2013,
     "festivals": [
@@ -99911,6 +99938,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T12:55:18.828314"
+  },
+  {
+    "title": "the summer of flying fish",
+    "year": 2013,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Marcela Said",
+    "synopsis": "Manena is the headstrong adolescent daughter of Pancho, a rich Chilean landowner who devotes his vacation to one thing : the invasion of his artificial lagoon by carps. While he employs increasingly radical methods, Manena has her first romantic experiences and hearbreak - and discovers a silent world in the shadow of her own : that of the Mapuche Indians who demand access to the land and clash with her father.",
+    "poster_url": "posters/191719.jpg",
+    "tmdb_id": 191719,
+    "tmdb_rating": 5.3,
+    "imdb_id": "tt2884186",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.3,
+    "letterboxd_url": "https://letterboxd.com/film/the-summer-of-flying-fish/",
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "runtime_mins": 87,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:42.181951"
   },
   {
     "title": "the unknown known",
@@ -101677,34 +101733,6 @@
     "added_at": "2026-04-20T12:43:55.421556"
   },
   {
-    "title": "adieu berthe – l’enterrement de mémé",
-    "year": 2012,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Bruno Podalydès",
-    "synopsis": "A provincial chemist in the throes of a mid-life crisis must choose between burying his dearly departed grandmother and cremating her in this quirky comedy of manners starring Valerie Lemercier, Denis Podalydes, and Isabelle Candelier.",
-    "poster_url": "posters/123243.jpg",
-    "tmdb_id": 123243,
-    "tmdb_rating": 5.6,
-    "imdb_id": "tt2399495",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:34.812355"
-  },
-  {
     "title": "agnès varda",
     "year": 2012,
     "festivals": [
@@ -102284,6 +102312,34 @@
     "added_at": "2026-04-20T10:49:18.612143"
   },
   {
+    "title": "cannes",
+    "year": 2012,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Richard Blanshard, Roger Penny",
+    "synopsis": "Looks at the glamour, red carpets, movies, craziness, stunts, deals, parties and personalities that have been part of the Cannes Film Festival over eight decades, as well as looking to the future.",
+    "poster_url": "posters/1139231.jpg",
+    "tmdb_id": 1139231,
+    "tmdb_rating": 5.3,
+    "imdb_id": "tt14909014",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 85,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:13.569023"
+  },
+  {
     "title": "children of sarajevo",
     "year": 2012,
     "festivals": [
@@ -102398,37 +102454,6 @@
     "added_at": "2026-04-20T12:43:38.944489"
   },
   {
-    "title": "dae gi eui wang",
-    "year": 2012,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Yeon Sang-ho",
-    "synopsis": "Two friends, Jung Jong-suk and Hwang Kyung-min, meet after several years and talk about their time in school, which left them scarred.",
-    "poster_url": "posters/91088.jpg",
-    "tmdb_id": 91088,
-    "tmdb_rating": 6.1,
-    "imdb_id": "tt2086830",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Animation",
-      "Thriller",
-      "Drama",
-      "Crime"
-    ],
-    "runtime_mins": 97,
-    "revenue": 124068,
-    "budget": 130000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:36.799308"
-  },
-  {
     "title": "dangerous liaisons",
     "year": 2012,
     "festivals": [
@@ -102540,6 +102565,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-07-13T06:05:37.085379"
+  },
+  {
+    "title": "dream and silence",
+    "year": 2012,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Jaime Rosales",
+    "synopsis": "Oriol and Yolanda live in Paris with their two daughters. During a holiday they have a car accident. Celia, their older daughter, dies and Oriol goes into a coma.",
+    "poster_url": "posters/112751.jpg",
+    "tmdb_id": 112751,
+    "tmdb_rating": 5.7,
+    "imdb_id": "tt2342317",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.39,
+    "letterboxd_url": "https://letterboxd.com/film/dream-and-silence-2012/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 107,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:17.682314"
   },
   {
     "title": "dredd",
@@ -102657,10 +102710,10 @@
     "added_at": "2026-04-20T12:42:16.932919"
   },
   {
-    "title": "ernest et célestine",
+    "title": "ernest & celestine",
     "year": 2012,
     "festivals": [
-      "Directors Fortnight"
+      "Cannes"
     ],
     "director": "Benjamin Renner, Stéphane Aubier",
     "synopsis": "Celestine is a little mouse trying to avoid a dental career while Ernest is a big bear craving an artistic outlet. When Celestine meets Ernest, they overcome their natural enmity by forging a life of crime together.",
@@ -102669,8 +102722,8 @@
     "tmdb_rating": 7.7,
     "imdb_id": "tt1816518",
     "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
+    "letterboxd_rating": 4.18,
+    "letterboxd_url": "https://letterboxd.com/film/ernest-celestine/",
     "screen_australia_url": "",
     "genres": [
       "Animation",
@@ -102686,7 +102739,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-13T06:13:40.867468"
+    "added_at": "2026-07-27T06:08:19.802028"
   },
   {
     "title": "everybody has a plan",
@@ -103219,6 +103272,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T12:14:05.323698"
+  },
+  {
+    "title": "granny's funeral",
+    "year": 2012,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Bruno Podalydès",
+    "synopsis": "A provincial chemist in the throes of a mid-life crisis must choose between burying his dearly departed grandmother and cremating her in this quirky comedy of manners starring Valerie Lemercier, Denis Podalydes, and Isabelle Candelier.",
+    "poster_url": "posters/123243.jpg",
+    "tmdb_id": 123243,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt2399495",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.22,
+    "letterboxd_url": "https://letterboxd.com/film/grannys-funeral/",
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:22.100639"
   },
   {
     "title": "greetings from tim buckley",
@@ -103915,34 +103996,6 @@
     "added_at": "2026-07-06T06:55:19.575642"
   },
   {
-    "title": "la noche de enfrente",
-    "year": 2012,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Raúl Ruiz",
-    "synopsis": "A drama centered on an office worker on the verge of retirement who begins to relive both real and imagined memories.",
-    "poster_url": "posters/111667.jpg",
-    "tmdb_id": 111667,
-    "tmdb_rating": 6.4,
-    "imdb_id": "tt1876360",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.46,
-    "letterboxd_url": "https://letterboxd.com/film/la-noche-de-enfrente/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 107,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:42.924718"
-  },
-  {
     "title": "la playa dc",
     "year": 2012,
     "festivals": [
@@ -104428,6 +104481,62 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-22T07:48:32.267884"
+  },
+  {
+    "title": "nelson pereira dos santos",
+    "year": 2012,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Aida Marques, Ivelise Ferreira",
+    "synopsis": "For six decades, the cinema of Nelson Pereira dos Santos has projected Brazil into the eyes of the world. Precursor of Cinema Novo, Nelson was, more than a director, he was an ideologue, a thinker of his country.",
+    "poster_url": "posters/1122956.jpg",
+    "tmdb_id": 1122956,
+    "tmdb_rating": 7.0,
+    "imdb_id": "tt27766587",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 102,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:15.606332"
+  },
+  {
+    "title": "night across the street",
+    "year": 2012,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Raúl Ruiz",
+    "synopsis": "A drama centered on an office worker on the verge of retirement who begins to relive both real and imagined memories.",
+    "poster_url": "posters/111667.jpg",
+    "tmdb_id": 111667,
+    "tmdb_rating": 6.4,
+    "imdb_id": "tt1876360",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.45,
+    "letterboxd_url": "https://letterboxd.com/film/night-across-the-street/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 107,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:26.508857"
   },
   {
     "title": "no",
@@ -105205,34 +105314,6 @@
     "added_at": "2026-07-06T06:55:24.181635"
   },
   {
-    "title": "sueño y silencio",
-    "year": 2012,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Jaime Rosales",
-    "synopsis": "Oriol and Yolanda live in Paris with their two daughters. During a holiday they have a car accident. Celia, their older daughter, dies and Oriol goes into a coma.",
-    "poster_url": "posters/112751.jpg",
-    "tmdb_id": 112751,
-    "tmdb_rating": 5.7,
-    "imdb_id": "tt2342317",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 107,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:45.118341"
-  },
-  {
     "title": "tai chi 0",
     "year": 2012,
     "festivals": [
@@ -105612,6 +105693,37 @@
     "added_at": "2026-04-20T12:14:18.735246"
   },
   {
+    "title": "the king of pigs",
+    "year": 2012,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Yeon Sang-ho",
+    "synopsis": "Two friends, Jung Jong-suk and Hwang Kyung-min, meet after several years and talk about their time in school, which left them scarred.",
+    "poster_url": "posters/91088.jpg",
+    "tmdb_id": 91088,
+    "tmdb_rating": 6.1,
+    "imdb_id": "tt2086830",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.52,
+    "letterboxd_url": "https://letterboxd.com/film/the-king-of-pigs/",
+    "screen_australia_url": "",
+    "genres": [
+      "Animation",
+      "Thriller",
+      "Drama",
+      "Crime"
+    ],
+    "runtime_mins": 97,
+    "revenue": 124068,
+    "budget": 130000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:24.373381"
+  },
+  {
     "title": "the law in these parts",
     "year": 2012,
     "festivals": [
@@ -105986,6 +106098,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:44:16.022664"
+  },
+  {
+    "title": "the white ribbon",
+    "year": 2012,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Michael Haneke",
+    "synopsis": "An aged tailor recalls his life as the schoolteacher of a small village in Northern Germany that was struck by a series of strange events in the year leading up to WWI.",
+    "poster_url": "posters/37903.jpg",
+    "tmdb_id": 37903,
+    "tmdb_rating": 7.5,
+    "imdb_id": "tt1149362",
+    "imdb_rating": null,
+    "letterboxd_rating": 4.21,
+    "letterboxd_url": "https://letterboxd.com/film/the-white-ribbon/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
+    "runtime_mins": 144,
+    "revenue": 11652157,
+    "budget": 21555450,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:28.689498"
   },
   {
     "title": "the woman who brushed off her tears",
@@ -107787,34 +107928,6 @@
     "added_at": "2026-06-29T07:43:15.322690"
   },
   {
-    "title": "béla tarr",
-    "year": 2011,
-    "festivals": [
-      "Berlin"
-    ],
-    "director": "Howard Feinstein",
-    "synopsis": "Hungarian filmmaker Béla Tarr and film critic Howard Feinstein discuss his innovative filmography, punctuated by clips from his films.",
-    "poster_url": "posters/530861.jpg",
-    "tmdb_id": 530861,
-    "tmdb_rating": null,
-    "imdb_id": "tt8185596",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 81,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:19:37.096980"
-  },
-  {
     "title": "caprichosos de san telmo",
     "year": 2011,
     "festivals": [
@@ -108498,6 +108611,34 @@
     "added_at": "2026-04-27T13:24:37.402479"
   },
   {
+    "title": "fahrenheit 9/11",
+    "year": 2011,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Michael Moore",
+    "synopsis": "Michael Moore's view on how the Bush administration allegedly used the tragic events on 9/11 to push forward its agenda for unjust wars in Afghanistan and Iraq.",
+    "poster_url": "posters/1777.jpg",
+    "tmdb_id": 1777,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt0361596",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 123,
+    "revenue": 222400000,
+    "budget": 6000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:11.543956"
+  },
+  {
     "title": "friends with kids",
     "year": 2011,
     "festivals": [
@@ -108698,6 +108839,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:21:59.402551"
+  },
+  {
+    "title": "gus van sant",
+    "year": 2011,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Gus Van Sant",
+    "synopsis": "The life and struggles of a notorious rock musician seeping into a pit of loneliness whose everyday life involves friends and family seeking financial aid and favors, inspired by rock music legend Kurt Cobain and his final hours.",
+    "poster_url": "posters/1665.jpg",
+    "tmdb_id": 1665,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt0403217",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 97,
+    "revenue": 1900000,
+    "budget": 5000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:05.107090"
   },
   {
     "title": "hanaan",
@@ -109352,34 +109521,6 @@
     "added_at": "2026-04-27T13:22:34.117864"
   },
   {
-    "title": "jeanne captive",
-    "year": 2011,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Philippe Ramos",
-    "synopsis": "In 1430, Joan of Arc, the prisoner of a powerful lord of the north of France is sold to the English. As a captive awaiting her death, she is approached by different men for whom she is believed to be the embodiment of the infinite.",
-    "poster_url": "posters/110954.jpg",
-    "tmdb_id": 110954,
-    "tmdb_rating": 3.5,
-    "imdb_id": "tt1444266",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/jeanne-captive/",
-    "screen_australia_url": "",
-    "genres": [
-      "History"
-    ],
-    "runtime_mins": 87,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:30.518991"
-  },
-  {
     "title": "jeff who lives at home",
     "year": 2011,
     "festivals": [
@@ -109721,6 +109862,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:24:24.254808"
+  },
+  {
+    "title": "lee chang-dong",
+    "year": 2011,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Alain Mazars",
+    "synopsis": "A portrait of the South Korean screenwriter, director and producer Lee Chang-Dong through his work, this documentary provides a thematic analysis of his films, most of which have been selected for and received awards at the Cannes Film Festival.",
+    "poster_url": "posters/953536.jpg",
+    "tmdb_id": 953536,
+    "tmdb_rating": 7.5,
+    "imdb_id": "tt22457818",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:01.009257"
   },
   {
     "title": "les géants",
@@ -110152,32 +110321,32 @@
     "added_at": "2026-04-27T13:21:34.481904"
   },
   {
-    "title": "o abismo prateado",
+    "title": "nuri bilge ceylan",
     "year": 2011,
     "festivals": [
-      "Directors Fortnight"
+      "Cannes"
     ],
-    "director": "Karim Aïnouz",
-    "synopsis": "Violeta is a married dentist on a normal working day. While listening to a message left on the cell she enters in despair. The message of her husband, Djalma, says he is leaving her and going to another city.",
-    "poster_url": "posters/110949.jpg",
-    "tmdb_id": 110949,
-    "tmdb_rating": 5.5,
-    "imdb_id": "tt1725057",
+    "director": "Nuri Bilge Ceylan",
+    "synopsis": "A young man from rural Turkey arrives in Istanbul with dreams of working on a ship and stays with a cousin while he searches for work. Over time, the former’s struggles to find employment and the latter’s troubles and disappointments strain their relationship and living situation.",
+    "poster_url": "posters/31026.jpg",
+    "tmdb_id": 31026,
+    "tmdb_rating": 7.1,
+    "imdb_id": "tt0346094",
     "imdb_rating": null,
-    "letterboxd_rating": 3.3,
-    "letterboxd_url": "https://letterboxd.com/film/o-abismo-prateado/",
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
     "screen_australia_url": "",
     "genres": [
       "Drama"
     ],
-    "runtime_mins": 83,
-    "revenue": null,
+    "runtime_mins": 106,
+    "revenue": 767337,
     "budget": null,
     "distributor": "",
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-13T06:13:32.670071"
+    "added_at": "2026-07-27T06:08:03.056359"
   },
   {
     "title": "omar killed me",
@@ -111840,6 +112009,62 @@
     "added_at": "2026-04-27T13:24:47.269636"
   },
   {
+    "title": "the silence of joan",
+    "year": 2011,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Philippe Ramos",
+    "synopsis": "In 1430, Joan of Arc, the prisoner of a powerful lord of the north of France is sold to the English. As a captive awaiting her death, she is approached by different men for whom she is believed to be the embodiment of the infinite.",
+    "poster_url": "posters/110954.jpg",
+    "tmdb_id": 110954,
+    "tmdb_rating": 3.5,
+    "imdb_id": "tt1444266",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/the-silence-of-joan/",
+    "screen_australia_url": "",
+    "genres": [
+      "History"
+    ],
+    "runtime_mins": 87,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:07.153537"
+  },
+  {
+    "title": "the silver cliff",
+    "year": 2011,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Karim Aïnouz",
+    "synopsis": "Violeta is a married dentist on a normal working day. While listening to a message left on the cell she enters in despair. The message of her husband, Djalma, says he is leaving her and going to another city.",
+    "poster_url": "posters/110949.jpg",
+    "tmdb_id": 110949,
+    "tmdb_rating": 5.5,
+    "imdb_id": "tt1725057",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.31,
+    "letterboxd_url": "https://letterboxd.com/film/the-silver-cliff/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 83,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:09.325741"
+  },
+  {
     "title": "the skin i live in",
     "year": 2011,
     "festivals": [
@@ -112720,7 +112945,7 @@
     "tmdb_rating": 6.8,
     "imdb_id": "tt1313092",
     "imdb_rating": null,
-    "letterboxd_rating": 3.76,
+    "letterboxd_rating": 3.75,
     "letterboxd_url": "https://letterboxd.com/film/animal-kingdom/",
     "screen_australia_url": "",
     "genres": [
@@ -112734,7 +112959,7 @@
     "distributor_intl": "Sony Pictures Classics",
     "sales_agent": "Memento Films International",
     "producers": [],
-    "added_at": "2026-06-22T07:54:47.401995"
+    "added_at": "2026-07-27T06:11:53.259936"
   },
   {
     "title": "Blame",
@@ -113717,10 +113942,10 @@
     "added_at": "2026-04-20T12:40:48.362680"
   },
   {
-    "title": "benda bilili !",
+    "title": "benda bilili!",
     "year": 2010,
     "festivals": [
-      "Directors Fortnight"
+      "Cannes"
     ],
     "director": "Florent de La Tullaye, Renaud Barret",
     "synopsis": "Ricky has a dream: to make Staff Benda Bilili the best band in Congo Kinshasa. Roger, a street child, more than ever wants to join these stars of the ghetto, who get around in customized tricycles. Together, they must avoid the pitfalls of the street, stay united and find the force to hope in music. For six years, from the first rehearsals to their triumph in international festivals, BENDA BILILI! (“beyond appearances”) is the story of this dream come reality.",
@@ -113729,7 +113954,7 @@
     "tmdb_rating": 6.3,
     "imdb_id": "tt1625857",
     "imdb_rating": null,
-    "letterboxd_rating": 3.61,
+    "letterboxd_rating": 3.6,
     "letterboxd_url": "https://letterboxd.com/film/benda-bilili/",
     "screen_australia_url": "",
     "genres": [
@@ -113743,7 +113968,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-13T06:13:19.949024"
+    "added_at": "2026-07-27T06:07:47.820602"
   },
   {
     "title": "berlin",
@@ -115216,34 +115441,6 @@
     "added_at": "2026-06-29T07:42:46.900201"
   },
   {
-    "title": "la mirada invisible",
-    "year": 2010,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Diego Lerman",
-    "synopsis": "A teaching assistant at a private Buenos Aires school begins obsessively spying on her students in the early 1980s, as the public rises up against the military dictatorship.",
-    "poster_url": "posters/51548.jpg",
-    "tmdb_id": 51548,
-    "tmdb_rating": 6.0,
-    "imdb_id": "tt1313254",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 97,
-    "revenue": 218708,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:22.177446"
-  },
-  {
     "title": "la nostra vita",
     "year": 2010,
     "festivals": [
@@ -115414,6 +115611,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:42:51.704887"
+  },
+  {
+    "title": "love like poison",
+    "year": 2010,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Katell Quillévéré",
+    "synopsis": "Anna, a young teenager, comes home from her Catholic boarding school for the holidays and discovers her father has left. Her mother is devastated and confined in the company of the local priest, who is also a childhood friend. Anna clings to her beloved grandfather. She also grows close to Pierre, a free-spirited teenager who cares little about God. Anna is preparing for her confirmation, but her budding desire for Pierre shakes her faith. She longs to give herself over, body and soul... but doesn't know if it is to God, or something else?",
+    "poster_url": "posters/71559.jpg",
+    "tmdb_id": 71559,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt1646985",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.34,
+    "letterboxd_url": "https://letterboxd.com/film/love-like-poison/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 92,
+    "revenue": null,
+    "budget": 2000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:54.514895"
   },
   {
     "title": "l’ultimo gattopardo: ritratto di goffredo lombardo",
@@ -115871,6 +116096,32 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-07-13T06:03:28.322980"
+  },
+  {
+    "title": "patricio guzmán",
+    "year": 2010,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Boris Nicot",
+    "synopsis": "A portrait of the filmmaker Patricio Guzmán.",
+    "poster_url": "",
+    "tmdb_id": 314516,
+    "tmdb_rating": null,
+    "imdb_id": "tt4008814",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:45.758468"
   },
   {
     "title": "picco",
@@ -116592,34 +116843,6 @@
     "added_at": "2026-07-06T06:52:54.321882"
   },
   {
-    "title": "svet-ake",
-    "year": 2010,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Aktan Arym Kubat",
-    "synopsis": "The main hero of the film is an electrician with a far greater effect on the people around him than his job defines. He is the last link in a huge energetic system and he becomes the binding bridge between the geopolitical problems of post-soviet space and the common people. The economic devastation of the country had an enormous impact on the industrial workers and yet despite the upheaval, these people did not seize to love and suffer, to have and be friends and to enjoy their lives. In particular our resilient electrician, who possesses a wonderful and open heart. He not only brings electric light (which is often out) to the lives of the inhabitants of this small city, but he also spreads the light of love, loyalty, life and mainly laughter.",
-    "poster_url": "posters/58859.jpg",
-    "tmdb_id": 58859,
-    "tmdb_rating": 5.1,
-    "imdb_id": "tt1646979",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.38,
-    "letterboxd_url": "https://letterboxd.com/film/svet-ake/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 80,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:24.166541"
-  },
-  {
     "title": "tears of gaza",
     "year": 2010,
     "festivals": [
@@ -117080,6 +117303,34 @@
     "added_at": "2026-04-20T12:41:00.476204"
   },
   {
+    "title": "the invisible eye",
+    "year": 2010,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Diego Lerman",
+    "synopsis": "A teaching assistant at a private Buenos Aires school begins obsessively spying on her students in the early 1980s, as the public rises up against the military dictatorship.",
+    "poster_url": "posters/51548.jpg",
+    "tmdb_id": 51548,
+    "tmdb_rating": 6.0,
+    "imdb_id": "tt1313254",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.28,
+    "letterboxd_url": "https://letterboxd.com/film/the-invisible-eye/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 97,
+    "revenue": 218708,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:49.988993"
+  },
+  {
     "title": "the king's speech",
     "year": 2010,
     "festivals": [
@@ -117168,6 +117419,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-07-06T06:53:07.505770"
+  },
+  {
+    "title": "the light thief",
+    "year": 2010,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Aktan Arym Kubat",
+    "synopsis": "The main hero of the film is an electrician with a far greater effect on the people around him than his job defines. He is the last link in a huge energetic system and he becomes the binding bridge between the geopolitical problems of post-soviet space and the common people. The economic devastation of the country had an enormous impact on the industrial workers and yet despite the upheaval, these people did not seize to love and suffer, to have and be friends and to enjoy their lives. In particular our resilient electrician, who possesses a wonderful and open heart. He not only brings electric light (which is often out) to the lives of the inhabitants of this small city, but he also spreads the light of love, loyalty, life and mainly laughter.",
+    "poster_url": "posters/58859.jpg",
+    "tmdb_id": 58859,
+    "tmdb_rating": 5.1,
+    "imdb_id": "tt1646979",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.39,
+    "letterboxd_url": "https://letterboxd.com/film/the-light-thief/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 80,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:52.257516"
   },
   {
     "title": "the myth of the american sleepover",
@@ -117546,34 +117825,6 @@
     "added_at": "2026-06-29T07:43:02.361365"
   },
   {
-    "title": "todos vós sodes capitáns",
-    "year": 2010,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Oliver Laxe",
-    "synopsis": "A European director is making a film with children from a social center in Tangiers. Because of his methods, his relationship with the children during shooting degenerates and transforms the evolution of the project.",
-    "poster_url": "posters/110218.jpg",
-    "tmdb_id": 110218,
-    "tmdb_rating": 5.9,
-    "imdb_id": "tt1646984",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 78,
-    "revenue": 7042,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:26.322317"
-  },
-  {
     "title": "toronto",
     "year": 2010,
     "festivals": [
@@ -117688,34 +117939,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:43:04.622001"
-  },
-  {
-    "title": "un poison violent",
-    "year": 2010,
-    "festivals": [
-      "Directors Fortnight"
-    ],
-    "director": "Katell Quillévéré",
-    "synopsis": "Anna, a young teenager, comes home from her Catholic boarding school for the holidays and discovers her father has left. Her mother is devastated and confined in the company of the local priest, who is also a childhood friend. Anna clings to her beloved grandfather. She also grows close to Pierre, a free-spirited teenager who cares little about God. Anna is preparing for her confirmation, but her budding desire for Pierre shakes her faith. She longs to give herself over, body and soul... but doesn't know if it is to God, or something else?",
-    "poster_url": "posters/71559.jpg",
-    "tmdb_id": 71559,
-    "tmdb_rating": 5.6,
-    "imdb_id": "tt1646985",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.33,
-    "letterboxd_url": "https://letterboxd.com/film/un-poison-violent/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 92,
-    "revenue": null,
-    "budget": 2000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-13T06:13:28.307196"
   },
   {
     "title": "uncle boonmee who can recall his past lives",
@@ -118000,6 +118223,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T12:41:12.340948"
+  },
+  {
+    "title": "you all are captains",
+    "year": 2010,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Oliver Laxe",
+    "synopsis": "A European director is making a film with children from a social center in Tangiers. Because of his methods, his relationship with the children during shooting degenerates and transforms the evolution of the project.",
+    "poster_url": "posters/110218.jpg",
+    "tmdb_id": 110218,
+    "tmdb_rating": 5.9,
+    "imdb_id": "tt1646984",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.27,
+    "letterboxd_url": "https://letterboxd.com/film/you-all-are-captains/",
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 78,
+    "revenue": 7042,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:56.691082"
   },
   {
     "title": "you will meet a tall dark stranger",
@@ -118663,7 +118914,7 @@
     "distributor_intl": "Kino Lorber",
     "sales_agent": "Memento Films International",
     "producers": [],
-    "added_at": "2026-06-22T07:54:45.251569"
+    "added_at": "2026-07-27T06:11:50.996582"
   },
   {
     "title": "Stolen",
@@ -118897,10 +119148,10 @@
     "added_at": "2026-06-29T07:41:50.183313"
   },
   {
-    "title": "amreeka",
+    "title": "amreeka (amerrika)",
     "year": 2009,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Cherien Dabis",
     "synopsis": "Eager to provide a better future for her son, Fadi, divorcée Muna Farah leaves her Palestinian homeland and takes up residence in rural Illinois -- just in time to encounter the domestic repercussions of America's disastrous war in Iraq. Now, the duo must reinvent their lives with some help from Muna's sister, Raghda, and brother-in-law, Nabeel.",
@@ -118909,8 +119160,8 @@
     "tmdb_rating": 6.7,
     "imdb_id": "tt1190858",
     "imdb_rating": null,
-    "letterboxd_rating": 3.57,
-    "letterboxd_url": "https://letterboxd.com/film/amreeka/",
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
     "screen_australia_url": "",
     "genres": [
       "Drama"
@@ -118922,7 +119173,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:17:07.966965"
+    "added_at": "2026-07-27T06:10:01.710507"
   },
   {
     "title": "around a small mountain",
@@ -119329,6 +119580,36 @@
     "added_at": "2026-06-29T07:24:38.484047"
   },
   {
+    "title": "cannes film festival",
+    "year": 2009,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Harvey Frost",
+    "synopsis": "A comedic murder mystery set in the middle of the Cannes Film Fest. Amidst the bumbling and drama, twists and turns emerge.",
+    "poster_url": "posters/1017815.jpg",
+    "tmdb_id": 1017815,
+    "tmdb_rating": 8.0,
+    "imdb_id": "tt0245301",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy",
+      "Mystery",
+      "TV Movie"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:41.657099"
+  },
+  {
     "title": "capitalism: a love story",
     "year": 2009,
     "festivals": [
@@ -119619,10 +119900,10 @@
     "added_at": "2026-04-27T13:21:21.846031"
   },
   {
-    "title": "daniel & ana",
+    "title": "daniel y ana",
     "year": 2009,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Michel Franco",
     "synopsis": "Being kidnapped shatters a brother and sister's harmony, forcing them to confront their desires.",
@@ -119631,8 +119912,8 @@
     "tmdb_rating": 6.7,
     "imdb_id": "tt1392888",
     "imdb_rating": null,
-    "letterboxd_rating": 2.79,
-    "letterboxd_url": "https://letterboxd.com/film/daniel-ana/",
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
     "screen_australia_url": "",
     "genres": [
       "Thriller",
@@ -119645,7 +119926,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:17:10.335094"
+    "added_at": "2026-07-27T06:10:03.820025"
   },
   {
     "title": "david's birthday",
@@ -120575,34 +120856,6 @@
     "added_at": "2026-06-29T07:25:45.292823"
   },
   {
-    "title": "i killed my mother",
-    "year": 2009,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Xavier Dolan",
-    "synopsis": "Hubert, a brash 17-year-old, is confused and torn by a love-hate relationship with his mother that consumes him more and more each day. After distressing ordeals and tragic episodes, Hubert will find his mother on the banks of Saint Lawrence river, where he grew up, and where a murder will be committed: the murder of childhood.",
-    "poster_url": "posters/26280.jpg",
-    "tmdb_id": 26280,
-    "tmdb_rating": 7.4,
-    "imdb_id": "tt1424797",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.85,
-    "letterboxd_url": "https://letterboxd.com/film/i-killed-my-mother-2009/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:17:15.011011"
-  },
-  {
     "title": "i love you phillip morris",
     "year": 2009,
     "festivals": [
@@ -120836,6 +121089,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:20:42.707035"
+  },
+  {
+    "title": "j’ai tué ma mère",
+    "year": 2009,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Xavier Dolan",
+    "synopsis": "Hubert, a brash 17-year-old, is confused and torn by a love-hate relationship with his mother that consumes him more and more each day. After distressing ordeals and tragic episodes, Hubert will find his mother on the banks of Saint Lawrence river, where he grew up, and where a murder will be committed: the murder of childhood.",
+    "poster_url": "posters/26280.jpg",
+    "tmdb_id": 26280,
+    "tmdb_rating": 7.4,
+    "imdb_id": "tt1424797",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:10:05.877832"
   },
   {
     "title": "kamui",
@@ -121180,34 +121461,6 @@
     "added_at": "2026-06-29T07:42:15.402264"
   },
   {
-    "title": "lee chang-dong",
-    "year": 2009,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Alain Mazars",
-    "synopsis": "A portrait of the South Korean screenwriter, director and producer Lee Chang-Dong through his work, this documentary provides a thematic analysis of his films, most of which have been selected for and received awards at the Cannes Film Festival.",
-    "poster_url": "posters/953536.jpg",
-    "tmdb_id": 953536,
-    "tmdb_rating": 7.5,
-    "imdb_id": "tt22457818",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:17:03.313418"
-  },
-  {
     "title": "lenny and the kids (go get some rosemary)",
     "year": 2009,
     "festivals": [
@@ -121235,6 +121488,36 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:42:17.381565"
+  },
+  {
+    "title": "les beaux gosses",
+    "year": 2009,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Riad Sattouf",
+    "synopsis": "An awkward adolescent boy and his angst-ridden friends try their best to fit in amongst a cast of varied characters.",
+    "poster_url": "posters/18896.jpg",
+    "tmdb_id": 18896,
+    "tmdb_rating": 5.8,
+    "imdb_id": "tt1314237",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 90,
+    "revenue": 14751272,
+    "budget": 3500000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:10:07.912118"
   },
   {
     "title": "les derniers jours du monde",
@@ -121758,34 +122041,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:20:32.716312"
-  },
-  {
-    "title": "nuri bilge ceylan",
-    "year": 2009,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Nuri Bilge Ceylan",
-    "synopsis": "A young man from rural Turkey arrives in Istanbul with dreams of working on a ship and stays with a cousin while he searches for work. Over time, the former’s struggles to find employment and the latter’s troubles and disappointments strain their relationship and living situation.",
-    "poster_url": "posters/31026.jpg",
-    "tmdb_id": 31026,
-    "tmdb_rating": 7.1,
-    "imdb_id": "tt0346094",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 106,
-    "revenue": 767337,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:17:01.119230"
   },
   {
     "title": "ong bak 2",
@@ -122742,36 +122997,6 @@
     "added_at": "2026-06-22T07:46:34.685756"
   },
   {
-    "title": "the french kissers",
-    "year": 2009,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Riad Sattouf",
-    "synopsis": "An awkward adolescent boy and his angst-ridden friends try their best to fit in amongst a cast of varied characters.",
-    "poster_url": "posters/18896.jpg",
-    "tmdb_id": 18896,
-    "tmdb_rating": 5.8,
-    "imdb_id": "tt1314237",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.3,
-    "letterboxd_url": "https://letterboxd.com/film/the-french-kissers/",
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "runtime_mins": 90,
-    "revenue": 14751272,
-    "budget": 3500000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:17:12.629784"
-  },
-  {
     "title": "the good heart",
     "year": 2009,
     "festivals": [
@@ -123377,35 +123602,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:19:26.344603"
-  },
-  {
-    "title": "the white ribbon",
-    "year": 2009,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Michael Haneke",
-    "synopsis": "An aged tailor recalls his life as the schoolteacher of a small village in Northern Germany that was struck by a series of strange events in the year leading up to WWI.",
-    "poster_url": "posters/37903.jpg",
-    "tmdb_id": 37903,
-    "tmdb_rating": 7.5,
-    "imdb_id": "tt1149362",
-    "imdb_rating": null,
-    "letterboxd_rating": 4.22,
-    "letterboxd_url": "https://letterboxd.com/film/the-white-ribbon/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Mystery"
-    ],
-    "runtime_mins": 144,
-    "revenue": 11652157,
-    "budget": 21555450,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:58.604774"
   },
   {
     "title": "the white space",
@@ -124609,6 +124805,35 @@
     "added_at": "2026-04-20T12:13:29.602955"
   },
   {
+    "title": "aquele querido mês de agosto",
+    "year": 2008,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Miguel Gomes",
+    "synopsis": "In the heart of Portugal, amid the mountains, the month of August is abuzz with people and activity...",
+    "poster_url": "posters/54384.jpg",
+    "tmdb_id": 54384,
+    "tmdb_rating": 6.7,
+    "imdb_id": "tt1081929",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Music",
+      "Romance"
+    ],
+    "runtime_mins": 147,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:55.535080"
+  },
+  {
     "title": "be kind rewind",
     "year": 2008,
     "festivals": [
@@ -124782,36 +125007,6 @@
     "added_at": "2026-06-29T07:26:22.897928"
   },
   {
-    "title": "cannes film festival",
-    "year": 2008,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Harvey Frost",
-    "synopsis": "A comedic murder mystery set in the middle of the Cannes Film Fest. Amidst the bumbling and drama, twists and turns emerge.",
-    "poster_url": "posters/1017815.jpg",
-    "tmdb_id": 1017815,
-    "tmdb_rating": 8.0,
-    "imdb_id": "tt0245301",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy",
-      "Mystery",
-      "TV Movie"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:47.236581"
-  },
-  {
     "title": "cant dels ocells (el)",
     "year": 2008,
     "festivals": [
@@ -124950,6 +125145,36 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T12:13:04.113937"
+  },
+  {
+    "title": "cztery noce z anna",
+    "year": 2008,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Jerzy Skolimowski",
+    "synopsis": "Leon falls in love with a nurse and obsessively tries to get close to her.",
+    "poster_url": "posters/44442.jpg",
+    "tmdb_id": 44442,
+    "tmdb_rating": 6.2,
+    "imdb_id": "tt1225290",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime_mins": 87,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:57.605105"
   },
   {
     "title": "de la guerre",
@@ -125476,36 +125701,6 @@
     "added_at": "2026-06-29T07:28:10.852999"
   },
   {
-    "title": "four nights with anna",
-    "year": 2008,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Jerzy Skolimowski",
-    "synopsis": "Leon falls in love with a nurse and obsessively tries to get close to her.",
-    "poster_url": "posters/44442.jpg",
-    "tmdb_id": 44442,
-    "tmdb_rating": 6.2,
-    "imdb_id": "tt1225290",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.57,
-    "letterboxd_url": "https://letterboxd.com/film/four-nights-with-anna/",
-    "screen_australia_url": "",
-    "genres": [
-      "Crime",
-      "Drama",
-      "Thriller"
-    ],
-    "runtime_mins": 87,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:51.586698"
-  },
-  {
     "title": "frontier of the dawn",
     "year": 2008,
     "festivals": [
@@ -125676,6 +125871,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:28:13.196428"
+  },
+  {
+    "title": "hou hsiao-hsien",
+    "year": 2008,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Cheuk Pak-Tong, Ryota Nakanishi",
+    "synopsis": "Chinese film school students and the professors from the Greater China Region gathered together at Hong Kong Baptist University to discuss the many serious film issues in the region.",
+    "poster_url": "posters/507491.jpg",
+    "tmdb_id": 507491,
+    "tmdb_rating": null,
+    "imdb_id": "",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 90,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:38.724928"
   },
   {
     "title": "i always wanted to be a gangster",
@@ -126946,35 +127169,6 @@
     "added_at": "2026-07-06T06:50:53.238750"
   },
   {
-    "title": "our beloved month of august",
-    "year": 2008,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Miguel Gomes",
-    "synopsis": "In the heart of Portugal, amid the mountains, the month of August is abuzz with people and activity...",
-    "poster_url": "posters/54384.jpg",
-    "tmdb_id": 54384,
-    "tmdb_rating": 6.6,
-    "imdb_id": "tt1081929",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.77,
-    "letterboxd_url": "https://letterboxd.com/film/our-beloved-month-of-august/",
-    "screen_australia_url": "",
-    "genres": [
-      "Music",
-      "Romance"
-    ],
-    "runtime_mins": 147,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:53.977474"
-  },
-  {
     "title": "paris 36",
     "year": 2008,
     "festivals": [
@@ -127059,6 +127253,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T12:13:24.945048"
+  },
+  {
+    "title": "pleasure of being robbed (the)",
+    "year": 2008,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Josh Safdie",
+    "synopsis": "A curious and lost Eleonore looks for something everywhere, even in the bags of strangers who find themselves sadly smiling only well after she's left their lives. They owe her their thanks.",
+    "poster_url": "posters/42585.jpg",
+    "tmdb_id": 42585,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt1189259",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "runtime_mins": 71,
+    "revenue": null,
+    "budget": 500000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:59.643818"
   },
   {
     "title": "pokrajina št. 2",
@@ -128225,35 +128448,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:29:00.035877"
-  },
-  {
-    "title": "the pleasure of being robbed",
-    "year": 2008,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Josh Safdie",
-    "synopsis": "A curious and lost Eleonore looks for something everywhere, even in the bags of strangers who find themselves sadly smiling only well after she's left their lives. They owe her their thanks.",
-    "poster_url": "posters/42585.jpg",
-    "tmdb_id": 42585,
-    "tmdb_rating": 5.6,
-    "imdb_id": "tt1189259",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.39,
-    "letterboxd_url": "https://letterboxd.com/film/the-pleasure-of-being-robbed/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Crime"
-    ],
-    "runtime_mins": 71,
-    "revenue": null,
-    "budget": 500000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:56.287328"
   },
   {
     "title": "the secret of moonacre",
@@ -129953,10 +130147,10 @@
     "added_at": "2026-04-20T12:12:39.399262"
   },
   {
-    "title": "avant que j'oublie",
+    "title": "avant que j’oublie",
     "year": 2007,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Jacques Nolot",
     "synopsis": "A portrait of a 58-year-old man battling his inner demons on the search for self-discovery.",
@@ -129979,7 +130173,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:16:38.006822"
+    "added_at": "2026-07-27T06:09:44.894810"
   },
   {
     "title": "away from her",
@@ -130009,6 +130203,35 @@
     "sales_agent": "HanWay Films",
     "producers": [],
     "added_at": "2026-04-27T12:53:03.617648"
+  },
+  {
+    "title": "ballon rouge (le)",
+    "year": 2007,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Hou Hsiao-hsien",
+    "synopsis": "The first part in a new series of films produced by Musée d'Orsay, 'Flight of the Red Balloon' tells the story of a French family as seen through the eyes of a Chinese student. The film was shot in August and September 2006 on location in Paris. This is Hou Hsiao-Hsien's first Western film. It is based on the classic French short The Red Balloon directed by Albert Lamorisse.",
+    "poster_url": "posters/12198.jpg",
+    "tmdb_id": 12198,
+    "tmdb_rating": 6.3,
+    "imdb_id": "tt0826711",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Family",
+      "Drama"
+    ],
+    "runtime_mins": 117,
+    "revenue": null,
+    "budget": 3000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:53.467464"
   },
   {
     "title": "battle for haditha",
@@ -130419,6 +130642,34 @@
     "sales_agent": "Wild Bunch",
     "producers": [],
     "added_at": "2026-04-27T13:16:36.335911"
+  },
+  {
+    "title": "béla tarr",
+    "year": 2007,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Howard Feinstein",
+    "synopsis": "Hungarian filmmaker Béla Tarr and film critic Howard Feinstein discuss his innovative filmography, punctuated by clips from his films.",
+    "poster_url": "posters/530861.jpg",
+    "tmdb_id": 530861,
+    "tmdb_rating": null,
+    "imdb_id": "tt8185596",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 81,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:34.600461"
   },
   {
     "title": "california dreamin' (endless)",
@@ -131193,6 +131444,34 @@
     "added_at": "2026-04-27T13:15:07.567394"
   },
   {
+    "title": "elle s’appelle sabine",
+    "year": 2007,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Sandrine Bonnaire",
+    "synopsis": "A sensitive portrait of Sabine Bonnaire, the autistic sister of the french actress Sandrine Bonnaire.",
+    "poster_url": "posters/33297.jpg",
+    "tmdb_id": 33297,
+    "tmdb_rating": 5.3,
+    "imdb_id": "tt1031928",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.61,
+    "letterboxd_url": "https://letterboxd.com/film/elle-sappelle-sabine/",
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 85,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:47.049078"
+  },
+  {
     "title": "empties",
     "year": 2007,
     "festivals": [
@@ -131249,6 +131528,35 @@
     "added_at": "2026-04-27T13:16:52.192446"
   },
   {
+    "title": "estado do mundo (o)",
+    "year": 2007,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Apichatpong Weerasethakul, Ayisha Abraham",
+    "synopsis": "Six directors, six independent films, six visions on the state of the world. Each carrying a unique and personal interpretation of a specific experience, their crossover creates new space for a dynamic and radical inquisitive reflection.",
+    "poster_url": "posters/126677.jpg",
+    "tmdb_id": 126677,
+    "tmdb_rating": 5.3,
+    "imdb_id": "tt1058526",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary",
+      "Drama"
+    ],
+    "runtime_mins": 105,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:49.243803"
+  },
+  {
     "title": "faro, goddess of the waters",
     "year": 2007,
     "festivals": [
@@ -131303,35 +131611,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:22:53.122052"
-  },
-  {
-    "title": "flight of the red balloon",
-    "year": 2007,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Hou Hsiao-hsien",
-    "synopsis": "The first part in a new series of films produced by Musée d'Orsay, 'Flight of the Red Balloon' tells the story of a French family as seen through the eyes of a Chinese student. The film was shot in August and September 2006 on location in Paris. This is Hou Hsiao-Hsien's first Western film. It is based on the classic French short The Red Balloon directed by Albert Lamorisse.",
-    "poster_url": "posters/12198.jpg",
-    "tmdb_id": 12198,
-    "tmdb_rating": 6.3,
-    "imdb_id": "tt0826711",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.63,
-    "letterboxd_url": "https://letterboxd.com/film/flight-of-the-red-balloon/",
-    "screen_australia_url": "",
-    "genres": [
-      "Family",
-      "Drama"
-    ],
-    "runtime_mins": 117,
-    "revenue": null,
-    "budget": 3000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:34.791562"
   },
   {
     "title": "for the bible tells me so",
@@ -131768,34 +132047,6 @@
     "added_at": "2026-06-29T07:23:27.596360"
   },
   {
-    "title": "gus van sant",
-    "year": 2007,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Gus Van Sant",
-    "synopsis": "The life and struggles of a notorious rock musician seeping into a pit of loneliness whose everyday life involves friends and family seeking financial aid and favors, inspired by rock music legend Kurt Cobain and his final hours.",
-    "poster_url": "posters/1665.jpg",
-    "tmdb_id": 1665,
-    "tmdb_rating": 5.6,
-    "imdb_id": "tt0403217",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 97,
-    "revenue": 1900000,
-    "budget": 5000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:30.409643"
-  },
-  {
     "title": "hammer & tongs",
     "year": 2007,
     "festivals": [
@@ -131909,34 +132160,6 @@
     "added_at": "2026-07-06T06:49:09.072259"
   },
   {
-    "title": "her name is sabine",
-    "year": 2007,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Sandrine Bonnaire",
-    "synopsis": "A sensitive portrait of Sabine Bonnaire, the autistic sister of the french actress Sandrine Bonnaire.",
-    "poster_url": "posters/33297.jpg",
-    "tmdb_id": 33297,
-    "tmdb_rating": 5.3,
-    "imdb_id": "tt1031928",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.61,
-    "letterboxd_url": "https://letterboxd.com/film/her-name-is-sabine/",
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 85,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:40.300510"
-  },
-  {
     "title": "here is what is",
     "year": 2007,
     "festivals": [
@@ -131992,34 +132215,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:17:47.417126"
-  },
-  {
-    "title": "hou hsiao-hsien",
-    "year": 2007,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Cheuk Pak-Tong, Ryota Nakanishi",
-    "synopsis": "Chinese film school students and the professors from the Greater China Region gathered together at Hong Kong Baptist University to discuss the many serious film issues in the region.",
-    "poster_url": "posters/507491.jpg",
-    "tmdb_id": 507491,
-    "tmdb_rating": null,
-    "imdb_id": "",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 90,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:37.080457"
   },
   {
     "title": "how is your fish today?",
@@ -132659,35 +132854,6 @@
     "added_at": "2026-04-20T12:11:32.910576"
   },
   {
-    "title": "l'état du monde",
-    "year": 2007,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Apichatpong Weerasethakul, Ayisha Abraham",
-    "synopsis": "Six directors, six independent films, six visions on the state of the world. Each carrying a unique and personal interpretation of a specific experience, their crossover creates new space for a dynamic and radical inquisitive reflection.",
-    "poster_url": "posters/126677.jpg",
-    "tmdb_id": 126677,
-    "tmdb_rating": 5.3,
-    "imdb_id": "tt1058526",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary",
-      "Drama"
-    ],
-    "runtime_mins": 105,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:42.631526"
-  },
-  {
     "title": "la bandera (film)",
     "year": 2007,
     "festivals": [
@@ -132743,35 +132909,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:23:17.271588"
-  },
-  {
-    "title": "la question humaine",
-    "year": 2007,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Nicolas Klotz",
-    "synopsis": "A psychologist discovers troubling links between Nazism and modern-day big business.",
-    "poster_url": "posters/60531.jpg",
-    "tmdb_id": 60531,
-    "tmdb_rating": 5.6,
-    "imdb_id": "tt0765141",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.46,
-    "letterboxd_url": "https://letterboxd.com/film/la-question-humaine/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Thriller"
-    ],
-    "runtime_mins": 143,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:44.826962"
   },
   {
     "title": "lage raho munna bhai",
@@ -133922,6 +134059,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-05-25T06:59:10.569004"
+  },
+  {
+    "title": "question humaine (la)",
+    "year": 2007,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Nicolas Klotz",
+    "synopsis": "A psychologist discovers troubling links between Nazism and modern-day big business.",
+    "poster_url": "posters/60531.jpg",
+    "tmdb_id": 60531,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt0765141",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "runtime_mins": 143,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:51.399194"
   },
   {
     "title": "rails & ties",
@@ -137244,6 +137410,35 @@
     "added_at": "2026-04-20T12:09:15.216195"
   },
   {
+    "title": "anges exterminateurs (les)",
+    "year": 2006,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Jean-Claude Brisseau",
+    "synopsis": "A filmmaker holds a series of boundary-pushing auditions for his latest project: a thriller on the subject of female pleasure.",
+    "poster_url": "posters/19976.jpg",
+    "tmdb_id": 19976,
+    "tmdb_rating": 5.3,
+    "imdb_id": "tt0792948",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Fantasy"
+    ],
+    "runtime_mins": 103,
+    "revenue": 154210,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:34.406457"
+  },
+  {
     "title": "angry monk-reflections on tibet",
     "year": 2006,
     "festivals": [
@@ -137846,10 +138041,10 @@
     "added_at": "2026-07-20T06:19:22.891822"
   },
   {
-    "title": "daft punk's electroma",
+    "title": "daft punk’s electroma",
     "year": 2006,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Guy-Manuel de Homem-Christo, Thomas Bangalter",
     "synopsis": "Two robots embark on a quest to become human.",
@@ -137872,7 +138067,7 @@
     "distributor_intl": "",
     "sales_agent": "Wild Bunch",
     "producers": [],
-    "added_at": "2026-07-20T06:16:18.743530"
+    "added_at": "2026-07-27T06:09:36.440979"
   },
   {
     "title": "dans paris",
@@ -138429,6 +138624,34 @@
     "added_at": "2026-04-20T12:08:29.157484"
   },
   {
+    "title": "hawk is dying (the)",
+    "year": 2006,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Julian Goldberger",
+    "synopsis": "A Gainesville Florida auto upholsterer attempts to subvert his mundane life by training a wild, red-tailed hawk.",
+    "poster_url": "posters/44813.jpg",
+    "tmdb_id": 44813,
+    "tmdb_rating": 4.9,
+    "imdb_id": "tt0412808",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 112,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:38.598643"
+  },
+  {
     "title": "heimat fragments: the women",
     "year": 2006,
     "festivals": [
@@ -138630,6 +138853,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-07-20T06:19:18.181024"
+  },
+  {
+    "title": "in the mood for love",
+    "year": 2006,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Wong Kar-Wai",
+    "synopsis": "In 1960s Hong Kong, two neighbors form an intimate bond after making a discovery about their spouses in this visually stunning tale of unrequited love.",
+    "poster_url": "posters/843.jpg",
+    "tmdb_id": 843,
+    "tmdb_rating": 8.1,
+    "imdb_id": "tt0118694",
+    "imdb_rating": null,
+    "letterboxd_rating": 4.37,
+    "letterboxd_url": "https://letterboxd.com/film/in-the-mood-for-love/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime_mins": 99,
+    "revenue": 15867968,
+    "budget": 3000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:24.053495"
   },
   {
     "title": "in the pit",
@@ -139005,35 +139257,6 @@
     "added_at": "2026-04-27T12:52:59.150135"
   },
   {
-    "title": "les anges exterminateurs",
-    "year": 2006,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Jean-Claude Brisseau",
-    "synopsis": "A filmmaker holds a series of boundary-pushing auditions for his latest project: a thriller on the subject of female pleasure.",
-    "poster_url": "posters/19976.jpg",
-    "tmdb_id": 19976,
-    "tmdb_rating": 5.3,
-    "imdb_id": "tt0792948",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.12,
-    "letterboxd_url": "https://letterboxd.com/film/les-anges-exterminateurs/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Fantasy"
-    ],
-    "runtime_mins": 103,
-    "revenue": 154210,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:16.335589"
-  },
-  {
     "title": "libero",
     "year": 2006,
     "festivals": [
@@ -139383,6 +139606,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:21:23.018329"
+  },
+  {
+    "title": "on ne devrait pas exister",
+    "year": 2006,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Hervé P. Gustave",
+    "synopsis": "Hervé is a 37-year-old porno movie actor. Weary of the excesses of this fringe universe, he decides to hang up his Condoman costume and turn over a new leaf as a mainstream movie actor. He thus enters a world he knows nothing about. Rejected by his fellow actors, Hervé is just dying to learn the rules of the game. He then encounters LZA...",
+    "poster_url": "posters/220106.jpg",
+    "tmdb_id": 220106,
+    "tmdb_rating": 4.1,
+    "imdb_id": "tt0792984",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/on-ne-devrait-pas-exister/",
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "runtime_mins": 88,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:40.631022"
   },
   {
     "title": "on the trail of igor rizzi",
@@ -140080,10 +140332,10 @@
     "added_at": "2026-04-20T12:09:31.499705"
   },
   {
-    "title": "summer '04",
+    "title": "sommer 04 an der schlei",
     "year": 2006,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Stefan Krohmer",
     "synopsis": "A character study of a family on vacation. The emotional abyss and problems are behind the seemingly nice facade of an intact family as they experience guilt, love, and jealousy.",
@@ -140092,8 +140344,8 @@
     "tmdb_rating": 5.7,
     "imdb_id": "tt0806679",
     "imdb_rating": null,
-    "letterboxd_rating": 3.37,
-    "letterboxd_url": "https://letterboxd.com/film/summer-04/",
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
     "screen_australia_url": "",
     "genres": [
       "Drama",
@@ -140106,7 +140358,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:16:23.480021"
+    "added_at": "2026-07-27T06:09:42.796424"
   },
   {
     "title": "syndromes and a century",
@@ -140514,34 +140766,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T12:09:00.403510"
-  },
-  {
-    "title": "the hawk is dying",
-    "year": 2006,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Julian Goldberger",
-    "synopsis": "A Gainesville Florida auto upholsterer attempts to subvert his mundane life by training a wild, red-tailed hawk.",
-    "poster_url": "posters/44813.jpg",
-    "tmdb_id": 44813,
-    "tmdb_rating": 4.9,
-    "imdb_id": "tt0412808",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.28,
-    "letterboxd_url": "https://letterboxd.com/film/the-hawk-is-dying/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 112,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:21.098458"
   },
   {
     "title": "the hottest state",
@@ -141546,35 +141770,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-07-20T06:19:11.141593"
-  },
-  {
-    "title": "we should not exist",
-    "year": 2006,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Hervé P. Gustave",
-    "synopsis": "Hervé is a 37-year-old porno movie actor. Weary of the excesses of this fringe universe, he decides to hang up his Condoman costume and turn over a new leaf as a mainstream movie actor. He thus enters a world he knows nothing about. Rejected by his fellow actors, Hervé is just dying to learn the rules of the game. He then encounters LZA...",
-    "poster_url": "posters/220106.jpg",
-    "tmdb_id": 220106,
-    "tmdb_rating": 4.1,
-    "imdb_id": "tt0792984",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/we-should-not-exist/",
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "runtime_mins": 88,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:16:25.853259"
   },
   {
     "title": "who killed the electric car",
@@ -142882,10 +143077,10 @@
     "added_at": "2026-04-20T12:30:47.712629"
   },
   {
-    "title": "cache-cache",
+    "title": "cache cache",
     "year": 2005,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "John Polson",
     "synopsis": "David Callaway tries to piece together his life in the wake of his wife's suicide and has been left to raise his nine-year-old daughter, Emily on his own. David is at first amused to discover that Emily has created an imaginary friend named 'Charlie', but it isn't long before 'Charlie' develops a sinister and violent side, and as David struggles with his daughter's growing emotional problems, he comes to the frightening realisation that 'Charlie' isn't just a figment of Emily's imagination.",
@@ -142908,7 +143103,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:15:58.329913"
+    "added_at": "2026-07-27T06:09:25.832656"
   },
   {
     "title": "caché (film)",
@@ -146766,10 +146961,10 @@
     "added_at": "2026-04-20T12:34:25.850160"
   },
   {
-    "title": "the president's last bang",
+    "title": "the president’s last bang",
     "year": 2005,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Im Sang-soo",
     "synopsis": "On October 26, 1979, President Park Chung-hee, who had ruled South Korea since 1961, was assassinated by his director of intelligence. The film depicts the events of that night.",
@@ -146793,7 +146988,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:16:00.638564"
+    "added_at": "2026-07-27T06:09:27.908797"
   },
   {
     "title": "the puffy chair",
@@ -147235,10 +147430,10 @@
     "added_at": "2026-04-20T12:30:38.123736"
   },
   {
-    "title": "travaux, on sait quand ça commence...",
+    "title": "travaux, on sait quand ça commence…",
     "year": 2005,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Brigitte Roüan",
     "synopsis": "Chantal, an advocate involved in defending homeless illegal immigrant, decides to refurbish her flat. Following her convictions she calls Columbian workers led by an unforeseeable architect. In the mean time a former client decides he is in love with her, her son and daughter are becoming nearly homeless since the flat's walls are demolished, the architect has new plans every day, an irregular workers fall in love with Chantal too and dance with her daughter, Martin (the son) still continue to roller blade around... Could the works go forward in this mess?",
@@ -147260,7 +147455,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:16:02.974392"
+    "added_at": "2026-07-27T06:09:30.162963"
   },
   {
     "title": "trudell",
@@ -147808,10 +148003,10 @@
     "added_at": "2026-04-20T12:31:40.255622"
   },
   {
-    "title": "who’s camus anyway?",
+    "title": "who’s camus anyway ?",
     "year": 2005,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Mitsuo Yanagimachi",
     "synopsis": "A group of eccentric students decide to make a movie. But, when their star suddenly quits, this witty ensemble cast begins to live the film, including murder, deception and true love.",
@@ -147820,7 +148015,7 @@
     "tmdb_rating": 6.5,
     "imdb_id": "tt0456873",
     "imdb_rating": null,
-    "letterboxd_rating": 3.61,
+    "letterboxd_rating": 3.6,
     "letterboxd_url": "https://letterboxd.com/film/whos-camus-anyway/",
     "screen_australia_url": "",
     "genres": [
@@ -147834,7 +148029,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:16:05.217052"
+    "added_at": "2026-07-27T06:09:32.243138"
   },
   {
     "title": "william eggleston in the real world",
@@ -148663,10 +148858,10 @@
     "added_at": "2026-04-27T13:13:00.027903"
   },
   {
-    "title": "a vot' bon cœur",
+    "title": "a vot’ bon coeur",
     "year": 2004,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Paul Vecchiali",
     "synopsis": "French independent director Paul Vecchiali playfully bites the hand that periodically feeds him (and many of the nation's other creative filmmakers) in this dark comedy. Writer and director Vecchiali stars as a moviemaker named Paul Vecchiali, who is trying to complete his latest project, a dramatic love story about a young couple whose relationship is complicated by the man's addiction to drugs. Short on funds, Vecchiali approaches the National Cinema Center, who offer loans and grants to independent filmmakers whom they believe are deserving. The NCC is less than impressed with Vecchiali's latest script, and they turn him down, just as they have done a number of times in the past. Angry and determined that the NCC will never break the spirit of another director, Vecchiali and his crew block out a plan to assassinate the nine members of the funding board, though the press and public seem more bemused than outraged by the sudden rash of killings.",
@@ -148676,7 +148871,7 @@
     "imdb_id": "tt0388559",
     "imdb_rating": null,
     "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/a-vot-bon-cur/",
+    "letterboxd_url": "https://letterboxd.com/film/a-vot-bon-coeur/",
     "screen_australia_url": "",
     "genres": [
       "Comedy"
@@ -148688,7 +148883,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:15:42.347200"
+    "added_at": "2026-07-27T06:09:16.832288"
   },
   {
     "title": "after the day before",
@@ -148919,6 +149114,34 @@
     "added_at": "2026-04-27T13:12:42.016637"
   },
   {
+    "title": "babae sa breakwater",
+    "year": 2004,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Mario O'Hara",
+    "synopsis": "Two brothers migrate to a city to escape the violence in their village, but the city's leader has other plans in mind for them.",
+    "poster_url": "posters/215698.jpg",
+    "tmdb_id": 215698,
+    "tmdb_rating": 9.0,
+    "imdb_id": "tt0412473",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/babae-sa-breakwater/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 127,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:19.072826"
+  },
+  {
     "title": "be here to love me",
     "year": 2004,
     "festivals": [
@@ -149090,34 +149313,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-01T07:46:04.279372"
-  },
-  {
-    "title": "cannes",
-    "year": 2004,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Richard Blanshard, Roger Penny",
-    "synopsis": "Looks at the glamour, red carpets, movies, craziness, stunts, deals, parties and personalities that have been part of the Cannes Film Festival over eight decades, as well as looking to the future.",
-    "poster_url": "posters/1139231.jpg",
-    "tmdb_id": 1139231,
-    "tmdb_rating": 5.3,
-    "imdb_id": "tt14909014",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 85,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:29.161492"
   },
   {
     "title": "casuistry: the art of killing a cat",
@@ -149295,10 +149490,10 @@
     "added_at": "2026-07-06T06:46:21.004307"
   },
   {
-    "title": "dans les champs de bataille",
+    "title": "dans les champs de bataille (maarek hob)",
     "year": 2004,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Danielle Arbid",
     "synopsis": "Lina, a young girl in war-torn Beirut, finds an ally and friend in Sihan, her domineering aunt's maid. Sihan shows Lina what her life could be like, but tests the girl's limits when she asks her to help plot her escape from the city.",
@@ -149321,7 +149516,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:15:44.672018"
+    "added_at": "2026-07-27T06:09:21.350928"
   },
   {
     "title": "darwin's nightmare",
@@ -149668,34 +149863,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-01T07:47:05.513833"
-  },
-  {
-    "title": "fahrenheit 9/11",
-    "year": 2004,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Michael Moore",
-    "synopsis": "Michael Moore's view on how the Bush administration allegedly used the tragic events on 9/11 to push forward its agenda for unjust wars in Afghanistan and Iraq.",
-    "poster_url": "posters/1777.jpg",
-    "tmdb_id": 1777,
-    "tmdb_rating": 7.1,
-    "imdb_id": "tt0361596",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 123,
-    "revenue": 222400000,
-    "budget": 6000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:31.393554"
   },
   {
     "title": "familia rodante",
@@ -150681,6 +150848,34 @@
     "added_at": "2026-07-13T06:01:54.800520"
   },
   {
+    "title": "l’odore del sangue",
+    "year": 2004,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Mario Martone",
+    "synopsis": "A couple of bourgeois intellectuals, Carlo and Silvia, have been married for twenty years. While she lives in their flat in Rome, he spends most of his time in the country house where he writes his books, openly living with his younger lover, Lù. In return, Carlo has long accepted that her wife may have lovers, but her volatile relationship with a young neo-fascist suddenly rekindles his jealousy.",
+    "poster_url": "posters/62027.jpg",
+    "tmdb_id": 62027,
+    "tmdb_rating": 5.5,
+    "imdb_id": "tt0374916",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/lodore-del-sangue/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:23.489043"
+  },
+  {
     "title": "ma mère",
     "year": 2004,
     "festivals": [
@@ -151142,34 +151337,6 @@
     "added_at": "2026-04-27T13:12:29.397140"
   },
   {
-    "title": "nelson pereira dos santos",
-    "year": 2004,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Aida Marques, Ivelise Ferreira",
-    "synopsis": "For six decades, the cinema of Nelson Pereira dos Santos has projected Brazil into the eyes of the world. Precursor of Cinema Novo, Nelson was, more than a director, he was an ideologue, a thinker of his country.",
-    "poster_url": "posters/1122956.jpg",
-    "tmdb_id": 1122956,
-    "tmdb_rating": 7.0,
-    "imdb_id": "tt27766587",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 102,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:40.157799"
-  },
-  {
     "title": "night of truth",
     "year": 2004,
     "festivals": [
@@ -151543,32 +151710,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-01T07:47:19.359021"
-  },
-  {
-    "title": "patricio guzmán",
-    "year": 2004,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Boris Nicot",
-    "synopsis": "A portrait of the filmmaker Patricio Guzmán.",
-    "poster_url": "",
-    "tmdb_id": 314516,
-    "tmdb_rating": null,
-    "imdb_id": "tt4008814",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:37.945668"
   },
   {
     "title": "phil the alien",
@@ -152745,34 +152886,6 @@
     "added_at": "2026-06-01T07:46:23.224332"
   },
   {
-    "title": "the scent of blood",
-    "year": 2004,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Mario Martone",
-    "synopsis": "A couple of bourgeois intellectuals, Carlo and Silvia, have been married for twenty years. While she lives in their flat in Rome, he spends most of his time in the country house where he writes his books, openly living with his younger lover, Lù. In return, Carlo has long accepted that her wife may have lovers, but her volatile relationship with a young neo-fascist suddenly rekindles his jealousy.",
-    "poster_url": "posters/62027.jpg",
-    "tmdb_id": 62027,
-    "tmdb_rating": 5.5,
-    "imdb_id": "tt0374916",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/the-scent-of-blood/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:46.848525"
-  },
-  {
     "title": "the sea inside",
     "year": 2004,
     "festivals": [
@@ -153569,34 +153682,6 @@
     "sales_agent": "mk2 Films",
     "producers": [],
     "added_at": "2026-06-29T07:18:08.183332"
-  },
-  {
-    "title": "woman of breakwater",
-    "year": 2004,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Mario O'Hara",
-    "synopsis": "Two brothers migrate to a city to escape the violence in their village, but the city's leader has other plans in mind for them.",
-    "poster_url": "posters/215698.jpg",
-    "tmdb_id": 215698,
-    "tmdb_rating": 9.0,
-    "imdb_id": "tt0412473",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/woman-of-breakwater/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 127,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:49.311722"
   },
   {
     "title": "working slowly (radio alice)",
@@ -156114,10 +156199,10 @@
     "added_at": "2026-04-20T12:05:18.904408"
   },
   {
-    "title": "james' journey to jerusalem",
+    "title": "james journey to jerusalem",
     "year": 2003,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Ra'anan Alexandrowicz",
     "synopsis": "During his journey to Jerusalem young James learns the meaning of being Israeli.",
@@ -156140,7 +156225,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:15:19.266046"
+    "added_at": "2026-07-27T06:09:06.277632"
   },
   {
     "title": "jesus, you know",
@@ -156255,6 +156340,63 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:38:18.526869"
+  },
+  {
+    "title": "la grande séduction",
+    "year": 2003,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Jean-François Pouliot",
+    "synopsis": "A much-needed boost, in the form of a new factory, is promised to the residents of the tiny fishing village St. Marie-La-Mauderne, provided they can lure a doctor to take up full-time residency on the island. Inspired, the villagers devise a scheme to make Dr. Christopher Lewis a local.",
+    "poster_url": "posters/41277.jpg",
+    "tmdb_id": 41277,
+    "tmdb_rating": 6.9,
+    "imdb_id": "tt0366532",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "runtime_mins": 108,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:08.459096"
+  },
+  {
+    "title": "las horas del dia",
+    "year": 2003,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Jaime Rosales",
+    "synopsis": "Abel lives with his mother in a small town on the outskirts of Barcelona. His life, grey and boring, is based on the small family business, his mother's house, his girlfriend's bed, and the town bars. However under an appearance of quiet and gentle man, Abel hides a dark and morbid personality.",
+    "poster_url": "posters/102514.jpg",
+    "tmdb_id": 102514,
+    "tmdb_rating": 5.5,
+    "imdb_id": "tt0367863",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 103,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:10.485028"
   },
   {
     "title": "last life in the universe",
@@ -157090,10 +157232,10 @@
     "added_at": "2026-04-20T12:28:02.538774"
   },
   {
-    "title": "niki and flo",
+    "title": "niki et flo",
     "year": 2003,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Lucian Pintilie",
     "synopsis": "In this very black comedy about ill-suited neighbors united by marriage, Niki is a former colonel in the Romanian army whose daughter is married to the son of Flo, an aging Bohemian who is full of schemes for the “new” Romania. As the young couple prepares to emigrate to the U.S., Niki is obliged to interact with Flo, whom he finds totally unbearable.",
@@ -157102,8 +157244,8 @@
     "tmdb_rating": 5.6,
     "imdb_id": "tt0368078",
     "imdb_rating": null,
-    "letterboxd_rating": 3.53,
-    "letterboxd_url": "https://letterboxd.com/film/niki-and-flo/",
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
     "screen_australia_url": "",
     "genres": [
       "Drama"
@@ -157115,7 +157257,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:15:21.700137"
+    "added_at": "2026-07-27T06:09:12.542531"
   },
   {
     "title": "no hay tierra sin dueño",
@@ -157173,36 +157315,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:38:36.764841"
-  },
-  {
-    "title": "no rest for the brave",
-    "year": 2003,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Alain Guiraudie",
-    "synopsis": "A strange man is involved in a village massacre and drug dealing.",
-    "poster_url": "posters/104505.jpg",
-    "tmdb_id": 104505,
-    "tmdb_rating": 5.6,
-    "imdb_id": "tt0339553",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.54,
-    "letterboxd_url": "https://letterboxd.com/film/no-rest-for-the-brave/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Comedy",
-      "Romance"
-    ],
-    "runtime_mins": 107,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:24.254880"
   },
   {
     "title": "noi the albino",
@@ -157377,6 +157489,36 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:38:38.739969"
+  },
+  {
+    "title": "pas de repos pour les braves",
+    "year": 2003,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Alain Guiraudie",
+    "synopsis": "A strange man is involved in a village massacre and drug dealing.",
+    "poster_url": "posters/104505.jpg",
+    "tmdb_id": 104505,
+    "tmdb_rating": 5.6,
+    "imdb_id": "tt0339553",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.54,
+    "letterboxd_url": "https://letterboxd.com/film/pas-de-repos-pour-les-braves/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Romance"
+    ],
+    "runtime_mins": 107,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:09:14.570725"
   },
   {
     "title": "people i know",
@@ -157815,35 +157957,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-01T07:45:27.624774"
-  },
-  {
-    "title": "seducing doctor lewis",
-    "year": 2003,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Jean-François Pouliot",
-    "synopsis": "A much-needed boost, in the form of a new factory, is promised to the residents of the tiny fishing village St. Marie-La-Mauderne, provided they can lure a doctor to take up full-time residency on the island. Inspired, the villagers devise a scheme to make Dr. Christopher Lewis a local.",
-    "poster_url": "posters/41277.jpg",
-    "tmdb_id": 41277,
-    "tmdb_rating": 6.9,
-    "imdb_id": "tt0366532",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.51,
-    "letterboxd_url": "https://letterboxd.com/film/seducing-doctor-lewis/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "runtime_mins": 108,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:26.688217"
   },
   {
     "title": "silence between two thoughts",
@@ -158306,34 +158419,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-07-20T06:17:30.517211"
-  },
-  {
-    "title": "the hours of the day",
-    "year": 2003,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Jaime Rosales",
-    "synopsis": "Abel lives with his mother in a small town on the outskirts of Barcelona. His life, grey and boring, is based on the small family business, his mother's house, his girlfriend's bed, and the town bars. However under an appearance of quiet and gentle man, Abel hides a dark and morbid personality.",
-    "poster_url": "posters/102514.jpg",
-    "tmdb_id": 102514,
-    "tmdb_rating": 5.5,
-    "imdb_id": "tt0367863",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.43,
-    "letterboxd_url": "https://letterboxd.com/film/the-hours-of-the-day/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 103,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:16.849314"
   },
   {
     "title": "the human stain",
@@ -160174,10 +160259,10 @@
     "added_at": "2026-06-29T07:15:37.783373"
   },
   {
-    "title": "apartment 5c",
+    "title": "apartment #5c",
     "year": 2002,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Raphaël Nadjari",
     "synopsis": "Nicky and Uri, two young Israeli, arrive in New York, living off small theft. They set down in a very modest Brooklyn appartment. One night, during an argument with Uri, Nicky inadvertently shoots herself in the leg.",
@@ -160199,7 +160284,7 @@
     "distributor_intl": "",
     "sales_agent": "mk2 Films",
     "producers": [],
-    "added_at": "2026-07-20T06:15:05.517055"
+    "added_at": "2026-07-27T06:09:01.882544"
   },
   {
     "title": "balseros (rafters)",
@@ -160983,34 +161068,6 @@
     "added_at": "2026-06-01T07:43:48.371534"
   },
   {
-    "title": "filles perdues, cheveux gras",
-    "year": 2002,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Claude Duty",
-    "synopsis": "Claude Duty's feature-length debut Filles Perdues, Cheveux Gras (Hypnotized and Hysterical, (Hairstylist Wanted)) is an offbeat comedy about three women. Elodi (Olivia Bonamy) is a struggling single mother. Natacha (Marina Fois) is an upbeat alcoholic hair stylist whose beloved pet cat has disappeared. Marianne (Amira Casar) is drawn to a roguish, sexually adventurous art dealer. Their lives intertwine in a variety of ways. Song and dance numbers, as well as animated sequences, punctuate the film.",
-    "poster_url": "posters/59508.jpg",
-    "tmdb_id": 59508,
-    "tmdb_rating": 5.2,
-    "imdb_id": "tt0293155",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/filles-perdues-cheveux-gras/",
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy"
-    ],
-    "runtime_mins": 100,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:15:03.150019"
-  },
-  {
     "title": "fix: the story of an addicted city",
     "year": 2002,
     "festivals": [
@@ -161299,6 +161356,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:09:00.754995"
+  },
+  {
+    "title": "hypnotized and hysterical (hairstylist wanted)",
+    "year": 2002,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Claude Duty",
+    "synopsis": "Claude Duty's feature-length debut Filles Perdues, Cheveux Gras (Hypnotized and Hysterical, (Hairstylist Wanted)) is an offbeat comedy about three women. Elodi (Olivia Bonamy) is a struggling single mother. Natacha (Marina Fois) is an upbeat alcoholic hair stylist whose beloved pet cat has disappeared. Marianne (Amira Casar) is drawn to a roguish, sexually adventurous art dealer. Their lives intertwine in a variety of ways. Song and dance numbers, as well as animated sequences, punctuate the film.",
+    "poster_url": "posters/59508.jpg",
+    "tmdb_id": 59508,
+    "tmdb_rating": 5.2,
+    "imdb_id": "tt0293155",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/hypnotized-and-hysterical-hairstylist-wanted/",
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime_mins": 100,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:07.086473"
   },
   {
     "title": "if....",
@@ -162607,10 +162692,10 @@
     "added_at": "2026-04-27T13:09:13.310411"
   },
   {
-    "title": "nada+",
+    "title": "nada +",
     "year": 2002,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
     ],
     "director": "Mike Leigh",
     "synopsis": "Penny works at a supermarket and Phil is a gentle taxi-driver. Penny’s love for Phil has run dry and they lead joyless lives with their two children, Rachel, a cleaner, and Rory, who is unemployed and aggressive.",
@@ -162632,7 +162717,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:15:07.831479"
+    "added_at": "2026-07-27T06:09:04.003015"
   },
   {
     "title": "naqoyqatsi",
@@ -165866,34 +165951,6 @@
     "added_at": "2026-04-20T12:27:10.314511"
   },
   {
-    "title": "danièle huillet",
-    "year": 2001,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Pedro Costa, Thierry Lounas",
-    "synopsis": "The original television version of 'Where Does Your Hidden Smile Lie?'",
-    "poster_url": "",
-    "tmdb_id": 403061,
-    "tmdb_rating": 6.0,
-    "imdb_id": "",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Documentary"
-    ],
-    "runtime_mins": 72,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:57.692399"
-  },
-  {
     "title": "dark blue world",
     "year": 2001,
     "festivals": [
@@ -166850,6 +166907,34 @@
     "added_at": "2026-04-20T12:26:58.212511"
   },
   {
+    "title": "jean-marie straub",
+    "year": 2001,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Pedro Costa, Thierry Lounas",
+    "synopsis": "The original television version of 'Where Does Your Hidden Smile Lie?'",
+    "poster_url": "",
+    "tmdb_id": 403061,
+    "tmdb_rating": 6.0,
+    "imdb_id": "",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime_mins": 72,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:07:04.003559"
+  },
+  {
     "title": "jeunesse dorée",
     "year": 2001,
     "festivals": [
@@ -167369,6 +167454,34 @@
     "added_at": "2026-04-20T12:25:01.341674"
   },
   {
+    "title": "l’orphelin d’anyang",
+    "year": 2001,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Wang Chao",
+    "synopsis": "An unemployed factory worker adopts the child of a desperate prostitute in exchange for 200 yuan a month in child support. When the woman's pimp, a local gangster, not only finds out that he may have fathered the child, but also that he is dying of cancer, he decides that he must adopt the baby - and is willing to resort to violence if necessary.",
+    "poster_url": "posters/125829.jpg",
+    "tmdb_id": 125829,
+    "tmdb_rating": 6.5,
+    "imdb_id": "tt0285848",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama"
+    ],
+    "runtime_mins": 84,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:57.668241"
+  },
+  {
     "title": "made in the usa",
     "year": 2001,
     "festivals": [
@@ -167451,6 +167564,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:14:47.968671"
+  },
+  {
+    "title": "marfa si banii",
+    "year": 2001,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Cristi Puiu",
+    "synopsis": "A young man from Constanța who has his own business aims to expand, but he doesn't have the resources.",
+    "poster_url": "posters/56256.jpg",
+    "tmdb_id": 56256,
+    "tmdb_rating": 6.5,
+    "imdb_id": "tt0289320",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "runtime_mins": 90,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:59.850675"
   },
   {
     "title": "margarita happy hour",
@@ -168436,35 +168578,6 @@
     "added_at": "2026-04-20T11:40:23.077837"
   },
   {
-    "title": "stuff and dough",
-    "year": 2001,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Cristi Puiu",
-    "synopsis": "A young man from Constanța who has his own business aims to expand, but he doesn't have the resources.",
-    "poster_url": "posters/56256.jpg",
-    "tmdb_id": 56256,
-    "tmdb_rating": 6.5,
-    "imdb_id": "tt0289320",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.58,
-    "letterboxd_url": "https://letterboxd.com/film/stuff-and-dough/",
-    "screen_australia_url": "",
-    "genres": [
-      "Crime",
-      "Drama"
-    ],
-    "runtime_mins": 90,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:55.281145"
-  },
-  {
     "title": "sur mes lèvres",
     "year": 2001,
     "festivals": [
@@ -169285,34 +169398,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-20T12:25:11.232606"
-  },
-  {
-    "title": "the orphan of anyang",
-    "year": 2001,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Wang Chao",
-    "synopsis": "An unemployed factory worker adopts the child of a desperate prostitute in exchange for 200 yuan a month in child support. When the woman's pimp, a local gangster, not only finds out that he may have fathered the child, but also that he is dying of cancer, he decides that he must adopt the baby - and is willing to resort to violence if necessary.",
-    "poster_url": "posters/125829.jpg",
-    "tmdb_id": 125829,
-    "tmdb_rating": 6.5,
-    "imdb_id": "tt0285848",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/the-orphan-of-anyang/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama"
-    ],
-    "runtime_mins": 84,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:52.937354"
   },
   {
     "title": "the safety of objects",
@@ -170647,35 +170732,6 @@
     "added_at": "2026-04-27T13:04:27.354470"
   },
   {
-    "title": "a time for drunken horses",
-    "year": 2000,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Bahman Ghobadi",
-    "synopsis": "After their father dies, a family of five children are forced to survive on their own in a Kurdish village on the border of Iran and Iraq.",
-    "poster_url": "posters/29270.jpg",
-    "tmdb_id": 29270,
-    "tmdb_rating": 7.6,
-    "imdb_id": "tt0259072",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.92,
-    "letterboxd_url": "https://letterboxd.com/film/a-time-for-drunken-horses/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "War"
-    ],
-    "runtime_mins": 80,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "mk2 Films",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:44.010338"
-  },
-  {
     "title": "adanggaman",
     "year": 2000,
     "festivals": [
@@ -171050,35 +171106,6 @@
     "added_at": "2026-04-27T13:05:07.127785"
   },
   {
-    "title": "bread and tulips",
-    "year": 2000,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Silvio Soldini",
-    "synopsis": "An endearing light comedy about a woman who spontaneously becomes a resident of Venice after her family left her behind. While enjoying the wonderful people she meets she achieves a new life and the first time independent of her family.",
-    "poster_url": "posters/552.jpg",
-    "tmdb_id": 552,
-    "tmdb_rating": 7.2,
-    "imdb_id": "tt0237539",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.67,
-    "letterboxd_url": "https://letterboxd.com/film/bread-and-tulips/",
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "runtime_mins": 114,
-    "revenue": 9735211,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:34.818082"
-  },
-  {
     "title": "breathe in/breathe out",
     "year": 2000,
     "festivals": [
@@ -171188,35 +171215,6 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-04-27T13:06:50.914001"
-  },
-  {
-    "title": "c'est pas si compliqué",
-    "year": 2000,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Nancy Meyers",
-    "synopsis": "Ten years after their divorce, Jane and Jake Adler unite for their son's college graduation and unexpectedly end up sleeping together. But Jake is married, and Jane is embarking on a new romance with her architect. Now, she has to sort out her life—just when she thought she had it all figured out.",
-    "poster_url": "posters/22897.jpg",
-    "tmdb_id": 22897,
-    "tmdb_rating": 6.5,
-    "imdb_id": "tt1230414",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": null,
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "runtime_mins": 121,
-    "revenue": 219103655,
-    "budget": 85000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:48.575487"
   },
   {
     "title": "calle 54",
@@ -171453,10 +171451,39 @@
     "added_at": "2026-06-29T07:36:11.728824"
   },
   {
-    "title": "dancer in the dark",
+    "title": "c’est pas si compliqué",
     "year": 2000,
     "festivals": [
-      "Cannes"
+      "Directors Fortnight"
+    ],
+    "director": "Nancy Meyers",
+    "synopsis": "Ten years after their divorce, Jane and Jake Adler unite for their son's college graduation and unexpectedly end up sleeping together. But Jake is married, and Jane is embarking on a new romance with her architect. Now, she has to sort out her life—just when she thought she had it all figured out.",
+    "poster_url": "posters/22897.jpg",
+    "tmdb_id": 22897,
+    "tmdb_rating": 6.5,
+    "imdb_id": "tt1230414",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "runtime_mins": 121,
+    "revenue": 219103655,
+    "budget": 85000000,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:55.553085"
+  },
+  {
+    "title": "dancer",
+    "year": 2000,
+    "festivals": [
+      "Directors Fortnight"
     ],
     "director": "Lars von Trier",
     "synopsis": "Selma, a Czech immigrant on the verge of blindness, struggles to make ends meet for herself and her son, who has inherited the same genetic disorder and will suffer the same fate without an expensive operation. When life gets too difficult, Selma learns to cope through her love of musicals, dreaming up little numbers to the rhythmic beats of her surroundings.",
@@ -171465,8 +171492,8 @@
     "tmdb_rating": 7.8,
     "imdb_id": "tt0168629",
     "imdb_rating": null,
-    "letterboxd_rating": 4.22,
-    "letterboxd_url": "https://letterboxd.com/film/dancer-in-the-dark/",
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/dancer/",
     "screen_australia_url": "",
     "genres": [
       "Drama",
@@ -171479,7 +171506,7 @@
     "distributor_intl": "",
     "sales_agent": "",
     "producers": [],
-    "added_at": "2026-07-20T06:14:22.938406"
+    "added_at": "2026-07-27T06:08:44.460553"
   },
   {
     "title": "dancing at the blue iguana",
@@ -172244,35 +172271,6 @@
     "added_at": "2026-06-29T07:13:09.395577"
   },
   {
-    "title": "in the mood for love",
-    "year": 2000,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Wong Kar-Wai",
-    "synopsis": "In 1960s Hong Kong, two neighbors form an intimate bond after making a discovery about their spouses in this visually stunning tale of unrequited love.",
-    "poster_url": "posters/843.jpg",
-    "tmdb_id": 843,
-    "tmdb_rating": 8.1,
-    "imdb_id": "tt0118694",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.91,
-    "letterboxd_url": "https://letterboxd.com/film/in-the-mood-for-love-2000/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "runtime_mins": 99,
-    "revenue": 15867968,
-    "budget": 3000000,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:27.789020"
-  },
-  {
     "title": "into the arms of strangers: stories of the kindertransport",
     "year": 2000,
     "festivals": [
@@ -172585,65 +172583,6 @@
     "added_at": "2026-06-29T07:36:18.412594"
   },
   {
-    "title": "krampack",
-    "year": 2000,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Cesc Gay",
-    "synopsis": "While his parents are away for the summer, 16-year-old Dani invites his best friend, the irrepressible Nico, to stay for the holidays. Jealously rears its head when Nico appears more interested in the local girls than in Dani. Hot summer nights and too many  joints lead to experimentation which neither boy can talk about, a situation complicated by the appearance of the older and openly gay Julián, a published writer and old friend of Dani’s father.",
-    "poster_url": "posters/12806.jpg",
-    "tmdb_id": 12806,
-    "tmdb_rating": 5.9,
-    "imdb_id": "tt0250478",
-    "imdb_rating": null,
-    "letterboxd_rating": 3.15,
-    "letterboxd_url": "https://letterboxd.com/film/krampack/",
-    "screen_australia_url": "",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "runtime_mins": 91,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:30.065476"
-  },
-  {
-    "title": "l'affaire marcorelle",
-    "year": 2000,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Serge Le Péron",
-    "synopsis": "François Marcorelle, an investigation magistrate in Chambéry, finds himself in the room of a young Polish girl that he met in a restaurant",
-    "poster_url": "posters/387667.jpg",
-    "tmdb_id": 387667,
-    "tmdb_rating": 4.9,
-    "imdb_id": "tt0247153",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/laffaire-marcorelle/",
-    "screen_australia_url": "",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Thriller"
-    ],
-    "runtime_mins": 92,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:32.417469"
-  },
-  {
     "title": "la captive",
     "year": 2000,
     "festivals": [
@@ -172844,6 +172783,32 @@
     "added_at": "2026-06-29T07:13:48.952286"
   },
   {
+    "title": "les fantômes des trois madeleine",
+    "year": 2000,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Guylaine Dionne",
+    "synopsis": "Three women who share a familial bond but little more come to know each other better in this beautifully-photographed drama. Marie-Madeleine (Sylvie Drapeau) is a photographer in her mid-30s who, for the first time, has come into contact with Mado (France Arbour), her biological mother, who put her up for adoption shortly after she was born. Marie-Madeleine is to take a long road trip for a magazine assignment, and she invites Mado along. Joining the two women is Marie-Madeleine's daughter (Isadora Galwey), who has yet to meet her German father. The three women share their thoughts and ideas as they travel through an idyllic setting to photograph birds. Les Fantomes des Trois Madeleine was shown at the 2000 Cannes Film Festival as part of the Directors Fortnight series.",
+    "poster_url": "posters/387670.jpg",
+    "tmdb_id": 387670,
+    "tmdb_rating": 6.3,
+    "imdb_id": "tt0188613",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [],
+    "runtime_mins": 82,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:46.747292"
+  },
+  {
     "title": "les filles ne savent pas nager",
     "year": 2000,
     "festivals": [
@@ -173016,6 +172981,36 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-29T07:36:24.554745"
+  },
+  {
+    "title": "l’affaire marcorelle",
+    "year": 2000,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Serge Le Péron",
+    "synopsis": "François Marcorelle, an investigation magistrate in Chambéry, finds himself in the room of a young Polish girl that he met in a restaurant",
+    "poster_url": "posters/387667.jpg",
+    "tmdb_id": 387667,
+    "tmdb_rating": 4.9,
+    "imdb_id": "tt0247153",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": "https://letterboxd.com/film/laffaire-marcorelle/",
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Thriller"
+    ],
+    "runtime_mins": 92,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:48.991667"
   },
   {
     "title": "mallboy",
@@ -173192,6 +173187,35 @@
     "added_at": "2026-06-29T07:13:20.515686"
   },
   {
+    "title": "nico and dani",
+    "year": 2000,
+    "festivals": [
+      "Cannes"
+    ],
+    "director": "Cesc Gay",
+    "synopsis": "While his parents are away for the summer, 16-year-old Dani invites his best friend, the irrepressible Nico, to stay for the holidays. Jealously rears its head when Nico appears more interested in the local girls than in Dani. Hot summer nights and too many  joints lead to experimentation which neither boy can talk about, a situation complicated by the appearance of the older and openly gay Julián, a published writer and old friend of Dani’s father.",
+    "poster_url": "posters/12806.jpg",
+    "tmdb_id": 12806,
+    "tmdb_rating": 5.9,
+    "imdb_id": "tt0250478",
+    "imdb_rating": null,
+    "letterboxd_rating": 3.15,
+    "letterboxd_url": "https://letterboxd.com/film/nico-and-dani/",
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "runtime_mins": 91,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:06:59.617367"
+  },
+  {
     "title": "nueces para el amor",
     "year": 2000,
     "festivals": [
@@ -173306,6 +173330,35 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-01T07:42:28.820246"
+  },
+  {
+    "title": "pane e tulipani",
+    "year": 2000,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Silvio Soldini",
+    "synopsis": "An endearing light comedy about a woman who spontaneously becomes a resident of Venice after her family left her behind. While enjoying the wonderful people she meets she achieves a new life and the first time independent of her family.",
+    "poster_url": "posters/552.jpg",
+    "tmdb_id": 552,
+    "tmdb_rating": 7.2,
+    "imdb_id": "tt0237539",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "runtime_mins": 114,
+    "revenue": 9735211,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:51.169675"
   },
   {
     "title": "paragraph 175",
@@ -174927,32 +174980,6 @@
     "added_at": "2026-07-13T06:01:12.247758"
   },
   {
-    "title": "the three madeleines",
-    "year": 2000,
-    "festivals": [
-      "Cannes"
-    ],
-    "director": "Guylaine Dionne",
-    "synopsis": "Three women who share a familial bond but little more come to know each other better in this beautifully-photographed drama. Marie-Madeleine (Sylvie Drapeau) is a photographer in her mid-30s who, for the first time, has come into contact with Mado (France Arbour), her biological mother, who put her up for adoption shortly after she was born. Marie-Madeleine is to take a long road trip for a magazine assignment, and she invites Mado along. Joining the two women is Marie-Madeleine's daughter (Isadora Galwey), who has yet to meet her German father. The three women share their thoughts and ideas as they travel through an idyllic setting to photograph birds. Les Fantomes des Trois Madeleine was shown at the 2000 Cannes Film Festival as part of the Directors Fortnight series.",
-    "poster_url": "posters/387670.jpg",
-    "tmdb_id": 387670,
-    "tmdb_rating": 6.3,
-    "imdb_id": "tt0188613",
-    "imdb_rating": null,
-    "letterboxd_rating": null,
-    "letterboxd_url": "https://letterboxd.com/film/the-three-madeleines/",
-    "screen_australia_url": "",
-    "genres": [],
-    "runtime_mins": 82,
-    "revenue": null,
-    "budget": null,
-    "distributor": "",
-    "distributor_intl": "",
-    "sales_agent": "",
-    "producers": [],
-    "added_at": "2026-07-20T06:14:41.717509"
-  },
-  {
     "title": "the town is quiet",
     "year": 2000,
     "festivals": [
@@ -175730,5 +175757,34 @@
     "sales_agent": "",
     "producers": [],
     "added_at": "2026-06-01T07:43:01.658640"
+  },
+  {
+    "title": "zamani barayé masti asbha – un temps pour l’ivresse des chevaux",
+    "year": 2000,
+    "festivals": [
+      "Directors Fortnight"
+    ],
+    "director": "Bahman Ghobadi",
+    "synopsis": "After their father dies, a family of five children are forced to survive on their own in a Kurdish village on the border of Iran and Iraq.",
+    "poster_url": "posters/29270.jpg",
+    "tmdb_id": 29270,
+    "tmdb_rating": 7.6,
+    "imdb_id": "tt0259072",
+    "imdb_rating": null,
+    "letterboxd_rating": null,
+    "letterboxd_url": null,
+    "screen_australia_url": "",
+    "genres": [
+      "Drama",
+      "War"
+    ],
+    "runtime_mins": 80,
+    "revenue": null,
+    "budget": null,
+    "distributor": "",
+    "distributor_intl": "",
+    "sales_agent": "mk2 Films",
+    "producers": [],
+    "added_at": "2026-07-27T06:08:53.256338"
   }
 ]
